@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="crowddbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="request_comments">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="rc_request_id" Type="int" Nullable="false" />
+          <Property Name="rc_user_id" Type="int" Nullable="false" />
+          <Property Name="rc_comment" Type="varchar" MaxLength="1024" Nullable="false" />
+        </EntityType>
+        <EntityType Name="requests">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="request_user_id" Type="int" Nullable="false" />
+          <Property Name="request_name" Type="char" MaxLength="255" Nullable="false" />
+          <Property Name="request_link" Type="char" MaxLength="255" />
+          <Property Name="request_type" Type="char" MaxLength="255" Nullable="false" />
+          <Property Name="request_lang" Type="int" Nullable="false" />
+          <Property Name="request_video_id" Type="int" />
+        </EntityType>
+        <EntityType Name="subtitle_comments">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="sc_user_id" Type="int" Nullable="false" />
+          <Property Name="sc_sub_id" Type="int" Nullable="false" />
+          <Property Name="sc_comment" Type="varchar" MaxLength="1024" Nullable="false" />
+        </EntityType>
+        <EntityType Name="subtitles">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="subtitle_user_id" Type="int" />
+          <Property Name="subtitle_video_id" Type="int" Nullable="false" />
+          <Property Name="subtitle_file_path" Type="char" MaxLength="255" Nullable="false" />
+          <Property Name="subtitle_version_is_active" Type="int" Nullable="false" />
+          <Property Name="subtitle_version" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="upvotes">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="upvote_request_id" Type="int" />
+          <Property Name="upvote_user_id" Type="int" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="user_name" Type="char" MaxLength="255" Nullable="false" />
+          <Property Name="user_role" Type="int" Nullable="false" />
+          <Property Name="user_password" Type="char" MaxLength="255" Nullable="false" />
+          <Property Name="user_email" Type="char" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="videos">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="video_created_by_user_id" Type="int" Nullable="false" />
+          <Property Name="video_title" Type="char" MaxLength="255" Nullable="false" />
+          <Property Name="video_type" Type="char" MaxLength="255" Nullable="false" />
+          <Property Name="video_year_published" Type="int" />
+          <Property Name="video_date_created" Type="date" Nullable="false" />
+          <Property Name="video_date_updated" Type="date" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_request_comments_0">
+          <End Role="requests" Type="Self.requests" Multiplicity="1" />
+          <End Role="request_comments" Type="Self.request_comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="requests">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="request_comments">
+              <PropertyRef Name="rc_request_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_request_comments_1">
+          <End Role="users" Type="Self.users" Multiplicity="1" />
+          <End Role="request_comments" Type="Self.request_comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="request_comments">
+              <PropertyRef Name="rc_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_requests_0">
+          <End Role="users" Type="Self.users" Multiplicity="1" />
+          <End Role="requests" Type="Self.requests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="requests">
+              <PropertyRef Name="request_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_requests_1">
+          <End Role="videos" Type="Self.videos" Multiplicity="0..1" />
+          <End Role="requests" Type="Self.requests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="videos">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="requests">
+              <PropertyRef Name="request_video_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_subtitle_comments_0">
+          <End Role="users" Type="Self.users" Multiplicity="1" />
+          <End Role="subtitle_comments" Type="Self.subtitle_comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="subtitle_comments">
+              <PropertyRef Name="sc_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_subtitle_comments_1">
+          <End Role="subtitles" Type="Self.subtitles" Multiplicity="1" />
+          <End Role="subtitle_comments" Type="Self.subtitle_comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="subtitles">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="subtitle_comments">
+              <PropertyRef Name="sc_sub_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_subtitles_0">
+          <End Role="users" Type="Self.users" Multiplicity="0..1" />
+          <End Role="subtitles" Type="Self.subtitles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="subtitles">
+              <PropertyRef Name="subtitle_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_subtitles_1">
+          <End Role="videos" Type="Self.videos" Multiplicity="1" />
+          <End Role="subtitles" Type="Self.subtitles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="videos">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="subtitles">
+              <PropertyRef Name="subtitle_video_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_upvotes_0">
+          <End Role="requests" Type="Self.requests" Multiplicity="0..1" />
+          <End Role="upvotes" Type="Self.upvotes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="requests">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="upvotes">
+              <PropertyRef Name="upvote_request_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_upvotes_1">
+          <End Role="users" Type="Self.users" Multiplicity="0..1" />
+          <End Role="upvotes" Type="Self.upvotes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="upvotes">
+              <PropertyRef Name="upvote_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_videos_0">
+          <End Role="users" Type="Self.users" Multiplicity="1" />
+          <End Role="videos" Type="Self.videos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="videos">
+              <PropertyRef Name="video_created_by_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="crowddbModelStoreContainer">
+          <EntitySet Name="request_comments" EntityType="Self.request_comments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="requests" EntityType="Self.requests" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="subtitle_comments" EntityType="Self.subtitle_comments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="subtitles" EntityType="Self.subtitles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="upvotes" EntityType="Self.upvotes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="videos" EntityType="Self.videos" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_request_comments_0" Association="Self.FK_request_comments_0">
+            <End Role="requests" EntitySet="requests" />
+            <End Role="request_comments" EntitySet="request_comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_request_comments_1" Association="Self.FK_request_comments_1">
+            <End Role="users" EntitySet="users" />
+            <End Role="request_comments" EntitySet="request_comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_requests_0" Association="Self.FK_requests_0">
+            <End Role="users" EntitySet="users" />
+            <End Role="requests" EntitySet="requests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_requests_1" Association="Self.FK_requests_1">
+            <End Role="videos" EntitySet="videos" />
+            <End Role="requests" EntitySet="requests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_subtitle_comments_0" Association="Self.FK_subtitle_comments_0">
+            <End Role="users" EntitySet="users" />
+            <End Role="subtitle_comments" EntitySet="subtitle_comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_subtitle_comments_1" Association="Self.FK_subtitle_comments_1">
+            <End Role="subtitles" EntitySet="subtitles" />
+            <End Role="subtitle_comments" EntitySet="subtitle_comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_subtitles_0" Association="Self.FK_subtitles_0">
+            <End Role="users" EntitySet="users" />
+            <End Role="subtitles" EntitySet="subtitles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_subtitles_1" Association="Self.FK_subtitles_1">
+            <End Role="videos" EntitySet="videos" />
+            <End Role="subtitles" EntitySet="subtitles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_upvotes_0" Association="Self.FK_upvotes_0">
+            <End Role="requests" EntitySet="requests" />
+            <End Role="upvotes" EntitySet="upvotes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_upvotes_1" Association="Self.FK_upvotes_1">
+            <End Role="users" EntitySet="users" />
+            <End Role="upvotes" EntitySet="upvotes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_videos_0" Association="Self.FK_videos_0">
+            <End Role="users" EntitySet="users" />
+            <End Role="videos" EntitySet="videos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="crowddbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="request_comments">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="rc_request_id" Type="Int32" Nullable="false" />
+          <Property Name="rc_user_id" Type="Int32" Nullable="false" />
+          <Property Name="rc_comment" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="request" Relationship="Self.FK_request_comments_0" FromRole="request_comments" ToRole="requests" />
+          <NavigationProperty Name="user" Relationship="Self.FK_request_comments_1" FromRole="request_comments" ToRole="users" />
+        </EntityType>
+        <EntityType Name="request">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="request_user_id" Type="Int32" Nullable="false" />
+          <Property Name="request_name" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="request_link" Type="String" MaxLength="255" FixedLength="true" Unicode="false" />
+          <Property Name="request_type" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="request_lang" Type="Int32" Nullable="false" />
+          <Property Name="request_video_id" Type="Int32" />
+          <NavigationProperty Name="request_comments" Relationship="Self.FK_request_comments_0" FromRole="requests" ToRole="request_comments" />
+          <NavigationProperty Name="user" Relationship="Self.FK_requests_0" FromRole="requests" ToRole="users" />
+          <NavigationProperty Name="video" Relationship="Self.FK_requests_1" FromRole="requests" ToRole="videos" />
+          <NavigationProperty Name="upvotes" Relationship="Self.FK_upvotes_0" FromRole="requests" ToRole="upvotes" />
+        </EntityType>
+        <EntityType Name="subtitle_comments">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="sc_user_id" Type="Int32" Nullable="false" />
+          <Property Name="sc_sub_id" Type="Int32" Nullable="false" />
+          <Property Name="sc_comment" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="user" Relationship="Self.FK_subtitle_comments_0" FromRole="subtitle_comments" ToRole="users" />
+          <NavigationProperty Name="subtitle" Relationship="Self.FK_subtitle_comments_1" FromRole="subtitle_comments" ToRole="subtitles" />
+        </EntityType>
+        <EntityType Name="subtitle">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="subtitle_user_id" Type="Int32" />
+          <Property Name="subtitle_video_id" Type="Int32" Nullable="false" />
+          <Property Name="subtitle_file_path" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="subtitle_version_is_active" Type="Int32" Nullable="false" />
+          <Property Name="subtitle_version" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="subtitle_comments" Relationship="Self.FK_subtitle_comments_1" FromRole="subtitles" ToRole="subtitle_comments" />
+          <NavigationProperty Name="user" Relationship="Self.FK_subtitles_0" FromRole="subtitles" ToRole="users" />
+          <NavigationProperty Name="video" Relationship="Self.FK_subtitles_1" FromRole="subtitles" ToRole="videos" />
+        </EntityType>
+        <EntityType Name="upvote">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="upvote_request_id" Type="Int32" />
+          <Property Name="upvote_user_id" Type="Int32" />
+          <NavigationProperty Name="request" Relationship="Self.FK_upvotes_0" FromRole="upvotes" ToRole="requests" />
+          <NavigationProperty Name="user" Relationship="Self.FK_upvotes_1" FromRole="upvotes" ToRole="users" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="user_name" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="user_role" Type="Int32" Nullable="false" />
+          <Property Name="user_password" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="user_email" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="request_comments" Relationship="Self.FK_request_comments_1" FromRole="users" ToRole="request_comments" />
+          <NavigationProperty Name="requests" Relationship="Self.FK_requests_0" FromRole="users" ToRole="requests" />
+          <NavigationProperty Name="subtitle_comments" Relationship="Self.FK_subtitle_comments_0" FromRole="users" ToRole="subtitle_comments" />
+          <NavigationProperty Name="subtitles" Relationship="Self.FK_subtitles_0" FromRole="users" ToRole="subtitles" />
+          <NavigationProperty Name="upvotes" Relationship="Self.FK_upvotes_1" FromRole="users" ToRole="upvotes" />
+          <NavigationProperty Name="videos" Relationship="Self.FK_videos_0" FromRole="users" ToRole="videos" />
+        </EntityType>
+        <EntityType Name="video">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="video_created_by_user_id" Type="Int32" Nullable="false" />
+          <Property Name="video_title" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="video_type" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="video_year_published" Type="Int32" />
+          <Property Name="video_date_created" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="video_date_updated" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="requests" Relationship="Self.FK_requests_1" FromRole="videos" ToRole="requests" />
+          <NavigationProperty Name="subtitles" Relationship="Self.FK_subtitles_1" FromRole="videos" ToRole="subtitles" />
+          <NavigationProperty Name="user" Relationship="Self.FK_videos_0" FromRole="videos" ToRole="users" />
+        </EntityType>
+        <Association Name="FK_request_comments_0">
+          <End Role="requests" Type="Self.request" Multiplicity="1" />
+          <End Role="request_comments" Type="Self.request_comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="requests">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="request_comments">
+              <PropertyRef Name="rc_request_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_request_comments_1">
+          <End Role="users" Type="Self.user" Multiplicity="1" />
+          <End Role="request_comments" Type="Self.request_comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="request_comments">
+              <PropertyRef Name="rc_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_requests_0">
+          <End Role="users" Type="Self.user" Multiplicity="1" />
+          <End Role="requests" Type="Self.request" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="requests">
+              <PropertyRef Name="request_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_requests_1">
+          <End Role="videos" Type="Self.video" Multiplicity="0..1" />
+          <End Role="requests" Type="Self.request" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="videos">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="requests">
+              <PropertyRef Name="request_video_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_upvotes_0">
+          <End Role="requests" Type="Self.request" Multiplicity="0..1" />
+          <End Role="upvotes" Type="Self.upvote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="requests">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="upvotes">
+              <PropertyRef Name="upvote_request_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_subtitle_comments_0">
+          <End Role="users" Type="Self.user" Multiplicity="1" />
+          <End Role="subtitle_comments" Type="Self.subtitle_comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="subtitle_comments">
+              <PropertyRef Name="sc_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_subtitle_comments_1">
+          <End Role="subtitles" Type="Self.subtitle" Multiplicity="1" />
+          <End Role="subtitle_comments" Type="Self.subtitle_comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="subtitles">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="subtitle_comments">
+              <PropertyRef Name="sc_sub_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_subtitles_0">
+          <End Role="users" Type="Self.user" Multiplicity="0..1" />
+          <End Role="subtitles" Type="Self.subtitle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="subtitles">
+              <PropertyRef Name="subtitle_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_subtitles_1">
+          <End Role="videos" Type="Self.video" Multiplicity="1" />
+          <End Role="subtitles" Type="Self.subtitle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="videos">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="subtitles">
+              <PropertyRef Name="subtitle_video_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_upvotes_1">
+          <End Role="users" Type="Self.user" Multiplicity="0..1" />
+          <End Role="upvotes" Type="Self.upvote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="upvotes">
+              <PropertyRef Name="upvote_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_videos_0">
+          <End Role="users" Type="Self.user" Multiplicity="1" />
+          <End Role="videos" Type="Self.video" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="videos">
+              <PropertyRef Name="video_created_by_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="crowddbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="request_comments" EntityType="Self.request_comments" />
+          <EntitySet Name="requests" EntityType="Self.request" />
+          <EntitySet Name="subtitle_comments" EntityType="Self.subtitle_comments" />
+          <EntitySet Name="subtitles" EntityType="Self.subtitle" />
+          <EntitySet Name="upvotes" EntityType="Self.upvote" />
+          <EntitySet Name="users" EntityType="Self.user" />
+          <EntitySet Name="videos" EntityType="Self.video" />
+          <AssociationSet Name="FK_request_comments_0" Association="Self.FK_request_comments_0">
+            <End Role="requests" EntitySet="requests" />
+            <End Role="request_comments" EntitySet="request_comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_request_comments_1" Association="Self.FK_request_comments_1">
+            <End Role="users" EntitySet="users" />
+            <End Role="request_comments" EntitySet="request_comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_requests_0" Association="Self.FK_requests_0">
+            <End Role="users" EntitySet="users" />
+            <End Role="requests" EntitySet="requests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_requests_1" Association="Self.FK_requests_1">
+            <End Role="videos" EntitySet="videos" />
+            <End Role="requests" EntitySet="requests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_upvotes_0" Association="Self.FK_upvotes_0">
+            <End Role="requests" EntitySet="requests" />
+            <End Role="upvotes" EntitySet="upvotes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_subtitle_comments_0" Association="Self.FK_subtitle_comments_0">
+            <End Role="users" EntitySet="users" />
+            <End Role="subtitle_comments" EntitySet="subtitle_comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_subtitle_comments_1" Association="Self.FK_subtitle_comments_1">
+            <End Role="subtitles" EntitySet="subtitles" />
+            <End Role="subtitle_comments" EntitySet="subtitle_comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_subtitles_0" Association="Self.FK_subtitles_0">
+            <End Role="users" EntitySet="users" />
+            <End Role="subtitles" EntitySet="subtitles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_subtitles_1" Association="Self.FK_subtitles_1">
+            <End Role="videos" EntitySet="videos" />
+            <End Role="subtitles" EntitySet="subtitles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_upvotes_1" Association="Self.FK_upvotes_1">
+            <End Role="users" EntitySet="users" />
+            <End Role="upvotes" EntitySet="upvotes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_videos_0" Association="Self.FK_videos_0">
+            <End Role="users" EntitySet="users" />
+            <End Role="videos" EntitySet="videos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="crowddbModelStoreContainer" CdmEntityContainer="crowddbEntities">
+          <EntitySetMapping Name="request_comments">
+            <EntityTypeMapping TypeName="crowddbModel.request_comments">
+              <MappingFragment StoreEntitySet="request_comments">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="rc_request_id" ColumnName="rc_request_id" />
+                <ScalarProperty Name="rc_user_id" ColumnName="rc_user_id" />
+                <ScalarProperty Name="rc_comment" ColumnName="rc_comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="requests">
+            <EntityTypeMapping TypeName="crowddbModel.request">
+              <MappingFragment StoreEntitySet="requests">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="request_user_id" ColumnName="request_user_id" />
+                <ScalarProperty Name="request_name" ColumnName="request_name" />
+                <ScalarProperty Name="request_link" ColumnName="request_link" />
+                <ScalarProperty Name="request_type" ColumnName="request_type" />
+                <ScalarProperty Name="request_lang" ColumnName="request_lang" />
+                <ScalarProperty Name="request_video_id" ColumnName="request_video_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="subtitle_comments">
+            <EntityTypeMapping TypeName="crowddbModel.subtitle_comments">
+              <MappingFragment StoreEntitySet="subtitle_comments">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="sc_user_id" ColumnName="sc_user_id" />
+                <ScalarProperty Name="sc_sub_id" ColumnName="sc_sub_id" />
+                <ScalarProperty Name="sc_comment" ColumnName="sc_comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="subtitles">
+            <EntityTypeMapping TypeName="crowddbModel.subtitle">
+              <MappingFragment StoreEntitySet="subtitles">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="subtitle_user_id" ColumnName="subtitle_user_id" />
+                <ScalarProperty Name="subtitle_video_id" ColumnName="subtitle_video_id" />
+                <ScalarProperty Name="subtitle_file_path" ColumnName="subtitle_file_path" />
+                <ScalarProperty Name="subtitle_version_is_active" ColumnName="subtitle_version_is_active" />
+                <ScalarProperty Name="subtitle_version" ColumnName="subtitle_version" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="upvotes">
+            <EntityTypeMapping TypeName="crowddbModel.upvote">
+              <MappingFragment StoreEntitySet="upvotes">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="upvote_request_id" ColumnName="upvote_request_id" />
+                <ScalarProperty Name="upvote_user_id" ColumnName="upvote_user_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="crowddbModel.user">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="user_name" ColumnName="user_name" />
+                <ScalarProperty Name="user_role" ColumnName="user_role" />
+                <ScalarProperty Name="user_password" ColumnName="user_password" />
+                <ScalarProperty Name="user_email" ColumnName="user_email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="videos">
+            <EntityTypeMapping TypeName="crowddbModel.video">
+              <MappingFragment StoreEntitySet="videos">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="video_created_by_user_id" ColumnName="video_created_by_user_id" />
+                <ScalarProperty Name="video_title" ColumnName="video_title" />
+                <ScalarProperty Name="video_type" ColumnName="video_type" />
+                <ScalarProperty Name="video_year_published" ColumnName="video_year_published" />
+                <ScalarProperty Name="video_date_created" ColumnName="video_date_created" />
+                <ScalarProperty Name="video_date_updated" ColumnName="video_date_updated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
