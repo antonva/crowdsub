@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace CrowdSub.Controllers
 {
-    public class SubtitleController : Controller
+    public class subtitle_controller : Controller
     {
         //
         // GET: /Subtitle/
