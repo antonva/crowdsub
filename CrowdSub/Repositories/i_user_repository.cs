@@ -11,7 +11,7 @@ namespace CrowdSub.Repositories
     {
         //TODO: connect to database
 
-        public IQueryable<user> get_subtitles()
+        public IQueryable<user> get_users()
         {
             //just for testing..
             return null;
