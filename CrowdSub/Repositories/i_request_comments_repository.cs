@@ -21,8 +21,8 @@ namespace CrowdSub.Repositories
         //delete comment by id
         bool delete_comment_by_id();
 
-        //get comment by subtitle id
-        bool get_comment_by_id();
+
+
 
     }
 }
