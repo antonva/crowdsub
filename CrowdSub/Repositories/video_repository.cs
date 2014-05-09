@@ -15,7 +15,7 @@ namespace CrowdSub.Repositories
             throw new NotImplementedException();
         }
 
-        public bool edit_video(int id)
+        public bool edit_video(video new_video)
         {
             throw new NotImplementedException();
         }

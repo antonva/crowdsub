@@ -15,47 +15,47 @@ namespace CrowdSub.Repositories
 		public IQueryable<subtitle> get_subtitles()
 		{
 			//just for testing..
-			return db.subtitles;
+			throw new NotImplementedException();
 		}
 		public bool create_subtitle(int id)
 		{
 			//create new subtitle file with parameter as id
 			//return true if create succeeded
 			//false otherwise
-			return true;
+			throw new NotImplementedException();
 		}
 		public bool edit_subtitle(int id)
 		{
 			//edit subtitle file or something
 			//return true if edit succeeded
 			//false otherwise
-			return true;
+			throw new NotImplementedException();
 		}
 		public bool delete_subtitle(int id)
 		{
-			return true;
+			throw new NotImplementedException();
 		}
 		public subtitle get_subtitle_by_id(int id)
 		{
 			//return subtitle which has parameter as id
 			//throw exception otherwise
-			return null;
+			throw new NotImplementedException();
 		}
 
 		//Search
 		public IEnumerable<subtitle> get_subtitles_by_video_id(int video_id)
 		{
-			return null;
+			throw new NotImplementedException();
 		}
 
 		//Misc
 		public int get_subtitle_count()
 		{
-			return 0;
+			throw new NotImplementedException();
 		}
 		public int get_subtitle_count_by_video_id(int video_id)
 		{
-			return 0;
+			throw new NotImplementedException();
 		}
 
 	}
