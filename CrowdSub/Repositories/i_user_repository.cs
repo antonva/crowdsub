@@ -9,12 +9,6 @@ namespace CrowdSub.Repositories
 {
     public interface i_user_repository
     {
-        //TODO: connect to database
-
-        public IQueryable<user> get_users()
-        {
-            //just for testing..
-            return null;
-        }
+        public IQueryable<user> get_users();
     }
 }
