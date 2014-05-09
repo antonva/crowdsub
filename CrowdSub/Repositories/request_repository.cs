@@ -12,7 +12,8 @@ namespace CrowdSub.Repositories
         private crowddbEntities db = new crowddbEntities();
         public IQueryable<request> get_requests()
         {
-            throw new NotImplementedException();
+            //just for testing
+            return db.requests;
         }
 
         public bool create_request()

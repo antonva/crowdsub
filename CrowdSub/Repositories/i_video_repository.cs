@@ -11,7 +11,7 @@ namespace CrowdSub.Repositories
     {
         // CRUD
         bool create_video(video new_video);
-        bool edit_video(int id);
+        bool edit_video(video new_video);
         bool remove_video(int id);
 
         // Returns video or videos
