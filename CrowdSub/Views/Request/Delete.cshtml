@@ -1,0 +1,80 @@
+﻿@model CrowdSub.Models.request
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>request</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.request_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.request_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.request_link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.request_link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.request_type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.request_type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.request_lang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.request_lang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.request_date_created)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.request_date_created)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user.user_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user.user_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.video.video_title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.video.video_title)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

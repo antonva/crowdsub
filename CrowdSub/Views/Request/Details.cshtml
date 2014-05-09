@@ -1,0 +1,74 @@
+﻿@model CrowdSub.Models.request
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>request</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.request_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.request_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.request_link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.request_link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.request_type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.request_type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.request_lang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.request_lang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.request_date_created)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.request_date_created)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user.user_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user.user_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.video.video_title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.video.video_title)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

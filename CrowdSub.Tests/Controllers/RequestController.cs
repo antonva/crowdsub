@@ -7,8 +7,15 @@ namespace CrowdSub.Tests.Controllers
     public class RequestController
     {
         [TestMethod]
-        public void TestMethod1()
+        public void create_request()
         {
+            
+            //Arrange
+
+
+            //Act
+
+            //Assert
         }
     }
 }

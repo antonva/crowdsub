@@ -1,0 +1,69 @@
+﻿@model IEnumerable<CrowdSub.Models.request>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.request_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.request_link)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.request_type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.request_lang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.request_date_created)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.user.user_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.video.video_title)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_link)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_lang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_date_created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.user.user_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video.video_title)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
