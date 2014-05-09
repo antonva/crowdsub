@@ -16,12 +16,12 @@ namespace CrowdSub.Repositories
             return db.requests;
         }
 
-        public bool create_request()
+        public bool create_request(request create_request)
         {
             throw new NotImplementedException();
         }
 
-        public bool edit_request()
+        public bool edit_request(request edited_request)
         {
             throw new NotImplementedException();
         }
