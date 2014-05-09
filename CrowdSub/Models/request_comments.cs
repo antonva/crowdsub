@@ -18,6 +18,7 @@ namespace CrowdSub.Models
         public int rc_request_id { get; set; }
         public int rc_user_id { get; set; }
         public string rc_comment { get; set; }
+        public System.DateTime rc_date_created { get; set; }
     
         public virtual request request { get; set; }
         public virtual user user { get; set; }

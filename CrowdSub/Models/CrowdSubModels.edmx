@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="crowddbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="crowddbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="request_comments">
           <Key>
             <PropertyRef Name="id" />
@@ -13,6 +13,7 @@
           <Property Name="rc_request_id" Type="int" Nullable="false" />
           <Property Name="rc_user_id" Type="int" Nullable="false" />
           <Property Name="rc_comment" Type="varchar" MaxLength="1024" Nullable="false" />
+          <Property Name="rc_date_created" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="requests">
           <Key>
@@ -25,6 +26,7 @@
           <Property Name="request_type" Type="char" MaxLength="255" Nullable="false" />
           <Property Name="request_lang" Type="int" Nullable="false" />
           <Property Name="request_video_id" Type="int" />
+          <Property Name="request_date_created" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="subtitle_comments">
           <Key>
@@ -34,6 +36,7 @@
           <Property Name="sc_user_id" Type="int" Nullable="false" />
           <Property Name="sc_sub_id" Type="int" Nullable="false" />
           <Property Name="sc_comment" Type="varchar" MaxLength="1024" Nullable="false" />
+          <Property Name="sc_date_created" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="subtitles">
           <Key>
@@ -45,6 +48,8 @@
           <Property Name="subtitle_file_path" Type="char" MaxLength="255" Nullable="false" />
           <Property Name="subtitle_version_is_active" Type="int" Nullable="false" />
           <Property Name="subtitle_version" Type="int" Nullable="false" />
+          <Property Name="subtitle_date_created" Type="datetime" Nullable="false" />
+          <Property Name="subtitle_download_count" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="upvotes">
           <Key>
@@ -53,6 +58,7 @@
           <Property Name="id" Type="int" Nullable="false" />
           <Property Name="upvote_request_id" Type="int" />
           <Property Name="upvote_user_id" Type="int" />
+          <Property Name="upvote_date_created" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="users">
           <Key>
@@ -63,6 +69,7 @@
           <Property Name="user_role" Type="int" Nullable="false" />
           <Property Name="user_password" Type="char" MaxLength="255" Nullable="false" />
           <Property Name="user_email" Type="char" MaxLength="255" Nullable="false" />
+          <Property Name="user_date_created" Type="datetime" />
         </EntityType>
         <EntityType Name="videos">
           <Key>
@@ -261,8 +268,7 @@
             <End Role="videos" EntitySet="videos" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="crowddbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -276,6 +282,7 @@
           <Property Name="rc_comment" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="request" Relationship="Self.FK_request_comments_0" FromRole="request_comments" ToRole="requests" />
           <NavigationProperty Name="user" Relationship="Self.FK_request_comments_1" FromRole="request_comments" ToRole="users" />
+          <Property Name="rc_date_created" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
         <EntityType Name="request">
           <Key>
@@ -292,6 +299,7 @@
           <NavigationProperty Name="user" Relationship="Self.FK_requests_0" FromRole="requests" ToRole="users" />
           <NavigationProperty Name="video" Relationship="Self.FK_requests_1" FromRole="requests" ToRole="videos" />
           <NavigationProperty Name="upvotes" Relationship="Self.FK_upvotes_0" FromRole="requests" ToRole="upvotes" />
+          <Property Name="request_date_created" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
         <EntityType Name="subtitle_comments">
           <Key>
@@ -303,6 +311,7 @@
           <Property Name="sc_comment" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="user" Relationship="Self.FK_subtitle_comments_0" FromRole="subtitle_comments" ToRole="users" />
           <NavigationProperty Name="subtitle" Relationship="Self.FK_subtitle_comments_1" FromRole="subtitle_comments" ToRole="subtitles" />
+          <Property Name="sc_date_created" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
         <EntityType Name="subtitle">
           <Key>
@@ -317,6 +326,8 @@
           <NavigationProperty Name="subtitle_comments" Relationship="Self.FK_subtitle_comments_1" FromRole="subtitles" ToRole="subtitle_comments" />
           <NavigationProperty Name="user" Relationship="Self.FK_subtitles_0" FromRole="subtitles" ToRole="users" />
           <NavigationProperty Name="video" Relationship="Self.FK_subtitles_1" FromRole="subtitles" ToRole="videos" />
+          <Property Name="subtitle_date_created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="subtitle_download_count" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="upvote">
           <Key>
@@ -327,6 +338,7 @@
           <Property Name="upvote_user_id" Type="Int32" />
           <NavigationProperty Name="request" Relationship="Self.FK_upvotes_0" FromRole="upvotes" ToRole="requests" />
           <NavigationProperty Name="user" Relationship="Self.FK_upvotes_1" FromRole="upvotes" ToRole="users" />
+          <Property Name="upvote_date_created" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
         <EntityType Name="user">
           <Key>
@@ -343,6 +355,7 @@
           <NavigationProperty Name="subtitles" Relationship="Self.FK_subtitles_0" FromRole="users" ToRole="subtitles" />
           <NavigationProperty Name="upvotes" Relationship="Self.FK_upvotes_1" FromRole="users" ToRole="upvotes" />
           <NavigationProperty Name="videos" Relationship="Self.FK_videos_0" FromRole="users" ToRole="videos" />
+          <Property Name="user_date_created" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="video">
           <Key>
@@ -553,6 +566,7 @@
           <EntitySetMapping Name="request_comments">
             <EntityTypeMapping TypeName="crowddbModel.request_comments">
               <MappingFragment StoreEntitySet="request_comments">
+                <ScalarProperty Name="rc_date_created" ColumnName="rc_date_created" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="rc_request_id" ColumnName="rc_request_id" />
                 <ScalarProperty Name="rc_user_id" ColumnName="rc_user_id" />
@@ -563,6 +577,7 @@
           <EntitySetMapping Name="requests">
             <EntityTypeMapping TypeName="crowddbModel.request">
               <MappingFragment StoreEntitySet="requests">
+                <ScalarProperty Name="request_date_created" ColumnName="request_date_created" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="request_user_id" ColumnName="request_user_id" />
                 <ScalarProperty Name="request_name" ColumnName="request_name" />
@@ -576,6 +591,7 @@
           <EntitySetMapping Name="subtitle_comments">
             <EntityTypeMapping TypeName="crowddbModel.subtitle_comments">
               <MappingFragment StoreEntitySet="subtitle_comments">
+                <ScalarProperty Name="sc_date_created" ColumnName="sc_date_created" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="sc_user_id" ColumnName="sc_user_id" />
                 <ScalarProperty Name="sc_sub_id" ColumnName="sc_sub_id" />
@@ -586,6 +602,8 @@
           <EntitySetMapping Name="subtitles">
             <EntityTypeMapping TypeName="crowddbModel.subtitle">
               <MappingFragment StoreEntitySet="subtitles">
+                <ScalarProperty Name="subtitle_download_count" ColumnName="subtitle_download_count" />
+                <ScalarProperty Name="subtitle_date_created" ColumnName="subtitle_date_created" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="subtitle_user_id" ColumnName="subtitle_user_id" />
                 <ScalarProperty Name="subtitle_video_id" ColumnName="subtitle_video_id" />
@@ -598,6 +616,7 @@
           <EntitySetMapping Name="upvotes">
             <EntityTypeMapping TypeName="crowddbModel.upvote">
               <MappingFragment StoreEntitySet="upvotes">
+                <ScalarProperty Name="upvote_date_created" ColumnName="upvote_date_created" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="upvote_request_id" ColumnName="upvote_request_id" />
                 <ScalarProperty Name="upvote_user_id" ColumnName="upvote_user_id" />
@@ -607,6 +626,7 @@
           <EntitySetMapping Name="users">
             <EntityTypeMapping TypeName="crowddbModel.user">
               <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="user_date_created" ColumnName="user_date_created" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="user_name" ColumnName="user_name" />
                 <ScalarProperty Name="user_role" ColumnName="user_role" />
