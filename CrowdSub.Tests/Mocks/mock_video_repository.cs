@@ -15,10 +15,9 @@ namespace CrowdSub.Tests.Mocks
 
         public bool create_video(video new_video)
         {
-
-            if (search_for_video(new_video.id))
-            {
-                return false;
+            if (search_for_video(new_video.id)) 
+            { 
+                return false; 
             }
             else 
             {
@@ -42,17 +41,27 @@ namespace CrowdSub.Tests.Mocks
 
         public bool remove_video(int id)
         {
-            throw new NotImplementedException();
+            if (search_for_video(id))
+            {
+                db.videos.Remove(id);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public video get_video(int id)
         {
-            throw new NotImplementedException();
+            video v = db.videos.GetObject(id);
+            return v;
         }
 
         public List<video> get_all_videos()
         {
-            throw new NotImplementedException();
+            List<video> n = db.videos.GetAll();
+            return n;
         }
 
         bool search_for_video(int id)
