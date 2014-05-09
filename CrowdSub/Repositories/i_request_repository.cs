@@ -9,11 +9,7 @@ namespace CrowdSub.Repositories
 {
     public interface i_request_repository
     {
-        IQueryable<request> get_requests()
-        {
-            //just for testing
-            return db.requests;
-        }
+        IQueryable<request> get_requests();
 
         //CRUD
         bool create_request();
