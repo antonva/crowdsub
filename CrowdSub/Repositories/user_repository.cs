@@ -9,11 +9,12 @@ namespace CrowdSub.Repositories
     public class user_repository : i_user_repository
     {
         //TODO: connect to database
+        private crowddbEntities db = new crowddbEntities();
 
         public IQueryable<user> get_users()
         {
             //just for testing..
-            return null;
+            return db.users;
         }
     }
 }
