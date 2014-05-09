@@ -17,6 +17,7 @@ namespace CrowdSub.Models
         public int id { get; set; }
         public Nullable<int> upvote_request_id { get; set; }
         public Nullable<int> upvote_user_id { get; set; }
+        public System.DateTime upvote_date_created { get; set; }
     
         public virtual request request { get; set; }
         public virtual user user { get; set; }

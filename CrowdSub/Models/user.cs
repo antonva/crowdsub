@@ -29,6 +29,7 @@ namespace CrowdSub.Models
         public int user_role { get; set; }
         public string user_password { get; set; }
         public string user_email { get; set; }
+        public Nullable<System.DateTime> user_date_created { get; set; }
     
         public virtual ICollection<request_comments> request_comments { get; set; }
         public virtual ICollection<request> requests { get; set; }

@@ -27,6 +27,7 @@ namespace CrowdSub.Models
         public string request_type { get; set; }
         public int request_lang { get; set; }
         public Nullable<int> request_video_id { get; set; }
+        public System.DateTime request_date_created { get; set; }
     
         public virtual ICollection<request_comments> request_comments { get; set; }
         public virtual user user { get; set; }
