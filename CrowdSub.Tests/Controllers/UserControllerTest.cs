@@ -11,7 +11,7 @@ using CrowdSub.Models;
 namespace CrowdSub.Tests.Controllers
 {
 	[TestClass]
-	public class subtitle_controller_test
+	public class UserControllerTest
 	{
 		[TestMethod]
 		public void get_top_downloads()
