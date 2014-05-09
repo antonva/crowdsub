@@ -7,7 +7,7 @@ using CrowdSub.Models;
 
 namespace CrowdSub.Repositories
 {
-    public interface i_user_interface
+    public interface i_user_repository
     {
         IQueryable<user> get_users();
     }
