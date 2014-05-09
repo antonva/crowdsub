@@ -84,7 +84,6 @@
   <ItemGroup>
     <Compile Include="Controllers\RequestController.cs" />
     <Compile Include="Controllers\UserControllerTest.cs" />
-    <Compile Include="Controllers\subtitle_controller_test.cs" />
     <Compile Include="Mocks\mock_request_repository.cs" />
     <Compile Include="Mocks\mock_subtitle_repository.cs" />
     <Compile Include="Mocks\mock_user_repository.cs" />
