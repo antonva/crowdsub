@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CrowdSub;
 using CrowdSub.Controllers;
+using CrowdSub.Models;
 
 namespace CrowdSub.Tests.Controllers
 {
@@ -15,7 +16,11 @@ namespace CrowdSub.Tests.Controllers
 		[TestMethod]
 		public void get_top_downloads()
 		{
+            // Arrange
 
+            // Act
+
+            // Assert
 		}
 	}
 }

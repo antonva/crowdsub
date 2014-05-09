@@ -1,0 +1,74 @@
+﻿@model CrowdSub.Models.subtitle
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>subtitle</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.subtitle_user_id, "subtitle_user_id", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("subtitle_user_id", String.Empty)
+                @Html.ValidationMessageFor(model => model.subtitle_user_id)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.subtitle_video_id, "subtitle_video_id", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("subtitle_video_id", String.Empty)
+                @Html.ValidationMessageFor(model => model.subtitle_video_id)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.subtitle_file_path, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.subtitle_file_path)
+                @Html.ValidationMessageFor(model => model.subtitle_file_path)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.subtitle_version_is_active, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.subtitle_version_is_active)
+                @Html.ValidationMessageFor(model => model.subtitle_version_is_active)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.subtitle_version, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.subtitle_version)
+                @Html.ValidationMessageFor(model => model.subtitle_version)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
