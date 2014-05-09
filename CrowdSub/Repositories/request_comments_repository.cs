@@ -2,34 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using CrowdSub.Models;
 
 namespace CrowdSub.Repositories
 {
-    public class upvote_repository : i_upvote_repository
+    public class request_comments_repository : i_request_comments_repository 
     {
-
-        public IQueryable<upvote> get_upvote()
+        public IQueryable<Models.request> get_comment()
         {
             throw new NotImplementedException();
         }
 
-        public int get_upvotes_by_requestid()
+        public bool get_comment_by_id()
         {
             throw new NotImplementedException();
         }
 
-        public bool create_upvote()
+        public bool edit_comment_by_id()
         {
             throw new NotImplementedException();
         }
 
-        public bool has_user_upvote()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool delete_upvote()
+        public bool delete_comment_by_id()
         {
             throw new NotImplementedException();
         }
