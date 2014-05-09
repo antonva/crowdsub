@@ -24,8 +24,5 @@ namespace CrowdSub.Repositories
         //get comment by subtitle id
         bool get_comment_by_id();
 
-
-
-
     }
 }
