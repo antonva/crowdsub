@@ -208,6 +208,7 @@
       <DependentUpon>CrowdSubModels.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\user_repository.cs" />
     <Compile Include="Repositories\i_subtitle_repository.cs" />
     <Compile Include="Repositories\subtitle_repository.cs" />
     <Compile Include="Repositories\i_user_interface.cs" />
