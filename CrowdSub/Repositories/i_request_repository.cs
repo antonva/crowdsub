@@ -12,8 +12,8 @@ namespace CrowdSub.Repositories
         IQueryable<request> get_requests();
 
         //CRUD
-        bool create_request();
-        bool edit_request();
+        bool create_request(request new_request);
+        bool edit_request(request edited_request);
         bool delete_request();
         bool get_request_by_user_id();
 
