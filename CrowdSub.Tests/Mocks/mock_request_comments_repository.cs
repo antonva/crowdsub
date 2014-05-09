@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace CrowdSub.Tests.Mocks
 {
     class mock_request_comments_repository : i_request_comments_repository
@@ -19,7 +18,7 @@ namespace CrowdSub.Tests.Mocks
             throw new NotImplementedException();
         }
 
-        public bool get_comment_by_id(int id)
+        public bool get_comment_by_id()
         {
             throw new NotImplementedException();
         }
