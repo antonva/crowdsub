@@ -213,6 +213,7 @@
     <Compile Include="Repositories\i_request_repository.cs" />
     <Compile Include="Repositories\i_user_repository.cs" />
     <Compile Include="Repositories\i_video_repository.cs" />
+    <Compile Include="Repositories\request_comments_repository.cs" />
     <Compile Include="Repositories\request_repository.cs" />
     <Compile Include="Repositories\user_repository.cs" />
     <Compile Include="Repositories\i_subtitle_repository.cs" />
