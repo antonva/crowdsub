@@ -9,6 +9,6 @@ namespace CrowdSub.Repositories
 {
     public interface i_user_repository
     {
-        public IQueryable<user> get_users();
+        IQueryable<user> get_users();
     }
 }
