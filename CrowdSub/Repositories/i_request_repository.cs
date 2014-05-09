@@ -9,7 +9,6 @@ namespace CrowdSub.Repositories
 {
     public interface i_request_repository
     {
-        //test function which should return all requests in database
         IQueryable<request> get_requests();
 
         //CRUD

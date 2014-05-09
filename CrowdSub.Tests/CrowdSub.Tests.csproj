@@ -82,7 +82,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\RequestController.cs" />
     <Compile Include="Controllers\UserControllerTest.cs" />
+    <Compile Include="Mocks\mock_request_comments_repository.cs" />
     <Compile Include="Mocks\mock_request_repository.cs" />
     <Compile Include="Mocks\mock_subtitle_repository.cs" />
     <Compile Include="Mocks\mock_user_repository.cs" />
