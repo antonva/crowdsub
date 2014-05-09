@@ -8,6 +8,8 @@ namespace CrowdSub.Repositories
 {
     public class request_repository : i_request_repository
     {
+        //Connection to database
+        private crowddbEntities db = new crowddbEntities();
         public IQueryable<request> get_requests()
         {
             throw new NotImplementedException();
