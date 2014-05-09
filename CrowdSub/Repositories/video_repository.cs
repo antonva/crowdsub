@@ -10,32 +10,32 @@ namespace CrowdSub.Repositories
     public class video_repository : i_video_repository
     {
 
-        public bool create_video()
+        public bool create_video(video new_video)
         {
             throw new NotImplementedException();
         }
 
-        public bool edit_video()
+        public bool edit_video(int id)
         {
             throw new NotImplementedException();
         }
 
-        public bool get_video()
+        public bool remove_video(int id)
         {
             throw new NotImplementedException();
         }
 
-        public bool get_all_videos()
+        public video get_video(int id)
         {
             throw new NotImplementedException();
         }
 
-        public bool remove_video()
+        public List<video> get_all_videos()
         {
             throw new NotImplementedException();
         }
 
-        public bool search_for_video()
+        public bool search_for_video(int id)
         {
             throw new NotImplementedException();
         }
