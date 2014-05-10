@@ -83,5 +83,70 @@ namespace CrowdSub.Tests.Controllers
             // Id is null.
             Assert.IsNull(model);
         }
+
+        // video_search_by_title test that passes
+        [TestMethod]
+        public void video_search_by_title()
+        {
+            //Arrange
+            List<video> videos = new List<video>();
+            for (int i = 0; i < 4; i++)
+            {
+                videos.Add(new video
+                {
+                    id = i,
+                    video_title = "Video" + i.ToString()
+                });
+            }
+
+            mock_video_repository mock_video_repo = new mock_video_repository(videos);
+            var controller = new VideoController(mock_video_repo);
+
+            //Act
+            var title = "Video1";
+            var result = controller.Search(title);
+
+            //Assert
+            var view_result = (ViewResult)result;
+
+            List<video> model = (view_result.Model as IEnumerable<video>).ToList();
+            Assert.IsFalse(model.Count < 1);
+            for (int i = 0; i < model.Count; i++)
+            {
+                Assert.IsTrue(model[i].video_title.Contains(title));
+            }
+        }
+        // video_search_by_title test that fails
+        [TestMethod]
+        public void video_search_by_title_fails()
+        {
+            //Arrange
+            List<video> videos = new List<video>();
+            for (int i = 0; i < 4; i++)
+            {
+                videos.Add(new video
+                {
+                    id = i,
+                    video_title = "Video" + i.ToString()
+                });
+            }
+
+            mock_video_repository mock_video_repo = new mock_video_repository(videos);
+            var controller = new VideoController(mock_video_repo);
+
+            //Act
+            var title = "Video100";
+            var result = controller.Search(title);
+
+            //Assert
+            var view_result = (ViewResult)result;
+
+            List<video> model = (view_result.Model as IEnumerable<video>).ToList();
+            Assert.IsFalse(model.Count < 1);
+            for (int i = 0; i < model.Count; i++)
+            {
+                Assert.IsTrue(model[i].video_title.Contains(title));
+            }
+        }
     }
 }
