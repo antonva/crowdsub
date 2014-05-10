@@ -169,7 +169,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="HelperClasses\search.cs" />
+    <Compile Include="HelperClasses\search_exact.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CrowdSubModels.Context.cs">
       <AutoGen>True</AutoGen>

@@ -19,19 +19,41 @@ namespace CrowdSub.Controllers
             video_repo = videos;
         }
 
-        public ActionResult Profile(int id)
+        public ActionResult profile(int id)
         {
             var model = video_repo.get_video(id);
             return View(model);
         }
 
-        public ActionResult Search(string query)
+        public ActionResult search(string query)
         {
             var model = from v in video_repo.get_all_videos()
                         where v.video_title.Contains(query)
                         select v;
 
             return View(model);
+        }
+
+        public ActionResult create_video(video newvideo)
+        {
+            return View();
+        }
+
+
+        // Help class
+        // Searches for exact video profile title.
+
+        public bool is_unique_video_title(string query)
+        {
+            var result = from v in video_repo.get_all_videos()
+                         where v.video_title.Equals(query)
+                         select v;
+
+            if (result.Count() == 0)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

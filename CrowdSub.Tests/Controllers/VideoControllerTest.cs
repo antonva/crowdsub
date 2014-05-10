@@ -39,7 +39,7 @@ namespace CrowdSub.Tests.Controllers
 
             // Act
             var id = 3;
-            var result = controller.Profile(id);
+            var result = controller.profile(id);
 
             // Assert
             var view_result = (ViewResult)result;
@@ -75,7 +75,7 @@ namespace CrowdSub.Tests.Controllers
 
             // Act
             var id = 5;
-            var result = controller.Profile(id);
+            var result = controller.profile(id);
 
             // Assert
             var view_result = (ViewResult)result;
@@ -104,7 +104,7 @@ namespace CrowdSub.Tests.Controllers
 
             //Act
             var title = "Video1";
-            var result = controller.Search(title);
+            var result = controller.search(title);
 
             //Assert
             var view_result = (ViewResult)result;
@@ -136,7 +136,7 @@ namespace CrowdSub.Tests.Controllers
 
             //Act
             var title = "Video100";
-            var result = controller.Search(title);
+            var result = controller.search(title);
 
             //Assert
             var view_result = (ViewResult)result;
@@ -147,6 +147,53 @@ namespace CrowdSub.Tests.Controllers
             {
                 Assert.IsTrue(model[i].video_title.Contains(title));
             }
+        }
+
+        [TestMethod]
+        public void video_profile_create()
+        {
+            //Arrange
+            List<video> videos = new List<video>();
+            
+            var testvideo = new video{
+                id = 1,
+                video_title = "dicks"
+            };
+            
+            mock_video_repository mock_video_repo = new mock_video_repository(videos);
+            var controller = new VideoController(mock_video_repo);
+
+
+            //Act
+            var result = controller.create_video(testvideo);
+
+            //Assert
+            var view_result = (ViewResult)result;
+            List<video> model = (view_result.Model as IEnumerable<video>).ToList();
+            Assert.IsTrue(model.Count == 1);
+        }
+        [TestMethod]
+        public void video_check_unique_search()
+        {
+            //Arrange
+            List<video> videos = new List<video>();
+            
+            videos.Add(new video
+            {
+                id = 1,
+                video_title = "Video" + 1.ToString()
+            });
+           
+
+            mock_video_repository mock_video_repo = new mock_video_repository(videos);
+            var controller = new VideoController(mock_video_repo);
+            
+            //Act
+            var query = "Video1";
+            var result = controller.is_unique_video_title(query);
+
+            //Assert
+            Assert.IsTrue(result);
         }
     }
 }
