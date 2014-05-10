@@ -9,7 +9,7 @@ namespace CrowdSub.Repositories
     public class request_comments_repository : i_request_comments_repository 
     {
         //TODO: connect to database
-        private crowddbEntities db = new crowddbEntities();
+        //private crowddbEntities db = new crowddbEntities();
 
         public IQueryable<Models.request> get_comment()
         {
