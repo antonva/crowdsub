@@ -9,6 +9,8 @@ namespace CrowdSub.Repositories
 {
     public class video_repository : i_video_repository
     {
+        //Database connection.
+        private crowddbEntities db = new crowddbEntities();
 
         public bool create_video(video new_video)
         {
@@ -27,17 +29,12 @@ namespace CrowdSub.Repositories
 
         public video get_video(int id)
         {
-            throw new NotImplementedException();
+            return db.videos.First(a =>a.id == id);
         }
 
-        public List<video> get_all_videos()
+        public IQueryable<video> get_all_videos()
         {
-            throw new NotImplementedException();
-        }
-
-        public bool search_for_video(int id)
-        {
-            throw new NotImplementedException();
+            return db.videos;
         }
     }
 }

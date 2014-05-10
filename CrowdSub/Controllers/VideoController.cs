@@ -7,126 +7,22 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CrowdSub.Models;
+using CrowdSub.Repositories;
 
 namespace CrowdSub.Controllers
 {
     public class VideoController : Controller
     {
-        private crowddbEntities db = new crowddbEntities();
-
-        // GET: /Video/
-        public ActionResult Index()
+        private readonly i_video_repository video_repo;
+        public VideoController(i_video_repository videos)
         {
-            var videos = db.videos.Include(v => v.user);
-            return View(videos.ToList());
+            video_repo = videos;
         }
 
-        // GET: /Video/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Profile(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            video video = db.videos.Find(id);
-            if (video == null)
-            {
-                return HttpNotFound();
-            }
-            return View(video);
-        }
-
-        // GET: /Video/Create
-        public ActionResult Create()
-        {
-            ViewBag.video_created_by_user_id = new SelectList(db.users, "id", "user_name");
-            return View();
-        }
-
-        // POST: /Video/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="id,video_created_by_user_id,video_title,video_type,video_year_published,video_date_created,video_date_updated")] video video)
-        {
-            if (ModelState.IsValid)
-            {
-                db.videos.Add(video);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
-            ViewBag.video_created_by_user_id = new SelectList(db.users, "id", "user_name", video.video_created_by_user_id);
-            return View(video);
-        }
-
-        // GET: /Video/Edit/5
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            video video = db.videos.Find(id);
-            if (video == null)
-            {
-                return HttpNotFound();
-            }
-            ViewBag.video_created_by_user_id = new SelectList(db.users, "id", "user_name", video.video_created_by_user_id);
-            return View(video);
-        }
-
-        // POST: /Video/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="id,video_created_by_user_id,video_title,video_type,video_year_published,video_date_created,video_date_updated")] video video)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(video).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            ViewBag.video_created_by_user_id = new SelectList(db.users, "id", "user_name", video.video_created_by_user_id);
-            return View(video);
-        }
-
-        // GET: /Video/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            video video = db.videos.Find(id);
-            if (video == null)
-            {
-                return HttpNotFound();
-            }
-            return View(video);
-        }
-
-        // POST: /Video/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            video video = db.videos.Find(id);
-            db.videos.Remove(video);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
+            var model = video_repo.get_video(id);
+            return View(model);
         }
     }
 }

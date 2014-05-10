@@ -13,12 +13,17 @@ using CrowdSub.Controllers;
 
 namespace CrowdSub.Tests.Mocks
 {
-    [TestClass]
     public class mock_request_repository : i_request_repository
     {
+        private readonly List<request> _requests;
+		public mock_request_repository(List<request> requests)
+		{
+			_requests = requests;
+		}
+
         public IQueryable<request> get_requests()
         {
-            throw new NotImplementedException();
+            return _requests.AsQueryable();
         }
 
         public bool create_request(request new_request)
