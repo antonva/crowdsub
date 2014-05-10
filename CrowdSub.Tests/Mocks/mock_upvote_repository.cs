@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
+using CrowdSub.Repositories;
 using CrowdSub.Models;
 
-namespace CrowdSub.Repositories
+namespace CrowdSub.Tests.Mocks
 {
-    public class upvote_repository : i_upvote_repository
+    //comment
+    class mock_upvote_repository : i_upvote_repository
     {
-        //comment
         public IQueryable<upvote> get_upvote()
         {
             throw new NotImplementedException();
