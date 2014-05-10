@@ -13,18 +13,18 @@ namespace CrowdSub.Controllers
 {
     public class UserController : Controller
     {
-        private readonly i_user_repository _user_repo;
+        private readonly i_user_repository user_repo;
         public UserController(i_user_repository users)
         {
-            _user_repo = users;
+            user_repo = users;
         }
 
         // GET: /User/
         public ActionResult Index()
         {
-            var model = (from u in _user_repo.get_users()
+            var model = (from u in user_repo.get_users()
                           orderby u.user_name descending
-                          select u).Take(10);
+                          select u).Take(12);
 
             return View(model);
         }

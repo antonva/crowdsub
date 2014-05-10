@@ -11,6 +11,12 @@ namespace CrowdSub.Tests.Mocks
 {
     public class mock_video_repository : i_video_repository
     {
+        private readonly List<video> _videos;
+        public mock_video_repository(List<video> videos)
+        {
+            _videos = videos;
+        }
+
         public bool create_video(video new_video)
         {
             throw new NotImplementedException();
@@ -25,20 +31,15 @@ namespace CrowdSub.Tests.Mocks
         {
             throw new NotImplementedException();
         }
-
+        
         public video get_video(int id)
         {
-            throw new NotImplementedException();
+            return _videos.First(a => a.id == id);
         }
 
-        public List<video> get_all_videos()
+        public IQueryable<video> get_all_videos()
         {
-            throw new NotImplementedException();
-        }
-
-        public bool search_for_video(int id)
-        {
-            throw new NotImplementedException();
+            return _videos.AsQueryable();
         }
     }
 }

@@ -8,6 +8,7 @@ using CrowdSub;
 using CrowdSub.Controllers;
 using CrowdSub.Models;
 using System.Web.Mvc;
+using CrowdSub.Tests.Mocks;
 
 namespace CrowdSub.Tests.Controllers
 {
@@ -19,7 +20,7 @@ namespace CrowdSub.Tests.Controllers
 		{
             // Arrange
             List<user> users = new List<user>();
-            for (int i = 0; i < 15; i++)
+            for (int i = 0; i < 13; i++)
             {
                 users.Add( new user
                     {
@@ -32,7 +33,7 @@ namespace CrowdSub.Tests.Controllers
                     });
             }
 
-            Mocks.mock_user_repository mock_user_repo = new Mocks.mock_user_repository(users);
+            mock_user_repository mock_user_repo = new mock_user_repository(users);
             var controller = new UserController(mock_user_repo);
             
             // Act

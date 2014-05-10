@@ -16,9 +16,6 @@ namespace CrowdSub.Repositories
 
         // Returns video or videos
         video get_video(int id);
-        List<video> get_all_videos();
-
-        // Search for video
-        bool search_for_video(int id);
+        IQueryable<video> get_all_videos();
     }
 }
