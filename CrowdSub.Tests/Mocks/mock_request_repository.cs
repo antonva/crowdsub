@@ -16,8 +16,10 @@ namespace CrowdSub.Tests.Mocks
     [TestClass]
     public class mock_request_repository : i_request_repository
     {
-        [TestMethod]
+        
         private readonly List<request> _request;
+
+        //[TestMethod]
         public mock_request_repository(List<request> request)
         {
             _request = request;
@@ -43,20 +45,23 @@ namespace CrowdSub.Tests.Mocks
                 //Act
 
                 //Assert
+                
             }
+            return null;
         }
 
         public bool create_request(request create_request)
         {
             //Arrange
-            create_request = new request{
+            create_request = new request
+            {
                 id = 1,
                 request_user_id = 1,
                 request_name = "User",
                 request_link = "www.test.com",
                 request_type = "Should be int type",
 
-            }
+            };
             //Act
             //Assert
             throw new NotImplementedException();
