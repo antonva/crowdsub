@@ -24,5 +24,14 @@ namespace CrowdSub.Controllers
             var model = video_repo.get_video(id);
             return View(model);
         }
+
+        public ActionResult Search(string query)
+        {
+            var model = from v in video_repo.get_all_videos()
+                        where v.video_title.Contains(query)
+                        select v;
+
+            return View(model);
+        }
     }
 }
