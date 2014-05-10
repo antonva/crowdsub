@@ -8,17 +8,20 @@ namespace CrowdSub.Repositories
 {
     public class request_repository : i_request_repository
     {
+        //Connection to database
+        private crowddbEntities db = new crowddbEntities();
         public IQueryable<request> get_requests()
         {
-            throw new NotImplementedException();
+            //just for testing
+            return db.requests;
         }
 
-        public bool create_request()
+        public bool create_request(request create_request)
         {
             throw new NotImplementedException();
         }
 
-        public bool edit_request()
+        public bool edit_request(request edited_request)
         {
             throw new NotImplementedException();
         }

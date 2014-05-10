@@ -1,41 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Threading;
+using System.Text;
+using System.Threading.Tasks;
+using CrowdSub.Repositories;
 using CrowdSub.Models;
 
-namespace CrowdSub.Repositories
+namespace CrowdSub.Tests.Mocks
 {
-    public class video_repository : i_video_repository
+    //comment
+    class mock_upvote_repository : i_upvote_repository
     {
-
-        public bool create_video(video new_video)
+        public IQueryable<upvote> get_upvote()
         {
             throw new NotImplementedException();
         }
 
-        public bool edit_video(video new_video)
+        public int get_upvotes_by_requestid()
         {
             throw new NotImplementedException();
         }
 
-        public bool remove_video(int id)
+        public bool create_upvote()
         {
             throw new NotImplementedException();
         }
 
-        public video get_video(int id)
+        public bool has_user_upvoted()
         {
             throw new NotImplementedException();
         }
 
-        public List<video> get_all_videos()
+        public bool delete_upvote()
         {
             throw new NotImplementedException();
         }
 
-        public bool search_for_video(int id)
+        public int get_upvotes_by_userid()
         {
             throw new NotImplementedException();
         }

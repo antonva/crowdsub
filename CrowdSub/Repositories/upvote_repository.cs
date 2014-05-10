@@ -8,7 +8,7 @@ namespace CrowdSub.Repositories
 {
     public class upvote_repository : i_upvote_repository
     {
-
+        //comment
         public IQueryable<upvote> get_upvote()
         {
             throw new NotImplementedException();
@@ -24,12 +24,17 @@ namespace CrowdSub.Repositories
             throw new NotImplementedException();
         }
 
-        public bool has_user_upvote()
+        public bool has_user_upvoted()
         {
             throw new NotImplementedException();
         }
 
         public bool delete_upvote()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int get_upvotes_by_userid()
         {
             throw new NotImplementedException();
         }

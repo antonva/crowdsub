@@ -5,18 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using CrowdSub.Repositories;
 using CrowdSub.Models;
+using CrowdSub.HelperClasses;
 
 namespace CrowdSub.Tests.Mocks
 {
     public class mock_video_repository : i_video_repository
     {
-
         public bool create_video(video new_video)
         {
             throw new NotImplementedException();
         }
 
-        public bool edit_video(int id)
+        public bool edit_video(video new_video)
         {
             throw new NotImplementedException();
         }
