@@ -8,7 +8,7 @@ namespace CrowdSub.Repositories
 {
     public class upvote_repository : i_upvote_repository
     {
-
+        //comment
         public IQueryable<upvote> get_upvote()
         {
             throw new NotImplementedException();

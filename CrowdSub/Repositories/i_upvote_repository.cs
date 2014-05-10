@@ -9,6 +9,7 @@ namespace CrowdSub.Repositories
 {
     public interface i_upvote_repository
     {
+        //comment
         IQueryable<upvote> get_upvote();
 
         int get_upvotes_by_requestid();

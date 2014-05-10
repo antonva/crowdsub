@@ -8,6 +8,7 @@ using CrowdSub.Models;
 
 namespace CrowdSub.Tests.Mocks
 {
+    //comment
     class mock_upvote_repository : i_upvote_repository
     {
         public IQueryable<upvote> get_upvote()
