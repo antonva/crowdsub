@@ -67,5 +67,6 @@ namespace CrowdSub.Tests.Mocks
  	        throw new NotImplementedException();
         }
         
-public  List<user> users { get; set; }}
+//public  List<user> users { get; set; }
+    }
 }
