@@ -52,9 +52,11 @@ namespace CrowdSub.Controllers
 
         public ActionResult delete_video(int id) 
         {
-            
+            var model = from v in video_repo.get_videos()
+                        where v.id == id
+                        select v;
 
-            return View();
+            return View(model);
         }
 
 
