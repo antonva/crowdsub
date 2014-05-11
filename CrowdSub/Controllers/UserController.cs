@@ -14,6 +14,15 @@ namespace CrowdSub.Controllers
     public class UserController : Controller
     {
         private readonly i_user_repository user_repo;
+
+        // Normal constructor.
+        public UserController()
+        {
+            var users = new user_repository();
+            user_repo = users;
+        }
+
+        // Test constructor, takes a repository as argument.
         public UserController(i_user_repository users)
         {
             user_repo = users;

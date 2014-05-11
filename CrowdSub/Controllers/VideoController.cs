@@ -14,6 +14,15 @@ namespace CrowdSub.Controllers
     public class VideoController : Controller
     {
         private readonly i_video_repository video_repo;
+
+        // Normal Constructor
+        public VideoController()
+        {
+            video_repository videos = new video_repository();
+            video_repo = videos;
+        }
+
+        // Test constructor, takes a repository as argument.
         public VideoController(i_video_repository videos)
         {
             video_repo = videos;
