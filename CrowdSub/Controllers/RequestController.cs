@@ -27,5 +27,36 @@ namespace CrowdSub.Controllers
         {
             request_repo = requests;
         }
+
+        public ActionResult create(FormCollection formdata)
+        {
+            //TODO....
+            var model = (from v in request_repo.get_requests()
+                        where v.id == id
+                        select v);
+            return View(model);
+        }
+
+        public ActionResult edit(int id, FormCollection formdata)
+        {
+            return View();
+        }
+
+        public ActionResult delete(int request_id)
+        {
+            return View();
+        }
+
+        public ActionResult add_upvote(int user_id)
+        {
+            return View();
+        }
+
+        public ActionResult remove_upvote(int user_id)
+        {
+            return View();
+        }
+
+        public int id { get; set; }
     }
 }
