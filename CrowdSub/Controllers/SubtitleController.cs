@@ -7,21 +7,32 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CrowdSub.Models;
+using CrowdSub.Repositories;
 
 namespace CrowdSub.Controllers
 {
     public class SubtitleController : Controller
     {
-        private crowddbEntities db = new crowddbEntities();
+		private readonly i_subtitle_repository subtitle_repo;
+
+		public SubtitleController(i_subtitle_repository subtitles)
+		{
+			subtitle_repo = subtitles; //constructor takes repo as parameter
+		}
 
         // GET: /Subtitle/
-        public ActionResult Index()
+        public ActionResult profile(int id)
         {
-            var subtitles = db.subtitles.Include(s => s.user).Include(s => s.video);
-            return View(subtitles.ToList());
+			var model = (from s in subtitle_repo.get_subtitles()
+						 where s.id == id
+						 select s).FirstOrDefault();
+
+			return View(model);
         }
 
-        // GET: /Subtitle/Details/5
+
+
+        /*// GET: /Subtitle/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -131,6 +142,6 @@ namespace CrowdSub.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
-        }
+        } */
     }
 }
