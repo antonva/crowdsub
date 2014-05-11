@@ -203,9 +203,28 @@ namespace CrowdSub.Tests.Controllers
         public void video_delete()
         {
             // Arrange
+            List<video> videos = new List<video>();
+
+            for (int i = 0; i < 4; i++) {
+                videos.Add(new video
+                {
+                    id = i,
+                    video_title = "video" + i.ToString()
+                });
+            }
+
+            mock_video_repository mock_video_repo = new mock_video_repository(videos);
+            var controller = new VideoController(mock_video_repo);
 
             // Act
+
+            var query = 1;
+            var result = controller.delete_video(query);
+            
             // Assert
+            var view_results = (ViewResult)result;
+            List<video> model = (view_results.Model as IEnumerable<video>).ToList();
+            Assert.IsTrue(model.Count == 3);
         }
     }
 }

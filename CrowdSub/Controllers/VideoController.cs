@@ -50,6 +50,13 @@ namespace CrowdSub.Controllers
             return View();
         }
 
+        public ActionResult delete_video(int id) 
+        {
+            
+
+            return View();
+        }
+
 
         // Help class
         // Searches for exact video profile title.
