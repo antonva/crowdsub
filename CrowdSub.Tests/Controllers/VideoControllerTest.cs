@@ -157,7 +157,7 @@ namespace CrowdSub.Tests.Controllers
             
             var testvideo = new video{
                 id = 1,
-                video_title = "dicks"
+                video_title = "TestVideo"
             };
             
             mock_video_repository mock_video_repo = new mock_video_repository(videos);
