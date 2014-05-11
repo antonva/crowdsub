@@ -9,7 +9,7 @@ namespace CrowdSub.Controllers
     public class HomeController : Controller
     {
 		[HttpGet]
-        public ActionResult Index()
+        public ActionResult index()
         {
 			//passes user to home page
 			//home page must have:
@@ -20,7 +20,7 @@ namespace CrowdSub.Controllers
         }
 
         [HttpGet]
-        public ActionResult About()
+        public ActionResult about()
         {
             ViewBag.Message = "Your application description page.";
 
@@ -28,7 +28,7 @@ namespace CrowdSub.Controllers
         }
 
         [HttpGet]
-        public ActionResult Users()
+        public ActionResult users()
         {
             CrowdSub.Models.user u = new CrowdSub.Models.user();
 
@@ -46,7 +46,7 @@ namespace CrowdSub.Controllers
 		}
 
 		[HttpGet]
-		public ActionResult FAQ()
+		public ActionResult faq()
 		{
 			//show some frequently asked questions and the answer to
 			//those questions, that shit is hardcoded mane
@@ -55,7 +55,7 @@ namespace CrowdSub.Controllers
 		}
 
 		[HttpGet]
-        public ActionResult Contact()
+        public ActionResult contact()
         {
             ViewBag.Message = "Your contact page.";
 
