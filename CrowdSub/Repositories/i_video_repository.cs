@@ -9,13 +9,6 @@ namespace CrowdSub.Repositories
 {
     public interface i_video_repository
     {
-        // CRUD
-        bool create_video(video new_video);
-        bool edit_video(video new_video);
-        bool remove_video(int id);
-
-        // Returns video or videos
-        video get_video(int id);
-        IQueryable<video> get_all_videos();
+        IQueryable<video> get_videos();
     }
 }

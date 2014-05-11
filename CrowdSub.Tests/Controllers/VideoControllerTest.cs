@@ -16,7 +16,7 @@ namespace CrowdSub.Tests.Controllers
     public class VideoControllerTest
     {
         [TestMethod]
-        public void get_video_profile_by_id()
+        public void video_get_profile_by_id()
         {
             // Arrange
             List<video> videos = new List<video>();
@@ -52,7 +52,7 @@ namespace CrowdSub.Tests.Controllers
         }
 
         [TestMethod]
-        public void get_video_profile_by_id_null_exception()
+        public void video_fail_get_profile_by_id_null_exception()
         {
             // Arrange
             List<video> videos = new List<video>();
@@ -118,7 +118,7 @@ namespace CrowdSub.Tests.Controllers
         }
         // video_search_by_title test that fails
         [TestMethod]
-        public void video_search_by_title_fails()
+        public void video_fail_search_by_title()
         {
             //Arrange
             List<video> videos = new List<video>();
@@ -169,12 +169,14 @@ namespace CrowdSub.Tests.Controllers
 
             //Assert
             var view_result = (ViewResult)result;
+            Assert.IsNotNull(view_result.Model);
             List<video> model = (view_result.Model as IEnumerable<video>).ToList();
             Assert.IsTrue(model.Count == 1);
         }
         [TestMethod]
-        public void video_check_unique_search()
+        public void video_fail_check_unique_search()
         {
+            // This test should fail.
             //Arrange
             List<video> videos = new List<video>();
             
@@ -193,7 +195,17 @@ namespace CrowdSub.Tests.Controllers
             var result = controller.is_unique_video_title(query);
 
             //Assert
+            
             Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void video_delete()
+        {
+            // Arrange
+
+            // Act
+            // Assert
         }
     }
 }

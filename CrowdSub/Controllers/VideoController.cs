@@ -21,13 +21,15 @@ namespace CrowdSub.Controllers
 
         public ActionResult profile(int id)
         {
-            var model = video_repo.get_video(id);
+            var model = (from v in video_repo.get_videos()
+                            where v.id == id
+                            select v).First();
             return View(model);
         }
 
         public ActionResult search(string query)
         {
-            var model = from v in video_repo.get_all_videos()
+            var model = from v in video_repo.get_videos()
                         where v.video_title.Contains(query)
                         select v;
 
@@ -45,7 +47,7 @@ namespace CrowdSub.Controllers
 
         public bool is_unique_video_title(string query)
         {
-            var result = from v in video_repo.get_all_videos()
+            var result = from v in video_repo.get_videos()
                          where v.video_title.Equals(query)
                          select v;
 

@@ -16,27 +16,7 @@ namespace CrowdSub.Tests.Mocks
             _videos = videos;
         }
 
-        public bool create_video(video new_video)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool edit_video(video new_video)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool remove_video(int id)
-        {
-            throw new NotImplementedException();
-        }
-        
-        public video get_video(int id)
-        {
-            return _videos.First(a => a.id == id);
-        }
-
-        public IQueryable<video> get_all_videos()
+        public IQueryable<video> get_videos()
         {
             return _videos.AsQueryable();
         }

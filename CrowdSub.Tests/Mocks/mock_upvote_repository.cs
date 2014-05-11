@@ -11,7 +11,7 @@ namespace CrowdSub.Tests.Mocks
     //comment
     class mock_upvote_repository : i_upvote_repository
     {
-        public IQueryable<upvote> get_upvote()
+        public IQueryable<upvote> get_upvotes()
         {
             throw new NotImplementedException();
         }
