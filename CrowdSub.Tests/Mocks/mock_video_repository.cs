@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using CrowdSub.Repositories;
 using CrowdSub.Models;
-using CrowdSub.HelperClasses;
 
 namespace CrowdSub.Tests.Mocks
 {
