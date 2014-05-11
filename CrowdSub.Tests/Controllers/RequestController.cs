@@ -15,5 +15,45 @@ namespace CrowdSub.Tests.Controllers
 
             //Assert
         }
+
+        [TestMethod]
+        public void request_edit()
+        {
+            //Arrange
+            
+            //Act
+
+            //Assert
+        }
+
+        [TestMethod]
+        public void request_delete()
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+        }
+
+        [TestMethod]
+        public void request_add_upvote()
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+        }
+
+        [TestMethod]
+        public void request_remove_upvote()
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+        }
     }
 }
