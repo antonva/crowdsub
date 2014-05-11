@@ -10,5 +10,8 @@ namespace CrowdSub.Repositories
     public interface i_request_repository
     {
         IQueryable<request> get_requests();
+        request add(request req);
+        request edit(int id, request req);
+        bool del(int id);
     }
 }

@@ -11,32 +11,23 @@ namespace CrowdSub.Tests.Mocks
     //comment
     class mock_upvote_repository : i_upvote_repository
     {
+        private readonly List<upvote> _upvote;
+		public mock_upvote_repository(List<upvote> upvotes)
+		{
+			_upvote = upvotes;
+		}
+
         public IQueryable<upvote> get_upvotes()
         {
             throw new NotImplementedException();
         }
 
-        public int get_upvotes_by_requestid()
+        public upvote add(int request_id, int user_id)
         {
             throw new NotImplementedException();
         }
 
-        public bool create_upvote()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool has_user_upvoted()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool delete_upvote()
-        {
-            throw new NotImplementedException();
-        }
-
-        public int get_upvotes_by_userid()
+        public upvote remove(int request_id, int user_id)
         {
             throw new NotImplementedException();
         }
