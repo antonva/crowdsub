@@ -149,16 +149,14 @@ namespace CrowdSub.Tests.Controllers
             }
         }
 
+        // TODO: FIXME
         [TestMethod]
         public void video_profile_create()
         {
             //Arrange
             List<video> videos = new List<video>();
-            
-            var testvideo = new video{
-                id = 1,
-                video_title = "TestVideo"
-            };
+
+            var testvideo = new FormCollection();
             
             mock_video_repository mock_video_repo = new mock_video_repository(videos);
             var controller = new VideoController(mock_video_repo);
@@ -173,6 +171,7 @@ namespace CrowdSub.Tests.Controllers
             List<video> model = (view_result.Model as IEnumerable<video>).ToList();
             Assert.IsTrue(model.Count == 1);
         }
+
         [TestMethod]
         public void video_fail_check_unique_search()
         {
