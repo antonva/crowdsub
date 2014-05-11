@@ -121,5 +121,44 @@ namespace CrowdSub.Tests.Controllers
 			}
 			
 		}
+
+		[TestMethod]
+		public void subtitle_get_profile_by_video_id_null_exception()
+		{
+			// Arrange:
+			List<subtitle> subtitles = new List<subtitle>();
+			for(int i = 0; i < 3; i++) //populate list with subtitles for video_id 1
+			{
+				subtitles.Add(new subtitle
+				{
+					id = i,
+					subtitle_user_id = 1,
+					subtitle_video_id = 1,
+					subtitle_date_created = DateTime.Now
+				});
+			}
+			for (int i = 3; i < 6; i++) //populate list with subtitles for video_id 2
+			{
+				subtitles.Add(new subtitle
+				{
+					id = i,
+					subtitle_user_id = 2,
+					subtitle_video_id = 2,
+					subtitle_date_created = DateTime.Now
+				});
+			}
+
+			mock_subtitle_repository mock_subtitle_repo = new mock_subtitle_repository(subtitles);
+			var controller = new SubtitleController(mock_subtitle_repo);
+
+			// Act:
+			var video_id = 3; //set test id
+			var result = controller.subtitles_for_video(video_id);
+
+			// Assert:
+			var view_result = (ViewResult)result;
+			//model should be null if no subtitles are found
+			Assert.IsNull(view_result);
+		}
 	}
 }
