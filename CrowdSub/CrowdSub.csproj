@@ -301,6 +301,7 @@
     <Content Include="Views\Request\Edit.cshtml" />
     <Content Include="Views\Request\Index.cshtml" />
     <Content Include="Views\Shared\could_not_be_found.cshtml" />
+    <Content Include="Views\Video\Profile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
