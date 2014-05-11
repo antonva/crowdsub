@@ -13,7 +13,7 @@ namespace CrowdSub.Tests.Controllers
     public class HomeControllerTest
     {
         [TestMethod]
-        public void Index()
+        public void homecontroller_index()
         {
             // Arrange
             HomeController controller = new HomeController();
@@ -26,7 +26,7 @@ namespace CrowdSub.Tests.Controllers
         }
 
         [TestMethod]
-        public void About()
+        public void homecontroller_about()
         {
             // Arrange
             HomeController controller = new HomeController();
@@ -39,7 +39,7 @@ namespace CrowdSub.Tests.Controllers
         }
 
         [TestMethod]
-        public void Contact()
+        public void homecontroller_contact()
         {
             // Arrange
             HomeController controller = new HomeController();
