@@ -25,5 +25,21 @@ namespace CrowdSub.Tests.Mocks
         {
             return _requests.AsQueryable();
         }
+
+
+        public request add(request req)
+        {
+            throw new NotImplementedException();
+        }
+
+        public request edit(int id, request req)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool del(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

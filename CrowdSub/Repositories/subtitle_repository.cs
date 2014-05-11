@@ -14,5 +14,21 @@ namespace CrowdSub.Repositories
 		{
             return db.subtitles;
 		}
-	}
+
+
+        public subtitle add(subtitle sub)
+        {
+            throw new NotImplementedException();
+        }
+
+        public subtitle edit(int id, subtitle sub)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool del(int id)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

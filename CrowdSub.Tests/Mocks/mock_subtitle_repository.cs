@@ -21,5 +21,21 @@ namespace CrowdSub.Tests.Mocks
         {
             return _subtitles.AsQueryable();
         }
-	}
+
+
+        public subtitle add(subtitle sub)
+        {
+            throw new NotImplementedException();
+        }
+
+        public subtitle edit(int id, subtitle sub)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool del(int id)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
