@@ -33,7 +33,7 @@ namespace CrowdSub.Tests.Mocks
             throw new NotImplementedException();
         }
 
-        public bool del(int id)
+        public bool delete(int id)
         {
             throw new NotImplementedException();
         }
