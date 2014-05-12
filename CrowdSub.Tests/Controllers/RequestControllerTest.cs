@@ -107,8 +107,8 @@ namespace CrowdSub.Tests.Controllers
             {
                 request.Add(new request
                 {
-                    request_name = "request1",
-                    id = 1
+                    request_name = "request" + i.ToString(),
+                    id = i
                 });
             } 
 
