@@ -1,11 +1,10 @@
 ﻿@model CrowdSub.Models.video
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "create_video";
 }
 
-<h2>Create</h2>
-
+<h2>create_video</h2>
 
 @using (Html.BeginForm()) 
 {
@@ -27,8 +26,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.video_created_by_user_id, "video_created_by_user_id", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("video_created_by_user_id", String.Empty)
-                @Html.ValidationMessageFor(model => model.video_created_by_user_id)
+                
             </div>
         </div>
 
@@ -73,6 +71,14 @@
         </div>
 
         <div class="form-group">
+            @Html.LabelFor(model => model.video_description, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.video_description)
+                @Html.ValidationMessageFor(model => model.video_description)
+            </div>
+        </div>
+
+        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
@@ -83,7 +89,3 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
