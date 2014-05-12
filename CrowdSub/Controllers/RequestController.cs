@@ -39,12 +39,20 @@ namespace CrowdSub.Controllers
 
         public ActionResult edit(int id, FormCollection formdata)
         {
-            return View();
+            //TODO....
+            var model = (from v in request_repo.get_requests()
+                         where v.id == id
+                         select v);
+            return View(model);
         }
 
         public ActionResult delete(int request_id)
         {
-            return View();
+            //TODO....
+            var model = (from v in request_repo.get_requests()
+                         where v.id == id
+                         select v);
+            return View(model);
         }
 
         public ActionResult add_upvote(int user_id)

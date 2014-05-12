@@ -81,11 +81,8 @@ namespace CrowdSub.Tests.Controllers
             mock_request_repository mock_request_repo = new mock_request_repository(request);
             var request_controller = new RequestController(mock_request_repo);
 
-            
-
             //Act
-            
-            
+                       
             var changes = new FormCollection();
             var changename = "Request2";
             changes.Add("request_name", changename);
@@ -105,10 +102,28 @@ namespace CrowdSub.Tests.Controllers
         public void request_delete()
         {
             //Arrange
+            List<request> request = new List<request>();
+            for (int i = 0; i < 4; i++)
+            {
+                request.Add(new request
+                {
+                    request_name = "request1",
+                    id = 1
+                });
+            } 
 
-             //Act
+            mock_request_repository mock_request_repo = new mock_request_repository(request);
+            var request_controller = new RequestController(mock_request_repo);
+            
+            //Act
+            var query = 1;
+            var result = request_controller.delete(query);
 
             //Assert
+            var view_result = (ViewResult)result;
+            List<request> model = (view_result.Model as IEnumerable<request>).ToList();
+            Assert.IsTrue(model.Count == 3);
+          
         }
 
         [TestMethod]
