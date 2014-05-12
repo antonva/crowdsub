@@ -45,11 +45,18 @@ namespace CrowdSub.Controllers
             return View(model);
         }
 
+        [HttpPost]
         public ActionResult create_video(FormCollection formdata)
         {
             video model = new video();
             var q = video_repo.get_videos();
             
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult create_video() 
+        {
             return View();
         }
 

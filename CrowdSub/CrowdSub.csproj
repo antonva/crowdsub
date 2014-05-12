@@ -189,9 +189,6 @@
     <Compile Include="Models\request.cs">
       <DependentUpon>CrowdSubModels.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\request_comments.cs">
-      <DependentUpon>CrowdSubModels.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\subtitle.cs">
       <DependentUpon>CrowdSubModels.tt</DependentUpon>
     </Compile>

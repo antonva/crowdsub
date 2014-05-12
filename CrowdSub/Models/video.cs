@@ -27,6 +27,7 @@ namespace CrowdSub.Models
         public Nullable<int> video_year_published { get; set; }
         public System.DateTime video_date_created { get; set; }
         public System.DateTime video_date_updated { get; set; }
+        public string video_description { get; set; }
     
         public virtual ICollection<request> requests { get; set; }
         public virtual ICollection<subtitle> subtitles { get; set; }
