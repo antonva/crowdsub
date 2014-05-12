@@ -17,51 +17,13 @@
 	<hr />
 
     <div>
-        <span>Some image</span>
-        <p>DESCRIPTION: Lorizzle ipsizzle dolor sizzle rizzle, bling bling adipiscing stuff. Nullizzle brizzle velit, daahng dawg volutpizzle, suscipit quis, gravida izzle, arcu. Dawg eget tortor. Break it down dope. Phat at dolor dapibizzle turpis get down get down i saw beyonces tizzles and my pizzle went crizzle. Maurizzle shizznit nibh izzle turpizzle. Shizzlin dizzle in tortor. Pellentesque sure rhoncizzle pimpin'. In fo shizzle mah nizzle fo rizzle, mah home g-dizzle habitasse platea dictumst. Ghetto boofron. Rizzle tellus urna, pretizzle yo, mattizzle ac, eleifend go to hizzle, nunc. Sure suscipit. Integizzle ghetto nizzle sizzle go to hizzle.</p>
-        
+        <span>!!!!!Some image!!!!!!</span>
+        @Html.DisplayFor(Model => Model.video_description) <!--Video description-->
+                
     </div>
 </div>
 
-    <div>
-        <p>Choose language</p>
-        <select>
-            <option value="English">English</option>
-            <option value="Icelandic">Icelandic</option>
-        </select>
-    </div>
-    <table> <!--The table for the video subtitles-->
-        <caption>Subtitles Available</caption>
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Date last modified</th>
-                <th>Upvotes</th>
-                <th>Last modified by</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Hearing impaired</td>
-                <td>25.01.2014</td>
-                <td>6847</td>
-                <td>HólMaR</td>
-            </tr>
-            <tr>
-                <td>Original Version</td>
-                <td>26.12.2013</td>
-                <td>254</td>
-                <td>HólMaR</td>
-            </tr>
-            <tr>
-                <td>Extended version</td>
-                <td>12.11.2011</td>
-                <td>752</td>
-                <td>HólMaR</td>
-            </tr>
-        </tbody>
-    </table>
-
+      
     <div> <!--Buttons that redirects or allows some action-->
         <button type="button">Edit</button>
         <button type="button">Upload</button>
@@ -72,57 +34,57 @@
 
     <!--<dl class="dl-horizontal">  not relvant
         <dt>
-            @Html.DisplayNameFor(model => model.video_title)
+            @@Html.DisplayNameFor(model => model.video_title)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.video_title)
+            @@Html.DisplayFor(model => model.video_title)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.video_type)
+            @@Html.DisplayNameFor(model => model.video_type)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.video_type)
+            @@Html.DisplayFor(model => model.video_type)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.video_year_published)
+            @@Html.DisplayNameFor(model => model.video_year_published)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.video_year_published)
+            @@Html.DisplayFor(model => model.video_year_published)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.video_date_created)
+            @@Html.DisplayNameFor(model => model.video_date_created)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.video_date_created)
+            @@Html.DisplayFor(model => model.video_date_created)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.video_date_updated)
+            @@Html.DisplayNameFor(model => model.video_date_updated)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.video_date_updated)
+            @@Html.DisplayFor(model => model.video_date_updated)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.user.user_name)
+            @@Html.DisplayNameFor(model => model.user.user_name)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.user.user_name)
+            @@Html.DisplayFor(model => model.user.user_name)
         </dd>
 
     </dl>
 </div>-->
 
 <!--<p> Not relevant
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @@Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @@Html.ActionLink("Back to List", "Index")
 </p>-->
