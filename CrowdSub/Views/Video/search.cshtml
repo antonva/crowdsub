@@ -12,9 +12,9 @@
 <table class="table">
     <tr>
         <th>
-            Title
+            Results
         </th>
-        <th>
+        @*<th>
             Video type
         </th>
         <th>
@@ -32,15 +32,15 @@
         <th>
             User 
         </th>
-        <th></th>
+        <th></th> *@
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.video_title)
+            @Html.ActionLink(item.video_title, "Profile", new { id = item.id }) <!--Link leads to profile for video title-->
         </td>
-        <td>
+        @*<td>
             @Html.DisplayFor(modelItem => item.video_type)
         </td>
         <td>
@@ -62,7 +62,7 @@
             @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
             @Html.ActionLink("Details", "Details", new { id=item.id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.id })
-        </td>
+        </td> *@
     </tr>
 }
 

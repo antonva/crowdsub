@@ -22,36 +22,6 @@
             @using (Html.BeginForm("index", "Home", FormMethod.Post))
             {
                 @Html.TextBox("search")
-                <input type="submit" value="Search" />
+                <input type="submit" value="Search by title" />
             }
         </div>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Type</th>
-                    <th>Subtitle Language</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Batman</td>
-                    <td>Movie</td>
-                    <td>English</td>
-                </tr>
-                <tr>
-                    <td>Spiderman</td>
-                    <td>Movie</td>
-                    <td>Icelandic</td>
-                </tr>
-                <tr>
-                    <td>American Dad</td>
-                    <td>TV Show</td>
-                    <td>English</td>
-                </tr>
-            </tbody>
-        </table>
-
-    </div>
-</div>
