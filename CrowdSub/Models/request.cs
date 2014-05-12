@@ -16,7 +16,6 @@ namespace CrowdSub.Models
     {
         public request()
         {
-            this.request_comments = new HashSet<request_comments>();
             this.upvotes = new HashSet<upvote>();
         }
     
@@ -24,12 +23,11 @@ namespace CrowdSub.Models
         public int request_user_id { get; set; }
         public string request_name { get; set; }
         public string request_link { get; set; }
-        public string request_type { get; set; }
         public int request_lang { get; set; }
         public Nullable<int> request_video_id { get; set; }
         public System.DateTime request_date_created { get; set; }
+        public int request_type { get; set; }
     
-        public virtual ICollection<request_comments> request_comments { get; set; }
         public virtual user user { get; set; }
         public virtual video video { get; set; }
         public virtual ICollection<upvote> upvotes { get; set; }

@@ -41,14 +41,18 @@ namespace CrowdSub.Tests.Mocks
 
         public bool del(int id)
         {
-            //var req = (from r in _requests
-            //           where r.id == id
-            //           select r).FirstOrDefault();
+            int? request_id = _requests.Where(x => x.id == id).FirstOrDefault().id;
+            if (request_id != null)
+            {
+                var request = (from r in _requests
+                               where r.id == id
+                               select r).FirstOrDefault();
 
-            //_requests.Remove(req);
+                _requests.Remove(request);
 
-            //return true;
-            throw new NotImplementedException();
+                return true;
+            }
+            return false;
         }
     }
 }
