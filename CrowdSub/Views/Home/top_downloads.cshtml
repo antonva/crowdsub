@@ -1,6 +1,7 @@
-﻿
+﻿@model IEnumerable<CrowdSub.Models.video>
+
 @{
-    ViewBag.Title = "top_downloads";
+    ViewBag.Title = "Top Downloads";
 }
 
 <h2>Top downloads</h2>
@@ -43,5 +44,29 @@
             <td>Icelandic</td>
             <td>5433</td>
         </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Video type</th>
+            <th>Subtitle type</th>
+            <th>Subtitle language</th>
+            <th>Votes</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.video_title</td>
+                <td>@item.video_type</td>
+                <td></td>
+            </tr>
+        }
+
     </tbody>
 </table>
