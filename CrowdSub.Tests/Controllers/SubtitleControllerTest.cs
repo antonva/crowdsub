@@ -9,6 +9,7 @@ using CrowdSub.Controllers;
 using CrowdSub.Models;
 using System.Web.Mvc;
 using CrowdSub.Tests.Mocks;
+using System.Diagnostics;
 
 namespace CrowdSub.Tests.Controllers
 {
@@ -123,7 +124,7 @@ namespace CrowdSub.Tests.Controllers
 		}
 
 		[TestMethod]
-		public void subtitle_get_subtitles_by_video_id_null_exception()
+		public void subtitle_get_subtitles_by_video_id_empty_list()
 		{
 			// Arrange:
 			List<subtitle> subtitles = new List<subtitle>();
@@ -152,13 +153,40 @@ namespace CrowdSub.Tests.Controllers
 			var controller = new SubtitleController(mock_subtitle_repo);
 
 			// Act:
-			var video_id = 3; //set test id
+			var video_id = 3; //set test id to something that cannot be found
 			var result = controller.subtitles_for_video(video_id);
 
 			// Assert:
 			var view_result = (ViewResult)result;
-			//model should be null if no subtitles are found
-			Assert.IsNull(view_result);
+			List<subtitle> model = (view_result as IEnumerable<subtitle>).ToList();
+			Debug.WriteLine(model.Count);
+			Assert.IsTrue(model.Count == 0);
+		}
+		[TestMethod]
+		public void subtitle_delete()
+		{
+			// Arrange:
+			List<subtitle> subtitles = new List<subtitle>();
+			for(int i = 0; i < 4; i++)
+			{
+				subtitles.Add(new subtitle
+				{
+					id = i,
+					subtitle_video_id = 1
+				});
+			}
+
+			mock_subtitle_repository mock_subtitle_repo = new mock_subtitle_repository(subtitles);
+			var controller = new SubtitleController(mock_subtitle_repo);
+
+			// Act:
+			var id = 1;
+			var result = controller.delete_subtitle(id);
+
+			// Assert:
+			var view_result = (ViewResult)result;
+			List<subtitle> model = (view_result.Model as IEnumerable<subtitle>).ToList();
+			Assert.IsTrue(model.Count == 3);
 		}
 	}
 }
