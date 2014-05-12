@@ -245,7 +245,7 @@ namespace CrowdSub.Tests.Controllers
             var controller = new VideoController(mock_video_repo);
 
             // Act
-            var query = 1;
+            var query = 5;
             var result = controller.delete_video(query);
             
             // Assert

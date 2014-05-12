@@ -36,8 +36,8 @@ namespace CrowdSub.Tests.Mocks
 
         public bool delete(int id)
         {
-            int? video_id = _videos.Where(x => x.id == id).FirstOrDefault().id;
-            if (video_id != null) 
+            video video_to_delete = _videos.Where(x => x.id == id).FirstOrDefault();
+            if (video_to_delete != null) 
             {
                 var vid = (from v in _videos
                            where v.id == id
