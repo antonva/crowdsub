@@ -16,8 +16,8 @@ namespace CrowdSub.Models
     {
         public video()
         {
-            this.requests = new HashSet<request>();
             this.subtitles = new HashSet<subtitle>();
+            this.requests = new HashSet<request>();
         }
     
         public int id { get; set; }
@@ -29,8 +29,8 @@ namespace CrowdSub.Models
         public System.DateTime video_date_updated { get; set; }
         public string video_description { get; set; }
     
-        public virtual ICollection<request> requests { get; set; }
         public virtual ICollection<subtitle> subtitles { get; set; }
         public virtual user user { get; set; }
+        public virtual ICollection<request> requests { get; set; }
     }
 }

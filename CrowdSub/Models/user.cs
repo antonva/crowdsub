@@ -16,11 +16,11 @@ namespace CrowdSub.Models
     {
         public user()
         {
-            this.requests = new HashSet<request>();
             this.subtitle_comments = new HashSet<subtitle_comments>();
             this.subtitles = new HashSet<subtitle>();
             this.upvotes = new HashSet<upvote>();
             this.videos = new HashSet<video>();
+            this.requests = new HashSet<request>();
         }
     
         public int id { get; set; }
@@ -30,10 +30,10 @@ namespace CrowdSub.Models
         public string user_email { get; set; }
         public Nullable<System.DateTime> user_date_created { get; set; }
     
-        public virtual ICollection<request> requests { get; set; }
         public virtual ICollection<subtitle_comments> subtitle_comments { get; set; }
         public virtual ICollection<subtitle> subtitles { get; set; }
         public virtual ICollection<upvote> upvotes { get; set; }
         public virtual ICollection<video> videos { get; set; }
+        public virtual ICollection<request> requests { get; set; }
     }
 }

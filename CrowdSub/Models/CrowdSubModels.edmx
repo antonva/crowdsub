@@ -230,22 +230,6 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="crowddbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="request">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="request_user_id" Type="Int32" Nullable="false" />
-          <Property Name="request_name" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
-          <Property Name="request_link" Type="String" MaxLength="255" FixedLength="true" Unicode="false" />
-          <Property Name="request_type" Type="String" Nullable="false" />
-          <Property Name="request_lang" Type="Int32" Nullable="false" />
-          <Property Name="request_video_id" Type="Int32" />
-          <NavigationProperty Name="user" Relationship="Self.FK_requests_0" FromRole="requests" ToRole="users" />
-          <NavigationProperty Name="video" Relationship="Self.FK_requests_1" FromRole="requests" ToRole="videos" />
-          <NavigationProperty Name="upvotes" Relationship="Self.FK_upvotes_0" FromRole="requests" ToRole="upvotes" />
-          <Property Name="request_date_created" Type="DateTime" Nullable="false" Precision="3" />
-        </EntityType>
         <EntityType Name="subtitle_comments">
           <Key>
             <PropertyRef Name="id" />
@@ -281,9 +265,9 @@
           <Property Name="id" Type="Int32" Nullable="false" />
           <Property Name="upvote_request_id" Type="Int32" />
           <Property Name="upvote_user_id" Type="Int32" />
-          <NavigationProperty Name="request" Relationship="Self.FK_upvotes_0" FromRole="upvotes" ToRole="requests" />
           <NavigationProperty Name="user" Relationship="Self.FK_upvotes_1" FromRole="upvotes" ToRole="users" />
           <Property Name="upvote_date_created" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="request" Relationship="crowddbModel.FK_upvotes_0" FromRole="upvote" ToRole="request" />
         </EntityType>
         <EntityType Name="user">
           <Key>
@@ -294,12 +278,12 @@
           <Property Name="user_role" Type="Int32" Nullable="false" />
           <Property Name="user_password" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="user_email" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="requests" Relationship="Self.FK_requests_0" FromRole="users" ToRole="requests" />
           <NavigationProperty Name="subtitle_comments" Relationship="Self.FK_subtitle_comments_0" FromRole="users" ToRole="subtitle_comments" />
           <NavigationProperty Name="subtitles" Relationship="Self.FK_subtitles_0" FromRole="users" ToRole="subtitles" />
           <NavigationProperty Name="upvotes" Relationship="Self.FK_upvotes_1" FromRole="users" ToRole="upvotes" />
           <NavigationProperty Name="videos" Relationship="Self.FK_videos_0" FromRole="users" ToRole="videos" />
           <Property Name="user_date_created" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="requests" Relationship="crowddbModel.FK_requests_0" FromRole="user" ToRole="request" />
         </EntityType>
         <EntityType Name="video">
           <Key>
@@ -312,47 +296,11 @@
           <Property Name="video_year_published" Type="Int32" />
           <Property Name="video_date_created" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="video_date_updated" Type="DateTime" Nullable="false" Precision="0" />
-          <NavigationProperty Name="requests" Relationship="Self.FK_requests_1" FromRole="videos" ToRole="requests" />
           <NavigationProperty Name="subtitles" Relationship="Self.FK_subtitles_1" FromRole="videos" ToRole="subtitles" />
           <NavigationProperty Name="user" Relationship="Self.FK_videos_0" FromRole="videos" ToRole="users" />
           <Property Name="video_description" Type="String" MaxLength="1024" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="requests" Relationship="crowddbModel.FK_requests_1" FromRole="video" ToRole="request" />
         </EntityType>
-        <Association Name="FK_requests_0">
-          <End Role="users" Type="Self.user" Multiplicity="1" />
-          <End Role="requests" Type="Self.request" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="users">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="requests">
-              <PropertyRef Name="request_user_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_requests_1">
-          <End Role="videos" Type="Self.video" Multiplicity="0..1" />
-          <End Role="requests" Type="Self.request" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="videos">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="requests">
-              <PropertyRef Name="request_video_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_upvotes_0">
-          <End Role="requests" Type="Self.request" Multiplicity="0..1" />
-          <End Role="upvotes" Type="Self.upvote" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="requests">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="upvotes">
-              <PropertyRef Name="upvote_request_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_subtitle_comments_0">
           <End Role="users" Type="Self.user" Multiplicity="1" />
           <End Role="subtitle_comments" Type="Self.subtitle_comments" Multiplicity="*" />
@@ -426,24 +374,11 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="crowddbEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="requests" EntityType="Self.request" />
           <EntitySet Name="subtitle_comments" EntityType="Self.subtitle_comments" />
           <EntitySet Name="subtitles" EntityType="Self.subtitle" />
           <EntitySet Name="upvotes" EntityType="Self.upvote" />
           <EntitySet Name="users" EntityType="Self.user" />
           <EntitySet Name="videos" EntityType="Self.video" />
-          <AssociationSet Name="FK_requests_0" Association="Self.FK_requests_0">
-            <End Role="users" EntitySet="users" />
-            <End Role="requests" EntitySet="requests" />
-          </AssociationSet>
-          <AssociationSet Name="FK_requests_1" Association="Self.FK_requests_1">
-            <End Role="videos" EntitySet="videos" />
-            <End Role="requests" EntitySet="requests" />
-          </AssociationSet>
-          <AssociationSet Name="FK_upvotes_0" Association="Self.FK_upvotes_0">
-            <End Role="requests" EntitySet="requests" />
-            <End Role="upvotes" EntitySet="upvotes" />
-          </AssociationSet>
           <AssociationSet Name="FK_subtitle_comments_0" Association="Self.FK_subtitle_comments_0">
             <End Role="users" EntitySet="users" />
             <End Role="subtitle_comments" EntitySet="subtitle_comments" />
@@ -468,27 +403,78 @@
             <End Role="users" EntitySet="users" />
             <End Role="videos" EntitySet="videos" />
           </AssociationSet>
+          <EntitySet Name="requests" EntityType="crowddbModel.request" />
+          <AssociationSet Name="FK_requests_0" Association="crowddbModel.FK_requests_0">
+            <End Role="user" EntitySet="users" />
+            <End Role="request" EntitySet="requests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_requests_1" Association="crowddbModel.FK_requests_1">
+            <End Role="video" EntitySet="videos" />
+            <End Role="request" EntitySet="requests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_upvotes_0" Association="crowddbModel.FK_upvotes_0">
+            <End Role="request" EntitySet="requests" />
+            <End Role="upvote" EntitySet="upvotes" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="request">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="request_user_id" Type="Int32" Nullable="false" />
+          <Property Name="request_name" Type="String" Nullable="false" MaxLength="255" FixedLength="true" Unicode="false" />
+          <Property Name="request_link" Type="String" MaxLength="255" FixedLength="true" Unicode="false" />
+          <Property Name="request_lang" Type="Int32" Nullable="false" />
+          <Property Name="request_video_id" Type="Int32" />
+          <Property Name="request_date_created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="request_type" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="user" Relationship="crowddbModel.FK_requests_0" FromRole="request" ToRole="user" />
+          <NavigationProperty Name="video" Relationship="crowddbModel.FK_requests_1" FromRole="request" ToRole="video" />
+          <NavigationProperty Name="upvotes" Relationship="crowddbModel.FK_upvotes_0" FromRole="request" ToRole="upvote" />
+        </EntityType>
+        <Association Name="FK_requests_0">
+          <End Type="crowddbModel.user" Role="user" Multiplicity="1" />
+          <End Type="crowddbModel.request" Role="request" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="request">
+              <PropertyRef Name="request_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_requests_1">
+          <End Type="crowddbModel.video" Role="video" Multiplicity="0..1" />
+          <End Type="crowddbModel.request" Role="request" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="video">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="request">
+              <PropertyRef Name="request_video_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_upvotes_0">
+          <End Type="crowddbModel.request" Role="request" Multiplicity="0..1" />
+          <End Type="crowddbModel.upvote" Role="upvote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="request">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="upvote">
+              <PropertyRef Name="upvote_request_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="crowddbModelStoreContainer" CdmEntityContainer="crowddbEntities">
-          <EntitySetMapping Name="requests">
-            <EntityTypeMapping TypeName="crowddbModel.request">
-              <MappingFragment StoreEntitySet="requests">
-                <ScalarProperty Name="request_date_created" ColumnName="request_date_created" />
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="request_user_id" ColumnName="request_user_id" />
-                <ScalarProperty Name="request_name" ColumnName="request_name" />
-                <ScalarProperty Name="request_link" ColumnName="request_link" />
-                <ScalarProperty Name="request_type" ColumnName="request_type" />
-                <ScalarProperty Name="request_lang" ColumnName="request_lang" />
-                <ScalarProperty Name="request_video_id" ColumnName="request_video_id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="subtitle_comments">
             <EntityTypeMapping TypeName="crowddbModel.subtitle_comments">
               <MappingFragment StoreEntitySet="subtitle_comments">
@@ -547,6 +533,20 @@
                 <ScalarProperty Name="video_year_published" ColumnName="video_year_published" />
                 <ScalarProperty Name="video_date_created" ColumnName="video_date_created" />
                 <ScalarProperty Name="video_date_updated" ColumnName="video_date_updated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="requests">
+            <EntityTypeMapping TypeName="crowddbModel.request">
+              <MappingFragment StoreEntitySet="requests">
+                <ScalarProperty Name="request_type" ColumnName="request_type" />
+                <ScalarProperty Name="request_date_created" ColumnName="request_date_created" />
+                <ScalarProperty Name="request_video_id" ColumnName="request_video_id" />
+                <ScalarProperty Name="request_lang" ColumnName="request_lang" />
+                <ScalarProperty Name="request_link" ColumnName="request_link" />
+                <ScalarProperty Name="request_name" ColumnName="request_name" />
+                <ScalarProperty Name="request_user_id" ColumnName="request_user_id" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
