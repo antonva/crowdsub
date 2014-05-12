@@ -31,9 +31,8 @@ namespace CrowdSub.Controllers
         public ActionResult create(FormCollection formdata)
         {
             //TODO....
-            var model = (from v in request_repo.get_requests()
-                        where v.id == id
-                        select v);
+            var model = request_repo.get_requests();
+
             return View(model);
         }
 
