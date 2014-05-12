@@ -204,6 +204,7 @@
     <Compile Include="Models\video.cs">
       <DependentUpon>CrowdSubModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModels\SearchModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\i_request_repository.cs" />
     <Compile Include="Repositories\i_upvote_repository.cs" />
@@ -303,6 +304,7 @@
     <Content Include="Views\Home\top_downloads.cshtml" />
     <Content Include="Views\Home\recent.cshtml" />
     <Content Include="Views\Home\top_requests.cshtml" />
+    <Content Include="Views\Video\search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

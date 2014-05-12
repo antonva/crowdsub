@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using CrowdSub.Models;
 using CrowdSub.Repositories;
+using System.Diagnostics;
 
 namespace CrowdSub.Controllers
 {
@@ -26,7 +27,7 @@ namespace CrowdSub.Controllers
         public VideoController(i_video_repository videos)
         {
             video_repo = videos;
-        }
+        } 
 
         public ActionResult profile(int id)
         {
@@ -38,7 +39,9 @@ namespace CrowdSub.Controllers
 
         public ActionResult search(string query)
         {
-            var model = from v in video_repo.get_videos()
+			Debug.WriteLine("query: " + query);
+			
+			var model = from v in video_repo.get_videos()
                         where v.video_title.Contains(query)
                         select v;
 

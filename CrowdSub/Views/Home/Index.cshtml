@@ -1,4 +1,6 @@
-﻿@{
+﻿@*@model CrowdSub.Models.SearchModel*@
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -17,13 +19,11 @@
         @Html.ActionLink("Recent", "recent", "Home")
         
         <div>
-            <input type="text" value="Search" />
-            <select> Language
-                <option value="All">All</option>
-                <option value="English">English</option>
-                <option value="Icelandic">Icelandic</option>
-            </select>
-            <button type="button" value="Search">Search</button>
+            @using (Html.BeginForm("index", "Home", FormMethod.Post))
+            {
+                @Html.TextBox("search")
+                <input type="submit" value="Search" />
+            }
         </div>
 
         <table>

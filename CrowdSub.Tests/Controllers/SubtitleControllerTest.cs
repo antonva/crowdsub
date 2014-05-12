@@ -49,7 +49,7 @@ namespace CrowdSub.Tests.Controllers
 		}
 
 		[TestMethod]
-		public void subtitle_fail_get_profile_by_id_null_exception()
+		public void subtitle_fail_get_profile_by_id_not_available()
 		{
 			// Arrange:
 			List<subtitle> subtitles = new List<subtitle>();
@@ -69,13 +69,10 @@ namespace CrowdSub.Tests.Controllers
 
 			// Act:
 			var id = 5;
-			var result = controller.profile(id);
+			var result = controller.profile(id) as ViewResult;
 
 			// Assert:
-			var view_result = (ViewResult)result;
-			subtitle model = view_result.Model as subtitle;
-			// Id should be null
-			Assert.IsNull(model);
+			Assert.AreEqual("Error", result.ViewBag.Title);
 		}
 
 		[TestMethod]
@@ -83,7 +80,7 @@ namespace CrowdSub.Tests.Controllers
 		{
 			// Arrange:
 			List<subtitle> subtitles = new List<subtitle>();
-			for(int i = 0; i < 4; i++) //add subtitles with the correct
+			for(int i = 0; i < 250; i++) //add subtitles with the correct
 			{                          //video id
 				subtitles.Add(new subtitle
 				{
@@ -114,7 +111,7 @@ namespace CrowdSub.Tests.Controllers
 			var view_result = (ViewResult)result;
 			List<subtitle> model = (view_result.Model as IEnumerable<subtitle>).ToList();
 			//model should contain 4 subtitles
-			Assert.IsTrue(model.Count == 4);
+			Assert.IsTrue(model.Count == 250);
 			for(int i = 0; i < model.Count; i++)
 			{
 				//all subtitles in model should have the correct video_id (1)
@@ -153,14 +150,11 @@ namespace CrowdSub.Tests.Controllers
 			var controller = new SubtitleController(mock_subtitle_repo);
 
 			// Act:
-			var video_id = 3; //set test id to something that cannot be found
-			var result = controller.subtitles_for_video(video_id);
+			var video_id = 5; //set test id to something that cannot be found
+			var result = controller.subtitles_for_video(video_id) as ViewResult;
 
 			// Assert:
-			var view_result = (ViewResult)result;
-			List<subtitle> model = (view_result as IEnumerable<subtitle>).ToList();
-			Debug.WriteLine(model.Count);
-			Assert.IsTrue(model.Count == 0);
+			Assert.IsTrue("Error" == result.ViewBag.Title);
 		}
 		[TestMethod]
 		public void subtitle_delete()
