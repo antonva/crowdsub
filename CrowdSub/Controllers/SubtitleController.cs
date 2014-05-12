@@ -41,7 +41,7 @@ namespace CrowdSub.Controllers
 		{
 			var model = (from s in subtitle_repo.get_subtitles()
 						 where s.subtitle_video_id == video_id
-						 select s).DefaultIfEmpty();
+						 select s);
 
 
 			return View(model);
