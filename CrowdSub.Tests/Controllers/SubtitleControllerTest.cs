@@ -123,7 +123,7 @@ namespace CrowdSub.Tests.Controllers
 		}
 
 		[TestMethod]
-		public void subtitle_get_profile_by_video_id_null_exception()
+		public void subtitle_get_subtitles_by_video_id_null_exception()
 		{
 			// Arrange:
 			List<subtitle> subtitles = new List<subtitle>();
