@@ -48,10 +48,13 @@ namespace CrowdSub.Controllers
         [HttpPost]
         public ActionResult create_video(FormCollection formdata)
         {
-            video model = new video();
-            var q = video_repo.get_videos();
+            video new_video = new video();
             
-            return View();
+            new_video.video_title = Convert.ToString(Request.Form["Title"]);
+            new_video.video_type = Convert.ToString(Request.Form["Type"]);
+            new_video.video_description = Convert.ToString(Request.Form["Description"]);
+            
+            return View(new_video);
         }
 
         [HttpGet]
