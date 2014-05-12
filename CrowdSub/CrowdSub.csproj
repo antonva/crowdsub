@@ -307,11 +307,11 @@
     <Content Include="Views\Home\recent.cshtml" />
     <Content Include="Views\Home\top_requests.cshtml" />
     <Content Include="Views\Video\search.cshtml" />
+    <Content Include="Views\Subtitle\edit_subtitle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="HelperClasses\" />
-    <Folder Include="Views\Subtitle\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

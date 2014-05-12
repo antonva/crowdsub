@@ -15,7 +15,7 @@
             <th>Video type</th>
             <th>Subtitle type</th>
             <th>Subtitle language</th>
-            <th>Votes</th>
+            <th>Downloads</th>
         </tr>
     </thead>
 
@@ -47,7 +47,8 @@
     </tbody>
 </table>
 
-<table>
+
+<!--<table> WE WILL USE THIS
     <thead>
         <tr>
             <th>Title</th>
@@ -59,15 +60,16 @@
     </thead>
     <tbody>
 
-        @foreach (var item in Model)
+        @*@foreach (var item in Model)
         {
             <tr>
                 <td>@item.video.video_title</td>
                 <td>@item.video.video_type</td>
                 <td>@item.subtitles.subtitle_version</td>
-                <td></td>
+                <td>@item.subtitles.subtitle_language</td>
+                <td>@item.subtitles.subtitle_download_count</td>
             </tr>
-        }
+        }*@
 
     </tbody>
-</table>
+</table>-->

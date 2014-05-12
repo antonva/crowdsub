@@ -61,6 +61,19 @@ namespace CrowdSub.Controllers
 			return View(model);
 		}
 
+        [HttpGet]
+        public ActionResult edit_subtitle(int id)
+        {
+            return View(id);
+        }
+
+        [HttpPost]
+        public ActionResult edit_subtitle(int id)
+        {
+            //Dont know brah
+            return View();
+        }
+
 	}
 }
 
