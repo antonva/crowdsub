@@ -157,7 +157,13 @@ namespace CrowdSub.Tests.Controllers
             List<video> videos = new List<video>();
 
             var testvideo = new FormCollection();
-            
+            testvideo.Add("video_title", "Bathman Begins");
+            testvideo.Add("video_created_by_user_id","1");
+            testvideo.Add("video_year_published","1900");
+            testvideo.Add("video_type","1");
+            testvideo.Add("video_date_created",DateTime.Now.ToString());
+            testvideo.Add("video_date_updated ",DateTime.Now.ToString());
+
             mock_video_repository mock_video_repo = new mock_video_repository(videos);
             var controller = new VideoController(mock_video_repo);
 

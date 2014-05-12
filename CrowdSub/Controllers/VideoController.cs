@@ -48,9 +48,9 @@ namespace CrowdSub.Controllers
         public ActionResult create_video(FormCollection formdata)
         {
             video model = new video();
-            var q = video_repo.get_videos();
-            
-            return View();
+            UpdateModel(model, formdata);
+            model = video_repo.add(model);
+            return View(model);
         }
 
         public ActionResult delete_video(int id) 
