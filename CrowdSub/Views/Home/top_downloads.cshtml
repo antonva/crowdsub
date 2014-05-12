@@ -1,0 +1,72 @@
+﻿@model IEnumerable<CrowdSub.Models.video>
+
+@{
+    ViewBag.Title = "Top Downloads";
+}
+
+<h2>Top downloads</h2>
+
+
+<!--This is a view (cshtml) for the Top requests-->
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Video type</th>
+            <th>Subtitle type</th>
+            <th>Subtitle language</th>
+            <th>Votes</th>
+        </tr>
+    </thead>
+
+
+    <!--Here below there should be a Razor code with forloop which access the database for the top downloads (?)
+        ATH newsapplication verkefnið-->
+    <tbody>
+        <tr>
+            <td>Braveheart</td>
+            <td>Movie</td>
+            <td>Hearing impaired</td>
+            <td>English</td>
+            <td>132</td>
+        </tr>
+        <tr>
+            <td>Batman</td>
+            <td>Movie</td>
+            <td>Extended</td>
+            <td>Icelandic</td>
+            <td>564</td>
+        </tr>
+        <tr>
+            <td>Suits</td>
+            <td>TV shows</td>
+            <td>Hearing impaired</td>
+            <td>Icelandic</td>
+            <td>5433</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Video type</th>
+            <th>Subtitle type</th>
+            <th>Subtitle language</th>
+            <th>Votes</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.video_title</td>
+                <td>@item.video_type</td>
+                <td></td>
+            </tr>
+        }
+
+    </tbody>
+</table>

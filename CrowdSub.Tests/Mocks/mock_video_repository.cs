@@ -36,7 +36,18 @@ namespace CrowdSub.Tests.Mocks
 
         public bool delete(int id)
         {
-            throw new NotImplementedException();
+            video video_to_delete = _videos.Where(x => x.id == id).FirstOrDefault();
+            if (video_to_delete != null) 
+            {
+                var vid = (from v in _videos
+                           where v.id == id
+                           select v).FirstOrDefault();
+
+                _videos.Remove(vid);
+
+                return true;
+            }
+            return false;
         }
     }
 }

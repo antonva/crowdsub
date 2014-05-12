@@ -1,66 +1,90 @@
 ﻿@model CrowdSub.Models.video
 
 @{
-    ViewBag.Title = "Profile";
+    ViewBag.Title = Html.DisplayFor(model => model.video_title);
 }
 
-<h2>Profile</h2>
 
-<div>
-    <h4>video</h4>
+<div> <!--Header that contains the video title info-->
+    <ul>
+        <li>@Html.DisplayFor(model => model.video_title)//video_title</li>
+        <li>@Html.DisplayFor(model => model.video_type)//video_type</li>
+        <li>@Html.DisplayFor(model => model.video_year_published) //video_year_published</li>
+    </ul>
+</div>
+
+<div> <!--The image of the video and a short description-->
 	<hr />
-    <dl class="dl-horizontal">
+
+    <div>
+        <span>!!!!!Some image!!!!!!</span>
+        @Html.DisplayFor(Model => Model.video_description) <!--Video description-->
+                
+    </div>
+</div>
+
+      
+    <div> <!--Buttons that redirects or allows some action-->
+        <button type="button">Edit</button>
+        <button type="button">Upload</button>
+        <button type="button">Download</button>
+        <button type="button">Export As</button>
+        <button type="button">Request</button>
+    </div>
+
+    <!--<dl class="dl-horizontal">  not relvant
         <dt>
-            @Html.DisplayNameFor(model => model.video_title)
+            @@Html.DisplayNameFor(model => model.video_title)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.video_title)
+            @@Html.DisplayFor(model => model.video_title)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.video_type)
+            @@Html.DisplayNameFor(model => model.video_type)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.video_type)
+            @@Html.DisplayFor(model => model.video_type)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.video_year_published)
+            @@Html.DisplayNameFor(model => model.video_year_published)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.video_year_published)
+            @@Html.DisplayFor(model => model.video_year_published)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.video_date_created)
+            @@Html.DisplayNameFor(model => model.video_date_created)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.video_date_created)
+            @@Html.DisplayFor(model => model.video_date_created)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.video_date_updated)
+            @@Html.DisplayNameFor(model => model.video_date_updated)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.video_date_updated)
+            @@Html.DisplayFor(model => model.video_date_updated)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.user.user_name)
+            @@Html.DisplayNameFor(model => model.user.user_name)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.user.user_name)
+            @@Html.DisplayFor(model => model.user.user_name)
         </dd>
 
     </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+</div>-->
+
+<!--<p> Not relevant
+    @@Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @@Html.ActionLink("Back to List", "Index")
+</p>-->

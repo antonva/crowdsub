@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using CrowdSub.Models;
+using System.Web.Mvc;
 
 namespace CrowdSub.Repositories
 {
@@ -23,6 +24,7 @@ namespace CrowdSub.Repositories
             throw new NotImplementedException();
         }
 
+
         public request edit(int id, request req)
         {
             throw new NotImplementedException();
@@ -30,7 +32,18 @@ namespace CrowdSub.Repositories
 
         public bool del(int id)
         {
-            throw new NotImplementedException();
+            int? request_id = db.requests.Where(x => x.id == id).FirstOrDefault().id;
+            if(request_id != null)
+            {
+                var request_del = (from r in db.requests
+                                   where r.id == id
+                                    select r).FirstOrDefault();
+                db.requests.Remove(request_del);
+                db.SaveChanges();
+
+                return true;
+            }
+            return false;
         }
     }
 }

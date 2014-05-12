@@ -189,9 +189,6 @@
     <Compile Include="Models\request.cs">
       <DependentUpon>CrowdSubModels.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\request_comments.cs">
-      <DependentUpon>CrowdSubModels.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\subtitle.cs">
       <DependentUpon>CrowdSubModels.tt</DependentUpon>
     </Compile>
@@ -207,6 +204,8 @@
     <Compile Include="Models\video.cs">
       <DependentUpon>CrowdSubModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModels\SearchModel.cs" />
+    <Compile Include="Models\ViewModels\video_profile_model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\i_request_repository.cs" />
     <Compile Include="Repositories\i_upvote_repository.cs" />
@@ -290,7 +289,6 @@
     <Content Include="Views\User\Details.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
-    <Content Include="Views\Video\Create.cshtml" />
     <Content Include="Views\Video\Delete.cshtml" />
     <Content Include="Views\Video\Details.cshtml" />
     <Content Include="Views\Video\Edit.cshtml" />
@@ -302,6 +300,12 @@
     <Content Include="Views\Request\Index.cshtml" />
     <Content Include="Views\Shared\could_not_be_found.cshtml" />
     <Content Include="Views\Video\Profile.cshtml" />
+    <Content Include="Views\Video\create_video.cshtml" />
+    <Content Include="Views\Home\all_requests.cshtml" />
+    <Content Include="Views\Home\top_downloads.cshtml" />
+    <Content Include="Views\Home\recent.cshtml" />
+    <Content Include="Views\Home\top_requests.cshtml" />
+    <Content Include="Views\Video\search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

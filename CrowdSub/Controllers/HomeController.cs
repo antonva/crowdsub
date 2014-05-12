@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CrowdSub.Models;
+using System.Diagnostics;
 
 namespace CrowdSub.Controllers
 {
@@ -18,6 +20,12 @@ namespace CrowdSub.Controllers
 
             return View();
         }
+
+		[HttpPost]
+		public ActionResult index(string search)
+		{
+			return RedirectToAction("search", "Video", new { query = search });
+		}
 
         [HttpGet]
         public ActionResult about()
@@ -59,6 +67,30 @@ namespace CrowdSub.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult all_requests()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult top_downloads()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult recent()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult top_requests()
+        {
             return View();
         }
 

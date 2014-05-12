@@ -25,12 +25,11 @@ namespace CrowdSub.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<request_comments> request_comments { get; set; }
-        public virtual DbSet<request> requests { get; set; }
         public virtual DbSet<subtitle_comments> subtitle_comments { get; set; }
         public virtual DbSet<subtitle> subtitles { get; set; }
         public virtual DbSet<upvote> upvotes { get; set; }
         public virtual DbSet<user> users { get; set; }
         public virtual DbSet<video> videos { get; set; }
+        public virtual DbSet<request> requests { get; set; }
     }
 }

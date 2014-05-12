@@ -29,7 +29,9 @@ namespace CrowdSub.Tests.Mocks
 
         public request add(request req)
         {
-            throw new NotImplementedException();
+            _requests.Add(req);
+            int id = _requests.OrderByDescending(x => x.id).First().id;
+            return _requests.Where(x => x.id == id).FirstOrDefault();
         }
 
         public request edit(int id, request req)
@@ -39,7 +41,18 @@ namespace CrowdSub.Tests.Mocks
 
         public bool del(int id)
         {
-            throw new NotImplementedException();
+            int? request_id = _requests.Where(x => x.id == id).FirstOrDefault().id;
+            if (request_id != null)
+            {
+                var request = (from r in _requests
+                               where r.id == id
+                               select r).FirstOrDefault();
+
+                _requests.Remove(request);
+
+                return true;
+            }
+            return false;
         }
     }
 }

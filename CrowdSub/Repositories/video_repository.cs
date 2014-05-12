@@ -29,12 +29,26 @@ namespace CrowdSub.Repositories
 
         public video edit(int id, video video)
         {
+            
             throw new NotImplementedException();
         }
 
         public bool delete(int id)
         {
-            throw new NotImplementedException();
+            video video_to_delete = db.videos.Where(x => x.id == id).FirstOrDefault();
+            if (video_to_delete != null) 
+            {
+                var video_del = (from v in db.videos
+                                where v.id == id
+                                select v).FirstOrDefault();
+
+                db.videos.Remove(video_del);
+                db.SaveChanges();
+
+                return true;
+            }
+            
+            return false;
         }
     }
 }
