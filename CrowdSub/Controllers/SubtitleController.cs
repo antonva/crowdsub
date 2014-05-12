@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using CrowdSub.Models;
 using CrowdSub.Repositories;
+using System.Diagnostics;
 
 namespace CrowdSub.Controllers
 {
@@ -29,7 +30,7 @@ namespace CrowdSub.Controllers
 
 			if (model == null) // if video profile does not exist
 			{  // show user that the desired video profile could not be found
-				return View("~/Views/Shared/could_not_be_found");
+				return View("~/Views/Shared/Error.cshtml");
 			}
 			else
 			{ // else return the appropriate video profile
@@ -42,7 +43,12 @@ namespace CrowdSub.Controllers
 			var model = (from s in subtitle_repo.get_subtitles()
 						 where s.subtitle_video_id == video_id
 						 select s);
-
+			//if LINQ result is empty, we return error view
+			if(!model.Any())
+			{
+				Debug.WriteLine("List is empty!");
+				return View("~/Views/Shared/Error.cshtml");
+			}
 
 			return View(model);
 		}

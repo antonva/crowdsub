@@ -1,0 +1,69 @@
+﻿@model IEnumerable<CrowdSub.Models.video>
+
+@{
+    ViewBag.Title = "search";
+}
+
+<h2>search</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Title
+        </th>
+        <th>
+            Video type
+        </th>
+        <th>
+            Year published 
+        </th>
+        <th>
+            Date Created
+        </th>
+        <th>
+            Date updated
+        </th>
+        <th>
+           Description
+        </th>
+        <th>
+            User 
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_year_published)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_date_created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_date_updated)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.user.user_name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
