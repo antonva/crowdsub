@@ -14,20 +14,20 @@
         <hr />
         @Html.ValidationSummary(true)
 
-        <div class="form-group">
+        <!--<div class="form-group">
             @Html.LabelFor(model => model.id, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.id)
                 @Html.ValidationMessageFor(model => model.id)
             </div>
-        </div>
+        </div>-->
 
-        <div class="form-group">
+        <!--<div class="form-group">
             @Html.LabelFor(model => model.video_created_by_user_id, "video_created_by_user_id", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 
             </div>
-        </div>
+        </div>-->
 
         <div class="form-group">
             @Html.LabelFor(model => model.video_title, new { @class = "control-label col-md-2" })
@@ -40,7 +40,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.video_type, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.video_type)
+                @Html.DropDownListFor(model => model.video_type, ViewBag.items as List<SelectListItem>)
+                <!--@Html.EditorFor(model => model.video_type)-->
                 @Html.ValidationMessageFor(model => model.video_type)
             </div>
         </div>
@@ -53,21 +54,21 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <!--<div class="form-group">
             @Html.LabelFor(model => model.video_date_created, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.video_date_created)
                 @Html.ValidationMessageFor(model => model.video_date_created)
             </div>
-        </div>
+        </div>-->
 
-        <div class="form-group">
+        <!--<div class="form-group">
             @Html.LabelFor(model => model.video_date_updated, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.video_date_updated)
                 @Html.ValidationMessageFor(model => model.video_date_updated)
             </div>
-        </div>
+        </div>-->
 
         <div class="form-group">
             @Html.LabelFor(model => model.video_description, new { @class = "control-label col-md-2" })
