@@ -38,7 +38,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.ActionLink(item.video_title, "Profile", new { id = item.id })
+            @Html.ActionLink(item.video_title, "Profile", new { id = item.id }) <!--Link leads to profile for video title-->
         </td>
         @*<td>
             @Html.DisplayFor(modelItem => item.video_type)
