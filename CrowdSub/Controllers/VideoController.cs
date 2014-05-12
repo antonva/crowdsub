@@ -53,7 +53,12 @@ namespace CrowdSub.Controllers
             new_video.video_title = Convert.ToString(Request.Form["Title"]);
             new_video.video_type = Convert.ToString(Request.Form["Type"]);
             new_video.video_description = Convert.ToString(Request.Form["Description"]);
+            new_video.video_created_by_user_id = 69;
+
+            video_repo.add(new_video);
             
+            RedirectToAction("Create");
+
             return View(new_video);
         }
 
