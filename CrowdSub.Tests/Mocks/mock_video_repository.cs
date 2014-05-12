@@ -36,13 +36,18 @@ namespace CrowdSub.Tests.Mocks
 
         public bool delete(int id)
         {
-            var vid = (from v in _videos
-                      where v.id == id
-                      select v).FirstOrDefault();
+            int video_id = _videos.Where(x => x.id == id).FirstOrDefault().id;
+            if (video_id != null) 
+            {
+                var vid = (from v in _videos
+                           where v.id == id
+                           select v).FirstOrDefault();
 
-            _videos.Remove(vid);
+                _videos.Remove(vid);
 
-            return true;
+                return true;
+            }
+            return false;
         }
     }
 }
