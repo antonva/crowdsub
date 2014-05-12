@@ -48,6 +48,13 @@ namespace CrowdSub.Controllers
         [HttpPost]
         public ActionResult create_video(FormCollection formdata)
         {
+            List<SelectListItem> items = new List<SelectListItem>();
+
+            items.Add(new SelectListItem { Text = "Movie", Value = "Movie" });
+            items.Add(new SelectListItem { Text = "Tv-Show", Value = "Tv-Show" });
+
+            ViewBag.items = items;
+
             video new_video = new video();
             
             new_video.video_title = Convert.ToString(Request.Form["Title"]);
@@ -65,6 +72,13 @@ namespace CrowdSub.Controllers
         [HttpGet]
         public ActionResult create_video() 
         {
+            List<SelectListItem> items = new List<SelectListItem>();
+
+            items.Add(new SelectListItem { Text = "Movie", Value = "Movie" });
+            items.Add(new SelectListItem { Text = "Tv-Show", Value = "Tv-Show" });
+
+            ViewBag.items = items;
+
             return View();
         }
 
