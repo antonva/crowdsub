@@ -1,17 +1,16 @@
 ﻿@model CrowdSub.Models.video
 
 @{
-    ViewBag.Title = "create_video";
+    ViewBag.Title = "Create Video Profile";
 }
 
-<h2>create_video</h2>
+<h2>Create Video Profile</h2>
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>video</h4>
         <hr />
         @Html.ValidationSummary(true)
 
