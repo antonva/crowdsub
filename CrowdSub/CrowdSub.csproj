@@ -299,6 +299,10 @@
     <Content Include="Views\Shared\could_not_be_found.cshtml" />
     <Content Include="Views\Video\Profile.cshtml" />
     <Content Include="Views\Video\create_video.cshtml" />
+    <Content Include="Views\Home\all_requests.cshtml" />
+    <Content Include="Views\Home\top_downloads.cshtml" />
+    <Content Include="Views\Home\recent.cshtml" />
+    <Content Include="Views\Home\top_requests.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
