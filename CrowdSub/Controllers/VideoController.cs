@@ -45,6 +45,7 @@ namespace CrowdSub.Controllers
             return View(model);
         }
 
+        [HttpPost]
         public ActionResult create_video(FormCollection formdata)
         {
             video model = new video();
@@ -53,13 +54,16 @@ namespace CrowdSub.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult create_video() 
+        {
+            return View();
+        }
+
         public ActionResult delete_video(int id) 
         {
             video_repo.delete(id);
-
-            var model = from v in video_repo.get_videos()
-                        where v.id == id
-                        select v;
+            var model = video_repo.get_videos();
 
             return View(model);
         }

@@ -5,16 +5,6 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="crowddbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="request_comments">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="rc_request_id" Type="int" Nullable="false" />
-          <Property Name="rc_user_id" Type="int" Nullable="false" />
-          <Property Name="rc_comment" Type="varchar" MaxLength="1024" Nullable="false" />
-          <Property Name="rc_date_created" Type="datetime" Nullable="false" />
-        </EntityType>
         <EntityType Name="requests">
           <Key>
             <PropertyRef Name="id" />
@@ -23,10 +13,10 @@
           <Property Name="request_user_id" Type="int" Nullable="false" />
           <Property Name="request_name" Type="char" MaxLength="255" Nullable="false" />
           <Property Name="request_link" Type="char" MaxLength="255" />
-          <Property Name="request_type" Type="char" MaxLength="255" Nullable="false" />
           <Property Name="request_lang" Type="int" Nullable="false" />
           <Property Name="request_video_id" Type="int" />
           <Property Name="request_date_created" Type="datetime" Nullable="false" />
+          <Property Name="request_type" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="subtitle_comments">
           <Key>
@@ -82,31 +72,8 @@
           <Property Name="video_year_published" Type="int" />
           <Property Name="video_date_created" Type="date" Nullable="false" />
           <Property Name="video_date_updated" Type="date" Nullable="false" />
+          <Property Name="video_description" Type="char" MaxLength="1024" />
         </EntityType>
-        <Association Name="FK_request_comments_0">
-          <End Role="requests" Type="Self.requests" Multiplicity="1" />
-          <End Role="request_comments" Type="Self.request_comments" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="requests">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="request_comments">
-              <PropertyRef Name="rc_request_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_request_comments_1">
-          <End Role="users" Type="Self.users" Multiplicity="1" />
-          <End Role="request_comments" Type="Self.request_comments" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="users">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="request_comments">
-              <PropertyRef Name="rc_user_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_requests_0">
           <End Role="users" Type="Self.users" Multiplicity="1" />
           <End Role="requests" Type="Self.requests" Multiplicity="*" />
@@ -216,21 +183,12 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="crowddbModelStoreContainer">
-          <EntitySet Name="request_comments" EntityType="Self.request_comments" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="requests" EntityType="Self.requests" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="subtitle_comments" EntityType="Self.subtitle_comments" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="subtitles" EntityType="Self.subtitles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="upvotes" EntityType="Self.upvotes" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="videos" EntityType="Self.videos" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_request_comments_0" Association="Self.FK_request_comments_0">
-            <End Role="requests" EntitySet="requests" />
-            <End Role="request_comments" EntitySet="request_comments" />
-          </AssociationSet>
-          <AssociationSet Name="FK_request_comments_1" Association="Self.FK_request_comments_1">
-            <End Role="users" EntitySet="users" />
-            <End Role="request_comments" EntitySet="request_comments" />
-          </AssociationSet>
           <AssociationSet Name="FK_requests_0" Association="Self.FK_requests_0">
             <End Role="users" EntitySet="users" />
             <End Role="requests" EntitySet="requests" />
@@ -272,18 +230,6 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="crowddbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="request_comments">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="rc_request_id" Type="Int32" Nullable="false" />
-          <Property Name="rc_user_id" Type="Int32" Nullable="false" />
-          <Property Name="rc_comment" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="request" Relationship="Self.FK_request_comments_0" FromRole="request_comments" ToRole="requests" />
-          <NavigationProperty Name="user" Relationship="Self.FK_request_comments_1" FromRole="request_comments" ToRole="users" />
-          <Property Name="rc_date_created" Type="DateTime" Nullable="false" Precision="3" />
-        </EntityType>
         <EntityType Name="request">
           <Key>
             <PropertyRef Name="id" />
@@ -292,10 +238,9 @@
           <Property Name="request_user_id" Type="Int32" Nullable="false" />
           <Property Name="request_name" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="request_link" Type="String" MaxLength="255" FixedLength="true" Unicode="false" />
-          <Property Name="request_type" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="request_type" Type="String" Nullable="false" />
           <Property Name="request_lang" Type="Int32" Nullable="false" />
           <Property Name="request_video_id" Type="Int32" />
-          <NavigationProperty Name="request_comments" Relationship="Self.FK_request_comments_0" FromRole="requests" ToRole="request_comments" />
           <NavigationProperty Name="user" Relationship="Self.FK_requests_0" FromRole="requests" ToRole="users" />
           <NavigationProperty Name="video" Relationship="Self.FK_requests_1" FromRole="requests" ToRole="videos" />
           <NavigationProperty Name="upvotes" Relationship="Self.FK_upvotes_0" FromRole="requests" ToRole="upvotes" />
@@ -349,7 +294,6 @@
           <Property Name="user_role" Type="Int32" Nullable="false" />
           <Property Name="user_password" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="user_email" Type="String" MaxLength="255" FixedLength="true" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="request_comments" Relationship="Self.FK_request_comments_1" FromRole="users" ToRole="request_comments" />
           <NavigationProperty Name="requests" Relationship="Self.FK_requests_0" FromRole="users" ToRole="requests" />
           <NavigationProperty Name="subtitle_comments" Relationship="Self.FK_subtitle_comments_0" FromRole="users" ToRole="subtitle_comments" />
           <NavigationProperty Name="subtitles" Relationship="Self.FK_subtitles_0" FromRole="users" ToRole="subtitles" />
@@ -371,31 +315,8 @@
           <NavigationProperty Name="requests" Relationship="Self.FK_requests_1" FromRole="videos" ToRole="requests" />
           <NavigationProperty Name="subtitles" Relationship="Self.FK_subtitles_1" FromRole="videos" ToRole="subtitles" />
           <NavigationProperty Name="user" Relationship="Self.FK_videos_0" FromRole="videos" ToRole="users" />
+          <Property Name="video_description" Type="String" MaxLength="1024" FixedLength="true" Unicode="false" />
         </EntityType>
-        <Association Name="FK_request_comments_0">
-          <End Role="requests" Type="Self.request" Multiplicity="1" />
-          <End Role="request_comments" Type="Self.request_comments" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="requests">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="request_comments">
-              <PropertyRef Name="rc_request_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_request_comments_1">
-          <End Role="users" Type="Self.user" Multiplicity="1" />
-          <End Role="request_comments" Type="Self.request_comments" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="users">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="request_comments">
-              <PropertyRef Name="rc_user_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_requests_0">
           <End Role="users" Type="Self.user" Multiplicity="1" />
           <End Role="requests" Type="Self.request" Multiplicity="*" />
@@ -505,21 +426,12 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="crowddbEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="request_comments" EntityType="Self.request_comments" />
           <EntitySet Name="requests" EntityType="Self.request" />
           <EntitySet Name="subtitle_comments" EntityType="Self.subtitle_comments" />
           <EntitySet Name="subtitles" EntityType="Self.subtitle" />
           <EntitySet Name="upvotes" EntityType="Self.upvote" />
           <EntitySet Name="users" EntityType="Self.user" />
           <EntitySet Name="videos" EntityType="Self.video" />
-          <AssociationSet Name="FK_request_comments_0" Association="Self.FK_request_comments_0">
-            <End Role="requests" EntitySet="requests" />
-            <End Role="request_comments" EntitySet="request_comments" />
-          </AssociationSet>
-          <AssociationSet Name="FK_request_comments_1" Association="Self.FK_request_comments_1">
-            <End Role="users" EntitySet="users" />
-            <End Role="request_comments" EntitySet="request_comments" />
-          </AssociationSet>
           <AssociationSet Name="FK_requests_0" Association="Self.FK_requests_0">
             <End Role="users" EntitySet="users" />
             <End Role="requests" EntitySet="requests" />
@@ -563,17 +475,6 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="crowddbModelStoreContainer" CdmEntityContainer="crowddbEntities">
-          <EntitySetMapping Name="request_comments">
-            <EntityTypeMapping TypeName="crowddbModel.request_comments">
-              <MappingFragment StoreEntitySet="request_comments">
-                <ScalarProperty Name="rc_date_created" ColumnName="rc_date_created" />
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="rc_request_id" ColumnName="rc_request_id" />
-                <ScalarProperty Name="rc_user_id" ColumnName="rc_user_id" />
-                <ScalarProperty Name="rc_comment" ColumnName="rc_comment" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="requests">
             <EntityTypeMapping TypeName="crowddbModel.request">
               <MappingFragment StoreEntitySet="requests">
@@ -638,6 +539,7 @@
           <EntitySetMapping Name="videos">
             <EntityTypeMapping TypeName="crowddbModel.video">
               <MappingFragment StoreEntitySet="videos">
+                <ScalarProperty Name="video_description" ColumnName="video_description" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="video_created_by_user_id" ColumnName="video_created_by_user_id" />
                 <ScalarProperty Name="video_title" ColumnName="video_title" />

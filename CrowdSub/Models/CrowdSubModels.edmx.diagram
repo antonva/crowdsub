@@ -5,15 +5,12 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="0a7162dfc8b7423d8f34637dea6928e2" Name="Diagram1">
-        <EntityTypeShape EntityType="crowddbModel.request_comments" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
         <EntityTypeShape EntityType="crowddbModel.request" Width="1.5" PointX="5.25" PointY="13.375" IsExpanded="true" />
         <EntityTypeShape EntityType="crowddbModel.subtitle_comments" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
         <EntityTypeShape EntityType="crowddbModel.subtitle" Width="1.5" PointX="8.25" PointY="13.625" IsExpanded="true" />
         <EntityTypeShape EntityType="crowddbModel.upvote" Width="1.5" PointX="7.5" PointY="11" IsExpanded="true" />
         <EntityTypeShape EntityType="crowddbModel.user" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
         <EntityTypeShape EntityType="crowddbModel.video" Width="1.5" PointX="3" PointY="19.5" IsExpanded="true" />
-        <AssociationConnector Association="crowddbModel.FK_request_comments_0" ManuallyRouted="false" />
-        <AssociationConnector Association="crowddbModel.FK_request_comments_1" ManuallyRouted="false" />
         <AssociationConnector Association="crowddbModel.FK_requests_0" ManuallyRouted="false" />
         <AssociationConnector Association="crowddbModel.FK_requests_1" ManuallyRouted="false" />
         <AssociationConnector Association="crowddbModel.FK_upvotes_0" ManuallyRouted="false" />

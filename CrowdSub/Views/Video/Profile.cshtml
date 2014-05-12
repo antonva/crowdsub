@@ -1,15 +1,76 @@
 ﻿@model CrowdSub.Models.video
 
 @{
-    ViewBag.Title = "Profile";
+    ViewBag.Title = Html.DisplayFor(model => model.video_title);
 }
 
-<h2>Profile</h2>
 
-<div>
-    <h4>video</h4>
+<div> <!--Header that contains the video title info-->
+    <ul>
+        <li>@Html.DisplayFor(model => model.video_title)//video_title</li>
+        <li>@Html.DisplayFor(model => model.video_type)//video_type</li>
+        <li>@Html.DisplayFor(model => model.video_year_published) //video_year_published</li>
+    </ul>
+</div>
+
+<div> <!--The image of the video and a short description-->
 	<hr />
-    <dl class="dl-horizontal">
+
+    <div>
+        <span>Some image
+        <p>DESCRIPTION: Lorizzle ipsizzle dolor sizzle rizzle, bling bling adipiscing stuff. Nullizzle brizzle velit, daahng dawg volutpizzle, suscipit quis, gravida izzle, arcu. Dawg eget tortor. Break it down dope. Phat at dolor dapibizzle turpis get down get down i saw beyonces tizzles and my pizzle went crizzle. Maurizzle shizznit nibh izzle turpizzle. Shizzlin dizzle in tortor. Pellentesque sure rhoncizzle pimpin'. In fo shizzle mah nizzle fo rizzle, mah home g-dizzle habitasse platea dictumst. Ghetto boofron. Rizzle tellus urna, pretizzle yo, mattizzle ac, eleifend go to hizzle, nunc. Sure suscipit. Integizzle ghetto nizzle sizzle go to hizzle.</p>
+        </span> 
+    </div>
+</div>
+
+    <div>
+        <p>Choose language</p>
+        <select>
+            <option value="English">English</option>
+            <option value="Icelandic">Icelandic</option>
+        </select>
+    </div>
+    <table> <!--The table for the video subtitles-->
+        <caption>Subtitles Available</caption>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Date last modified</th>
+                <th>Upvotes</th>
+                <th>Last modified by</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hearing impaired</td>
+                <td>25.01.2014</td>
+                <td>6847</td>
+                <td>HólMaR</td>
+            </tr>
+            <tr>
+                <td>Original Version</td>
+                <td>26.12.2013</td>
+                <td>254</td>
+                <td>HólMaR</td>
+            </tr>
+            <tr>
+                <td>Extended version</td>
+                <td>12.11.2011</td>
+                <td>752</td>
+                <td>HólMaR</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div> <!--Buttons that redirects or allows some action-->
+        <button type="button">Edit</button>
+        <button type="button">Upload</button>
+        <button type="button">Download</button>
+        <button type="button">Export As</button>
+        <button type="button">Request</button>
+    </div>
+
+    <!--<dl class="dl-horizontal">  not relvant
         <dt>
             @Html.DisplayNameFor(model => model.video_title)
         </dt>
@@ -59,8 +120,9 @@
         </dd>
 
     </dl>
-</div>
-<p>
+</div>-->
+
+<!--<p> Not relevant
     @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>-->
