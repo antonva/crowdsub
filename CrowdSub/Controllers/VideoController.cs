@@ -55,6 +55,7 @@ namespace CrowdSub.Controllers
 
             items.Add(new SelectListItem { Text = "Movie", Value = "Movie" });
             items.Add(new SelectListItem { Text = "Tv-Show", Value = "Tv-Show" });
+            items.Add(new SelectListItem { Text = "Other", Value = "Other" });
 
             ViewBag.items = items;
 
@@ -79,6 +80,7 @@ namespace CrowdSub.Controllers
 
             items.Add(new SelectListItem { Text = "Movie", Value = "Movie" });
             items.Add(new SelectListItem { Text = "Tv-Show", Value = "Tv-Show" });
+            items.Add(new SelectListItem { Text = "Other", Value = "Other" });
 
             ViewBag.items = items;
 

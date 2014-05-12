@@ -135,17 +135,17 @@ namespace CrowdSub.Tests.Controllers
             var controller = new VideoController(mock_video_repo);
 
             //Act
-            var title = "Video100";
+            var title = "5";
             var result = controller.search(title);
 
             //Assert
             var view_result = (ViewResult)result;
 
             List<video> model = (view_result.Model as IEnumerable<video>).ToList();
-            Assert.IsFalse(model.Count < 1);
+            Assert.IsTrue(model.Count < 1);
             for (int i = 0; i < model.Count; i++)
-            {
-                Assert.IsTrue(model[i].video_title.Contains(title));
+            {  
+                Assert.IsFalse(model[i].video_title.Contains(title));
             }
         }
 
@@ -156,7 +156,11 @@ namespace CrowdSub.Tests.Controllers
             //Arrange
             List<video> videos = new List<video>();
 
-            var testvideo = new FormCollection();
+            var testvideo = new FormCollection() { 
+                {"Title", "AnotherValue"},
+                {"Type", "AnotherType"},
+                {"VideoPublished", "AnotherVideoPublished"}
+            };
             
             mock_video_repository mock_video_repo = new mock_video_repository(videos);
             var controller = new VideoController(mock_video_repo);
@@ -178,13 +182,15 @@ namespace CrowdSub.Tests.Controllers
             // This test should fail.
             //Arrange
             List<video> videos = new List<video>();
-            
-            videos.Add(new video
+
+            for (var i = 0; i < 4; i++) 
             {
-                id = 1,
-                video_title = "Video" + 1.ToString()
-            });
-           
+                videos.Add(new video
+                {
+                    id = i,
+                    video_title = "Video" + i.ToString()
+                });
+            }
 
             mock_video_repository mock_video_repo = new mock_video_repository(videos);
             var controller = new VideoController(mock_video_repo);
@@ -194,8 +200,10 @@ namespace CrowdSub.Tests.Controllers
             var result = controller.is_unique_video_title(query);
 
             //Assert
-            
-            Assert.IsTrue(result);
+            for (var i = 0; i < 4; i++) 
+            {
+                Assert.IsFalse(result);
+            }
         }
 
         [TestMethod]
