@@ -35,7 +35,7 @@ namespace CrowdSub.Repositories
 
         public bool delete(int id)
         {
-            int video_id = db.videos.Where(x => x.id == id).FirstOrDefault().id;
+            int? video_id = db.videos.Where(x => x.id == id).FirstOrDefault().id;
             if (video_id != null) 
             {
                 var video_del = (from v in db.videos
