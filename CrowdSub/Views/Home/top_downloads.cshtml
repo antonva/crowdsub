@@ -1,4 +1,4 @@
-﻿@model IEnumerable<CrowdSub.Models.video>
+﻿@model IEnumerable<CrowdSub.Models.top_downloads_model>
 
 @{
     ViewBag.Title = "Top Downloads";
@@ -54,7 +54,7 @@
             <th>Video type</th>
             <th>Subtitle type</th>
             <th>Subtitle language</th>
-            <th>Votes</th>
+            <th>Downloads</th>
         </tr>
     </thead>
     <tbody>
@@ -62,8 +62,9 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.video_title</td>
-                <td>@item.video_type</td>
+                <td>@item.video.video_title</td>
+                <td>@item.video.video_type</td>
+                <td>@item.subtitles.subtitle_version</td>
                 <td></td>
             </tr>
         }
