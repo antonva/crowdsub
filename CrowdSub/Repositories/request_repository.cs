@@ -16,5 +16,21 @@ namespace CrowdSub.Repositories
         {
             return db.requests;
         }
+
+
+        public request add(request req)
+        {
+            throw new NotImplementedException();
+        }
+
+        public request edit(int id, request req)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool del(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

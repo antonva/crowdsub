@@ -10,5 +10,7 @@ namespace CrowdSub.Repositories
 	public interface i_subtitle_repository
 	{
 		IQueryable<subtitle> get_subtitles();
+        subtitle add(subtitle sub);
+        bool delete(int id);
 	}
 }

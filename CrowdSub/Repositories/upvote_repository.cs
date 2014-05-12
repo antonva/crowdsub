@@ -38,5 +38,16 @@ namespace CrowdSub.Repositories
         {
             throw new NotImplementedException();
         }
+
+
+        public upvote add(int request_id, int user_id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public upvote remove(int request_id, int user_id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

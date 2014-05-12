@@ -25,5 +25,30 @@ namespace CrowdSub.Tests.Mocks
         {
             return _requests.AsQueryable();
         }
+
+
+        public request add(request req)
+        {
+            _requests.Add(req);
+            int id = _requests.OrderByDescending(x => x.id).First().id;
+            return _requests.Where(x => x.id == id).FirstOrDefault();
+        }
+
+        public request edit(int id, request req)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool del(int id)
+        {
+            //var req = (from r in _requests
+            //           where r.id == id
+            //           select r).FirstOrDefault();
+
+            //_requests.Remove(req);
+
+            //return true;
+            throw new NotImplementedException();
+        }
     }
 }
