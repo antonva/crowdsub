@@ -47,6 +47,14 @@ namespace CrowdSub.Controllers
 			return View(model);
 		}
 
+		public ActionResult delete_subtitle(int id)
+		{
+			subtitle_repo.delete(id);
+			var model = subtitle_repo.get_subtitles();
+
+			return View(model);
+		}
+
 	}
 }
 
