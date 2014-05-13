@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using CrowdSubMain.Models;
 using CrowdSubMain.DAL;
+using System.Data.Entity;
 
 namespace CrowdSubMain.Repositories
 {
@@ -15,26 +16,23 @@ namespace CrowdSubMain.Repositories
 			return db.requests;
 		}
 
-		public void add(Models.request req)
+		public void add(request req)
 		{
 			db.requests.Add(req);
 			db.SaveChanges();
 		}
 
-		public bool edit(Models.request req)
+		public void edit(request request)
 		{
-			throw new NotImplementedException();
+            db.Entry(request).State = EntityState.Modified;
+            db.SaveChanges();
 		}
 
-		public bool delete(int id)
+		public bool delete(request request)
 		{
-			int? request_id = db.requests.Where(x => x.id == id).FirstOrDefault().id;
-			if(request_id == null)
+			if(request != null)
 			{
-				var request_del = (from r in db.requests
-								   where r.id == id
-								   select r).FirstOrDefault();
-				db.requests.Remove(request_del);
+				db.requests.Remove(request);
 				db.SaveChanges();
 				return true;
 			}

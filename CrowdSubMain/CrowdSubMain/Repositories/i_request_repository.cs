@@ -12,7 +12,7 @@ namespace CrowdSubMain.Repositories
 	{
 		IQueryable<request> get_requests();
 		void add(request req);
-		bool edit(request req);
-		bool delete(int id);
+		void edit(request req);
+		bool delete(request req);
 	}
 }

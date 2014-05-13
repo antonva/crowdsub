@@ -18,10 +18,12 @@ namespace CrowdSubMain.Controllers
         private readonly i_request_repository request_repo;
 
         // GET: /Request/
+        /*
         public ActionResult Index()
         {
             return View(db.requests.ToList());
         }
+        */
 
         // GET: /Request/Details/5
         public ActionResult Details(int? id)
@@ -30,7 +32,7 @@ namespace CrowdSubMain.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            request request = db.requests.Find(id);
+            request request = request_repo.get_requests().Where(x => x.id == id).FirstOrDefault();
             if (request == null)
             {
                 return HttpNotFound();
@@ -53,8 +55,7 @@ namespace CrowdSubMain.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.requests.Add(request);
-                db.SaveChanges();
+                request_repo.add(request);
                 return RedirectToAction("Index");
             }
 
@@ -68,7 +69,7 @@ namespace CrowdSubMain.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            request request = db.requests.Find(id);
+            request request = request_repo.get_requests().Where(x => x.id == id).FirstOrDefault();
             if (request == null)
             {
                 return HttpNotFound();
@@ -85,8 +86,7 @@ namespace CrowdSubMain.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(request).State = EntityState.Modified;
-                db.SaveChanges();
+                request_repo.edit(request);
                 return RedirectToAction("Index");
             }
             return View(request);
@@ -99,7 +99,7 @@ namespace CrowdSubMain.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            request request = db.requests.Find(id);
+            request request = request_repo.get_requests().Where(x => x.id == id).FirstOrDefault();
             if (request == null)
             {
                 return HttpNotFound();
@@ -112,12 +112,12 @@ namespace CrowdSubMain.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            request request = db.requests.Find(id);
-            db.requests.Remove(request);
-            db.SaveChanges();
+            request request = request_repo.get_requests().Where(x => x.id == id).FirstOrDefault();
+            request_repo.delete(request);
             return RedirectToAction("Index");
         }
 
+        /*
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -126,5 +126,6 @@ namespace CrowdSubMain.Controllers
             }
             base.Dispose(disposing);
         }
+        */ 
     }
 }
