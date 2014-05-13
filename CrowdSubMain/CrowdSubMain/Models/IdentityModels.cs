@@ -13,5 +13,7 @@ namespace CrowdSubMain.Models
             : base("crowdbase")
         {
         }
+
+        public System.Data.Entity.DbSet<CrowdSubMain.Models.request> requests { get; set; }
     }
 }
