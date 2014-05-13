@@ -341,7 +341,8 @@ a {
 
 a:hover,
 a:focus {
-  color: #2a6496;
+    /*Change color*/
+  color: rgb(0,0,0);
   text-decoration: underline;
 }
 
@@ -5577,6 +5578,7 @@ a.list-group-item:focus {
 .well-lg {
   padding: 24px;
   border-radius: 6px;
+  background-color: #1cb2b0; /*Change*/
 }
 
 .well-sm {
