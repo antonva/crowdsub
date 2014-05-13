@@ -6,7 +6,7 @@
 
 <h2>All Requests</h2>
 
-<table style="width:50">
+<table width="700" border="1">
     <thead>
         <tr>
             <th>Request Title</th>
@@ -20,16 +20,15 @@
     <tbody>
 
         @*Þarf að klára þegar virkni er komin*@
-        @*@foreach (var item in Model)
-        {
-        <tr>
-            <td>@item.request_name</td>
-            <td>@item.request_lang</td>
-            <td>@item.request_date_created</td>
-            <td>@item.request_type</td>
-            <td>@item.request_link</td>
-        </tr>
-        }*@
-
+        @*@foreach (var item in model)
+            {
+            <tr>
+                <td>@item.request_name</td>
+                <td>@item.request_lang</td>
+                <td>@item.request_date_created</td>
+                <td>@item.request_type</td>
+                <td>@item.request_link</td>
+            </tr>
+            }*@
     </tbody>
 </table>
