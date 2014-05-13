@@ -1,20 +1,23 @@
-﻿
+﻿@model CrowdSub.Models.subtitle
 @{
     ViewBag.Title = "Edit Subtitle";
 }
 
-<h2>Edit Subtitle</h2>
+@Html.DisplayFor(Model => Model.subtitle_version)
 
-<h2>Terminator 2</h2>
 
-<p>Version: Hearing impaired</p>
-<p>Language: English</p>
-<p>Content</p>
-<textarea rows="50" cols="50">
-    GJET TO DA CHOPPPAAA
-</textarea>
+<div>
+    <p>Version: Hearing impaired</p>
+    <p>Language: English</p>
+    <p>Content</p>
+    <textarea rows="5" cols="10">
+        GJET TO DA CHOPPPAAA
+    </textarea>
+</div>
 
-<button type="submit">Save</button>
+<div>
+    <button type="submit">Save</button>
+</div>
 
-<p>Comments</p>
+@Html.DisplayFor(Model => Model.subtitle_language)
 

@@ -204,6 +204,7 @@
     <Compile Include="Models\video.cs">
       <DependentUpon>CrowdSubModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModels\edit_subtitle.cs" />
     <Compile Include="Models\ViewModels\SearchModel.cs" />
     <Compile Include="Models\ViewModels\top_downloads_model.cs" />
     <Compile Include="Models\ViewModels\video_profile_model.cs" />
