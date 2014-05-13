@@ -9,5 +9,6 @@ namespace CrowdSub.Models
     {
         public video video;
         public subtitle subtitles;
+        public request requests; //bætti þessu við ATHUGA hvort það þurfi annað view model eða þetta í lagi?
     }
 }

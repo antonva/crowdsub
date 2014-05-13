@@ -1,0 +1,126 @@
+﻿<#@ include file="CodeSecond.ttinclude"#>
+<#@ output extension=".txt"#>
+<#
+	WriteHeader(codeStringGenerator, fileManager);
+    fileManager.StartNewFile(container.Name + ".partial.cs");
+	BeginNamespace(code);
+#>
+using System;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+<#
+if (container.FunctionImports.Any())
+{
+#>
+using System.Data.Objects;
+using System.Data.Objects.DataClasses;
+using System.Linq;
+<#
+}
+#>
+using <#=escapedNamespace#>.Configurations;
+using <#=escapedNamespace#>.Implementations;
+using <#=escapedNamespace#>.Models;
+
+<#=Accessibility.ForType(container)#> partial class <#=escapedContainerName#> : DbContext
+{
+    public <#=escapedContainerName#>()
+        : this("name=<#=escapedContainerName#>")
+	{
+	}
+
+    public <#=escapedContainerName#>(string connectionString)
+        : base(connectionString)
+    {
+<#
+if (!loader.IsLazyLoadingEnabled(container))
+{
+#>
+        this.Configuration.LazyLoadingEnabled = false;
+<#
+}
+foreach (var entitySet in container.BaseEntitySets.OfType<EntitySet>())
+{
+#>
+		<#=code.Escape(entitySet)#> = new <#=code.Escape(entitySet.ElementType)#>Repository(this, this.Set<<#=code.Escape(entitySet.ElementType)#>>());
+<#
+}
+#>
+    }
+
+    protected override void OnModelCreating(DbModelBuilder modelBuilder)
+    {
+        modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+<#
+foreach (var entity in entities)
+{
+#>
+        modelBuilder.Configurations.Add(new <#=code.Escape(entity)#>Configuration());
+<#
+}
+
+foreach (var complexType in complexTypes)
+{
+#>
+        modelBuilder.Configurations.Add(new <#=code.Escape(complexType)#>Configuration());
+<#}
+#>
+    }
+
+<#
+    foreach (var entitySet in entitySets)
+    {
+#>
+    <#=Accessibility.ForReadOnlyProperty(entitySet)#> <#=code.Escape(entitySet.ElementType)#>Repository <#=code.Escape(entitySet)#> { get; set; }
+<#
+    }
+
+    foreach (var edmFunction in container.FunctionImports)
+    {
+        WriteFunctionImport(typeMapper, codeStringGenerator, edmFunction, modelNamespace, includeMergeOption: false);
+    }
+#>
+}
+<#
+	EndNamespace(code);
+
+	var migrationConfigurationClassName = escapedContainerName + "MigrationsConfiguration";
+    fileManager.StartNewFile(migrationConfigurationClassName + ".cs");
+	BeginNamespace(code);
+#>
+using System.Data.Entity;
+using System.Data.Entity.Migrations;
+
+/// <remarks>
+/// To add new migration run the following script
+/// Add-Migration ${migrationName} -ProjectName "${projectName}" -StartUpProjectName "${projectName}" -ConfigurationTypeName "<#=escapedNamespace#>.<#=migrationConfigurationClassName#>" ConnectionString="Server=localhost;Database=EF;Trusted_Connection=True;" -ConnectionProviderName "System.Data.SqlClient"
+/// Add-Migration InitialCreate -ProjectName "<#=projectName#>" -StartUpProjectName "<#=projectName#>" -ConfigurationTypeName "<#=escapedNamespace#>.<#=migrationConfigurationClassName#>" ConnectionString="Server=localhost;Database=EF;Trusted_Connection=True;" -ConnectionProviderName "System.Data.SqlClient"
+/// </remarks>
+public sealed class <#=migrationConfigurationClassName#> : DbMigrationsConfiguration<<#=escapedContainerName#>>
+{
+    public <#=migrationConfigurationClassName#>()
+    {
+        var dbContextType = typeof(<#=escapedContainerName#>);
+
+        AutomaticMigrationsEnabled = true;
+        MigrationsAssembly = dbContextType.Assembly;
+        MigrationsNamespace = "<#=escapedNamespace#>.Migrations";
+        MigrationsDirectory = "Migrations";
+        ContextType = dbContextType;
+    }
+
+    public static void UpdateSchema(string connectionString)
+    {
+        var migrator = new MigrateDatabaseToLatestVersion<<#=escapedContainerName#>, <#=migrationConfigurationClassName#>>();
+
+        using (var context = new <#=escapedContainerName#>(connectionString))
+        {
+            migrator.InitializeDatabase(context);
+        }
+    }
+}
+<#
+	EndNamespace(code);
+
+	fileManager.Process();
+#>

@@ -1,6 +1,5 @@
 ﻿@*ATHUGA ÞETTA!!!!*@
-@model CrowdSub.Models.top_downloads_model
-
+@model IEnumerable<CrowdSub.Models.top_downloads_model>
 @{
     ViewBag.Title = "Top Downloads";
 }
@@ -8,7 +7,7 @@
 <h2>Top downloads</h2>
 
 <!--This is a view (cshtml) for the Top downloads-->
-<table>
+<table width="400">
     <thead>
         <tr>
             <th>Title</th>
@@ -28,7 +27,7 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.video.video_title</td>
+                <td>@item.video.video_title</td>  <!--CHECK user can click the video title to access the video profile-->
                 <td>@item.video.video_type</td>
                 <td>@item.subtitles.subtitle_version</td>
                 <td>@item.subtitles.subtitle_language</td>

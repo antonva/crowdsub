@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -40,6 +44,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.Extensions" />
@@ -95,8 +100,72 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
+    <Content Include="Configurations\ComplexTypeConfiguration.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplexTypeConfiguration.tt</DependentUpon>
+    </Content>
+    <Content Include="Configurations\EntityTypeConfiguration.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityTypeConfiguration.tt</DependentUpon>
+    </Content>
+    <Content Include="DbContext.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Content>
+    <Content Include="Implementations\Repository.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Content>
+    <Content Include="Models\ComplexType.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplexType.tt</DependentUpon>
+    </Content>
+    <Content Include="Models\Entity.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Entity.tt</DependentUpon>
+    </Content>
+    <Content Include="Models\EnumType.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnumType.tt</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <None Include="CodeSecond.ttinclude" />
+    <None Include="Configurations\ComplexTypeConfiguration.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ComplexTypeConfiguration.txt</LastGenOutput>
+    </None>
+    <None Include="Configurations\EntityTypeConfiguration.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EntityTypeConfiguration.txt</LastGenOutput>
+    </None>
+    <None Include="DbContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DbContext.txt</LastGenOutput>
+    </None>
+    <None Include="Implementations\Repository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Repository.txt</LastGenOutput>
+    </None>
+    <None Include="Models\ComplexType.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ComplexType.txt</LastGenOutput>
+    </None>
+    <None Include="Models\Entity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Entity.txt</LastGenOutput>
+    </None>
+    <None Include="Models\EnumType.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EnumType.txt</LastGenOutput>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -105,7 +174,9 @@
       <Name>CrowdSub</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
