@@ -11,7 +11,7 @@ namespace CrowdSubMain.Repositories
 	interface i_upvote_repository
 	{
 		IQueryable<upvote> get_upvotes();
-		bool add(int request_id, int user_id);
+		void add(int request_id, int user_id);
 		bool delete(int upvote_id);
 	}
 }

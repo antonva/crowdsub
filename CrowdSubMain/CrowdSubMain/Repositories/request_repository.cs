@@ -15,9 +15,10 @@ namespace CrowdSubMain.Repositories
 			return db.requests;
 		}
 
-		public bool add(Models.request req)
+		public void add(Models.request req)
 		{
-			throw new NotImplementedException();
+			db.requests.Add(req);
+			db.SaveChanges();
 		}
 
 		public bool edit(Models.request req)
