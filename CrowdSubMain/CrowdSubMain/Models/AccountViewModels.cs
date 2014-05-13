@@ -46,7 +46,7 @@ namespace CrowdSubMain.Models
     public class RegisterViewModel
     {
         [Required]
-        [Display(Name = "Please enter user name")]
+        [Display(Name = "Choose a user name")]
         public string UserName { get; set; }
 
         [Required]
