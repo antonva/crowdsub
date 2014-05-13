@@ -13,7 +13,7 @@ namespace CrowdSubMain.Repositories
 		private crowd_sub_context db = new crowd_sub_context();
 		public IQueryable<Models.video> get_videos()
 		{
-			throw new NotImplementedException();
+			return db.videos;
 		}
 
 		public void add(Models.video video)

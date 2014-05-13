@@ -30,7 +30,7 @@ namespace CrowdSubMain.Controllers
 			video_repo = videos;
 		}
 
-		public ActionResult profile(int id)
+		public ActionResult Profile(int id)
 		{
 			var model = (from v in video_repo.get_videos()
 						 where v.id == id
@@ -73,6 +73,14 @@ namespace CrowdSubMain.Controllers
         // GET: /Video/Create
         public ActionResult Create()
         {
+            List<SelectListItem> items = new List<SelectListItem>();
+
+            items.Add(new SelectListItem { Text = "Movie", Value = "Movie" });
+            items.Add(new SelectListItem { Text = "Tv-Show", Value = "Tv-Show" });
+            items.Add(new SelectListItem { Text = "Other", Value = "Other" });
+
+            ViewBag.items = items;
+
             return View();
         }
 
@@ -85,11 +93,23 @@ namespace CrowdSubMain.Controllers
         {
             if (ModelState.IsValid)
             {
-                string user_id = User.Identity.GetUserId();
-                Debug.WriteLine(user_id);
-                //video.video_created_by_user_id = user_id;
-				video_repo.add(video);
-                return RedirectToAction("Index");
+                List<SelectListItem> items = new List<SelectListItem>();
+
+                items.Add(new SelectListItem { Text = "Movie", Value = "Movie" });
+                items.Add(new SelectListItem { Text = "Tv-Show", Value = "Tv-Show" });
+                items.Add(new SelectListItem { Text = "Other", Value = "Other" });
+
+                ViewBag.items = items;
+
+                string user_id = User.Identity.GetUserId(); // Get the user id
+                string user_name = User.Identity.GetUserName();
+                video.video_created_by_user_id = user_id;   // Add the user id to the video object
+                video.video_date_created = DateTime.Now;    // Add current time to the object being created
+                video.video_date_updated = DateTime.Now;    // Add curretn time to the object being created
+
+				video_repo.add(video); // Add video to repo
+                
+                return RedirectToAction("Profile", new { id = video.id});
             }
 
             return View(video);
