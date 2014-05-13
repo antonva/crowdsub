@@ -17,13 +17,24 @@ namespace CrowdSubMain.Controllers
 
         private readonly i_request_repository request_repo;
 
+		// Normal constructor.
+		public RequestController()
+		{
+			var requests = new request_repository();
+			request_repo = requests;
+		}
+
+		// Test constructor, takes a repository as argument.
+		public RequestController(i_request_repository requests)
+		{
+			request_repo = requests;
+		}
+
         // GET: /Request/
-        /*
         public ActionResult Index()
         {
-            return View(db.requests.ToList());
+            return View(request_repo.get_requests().ToList());
         }
-        */
 
         // GET: /Request/Details/5
         public ActionResult Details(int? id)
