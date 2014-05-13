@@ -14,8 +14,8 @@ namespace CrowdSub.Controllers
 {
     enum subtitle_language_enum
     {
-        English = "Enlglish",
-        Icelandic = "Icelandic"
+        English = 0,
+        Icelandic = 1
     }
 	public class SubtitleController : Controller
 	{
