@@ -6,33 +6,30 @@
 
 <h2>All Requests</h2>
 
-<table>
+<table style="width:50">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Video Type</th>
-            <th>Subtitle Type</th>
-            <th>Upvotes</th>
+            <th>Request Title</th>
+            <th>Request Language</th>
+            <th>Date Requested</th>
+            <th>Request Type</th>
+            <th>Request Link</th>
         </tr>
     </thead>
+
     <tbody>
+
+        @*Þarf að klára þegar virkni er komin*@
+        @*@foreach (var item in Model)
+        {
         <tr>
-            <td>Batman</td>
-            <td>Movie</td>
-            <td>Hearing impaired</td>
-            <td>13544</td>
+            <td>@item.request_name</td>
+            <td>@item.request_lang</td>
+            <td>@item.request_date_created</td>
+            <td>@item.request_type</td>
+            <td>@item.request_link</td>
         </tr>
-        <tr>
-            <td>Superman</td>
-            <td>Movie</td>
-            <td>Extended</td>
-            <td>1337</td>
-        </tr>
-        <tr>
-            <td>Spiderman Comics</td>
-            <td>TV Show</td>
-            <td>Hearing impaired</td>
-            <td>124</td>
-        </tr>
+        }*@
+
     </tbody>
 </table>
