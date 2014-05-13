@@ -26,5 +26,41 @@ namespace CrowdSubMain.Controllers
 
 			return View();
 		}
+
+        [HttpGet]
+        public ActionResult help()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult faq()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult all_requests()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult top_downloads()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult recent()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult top_requests()
+        {
+            return View();
+        }
 	}
 }
