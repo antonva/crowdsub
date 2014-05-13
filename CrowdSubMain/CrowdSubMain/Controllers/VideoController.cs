@@ -70,6 +70,19 @@ namespace CrowdSubMain.Controllers
             return View(video);
         } */
 
+        [HttpGet]    
+        public ActionResult CreateSearch() 
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult CreateSearch(string query)
+        {
+            
+            return View();
+        }
+
         // GET: /Video/Create
         public ActionResult Create()
         {
