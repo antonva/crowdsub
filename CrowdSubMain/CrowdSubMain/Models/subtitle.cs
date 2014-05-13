@@ -8,7 +8,7 @@ namespace CrowdSubMain.Models
 	public class subtitle
 	{
 		public int id { get; set; }
-		public int subtitle_user_id { get; set; }
+		public string subtitle_user_id { get; set; }
 		public int subtitle_video_id { get; set; }
 		public string subtitle_file_path { get; set; }
 		//public int subtitle_version_is_active { get; set; } MAYBE

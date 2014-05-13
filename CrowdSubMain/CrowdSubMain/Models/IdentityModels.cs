@@ -7,11 +7,17 @@ namespace CrowdSubMain.Models
     {
     }
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    /* public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
             : base("crowdbase")
         {
         }
-    }
+
+        public System.Data.Entity.DbSet<CrowdSubMain.Models.request> requests { get; set; }
+
+		public System.Data.Entity.DbSet<CrowdSubMain.Models.subtitle> subtitles { get; set; }
+
+		public System.Data.Entity.DbSet<CrowdSubMain.Models.video> videos { get; set; }
+    } */
 }

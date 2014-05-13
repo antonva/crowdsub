@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CrowdSubMain.Models.subtitle>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.subtitle_user_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subtitle_video_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subtitle_file_path)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subtitle_date_created)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subtitle_download_count)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subtitle_language)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_user_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_video_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_file_path)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_date_created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_download_count)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_language)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

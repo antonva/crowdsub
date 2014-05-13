@@ -1,0 +1,51 @@
+﻿@model IEnumerable<CrowdSubMain.Models.request>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.request_user_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.request_lang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.request_video_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.request_date_created)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_user_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_lang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_video_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_date_created)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

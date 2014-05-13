@@ -8,8 +8,8 @@ namespace CrowdSubMain.Models
 	public class upvote
 	{
 		public int id { get; set; }
-		public Nullable<int> upvote_request_id { get; set; }
-		public Nullable<int> upvote_user_id { get; set; }
+		public int upvote_request_id { get; set; }
+		public string upvote_user_id { get; set; }
 		public System.DateTime upvote_date_create { get; set; }
 
 		public virtual ApplicationUser user { get; set; }

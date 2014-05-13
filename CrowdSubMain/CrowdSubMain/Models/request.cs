@@ -14,7 +14,7 @@ namespace CrowdSubMain.Models
 	public class request
 	{
 		public int id { get; set; }
-		public int request_user_id { get; set; }
+		public string request_user_id { get; set; }
 		//public string request_name { get; set; } WAT
 		//public string request_link { get; set; } MAYBE
 		public language request_lang { get; set; }
