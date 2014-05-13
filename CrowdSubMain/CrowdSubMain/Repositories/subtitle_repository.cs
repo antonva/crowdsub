@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using CrowdSubMain.Models;
 using CrowdSubMain.DAL;
+using System.Data.Entity;
 
 namespace CrowdSubMain.Repositories
 {
@@ -21,14 +22,15 @@ namespace CrowdSubMain.Repositories
 			throw new NotImplementedException();
 		}
 
-		public bool edit(subtitle sub)
+		public void edit(subtitle sub)
 		{
-			throw new NotImplementedException();
+			db.Entry(sub).State = EntityState.Modified;
+			db.SaveChanges();
 		}
 
-		public bool delete(int id)
+		public void delete(subtitle sub)
 		{
-			subtitle subtitle_to_delete = db.subtitles.Where(s => s.id == id).FirstOrDefault();
+			/* subtitle subtitle_to_delete = db.subtitles.Where(s => s.id == id).FirstOrDefault();
 			if (subtitle_to_delete != null)
 			{
 				var subtitle_del = (from s in db.subtitles
@@ -38,7 +40,10 @@ namespace CrowdSubMain.Repositories
 				db.SaveChanges();
 				return true;
 			}
-			return false;
+			return false; */
+
+			db.subtitles.Remove(sub);
+			db.SaveChanges();
 		}
 	}
 }

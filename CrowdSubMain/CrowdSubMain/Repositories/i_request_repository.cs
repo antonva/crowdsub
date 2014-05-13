@@ -8,7 +8,7 @@ using CrowdSubMain.DAL;
 
 namespace CrowdSubMain.Repositories
 {
-	interface i_request_repository
+	public interface i_request_repository
 	{
 		IQueryable<request> get_requests();
 		void add(request req);

@@ -160,6 +160,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SubtitleController.cs" />
+    <Compile Include="Controllers\VideoController.cs" />
     <Compile Include="DAL\crowd_sub_context.cs" />
     <Compile Include="DAL\crowd_sub_initializer.cs" />
     <Compile Include="Global.asax.cs">
@@ -238,6 +240,16 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Subtitle\Create.cshtml" />
+    <Content Include="Views\Subtitle\Delete.cshtml" />
+    <Content Include="Views\Subtitle\Details.cshtml" />
+    <Content Include="Views\Subtitle\Edit.cshtml" />
+    <Content Include="Views\Subtitle\Index.cshtml" />
+    <Content Include="Views\Video\Create.cshtml" />
+    <Content Include="Views\Video\Delete.cshtml" />
+    <Content Include="Views\Video\Details.cshtml" />
+    <Content Include="Views\Video\Edit.cshtml" />
+    <Content Include="Views\Video\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -13,5 +13,9 @@ namespace CrowdSubMain.Models
             : base("crowdbase")
         {
         }
+
+		public System.Data.Entity.DbSet<CrowdSubMain.Models.subtitle> subtitles { get; set; }
+
+		public System.Data.Entity.DbSet<CrowdSubMain.Models.video> videos { get; set; }
     }
 }

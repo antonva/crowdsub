@@ -8,11 +8,11 @@ using CrowdSubMain.DAL;
 
 namespace CrowdSubMain.Repositories
 {
-	interface i_subtitle_repository
+	public interface i_subtitle_repository
 	{
 		IQueryable<subtitle> get_subtitles();
 		void add(subtitle sub);
-		bool edit(subtitle sub);
-		bool delete(int id);
+		void edit(subtitle sub);
+		void delete(subtitle sub);
 	}
 }

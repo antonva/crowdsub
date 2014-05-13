@@ -8,7 +8,7 @@ using CrowdSubMain.DAL;
 
 namespace CrowdSubMain.Repositories
 {
-	interface i_upvote_repository
+	public interface i_upvote_repository
 	{
 		IQueryable<upvote> get_upvotes();
 		void add(int request_id, int user_id);

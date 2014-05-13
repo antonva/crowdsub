@@ -2,29 +2,36 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using CrowdSubMain.Models;
+using CrowdSubMain.DAL;
+using System.Data.Entity;
 
 namespace CrowdSubMain.Repositories
 {
 	public class video_repository : i_video_repository
 	{
+		private crowd_sub_context db = new crowd_sub_context();
 		public IQueryable<Models.video> get_videos()
 		{
 			throw new NotImplementedException();
 		}
 
-		public bool add(Models.video video)
+		public void add(Models.video video)
 		{
-			throw new NotImplementedException();
+			db.videos.Add(video);
+			db.SaveChanges();
 		}
 
-		public bool edit(Models.video video)
+		public void edit(Models.video video)
 		{
-			throw new NotImplementedException();
+			db.Entry(video).State = EntityState.Modified;
+			db.SaveChanges();
 		}
 
-		public bool delete(int id)
+		public void delete(video video)
 		{
-			throw new NotImplementedException();
+			db.videos.Remove(video);
+			db.SaveChanges();
 		}
 	}
 }

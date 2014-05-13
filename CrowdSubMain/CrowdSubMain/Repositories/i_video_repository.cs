@@ -9,11 +9,11 @@ using System.Web.Mvc;
 
 namespace CrowdSubMain.Repositories
 {
-	interface i_video_repository
+	public interface i_video_repository
 	{
 		IQueryable<video> get_videos();
-		bool add(video video);
-		bool edit(video video);
-		bool delete(int id);
+		void add(video video);
+		void edit(video video);
+		void delete(video video);
 	}
 }

@@ -11,7 +11,6 @@ namespace CrowdSubMain.DAL
 	public class crowd_sub_context : DbContext
 	{
 		public crowd_sub_context() : base("crowdbase"){ }
-
 		public DbSet<request> requests { get; set; }
 		public DbSet<subtitle> subtitles { get; set; }
 		public DbSet<subtitle_comment> subtitle_comments { get; set; }
