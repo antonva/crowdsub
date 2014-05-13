@@ -17,7 +17,8 @@ namespace CrowdSubCodeFirst.DAL
 				{
 					id = 1,
 					request_user_id = 1,
-					
+					request_lang = 0,
+
 				}
 			}
 		}
