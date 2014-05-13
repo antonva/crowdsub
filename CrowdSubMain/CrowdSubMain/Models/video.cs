@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace CrowdSubMain.Models
 {
@@ -15,6 +19,8 @@ namespace CrowdSubMain.Models
 	{
 		public int id { get; set; }
 		public string video_created_by_user_id { get; set; }
+
+        [Required(ErrorMessage = "Video title is required")]
 		public string video_title { get; set; }
 		public vidtype video_type { get; set; }
 		public int video_year_published { get; set; }
