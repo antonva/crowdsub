@@ -14,7 +14,7 @@
     <button type="button">Other</button>
 </div>
 
-<table border="1" style="width:50px">
+<table width="700" border="1">
     <thead>
         <tr>
             <th>Title</th>
@@ -26,16 +26,16 @@
     </thead>
     <tbody>
 
-       <!--needs to search the most recent uploads by date created-->
-      @*@foreach (var item in Model)
-      {
-          <tr>
-              <td>@item.video.video_title</td>
-              <td>@item.video.video_type</td>
-              <td>@item.subtitles.subtitle_language</td>
-              <td>@item.subtitles.subtitle_date_created</td>
-          </tr>
-      }
-    </tbody>*@
+        <!--needs to search the most recent uploads by date created-->
+        @*@foreach (var item in Model)
+              {
+                  <tr>
+                      <td>@item.video.video_title</td>
+                      <td>@item.video.video_type</td>
+                      <td>@item.subtitles.subtitle_language</td>
+                      <td>@item.subtitles.subtitle_date_created</td>
+                  </tr>
+              }
+            </tbody>*@
 </table>
 
