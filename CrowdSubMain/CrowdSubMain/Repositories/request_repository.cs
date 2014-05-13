@@ -17,7 +17,7 @@ namespace CrowdSubMain.Repositories
 
 		public void add(Models.request req)
 		{
-			db.requests.Add(req); ;
+			db.requests.Add(req);
 			db.SaveChanges();
 		}
 

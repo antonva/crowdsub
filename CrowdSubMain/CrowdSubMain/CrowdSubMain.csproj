@@ -158,8 +158,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Content\Controllers\AccountController.cs" />
-    <Compile Include="Content\Controllers\HomeController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\crowd_sub_context.cs" />
     <Compile Include="DAL\crowd_sub_initializer.cs" />
     <Compile Include="Global.asax.cs">
