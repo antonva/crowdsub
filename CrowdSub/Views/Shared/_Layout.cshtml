@@ -7,9 +7,10 @@
     <script src="~/Scripts/jquery-1.10.2.min.js"></script> <!--include jquery-->
     <script src="~/Scripts/faq.js"></script><!--Include the script file you created-->
     <script src="~/Scripts/moment-with-langs.js"></script> <!--Include moment date formatting-->
+    <link href="~/Content/Site.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+   
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -27,7 +28,7 @@
             </div>
             <hr />
             <div class="navbar-collapse collape">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="toplinks">
                     <li>@Html.ActionLink("All Requests", "all_requests", "Home")</li>
                     <li>@Html.ActionLink("Top Downloads", "top_downloads", "Home")</li>
                     <li>@Html.ActionLink("Top Requests", "top_requests", "Home")</li>
