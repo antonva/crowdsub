@@ -40,3 +40,16 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+/*Make the questions in FAQ blue*/
+.questions{
+    color: blue;
+}
+
+#toplinks{
+    margin: -32px;
+}
+
+a:hover{
+    color: rgb(5,180,177);
+}
