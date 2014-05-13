@@ -1,28 +1,24 @@
 ﻿@model CrowdSub.Models.SearchModel
 
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Welcome to Crowd Sub";
+    
 }
 
+@{
+    ViewBag.Message = "A crowd sourcing subtitle page where you can search for and download/upload or edit a subtitle in just a few easy steps.";
+}
 
-<div class="frontpage_infobox">
-    <h1>Welcome to Crowd Sub</h1>
-    <p class="lead">The first online database explicitly for Icelandic Subitles</p>
-
+<div class="welcome_message">
+   
 </div>
 
-    <div class="col-md-4">
 
-        @Html.ActionLink("All Requests", "all_requests", "Home")
-        @Html.ActionLink("Top Downloads", "top_downloads", "Home")
-        @Html.ActionLink("Top Requests", "top_requests", "Home")
-        @Html.ActionLink("Recent", "recent", "Home")
-        
-        <div>
-            @using (Html.BeginForm("index", "Home", FormMethod.Post))
-            {
-                @Html.TextBox("search")
-                <input type="submit" value="Search by title" />
-            }
-        </div>
-        </div>
+    <div class="col-md-4">
+        @using (Html.BeginForm("index", "Home", FormMethod.Post))
+        {
+            @Html.TextBox("search", "Search by title")
+            <input type="submit" value="Search" />
+        }
+    </div>
+
