@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using CrowdSubMain.Models;
 using CrowdSubMain.Repositories;
 using System.Diagnostics;
+using Microsoft.AspNet.Identity;
 
 namespace CrowdSubMain.Controllers
 {
@@ -84,6 +85,9 @@ namespace CrowdSubMain.Controllers
         {
             if (ModelState.IsValid)
             {
+                string user_id = User.Identity.GetUserId();
+                Debug.WriteLine(user_id);
+                //video.video_created_by_user_id = user_id;
 				video_repo.add(video);
                 return RedirectToAction("Index");
             }

@@ -15,21 +15,21 @@ namespace CrowdSubMain.DAL
 			{
 				new request
 				{
-					request_user_id = 1,
+					request_user_id = 1.ToString(),
 					request_lang = (language)0,
 					request_video_id = 1,
 					request_date_created = DateTime.Now
 				},
 				new request
 				{
-					request_user_id = 1,
+					request_user_id = 1.ToString(),
 					request_lang = (language)0,
 					request_video_id = 2,
 					request_date_created = DateTime.Now
 				},
 				new request
 				{
-					request_user_id = 2,
+					request_user_id = 2.ToString(),
 					request_lang = (language)1,
 					request_video_id = 2,
 					request_date_created = DateTime.Now
@@ -41,7 +41,7 @@ namespace CrowdSubMain.DAL
 			{
 				new subtitle
 				{
-					subtitle_user_id = 1,
+					subtitle_user_id = 1.ToString(),
 					subtitle_video_id = 1,
 					subtitle_file_path = "c:/filepath1",
 					subtitle_date_created = DateTime.Now,
@@ -50,7 +50,7 @@ namespace CrowdSubMain.DAL
 				},
 				new subtitle
 				{
-					subtitle_user_id = 2,
+					subtitle_user_id = 2.ToString(),
 					subtitle_video_id = 2,
 					subtitle_file_path = "c:/filepath",
 					subtitle_date_created = DateTime.Now,
@@ -59,7 +59,7 @@ namespace CrowdSubMain.DAL
 				},
 				new subtitle
 				{
-					subtitle_user_id = 3,
+					subtitle_user_id = 3.ToString(),
 					subtitle_video_id = 3,
 					subtitle_file_path = "c:/filepath",
 					subtitle_date_created = DateTime.Now,
@@ -74,21 +74,21 @@ namespace CrowdSubMain.DAL
 			{
 				new subtitle_comment
 				{
-					sc_user_id = 1,
+					sc_user_id = 1.ToString(),
 					sc_sub_id = 1,
 					sc_comment = "Wow this is a great subtitle",
 					sc_date_created = DateTime.Now
 				},
 				new subtitle_comment
 				{
-					sc_user_id = 2,
+					sc_user_id = 2.ToString(),
 					sc_sub_id = 2,
 					sc_comment = "Horrible subtitle",
 					sc_date_created = DateTime.Now
 				},
 				new subtitle_comment
 				{
-					sc_user_id = 3,
+					sc_user_id = 3.ToString(),
 					sc_sub_id = 3,
 					sc_comment = "Good subtitle, i like",
 					sc_date_created = DateTime.Now
@@ -101,7 +101,7 @@ namespace CrowdSubMain.DAL
 			{
 				new video
 				{
-					video_created_by_user_id = 1,
+					video_created_by_user_id = 1.ToString(),
 					video_title = "Bartman",
 					video_type = (vidtype)0,
 					video_year_published = 2001,
@@ -112,7 +112,7 @@ namespace CrowdSubMain.DAL
 
 				new video
 				{
-					video_created_by_user_id = 2,
+					video_created_by_user_id = 2.ToString(),
 					video_title = "Gorillaz",
 					video_type = (vidtype)1,
 					video_year_published = 2011,
@@ -123,7 +123,7 @@ namespace CrowdSubMain.DAL
 
 				new video
 				{
-					video_created_by_user_id = 2,
+					video_created_by_user_id = 3.ToString(),
 					video_title = "Aint it great to shart",
 					video_type = (vidtype)0,
 					video_year_published = 1995,
@@ -141,21 +141,21 @@ namespace CrowdSubMain.DAL
 				new upvote
 				{
 					upvote_request_id = 1,
-					upvote_user_id = 1,
+					upvote_user_id = 1.ToString(),
 					upvote_date_create = DateTime.Now
 				},
 
 				new upvote
 				{
 					upvote_request_id = 2,
-					upvote_user_id = 2,
+					upvote_user_id = 2.ToString(),
 					upvote_date_create = DateTime.Now
 				},
 
 				new upvote
 				{
 					upvote_request_id = 3,
-					upvote_user_id = 3,
+					upvote_user_id = 3.ToString(),
 					upvote_date_create = DateTime.Now
 				}
 			}; 
