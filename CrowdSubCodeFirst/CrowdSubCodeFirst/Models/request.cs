@@ -10,6 +10,7 @@ namespace CrowdSubCodeFirst.Models
 		English = 0,
 		Icelandic = 1
 	}
+
 	public class request
 	{
 		public int id { get; set; }
@@ -19,8 +20,7 @@ namespace CrowdSubCodeFirst.Models
 		public language request_lang { get; set; }
 		public int request_video_id { get; set; }
 		public System.DateTime request_date_created { get; set; }
-		public int request_type { get; set; }
-		public IEnumerable<upvote> upvotes { get; set; }
+		//public int request_type { get; set; } MAYBE
 
 		public virtual ApplicationUser user { get; set; }
 		public virtual video video { get; set; }
