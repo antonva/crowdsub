@@ -22,7 +22,7 @@ namespace CrowdSubMain.Controllers
 
 		public ActionResult Contact()
 		{
-			ViewBag.Message = "Your contact page.";
+			ViewBag.Message = "Group 12";
 
 			return View();
 		}
