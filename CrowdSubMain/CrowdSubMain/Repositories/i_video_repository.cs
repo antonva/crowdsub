@@ -12,8 +12,8 @@ namespace CrowdSubMain.Repositories
 	interface i_video_repository
 	{
 		IQueryable<video> get_videos();
-		bool add(video video);
-		bool edit(video video);
+		void add(video video);
+		void edit(video video);
 		bool delete(int id);
 	}
 }
