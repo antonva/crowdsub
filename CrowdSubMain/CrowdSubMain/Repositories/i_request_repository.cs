@@ -11,7 +11,7 @@ namespace CrowdSubMain.Repositories
 	interface i_request_repository
 	{
 		IQueryable<request> get_requests();
-		bool add(request req);
+		void add(request req);
 		bool edit(request req);
 		bool delete(int id);
 	}
