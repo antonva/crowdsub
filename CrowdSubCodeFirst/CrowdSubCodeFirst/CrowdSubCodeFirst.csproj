@@ -162,11 +162,18 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DAL\crowd_sub_context.cs" />
+    <Compile Include="DAL\crowd_sub_initializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\request.cs" />
+    <Compile Include="Models\subtitle.cs" />
+    <Compile Include="Models\subtitle_comment.cs" />
+    <Compile Include="Models\upvote.cs" />
+    <Compile Include="Models\video.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
