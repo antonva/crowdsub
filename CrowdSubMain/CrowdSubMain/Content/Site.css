@@ -68,7 +68,7 @@ input[type="checkbox"].input-validation-error {
     color: #FFFFFF;
 }
 
-/*To make footer always at bottom*/
+/* BEGIN TO MAKE FOOTER ALWAYS AT BOTTOM*/
 html,
 body {
 	margin:0;
@@ -91,5 +91,29 @@ body {
 	bottom:0;
 	left:0;
 	background:#eeeeee;
+}
+/*END*/
+
+
+
+/*BEGIN VIDEO PROFILE*/
+/*to scale video profile images*/
+#video_image{
+    width: 280px;
+    height: auto;
+    margin-top: 40px;
+}
+
+.video_profile_general_description{
+    position: relative;
+    left: 290px;
+    bottom: 105px;
+    height: 110px;
+    width: 500px;
+}
+
+#video_information{
+    position: relative;
+    height:auto;
 }
 /*END*/
