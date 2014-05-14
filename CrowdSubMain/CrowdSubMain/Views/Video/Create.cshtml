@@ -4,85 +4,48 @@
     ViewBag.Title = "Create Video Profile";
 }
 
-<h2>Create</h2>
-
-
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
-        <h4>video</h4>
-        <hr />
         @Html.ValidationSummary(true)
 
-        <!--
-        <div class="form-group">
-            @Html.LabelFor(model => model.user_Id, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.user_Id)
-                @Html.ValidationMessageFor(model => model.user_Id)
-            </div>
-        </div>
-        -->
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_title, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+        <!--A video information : Video title, video type, year published and video description-->
+        <div id="video-information" class="form-group">
+            <div>
+                Title:
                 @Html.EditorFor(model => model.video_title)
                 @Html.ValidationMessageFor(model => model.video_title)
             </div>
-        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_type, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownListFor(model => model.video_type, ViewBag.items as List<SelectListItem>)
-                <!--@Html.EditorFor(model => model.video_type)-->
+            <div>
+                Video type: 
+                @Html.DropDownListFor(model => model.video_type, ViewBag.items as List<SelectListItem>) 
                 @Html.ValidationMessageFor(model => model.video_type)
             </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_year_published, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            
+            <div>
+                Year published: 
                 @Html.EditorFor(model => model.video_year_published)
-                @Html.ValidationMessageFor(model => model.video_year_published)
+                @Html.ValidationMessageFor(model => model.video_year_published) 
             </div>
-        </div>
-
-        <!--
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_date_created, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_date_created)
-                @Html.ValidationMessageFor(model => model.video_date_created)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_date_updated, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_date_updated)
-                @Html.ValidationMessageFor(model => model.video_date_updated)
-            </div>
-        </div>
-        -->
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_description, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            
+            <div>
+                Video description: 
                 @Html.EditorFor(model => model.video_description)
-                @Html.ValidationMessageFor(model => model.video_description)
+                @Html.ValidationMessageFor(model => model.video_description) 
             </div>
         </div>
-
+        
+        <!--The create button-->
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
         </div>
     </div>
+
 }
 
 <div>

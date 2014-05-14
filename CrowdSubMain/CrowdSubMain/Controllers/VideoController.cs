@@ -16,12 +16,15 @@ namespace CrowdSubMain.Controllers
     public class VideoController : Controller
     {
 		private readonly i_video_repository video_repo;
+        private readonly i_subtitle_repository subtitle_repo;
 
 		// Normal Constructor
 		public VideoController()
 		{
 			video_repository videos = new video_repository();
+            subtitle_repository subtitles = new subtitle_repository();
 			video_repo = videos;
+            subtitle_repo = subtitles;
 		}
 
 		// Test constructor, takes a repository as argument.
@@ -32,9 +35,13 @@ namespace CrowdSubMain.Controllers
 
 		public ActionResult Profile(int id)
 		{
-			var model = (from v in video_repo.get_videos()
+			var video = (from v in video_repo.get_videos()
 						 where v.id == id
 						 select v).First();
+
+            var subtitles = subtitle_for_video(id);
+            var model = new profile_view_model { video = video, subtitles = subtitles };
+
 			return View(model);
 		}
 
@@ -48,6 +55,24 @@ namespace CrowdSubMain.Controllers
 
 			return View(model);
 		}
+
+        public ActionResult top_downloads() 
+        {
+            var model = (from v in video_repo.get_videos()
+                        orderby v.requests
+                        select v);
+
+            return View();
+        }
+
+        public IEnumerable<subtitle> subtitle_for_video(int id) 
+        {
+            var model = (from v in subtitle_repo.get_subtitles()
+                        where v.subtitle_video_id == id
+                        select v).ToList();
+
+            return model;
+        }
 
         /* // GET: /Video/
         public ActionResult Index()
@@ -69,19 +94,6 @@ namespace CrowdSubMain.Controllers
             }
             return View(video);
         } */
-
-        [HttpGet]    
-        public ActionResult CreateSearch() 
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult CreateSearch(string query)
-        {
-            
-            return View();
-        }
 
         // GET: /Video/Create
         public ActionResult Create()

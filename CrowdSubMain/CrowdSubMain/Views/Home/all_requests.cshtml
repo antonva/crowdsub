@@ -1,0 +1,71 @@
+﻿@model IEnumerable<CrowdSubMain.Models.request>
+
+@{
+    ViewBag.Title = "all_requests";
+}
+
+<h2>all_requests</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.request_user_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.request_video_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.request_date_created)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_user_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_video_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_date_created)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
+
+
+@*<table width="700" border="1">
+        <thead>
+            <tr>
+                <th>Request Title</th>
+                <th>Request Language</th>
+                <th>Date Requested</th>
+                <th>Request Type</th>
+                <th>Request Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            Þarf að klára þegar virkni er komin
+            @foreach (var item in model)
+                {
+                <tr>
+                    <td>@item.request_name</td>
+                    <td>@item.request_lang</td>
+                    <td>@item.request_date_created</td>
+                    <td>@item.request_type</td>
+                    <td>@item.request_link</td>
+                </tr>
+                }
+        </tbody>
+    </table>*@
