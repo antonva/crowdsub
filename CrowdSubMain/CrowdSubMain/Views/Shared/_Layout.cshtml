@@ -22,7 +22,7 @@
                 </button>
                 <a href="/Home/Index"><img src="~/Images/CrowdSub_Logo_V1_210x75.png" /></a> <!--the logo that leads to homepage-->
             </div>
-            
+
             <div class="navbar-collapse collapse">
                 @Html.Partial("_LoginPartial")
             </div>
@@ -30,11 +30,11 @@
     </div>
 
     <div id="wrapper">
-            <div id="bar_title">
-                <h2 class="container body-content" id="page_title">@ViewBag.Title</h2>
-                <h4 class="container body-content" id="page_message">@ViewBag.Message</h4>
-            </div>
-        
+        <div id="bar_title">
+            <h2 class="container body-content" id="page_title">@ViewBag.Title</h2>
+            <h4 class="container body-content" id="page_message">@ViewBag.Message</h4>
+        </div>
+
         <div id="content">
             <div class="container body-content">
                 @RenderBody()
@@ -54,7 +54,7 @@
                 </footer>
             </div>
         </div>
-        </div>
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

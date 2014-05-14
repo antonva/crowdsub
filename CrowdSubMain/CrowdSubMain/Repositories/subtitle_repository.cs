@@ -19,7 +19,8 @@ namespace CrowdSubMain.Repositories
 
 		public void add(subtitle sub)
 		{
-			throw new NotImplementedException();
+			db.subtitles.Add(sub);
+            db.SaveChanges();
 		}
 
 		public void edit(subtitle sub)

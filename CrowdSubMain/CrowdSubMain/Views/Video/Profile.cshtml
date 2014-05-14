@@ -1,7 +1,11 @@
 ﻿@model CrowdSubMain.Models.video
 
 @{
-    ViewBag.Title = "video_profile";
+    ViewBag.Title = Html.DisplayFor(model => model.video_title);
+}
+
+@{
+    ViewBag.Message = "Video Profile";
 }
 
 <h2>video_profile</h2>

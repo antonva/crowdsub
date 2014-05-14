@@ -49,6 +49,15 @@ namespace CrowdSubMain.Controllers
 			return View(model);
 		}
 
+        public ActionResult top_downloads() 
+        {
+            var model = (from v in video_repo.get_videos()
+                        orderby v.requests
+                        select v);
+
+            return View();
+        }
+
         /* // GET: /Video/
         public ActionResult Index()
         {
@@ -69,19 +78,6 @@ namespace CrowdSubMain.Controllers
             }
             return View(video);
         } */
-
-        [HttpGet]    
-        public ActionResult CreateSearch() 
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult CreateSearch(string query)
-        {
-            
-            return View();
-        }
 
         // GET: /Video/Create
         public ActionResult Create()
