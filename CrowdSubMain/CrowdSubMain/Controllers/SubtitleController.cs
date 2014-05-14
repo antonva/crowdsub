@@ -34,7 +34,7 @@ namespace CrowdSubMain.Controllers
         }
 
         // GET: /Subtitle/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult subtitle_profile(int? id)
         {
             if (id == null)
             {
