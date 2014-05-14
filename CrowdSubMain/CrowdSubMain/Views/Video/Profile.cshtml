@@ -1,33 +1,58 @@
-﻿@model CrowdSubMain.Models.video
+﻿@model CrowdSubMain.Models.profile_view_model
 
 @{
-    ViewBag.Title = Html.DisplayFor(model => model.video_title);
+    ViewBag.Title = Html.DisplayFor(model => model.video.video_title);
 }
 
 @{
-    ViewBag.Message = Html.DisplayFor(model => model.video_type) + " / " + Html.DisplayFor(model => model.video_year_published);
-} 
+    ViewBag.Message = Html.DisplayFor(model => model.video.video_type) + " / " + Html.DisplayFor(model => model.video.video_year_published);
+}
 
 <div id="video_information">
-    <img  id="video_image" src="~/Images/batman-logo.png" />
+    <img src="@Html.DisplayFor(model => model.video.poster_link)" />
     <div class="video_profile_general_description">
-        <p id="video_description">@Html.DisplayFor(model => model.video_description)</p>
+        <p id="video_description">@Html.DisplayFor(model => model.video.video_description)</p>
     </div>
 </div>
 
+<table class="table">
+    <tr>
+        <th>
+            <p>Date created</p>
+        </th>
+        <th>
+            <p>Downloads</p>
+        </th>
+        <th>
+            <p>Language</p>
+        </th>
+        <th>
+            <p>Video profile</p>
+        </th>
+        <th></th>
+    </tr>
 
+    @foreach (var item in Model.subtitles)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtitle_date_created)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtitle_download_count)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtitle_language)
+            </td>
+            <td>
+                @Html.ActionLink("Download", "Profile", "Video", new { id = item.subtitle_video_id }, null)
+            </td>
+        </tr>
+    }
 
-@*<div>
-    @Html.DisplayNameFor(model => model.video_date_created)
+</table>
 
-    @Html.DisplayFor(model => model.video_date_created)
-
-    @Html.DisplayNameFor(model => model.video_date_updated)
-
-    @Html.DisplayFor(model => model.video_date_updated)
-</div>*@
-
-@*<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.video.id }) |
     @Html.ActionLink("Back to List", "Index")
-</p>*@
+</p>

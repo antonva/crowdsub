@@ -26,7 +26,7 @@ namespace CrowdSubMain.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=fvve9j2ogp.database.windows.net;Initial Catalog=crowdbase;Persist Sec" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=fvve9j2ogp.database.windows.net;Initial Catalog=crowdbass;Persist Sec" +
             "urity Info=True;User ID=crowdsub@fvve9j2ogp;Password=SubCr0wd")]
         public string crowdbase {
             get {

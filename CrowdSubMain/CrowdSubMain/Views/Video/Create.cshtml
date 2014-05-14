@@ -4,54 +4,65 @@
     ViewBag.Title = "Create Video Profile";
 }
 
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
-        @Html.ValidationSummary(true)
+<div class="row">
+    <div class="col-md-8">
+        <section id="loginForm">
+            <!--A video information : Video title, video type, year published and video description-->
+            @using (Html.BeginForm("Create", "Video", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <h4>Please fill in the blanks to create a new video profile</h4>
+                @Html.ValidationSummary(true)
+                <div class="form-group">
+                    @Html.LabelFor(m => m.video_title, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.video_title, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.video_title)
+                    </div>
+                </div>
 
-        <!--A video information : Video title, video type, year published and video description-->
-        <div id="video-information" class="form-group">
-            <div>
-                Title:
-                @Html.EditorFor(model => model.video_title)
-                @Html.ValidationMessageFor(model => model.video_title)
-            </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.video_description, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextAreaFor(m => m.video_description, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.video_description)
+                    </div>
+                </div>
 
-            <div>
-                Video type: 
-                @Html.DropDownListFor(model => model.video_type, ViewBag.items as List<SelectListItem>) 
-                @Html.ValidationMessageFor(model => model.video_type)
-            </div>
-            
-            <div>
-                Year published: 
-                @Html.EditorFor(model => model.video_year_published)
-                @Html.ValidationMessageFor(model => model.video_year_published) 
-            </div>
-            
-            <div>
-                Video description: 
-                @Html.EditorFor(model => model.video_description)
-                @Html.ValidationMessageFor(model => model.video_description) 
-            </div>
-        </div>
-        
-        <!--The create button-->
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.video_year_published, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.video_year_published, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.video_year_published)
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    @Html.LabelFor(m => m.poster_link, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.poster_link, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.poster_link)
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    @Html.LabelFor(m => m.video_type, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.video_type, ViewBag.items as List<SelectListItem>)
+                            @Html.ValidationMessageFor(model => model.video_type)
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
+            }
+        </section>
     </div>
 
-}
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
