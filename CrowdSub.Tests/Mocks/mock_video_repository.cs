@@ -29,7 +29,7 @@ namespace CrowdSub.Tests.Mocks
         }
 
 
-        public video edit(int id, System.Web.Mvc.FormCollection formdata)
+        public video edit(int id, video video)
         {
             throw new NotImplementedException();
         }

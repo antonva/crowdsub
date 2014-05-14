@@ -118,19 +118,17 @@ namespace CrowdSubMain.Controllers
         {
             if (ModelState.IsValid)
             {
-                List<SelectListItem> items = new List<SelectListItem>();
-
-                items.Add(new SelectListItem { Text = "Movie", Value = "Movie" });
-                items.Add(new SelectListItem { Text = "Tv-Show", Value = "Tv-Show" });
-                items.Add(new SelectListItem { Text = "Other", Value = "Other" });
-
-                ViewBag.items = items;
 
                 string user_id = User.Identity.GetUserId(); // Get the user id
                 string user_name = User.Identity.GetUserName();
                 video.video_created_by_user_id = user_id;   // Add the user id to the video object
                 video.video_date_created = DateTime.Now;    // Add current time to the object being created
                 video.video_date_updated = DateTime.Now;    // Add curretn time to the object being created
+
+                if (video.poster_link == null) 
+                {
+                    video.poster_link = "http://ia.media-imdb.com/images/M/MV5BODg0NjQ5ODQ3OF5BMl5BanBnXkFtZTcwNjU4MjkzNA@@._V1_SX300.jpg";
+                }
 
 				video_repo.add(video); // Add video to repo
                 
