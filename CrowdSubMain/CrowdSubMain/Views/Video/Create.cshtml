@@ -36,6 +36,11 @@
                 @Html.EditorFor(model => model.video_description)
                 @Html.ValidationMessageFor(model => model.video_description) 
             </div>
+            <div>
+                Video poster:
+                @Html.EditorFor(model => model.poster_link)
+                @Html.ValidationMessageFor(model => model.poster_link)
+            </div>
         </div>
         
         <!--The create button-->
