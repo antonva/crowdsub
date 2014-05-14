@@ -1,12 +1,14 @@
 ﻿@model CrowdSubMain.Models.subtitle
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Subtitle Profile";
 }
 
-<h2>Details</h2>
+<h2>Subtitle Profile</h2>
 
 <div>
+    <!--SRT Parser and menu creator.-->
+    <script href="" type="text/javascript"></script>
     <h4>subtitle</h4>
 	<hr />
     <dl class="dl-horizontal">
@@ -59,6 +61,8 @@
         </dd>
 
     </dl>
+    <div id="srt-file">
+    </div>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
