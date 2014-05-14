@@ -132,6 +132,11 @@ namespace CrowdSubMain.Controllers
                 video.video_date_created = DateTime.Now;    // Add current time to the object being created
                 video.video_date_updated = DateTime.Now;    // Add curretn time to the object being created
 
+                if (video.poster_link == null) 
+                {
+                    video.poster_link = "http://ia.media-imdb.com/images/M/MV5BODg0NjQ5ODQ3OF5BMl5BanBnXkFtZTcwNjU4MjkzNA@@._V1_SX300.jpg";
+                }
+
 				video_repo.add(video); // Add video to repo
                 
                 return RedirectToAction("Profile", new { id = video.id});

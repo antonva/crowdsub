@@ -16,20 +16,11 @@
         <hr />
         @Html.ValidationSummary(true)
 
-        <!--
         <div class="form-group">
-            @Html.LabelFor(model => model.user_Id, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.subtitle_video_id, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.user_Id)
-                @Html.ValidationMessageFor(model => model.user_Id)
-            </div>
-        </div>
-        -->
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_id, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_id)
-                @Html.ValidationMessageFor(model => model.video_id)
+                @Html.EditorFor(model => model.subtitle_video_id)
+                @Html.ValidationMessageFor(model => model.subtitle_video_id)
             </div>
         </div>
 
