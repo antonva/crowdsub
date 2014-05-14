@@ -23,7 +23,8 @@
                 <a href="/Home/Index"><img src="~/Images/CrowdSub_Logo_V1_210x75.png" /></a> <!--the logo that leads to homepage-->
             </div>
             <div class="col-md-4">
-                @using (Html.BeginForm("search", "Video", FormMethod.Post))
+                @using CrowdSubMain.Controllers
+                @using (Html.BeginForm("Index", "Home", FormMethod.Post))
                 {
                     @Html.TextBox("search", "Search by title")
                     <input type="submit" value="Search" />

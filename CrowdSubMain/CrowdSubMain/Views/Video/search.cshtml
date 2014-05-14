@@ -15,7 +15,7 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 
-<table>
+@*<table class="tabe">
     <thead>
         <tr>
             <th>Title</th>
@@ -25,64 +25,74 @@
         </tr>
     </thead>
     <tbody>
-
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(item.video_title, "Profile", new { id = item.id })</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        }
     </tbody>
-</table>
+</table>*@
+
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.video_created_by_user_id)
+            Results
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.video_title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.video_type)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.video_year_published)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.video_date_created)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.video_date_updated)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.video_description)
-        </th>
-        <th></th>
+        @*<th>
+                Video type
+            </th>
+            <th>
+                Year published
+            </th>
+            <th>
+                Date Created
+            </th>
+            <th>
+                Date updated
+            </th>
+            <th>
+               Description
+            </th>
+            <th>
+                User
+            </th>
+            <th></th> *@
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.video_created_by_user_id)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.video_title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.video_type)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.video_year_published)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.video_date_created)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.video_date_updated)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.video_description)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(item.video_title, "Profile", new { id = item.id }) <!--Link leads to profile for video title-->
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.video_type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.video_year_published)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.video_date_created)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.video_date_updated)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.video_description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.user.user_name)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.id })
+                </td> *@
+        </tr>
+    }
 
 </table>
