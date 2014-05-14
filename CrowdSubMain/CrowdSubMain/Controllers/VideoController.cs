@@ -118,13 +118,6 @@ namespace CrowdSubMain.Controllers
         {
             if (ModelState.IsValid)
             {
-                List<SelectListItem> items = new List<SelectListItem>();
-
-                items.Add(new SelectListItem { Text = "Movie", Value = "Movie" });
-                items.Add(new SelectListItem { Text = "Tv-Show", Value = "Tv-Show" });
-                items.Add(new SelectListItem { Text = "Other", Value = "Other" });
-
-                ViewBag.items = items;
 
                 string user_id = User.Identity.GetUserId(); // Get the user id
                 string user_name = User.Identity.GetUserName();
