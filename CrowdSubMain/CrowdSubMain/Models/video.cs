@@ -20,7 +20,7 @@ namespace CrowdSubMain.Models
 		public int id { get; set; }
 		public string video_created_by_user_id { get; set; }
 
-        [Required(ErrorMessage = "Video title is required")]
+        // [Required(ErrorMessage = "Video title is required")]
 		public string video_title { get; set; }
 		public vidtype video_type { get; set; }
 		public int video_year_published { get; set; }
