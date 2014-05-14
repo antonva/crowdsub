@@ -23,6 +23,7 @@ namespace CrowdSubMain.Models
         [Required(ErrorMessage = "Video title is required")] /*generates a error messages when left blank*/
         [Display(Name = "Video title")]
 		public string video_title { get; set; }
+        [Display(Name = "Poster link")]
 		public string poster_link { get; set; }
         [Display(Name = "Video type")]
 		public vidtype video_type { get; set; }
