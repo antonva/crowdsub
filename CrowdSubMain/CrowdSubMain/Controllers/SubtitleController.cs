@@ -75,18 +75,20 @@ namespace CrowdSubMain.Controllers
 		}
 
         // GET: /Subtitle/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult subtitle_profile(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+            
 			subtitle subtitle = subtitle_repo.get_subtitles().Where(x => x.id == id).FirstOrDefault();
             if (subtitle == null)
             {
                 return HttpNotFound();
             }
-            return View(subtitle);
+            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = "fle" };
+            return View(model);
         }
 
         // GET: /Subtitle/Create
@@ -175,7 +177,15 @@ namespace CrowdSubMain.Controllers
             return View(model);
         }
 
-		[HttpGet]
+        public ActionResult RecentSubtitles() 
+        {
+            var model = (from v in subtitle_repo.get_subtitles()
+                         orderby v.subtitle_date_created descending
+                         select v).ToList().Take(10);
+            return View(model);
+        }
+
+		/* [HttpGet]
 		public ActionResult Upload()
 		{
 			return View();
