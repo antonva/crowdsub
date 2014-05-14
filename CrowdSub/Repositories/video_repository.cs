@@ -27,7 +27,7 @@ namespace CrowdSub.Repositories
             return db.videos.Where(x => x.id == id).FirstOrDefault();
         }
 
-        public video edit(int id, FormCollection formdata)
+        public video edit(int id, video video)
         {
             
             throw new NotImplementedException();

@@ -13,7 +13,7 @@ namespace CrowdSub.Repositories
     {
         IQueryable<video> get_videos();
         video add(video video);
-        video edit(int id, FormCollection formdata);
+        video edit(int id, video video);
         bool delete(int id);
     }
 }
