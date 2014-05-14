@@ -132,3 +132,15 @@ body {
     right: 18px;
 }
 /*END Search bar */
+
+/*BEGIN FAQ*/
+.questions{
+    color:#1F2174;
+   padding-top:10px;
+
+}
+.answers{
+    font-style:italic;
+    padding-bottom:10px;
+}
+/*END FAQ*/
