@@ -4,40 +4,63 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script> <!--include jquery-->
+    <script src="~/Scripts/faq.js"></script><!--Include the script file you created-->
+    <script src="~/Scripts/moment-with-langs.js"></script> <!--Include moment date formatting-->
+    <link href="~/Content/Site.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+   
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/Home/Index"><img src="/Images/Logo_210x75.png" alt="logo" /></a>
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="/Home/Index"><img src="/Images/Logo_210x75.png" alt="logo" /></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        @Html.Partial("_LoginPartial")
+                    </div>
+
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                @Html.Partial("_LoginPartial")
+            <div id="bar_title">
+                    <h2 id="welcome_message">@ViewBag.Title</h2>
+                    <h4 id="title_message">@ViewBag.Message</h4>
             </div>
-            <hr />
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            <div class="navbar-collapse collape">
+                <ul class="nav navbar-nav" id="toplinks">
+                    <li>@Html.ActionLink("All Requests", "all_requests", "Home")</li>
+                    <li>@Html.ActionLink("Top Downloads", "top_downloads", "Home")</li>
+                    <li>@Html.ActionLink("Top Requests", "top_requests", "Home")</li>
+                    <li>@Html.ActionLink("Recent", "recent", "Home")</li>
                 </ul>
             </div>
-        </footer>
-    </div>
+
+  
+            <div class="container body-content" id="body-content">
+                @RenderBody()
+            </div>
+
+        <div id="footer">
+            <div class="container body-content">
+                <footer>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("FAQ", "faq", "Home")</li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

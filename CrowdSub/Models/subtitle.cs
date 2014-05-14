@@ -27,6 +27,7 @@ namespace CrowdSub.Models
         public int subtitle_version { get; set; }
         public System.DateTime subtitle_date_created { get; set; }
         public int subtitle_download_count { get; set; }
+        public int subtitle_language { get; set; }
     
         public virtual ICollection<subtitle_comments> subtitle_comments { get; set; }
         public virtual user user { get; set; }

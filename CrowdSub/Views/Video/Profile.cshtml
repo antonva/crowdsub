@@ -5,86 +5,36 @@
 }
 
 
-<div> <!--Header that contains the video title info-->
+@Html.DisplayFor(Model => Model.video_title)
+
+<div>
+    <!--The image of the video and a short description-->
+    <hr />
+        <span>!!!!!Some image!!!!!!</span>
+        <div>
+            <b>Video Description: </b>@Html.DisplayFor(Model => Model.video_description)
+        </div>
+        
+    <div>
+        <!--Header that contains the video title info-->
+        <ul>
+            <li><b>Video title: </b> @Html.DisplayFor(model => model.video_title)</li>
+            <li><b>Video type: </b> @Html.DisplayFor(model => model.video_type)</li>
+            <li><b>Year published: </b> @Html.DisplayFor(model => model.video_year_published) </li>
+        </ul>
+    </div>
+</div>
+
+
+<div>
     <ul>
-        <li>@Html.DisplayFor(model => model.video_title)//video_title</li>
-        <li>@Html.DisplayFor(model => model.video_type)//video_type</li>
-        <li>@Html.DisplayFor(model => model.video_year_published) //video_year_published</li>
+        <li><a href="/video/edit">Subtitle edit</a></li>
+        <li><a href="/video/upload">Upload subtitle</a></li>
+        <li><a href="/video/download">Download subtitle</a></li>
+        <li><a href="/video/export_as">Export subtitle as</a></li>
+        <li><a href="/video/subtitle_request">Request as subtile for this movie</a></li>
     </ul>
 </div>
 
-<div> <!--The image of the video and a short description-->
-	<hr />
 
-    <div>
-        <span>!!!!!Some image!!!!!!</span>
-        @Html.DisplayFor(Model => Model.video_description) <!--Video description-->
-                
-    </div>
-</div>
 
-      
-    <div> <!--Buttons that redirects or allows some action-->
-        <button type="button">Edit</button>
-        <button type="button">Upload</button>
-        <button type="button">Download</button>
-        <button type="button">Export As</button>
-        <button type="button">Request</button>
-    </div>
-
-    <!--<dl class="dl-horizontal">  not relvant
-        <dt>
-            @@Html.DisplayNameFor(model => model.video_title)
-        </dt>
-
-        <dd>
-            @@Html.DisplayFor(model => model.video_title)
-        </dd>
-
-        <dt>
-            @@Html.DisplayNameFor(model => model.video_type)
-        </dt>
-
-        <dd>
-            @@Html.DisplayFor(model => model.video_type)
-        </dd>
-
-        <dt>
-            @@Html.DisplayNameFor(model => model.video_year_published)
-        </dt>
-
-        <dd>
-            @@Html.DisplayFor(model => model.video_year_published)
-        </dd>
-
-        <dt>
-            @@Html.DisplayNameFor(model => model.video_date_created)
-        </dt>
-
-        <dd>
-            @@Html.DisplayFor(model => model.video_date_created)
-        </dd>
-
-        <dt>
-            @@Html.DisplayNameFor(model => model.video_date_updated)
-        </dt>
-
-        <dd>
-            @@Html.DisplayFor(model => model.video_date_updated)
-        </dd>
-
-        <dt>
-            @@Html.DisplayNameFor(model => model.user.user_name)
-        </dt>
-
-        <dd>
-            @@Html.DisplayFor(model => model.user.user_name)
-        </dd>
-
-    </dl>
-</div>-->
-
-<!--<p> Not relevant
-    @@Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
-    @@Html.ActionLink("Back to List", "Index")
-</p>-->

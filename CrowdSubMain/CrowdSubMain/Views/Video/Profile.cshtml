@@ -1,0 +1,64 @@
+﻿@model CrowdSubMain.Models.profile_view_model
+
+@{
+    ViewBag.Title = Html.DisplayFor(model => model.video.video_title);
+}
+
+@{
+    ViewBag.Message = Html.DisplayFor(model => model.video.video_type) + " / " + Html.DisplayFor(model => model.video.video_year_published);
+}
+
+<div id="video_information">
+    <img  id="video_image" src="~/Images/batman-logo.png" />
+    <div class="video_profile_general_description">
+        <p id="video_description">@Html.DisplayFor(model => model.video.video_description)</p>
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            <p>Video id</p>
+        </th>
+        <th>
+            <p>Date created</p>
+        </th>
+        <th>
+            <p>Downloads</p>
+        </th>
+        <th>
+            <p>Language</p>
+        </th>
+        <th>
+            <p>Video profile</p>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.subtitles)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtitle_video_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtitle_date_created)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtitle_download_count)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtitle_language)
+            </td>
+            <td>
+                @Html.ActionLink("Go to video", "Profile", "Video", new { id = item.subtitle_video_id }, null)
+            </td>
+        </tr>
+    }
+
+</table>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.video.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

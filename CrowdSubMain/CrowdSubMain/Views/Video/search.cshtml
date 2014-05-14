@@ -1,0 +1,69 @@
+﻿@model IEnumerable<CrowdSubMain.Models.video>
+
+@{
+    ViewBag.Title = "Search Video";
+}
+
+<h2>search</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.video_created_by_user_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.video_title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.video_type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.video_year_published)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.video_date_created)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.video_date_updated)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.video_description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_created_by_user_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_year_published)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_date_created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_date_updated)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.video_description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

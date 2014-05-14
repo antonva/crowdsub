@@ -1,12 +1,13 @@
-﻿
+﻿@*ATHUGA ÞETTA!!!!*@
+@model IEnumerable<CrowdSub.Models.top_downloads_model>
+
 @{
-    ViewBag.Title = "top_requests";
+    ViewBag.Title = "Top Requests";
 }
 
 <!--This is a view (cshtml) for the Top requests-->
-<h2>Top requests</h2>
 
-<table>
+<table width="400">
     <thead>
         <tr>
             <th>Title</th>
@@ -17,9 +18,22 @@
         </tr>
     </thead>
 
-
     <!--Here below there should be a Razor code with forloop which access the database for the top requests (?) 
         ATH newsapplication verkefnið-->
+
+    @*<tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.video.video_title</td>
+                <td>@item.video.video_type</td>
+                <td>@item.subtitles.subtitle_version</td>
+                <td>@item.subtitles.subtitle_language</td>
+                <td>@item.requests.upvotes</td>  <!--ATHUGA ÞETTA FYRIR FJÖLDA REQUESTA-->
+            </tr>
+        }
+    </tbody>*@
+
     <tbody>
         <tr>
             <td>Braveheart</td>

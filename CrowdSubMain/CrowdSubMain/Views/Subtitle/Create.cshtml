@@ -1,0 +1,82 @@
+﻿@model CrowdSubMain.Models.subtitle
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>subtitle</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <!--
+        <div class="form-group">
+            @Html.LabelFor(model => model.user_Id, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.user_Id)
+                @Html.ValidationMessageFor(model => model.user_Id)
+            </div>
+        </div>
+        -->
+        <div class="form-group">
+            @Html.LabelFor(model => model.video_id, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.video_id)
+                @Html.ValidationMessageFor(model => model.video_id)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.subtitle_file_path, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.subtitle_file_path)
+                @Html.ValidationMessageFor(model => model.subtitle_file_path)
+            </div>
+        </div>
+        <!--
+        <div class="form-group">
+            @Html.LabelFor(model => model.subtitle_date_created, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.subtitle_date_created)
+                @Html.ValidationMessageFor(model => model.subtitle_date_created)
+            </div>
+        </div>
+        -->
+        <div class="form-group">
+            @Html.LabelFor(model => model.subtitle_download_count, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.subtitle_download_count)
+                @Html.ValidationMessageFor(model => model.subtitle_download_count)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.subtitle_language, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.subtitle_language)
+                @Html.ValidationMessageFor(model => model.subtitle_language)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

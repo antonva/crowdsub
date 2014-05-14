@@ -12,10 +12,21 @@ using System.Diagnostics;
 
 namespace CrowdSub.Controllers
 {
+    enum subtitle_language_enum
+    {
+        English = 0,
+        Icelandic = 1
+    }
 	public class SubtitleController : Controller
 	{
+        
 		private readonly i_subtitle_repository subtitle_repo;
 
+        public SubtitleController()
+        {
+            subtitle_repository subtitle = new subtitle_repository();
+            subtitle_repo = subtitle;
+        }
 		public SubtitleController(i_subtitle_repository subtitles)
 		{
 			subtitle_repo = subtitles; //constructor takes repo as parameter
@@ -60,6 +71,27 @@ namespace CrowdSub.Controllers
 
 			return View(model);
 		}
+
+        [HttpGet]
+        public ActionResult edit_subtitle(int id)
+        {
+            var model = (from v in subtitle_repo.get_subtitles()
+                         where v.id == id
+                         select v).First();
+            if(model.subtitle_language == 1)
+            {
+                model.subtitle_language = (int)subtitle_language_enum.Icelandic;
+            }
+            else
+            {
+                model.subtitle_language = (int)subtitle_language_enum.English;
+            }
+            
+                
+
+            return View(model);
+        }
+
 
 	}
 }

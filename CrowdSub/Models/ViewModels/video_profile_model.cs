@@ -8,6 +8,6 @@ namespace CrowdSub.Models
     public class video_profile_model
     {
         public video video;
-        public IEnumerable<subtitle> subtitles;
+        public subtitle subtitles;
     }
 }
