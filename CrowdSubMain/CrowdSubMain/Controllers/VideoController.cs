@@ -114,7 +114,7 @@ namespace CrowdSubMain.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="id,video_created_by_user_id,video_title,video_type,video_year_published,video_date_created,video_date_updated,video_description")] video video)
+        public ActionResult Create([Bind(Include="id,video_created_by_user_id,video_title,video_type,video_year_published,video_date_created,video_date_updated,video_description,poster_link")] video video)
         {
             if (ModelState.IsValid)
             {
