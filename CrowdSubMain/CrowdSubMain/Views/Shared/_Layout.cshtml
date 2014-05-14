@@ -20,41 +20,41 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/"><img src="~/Images/CrowdSub_Logo_V1_210x75.png" /></a> <!--the logo that leads to homepage-->
+                <a href="/Home/Index"><img src="~/Images/CrowdSub_Logo_V1_210x75.png" /></a> <!--the logo that leads to homepage-->
             </div>
-            
+
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("FAQ", "faq", "Home")</li>
-                </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
 
-    <div id="bar_title">
-        <h2 id="message">@ViewBag.Title</h2>
-        <h4 id="message"@ViewBag.Message></h4>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-    </div>
+    <div id="wrapper">
+        <div id="bar_title">
+            <h2 class="container body-content" id="page_title">@ViewBag.Title</h2>
+            <h4 class="container body-content" id="page_message">@ViewBag.Message</h4>
+        </div>
 
-    <div class="container body-content" id="footer">
-        <footer>
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("About", "About", "Home")</li>
-                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                <li>@Html.ActionLink("FAQ", "faq", "Home")</li>
-                <li>@Html.ActionLink("Help", "help", "Home")</li>
-            </ul>
-        </footer>
+        <div id="content">
+            <div class="container body-content">
+                @RenderBody()
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container body-content">
+                <footer>
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("FAQ", "faq", "Home")</li>
+                        <li>@Html.ActionLink("Help", "help", "Home")</li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
     </div>
-    
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
