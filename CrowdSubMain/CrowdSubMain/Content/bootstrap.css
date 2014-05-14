@@ -1274,7 +1274,8 @@ pre code {
     width: 41.66666666666667%;
   }
   .col-lg-6 {
-    width: 50%;
+/*CHANGE*/
+    /*width: 50%;*/
   }
   .col-lg-7 {
     width: 58.333333333333336%;
@@ -1999,7 +2000,8 @@ textarea.input-lg {
 
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+/*CHANGE*/
+  /*padding: 6px 12px;*/
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
@@ -3631,7 +3633,9 @@ input[type="button"].btn-block {
 }
 
 .input-group {
+/*CHANGE added width*/
   position: relative;
+  width: 453px;
   display: table;
   border-collapse: separate;
 }

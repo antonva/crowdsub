@@ -117,3 +117,18 @@ body {
     height:auto;
 }
 /*END*/
+
+/*BEGIN Search bar in the layout*/
+
+#search_row{
+    position: relative;
+    bottom: 50px;
+    left: 790px;
+}
+
+#search_dropdown{
+    padding: 7px;
+    position: relative;
+    right: 18px;
+}
+/*END Search bar */
