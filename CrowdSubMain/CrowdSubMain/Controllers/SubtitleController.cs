@@ -130,6 +130,15 @@ namespace CrowdSubMain.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult TopDownloadedSubtitles()
+        {
+            var model = (from v in subtitle_repo.get_subtitles()
+                        orderby v.subtitle_download_count descending
+                        select v).ToList().Take(10);
+
+            return View(model);
+        }
+
         /* protected override void Dispose(bool disposing)
         {
             if (disposing)
