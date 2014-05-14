@@ -136,6 +136,14 @@ namespace CrowdSubMain.Controllers
             return View(model);
         }
 
+        public ActionResult RecentSubtitles() 
+        {
+            var model = (from v in subtitle_repo.get_subtitles()
+                         orderby v.subtitle_date_created descending
+                         select v).ToList().Take(10);
+            return View(model);
+        }
+
 		/* [HttpGet]
 		public ActionResult Upload()
 		{

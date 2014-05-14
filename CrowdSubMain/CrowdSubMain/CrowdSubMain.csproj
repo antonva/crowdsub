@@ -270,6 +270,7 @@
     <Content Include="Views\Home\all_requests.cshtml" />
     <Content Include="Views\Subtitle\TopDownloadedSubtitles.cshtml" />
     <Content Include="Views\Video\search.cshtml" />
+    <Content Include="Views\Subtitle\RecentSubtitles.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
