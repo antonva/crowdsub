@@ -1,0 +1,90 @@
+﻿@model IEnumerable<CrowdSubMain.Models.subtitle>
+
+@{
+    ViewBag.Title = "recent";
+}
+
+<h2>recent</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.subtitle_user_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subtitle_video_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subtitle_file_path)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subtitle_date_created)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subtitle_download_count)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_user_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_video_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_file_path)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_date_created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_download_count)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
+
+
+@*<div>
+    <button type="button">All</button>
+    <button type="button">Movie</button>
+    <button type="button">TV Show</button>
+    <button type="button">Other</button>
+</div>
+
+<table width="700" border="1">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Video Type</th>
+            <th>Subtitle Type</th>
+            <th>Subtitle Language</th>
+            <th>Date Added</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        needs to search the most recent uploads by date created
+        @foreach (var item in Model)
+              {
+                  <tr>
+                      <td>@item.video.video_title</td>
+                      <td>@item.video.video_type</td>
+                      <td>@item.subtitles.subtitle_language</td>
+                      <td>@item.subtitles.subtitle_date_created</td>
+                  </tr>
+              }
+            </tbody>
+</table>*@
