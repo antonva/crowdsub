@@ -22,6 +22,7 @@ namespace CrowdSubMain.Models
 
         // [Required(ErrorMessage = "Video title is required")]
 		public string video_title { get; set; }
+		public string poster_link { get; set; }
 		public vidtype video_type { get; set; }
 		public int video_year_published { get; set; }
 		public System.DateTime video_date_created { get; set; }
