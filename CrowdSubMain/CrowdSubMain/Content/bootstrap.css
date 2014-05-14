@@ -4136,6 +4136,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-collapse .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
+    margin-top: 15px;
   }
   .navbar-collapse .navbar-text:last-child {
     margin-right: 0;
