@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using CrowdSubMain.Models;
 using CrowdSubMain.DAL;
 using CrowdSubMain.Repositories;
+using Microsoft.AspNet.Identity;
 
 namespace CrowdSubMain.Controllers
 {
@@ -62,8 +63,13 @@ namespace CrowdSubMain.Controllers
         {
             if (ModelState.IsValid)
             {
-				subtitle_repo.add(subtitle);
-                return RedirectToAction("Index");
+                string user_id = User.Identity.GetUserId(); // Get the user id
+                string user_name = User.Identity.GetUserName();
+                subtitle.subtitle_user_id = user_id;   // Add the user id to the video object
+                subtitle.subtitle_date_created = DateTime.Now;    // Add current time to the object being created
+                
+                subtitle_repo.add(subtitle);
+                return RedirectToAction("Video/Profile", new { id = subtitle.subtitle_video_id });
             }
 
             return View(subtitle);
