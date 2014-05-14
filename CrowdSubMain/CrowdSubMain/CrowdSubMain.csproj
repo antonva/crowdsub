@@ -175,6 +175,7 @@
     <Compile Include="Models\request.cs" />
     <Compile Include="Models\subtitle.cs" />
     <Compile Include="Models\subtitle_comment.cs" />
+    <Compile Include="Models\subtitle_view_model_download.cs" />
     <Compile Include="Models\upvote.cs" />
     <Compile Include="Models\video.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
