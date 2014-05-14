@@ -42,12 +42,14 @@ namespace CrowdSubMain.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+            
 			subtitle subtitle = subtitle_repo.get_subtitles().Where(x => x.id == id).FirstOrDefault();
             if (subtitle == null)
             {
                 return HttpNotFound();
             }
-            return View(subtitle);
+            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = "fle" };
+            return View(model);
         }
 
         // GET: /Subtitle/Create

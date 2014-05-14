@@ -1,4 +1,4 @@
-﻿@model CrowdSubMain.Models.subtitle
+﻿@model CrowdSubMain.Models.subtitle_profile_model
 
 @{
     ViewBag.Title = "Subtitle Profile";
@@ -8,63 +8,74 @@
 
 <div>
     <!--SRT Parser and menu creator.-->
-    <script href="" type="text/javascript"></script>
+    @section scripts {
+    <script href="/Scripts/srt_parser_menu.js" type="text/javascript"></script>
+    }
     <h4>subtitle</h4>
 	<hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.subtitle_user_id)
+            @Html.DisplayNameFor(model => model.subtitle.subtitle_user_id)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.subtitle_user_id)
+            @Html.DisplayFor(model => model.subtitle.subtitle_user_id)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.subtitle_video_id)
+            @Html.DisplayNameFor(model => model.subtitle.subtitle_video_id)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.subtitle_video_id)
+            @Html.DisplayFor(model => model.subtitle.subtitle_video_id)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.subtitle_file_path)
+            @Html.DisplayNameFor(model => model.subtitle.subtitle_file_path)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.subtitle_file_path)
+            @Html.DisplayFor(model => model.subtitle.subtitle_file_path)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.subtitle_date_created)
+            @Html.DisplayNameFor(model => model.subtitle.subtitle_date_created)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.subtitle_date_created)
+            @Html.DisplayFor(model => model.subtitle.subtitle_date_created)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.subtitle_download_count)
+            @Html.DisplayNameFor(model => model.subtitle.subtitle_download_count)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.subtitle_download_count)
+            @Html.DisplayFor(model => model.subtitle.subtitle_download_count)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.subtitle_language)
+            @Html.DisplayNameFor(model => model.subtitle.subtitle_language)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.subtitle_language)
+            @Html.DisplayFor(model => model.subtitle.subtitle_language)
         </dd>
 
     </dl>
     <div id="srt-file">
+        <textarea id="srt" readonly="1">
+            1
+            00:00:50,739 --> 00:00:54,868
+            And we're on in four, three,
+
+            2
+            00:00:54,952 --> 00:00:56,870
+            two, one.
+        </textarea>
     </div>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.subtitle.id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
