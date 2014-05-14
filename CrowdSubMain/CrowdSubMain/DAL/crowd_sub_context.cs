@@ -40,6 +40,5 @@ namespace CrowdSubMain.DAL
 			//configure relation mapping and foreign keys of video model
 			modelBuilder.Entity<video>().HasRequired(v => v.user).WithMany(u => u.videos).HasForeignKey(v => v.video_created_by_user_id).WillCascadeOnDelete(false);
 		}
-
 	}
 }
