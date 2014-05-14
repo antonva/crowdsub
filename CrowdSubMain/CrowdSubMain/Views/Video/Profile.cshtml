@@ -5,74 +5,15 @@
 }
 
 @{
-    ViewBag.Message = "Video Profile";
+    ViewBag.Message = Html.DisplayFor(model => model.video.video_type) + " / " + Html.DisplayFor(model => model.video.video_year_published);
 }
 
-<h2>video_profile</h2>
-
-<div>
-    <h4>video</h4>
-	<hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.video.video_created_by_user_id)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video.video_created_by_user_id)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video.video_title)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video.video_title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video.video_type)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video.video_type)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video.video_year_published)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video.video_year_published)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video.video_date_created)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video.video_date_created)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video.video_date_updated)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video.video_date_updated)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video.video_description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video.video_description)
-        </dd>
-    </dl>
+<div id="video_information">
+    <img  id="video_image" src="~/Images/batman-logo.png" />
+    <div class="video_profile_general_description">
+        <p id="video_description">@Html.DisplayFor(model => model.video.video_description)</p>
+    </div>
 </div>
-
-
 
 <table class="table">
     <tr>
@@ -80,13 +21,13 @@
             <p>Video id</p>
         </th>
         <th>
-           <p>Date created</p>
+            <p>Date created</p>
         </th>
         <th>
             <p>Downloads</p>
         </th>
         <th>
-           <p>Language</p>
+            <p>Language</p>
         </th>
         <th>
             <p>Video profile</p>
@@ -116,7 +57,8 @@
     }
 
 </table>
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.video.id }) |
     @Html.ActionLink("Back to List", "Index")
-</p>    
+</p>
