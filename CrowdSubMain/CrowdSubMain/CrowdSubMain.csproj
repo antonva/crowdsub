@@ -270,6 +270,10 @@
     <Content Include="Views\Video\Profile.cshtml" />
     <Content Include="Views\Home\help.cshtml" />
     <Content Include="Views\Home\faq.cshtml" />
+    <Content Include="Views\Home\top_downloads.cshtml" />
+    <Content Include="Views\Home\recent.cshtml" />
+    <Content Include="Views\Home\top_requests.cshtml" />
+    <Content Include="Views\Home\all_requests.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

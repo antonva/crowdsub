@@ -1,0 +1,100 @@
+﻿@model IEnumerable<CrowdSubMain.Models.request>
+
+@{
+    ViewBag.Title = "top_requests";
+}
+
+<h2>top_requests</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.request_user_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.request_video_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.request_date_created)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_user_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_video_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_date_created)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
+
+
+
+<!--This is a view (cshtml) for the Top requests-->
+
+@*<table width="400">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Video type</th>
+            <th>Subtitle type</th>
+            <th>Subtitle language</th>
+            <th>Votes</th>
+        </tr>
+    </thead>
+
+    Here below there should be a Razor code with forloop which access the database for the top requests (?)
+        ATH newsapplication verkefnið
+    <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.video.video_title</td>
+                    <td>@item.video.video_type</td>
+                    <td>@item.subtitles.subtitle_version</td>
+                    <td>@item.subtitles.subtitle_language</td>
+                    <td>@item.requests.upvotes</td>  ATHUGA ÞETTA FYRIR FJÖLDA REQUESTA
+                </tr>
+            }
+        </tbody>
+
+    <tbody>
+        <tr>
+            <td>Braveheart</td>
+            <td>Movie</td>
+            <td>Hearing impaired</td>
+            <td>English</td>
+            <td>132</td>
+        </tr>
+        <tr>
+            <td>Batman</td>
+            <td>Movie</td>
+            <td>Extended</td>
+            <td>Icelandic</td>
+            <td>564</td>
+        </tr>
+        <tr>
+            <td>Suits</td>
+            <td>TV shows</td>
+            <td>Hearing impaired</td>
+            <td>Icelandic</td>
+            <td>5433</td>
+        </tr>
+    </tbody>
+</table>*@
