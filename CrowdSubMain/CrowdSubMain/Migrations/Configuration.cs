@@ -9,7 +9,7 @@ namespace CrowdSubMain.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(CrowdSubMain.DAL.crowd_sub_context context)
