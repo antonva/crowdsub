@@ -56,9 +56,6 @@ namespace CrowdSubMain.Controllers
             return View();
         }
 
-        // POST: /Subtitle/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include="id,subtitle_user_id,subtitle_video_id,subtitle_file_path,subtitle_date_created,subtitle_download_count,subtitle_language")] subtitle subtitle)
@@ -66,7 +63,7 @@ namespace CrowdSubMain.Controllers
             if (ModelState.IsValid)
             {
                 string user_id = User.Identity.GetUserId(); // Get the user id
-                string user_name = User.Identity.GetUserName();
+                string user_name = User.Identity.GetUserName(); // Bind the user id to the subtitle object
                 subtitle.subtitle_user_id = user_id;   // Add the user id to the video object
                 subtitle.subtitle_date_created = DateTime.Now;    // Add current time to the object being created
                 
@@ -93,8 +90,6 @@ namespace CrowdSubMain.Controllers
         }
 
         // POST: /Subtitle/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include="id,subtitle_user_id,subtitle_video_id,subtitle_file_path,subtitle_date_created,subtitle_download_count,subtitle_language")] subtitle subtitle)

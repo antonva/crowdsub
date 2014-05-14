@@ -20,13 +20,18 @@ namespace CrowdSubMain.Models
 		public int id { get; set; }
 		public string video_created_by_user_id { get; set; }
 
-        // [Required(ErrorMessage = "Video title is required")]
+        [Required(ErrorMessage = "Video title is required")] /*generates a error messages when left blank*/
+        [Display(Name = "Video title")]
 		public string video_title { get; set; }
+        [Display(Name = "Poster link")]
 		public string poster_link { get; set; }
+        [Display(Name = "Video type")]
 		public vidtype video_type { get; set; }
+        [Display(Name = "Published")]
 		public int video_year_published { get; set; }
 		public System.DateTime video_date_created { get; set; }
 		public System.DateTime video_date_updated { get; set; }
+        [Display(Name = "Description")]
 		public string video_description { get; set; }
 
 		public virtual ICollection<subtitle> subtitles { get; set; }
