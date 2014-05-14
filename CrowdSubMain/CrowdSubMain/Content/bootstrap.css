@@ -4502,20 +4502,20 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-    /*Change color and took border*/
+   /*Background of the header*/
   background-color: #FFFFFF;
-  /*border-color: #080808;*/
 }
 
 .navbar-inverse .navbar-brand {
-    /*Change color*/
-  color: #FFFFFF;
+  /*Change color*/
+  background-color: #FFFFFF;
+  
 }
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #ffffff;
-  background-color: transparent;
+    color: #ffffff;
+    background-color: transparent;
 }
 
 .navbar-inverse .navbar-text {
@@ -4523,14 +4523,27 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
+/*Þetta er log in og register buttons*/
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: transparent;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /*background-color:#EEEEEE;*/
+    color: #FFFFFF;
+    text-decoration:underline;
 }
+
+
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
