@@ -22,7 +22,13 @@
                 </button>
                 <a href="/Home/Index"><img src="~/Images/CrowdSub_Logo_V1_210x75.png" /></a> <!--the logo that leads to homepage-->
             </div>
-
+            <div class="col-md-4">
+                @using (Html.BeginForm("search", "Video", FormMethod.Post))
+                {
+                    @Html.TextBox("search", "Search by title")
+                    <input type="submit" value="Search" />
+                }
+            </div>
             <div class="navbar-collapse collapse">
                 @Html.Partial("_LoginPartial")
             </div>
@@ -33,7 +39,25 @@
         <div id="bar_title">
             <h2 class="container body-content" id="page_title">@ViewBag.Title</h2>
             <h4 class="container body-content" id="page_message">@ViewBag.Message</h4>
+            @*Serch bar begin 
+            <div class="row" id="search_row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                            <select class="btn btn-default" id="search_dropdown">
+                                <option value="0">English</option>
+                                <option value="1">Icelandic</option>
+                            </select>
+                            <button class="btn btn-default" type="button" id="search_dropdown">Search</button>
+                        </div><!-- /btn-group -->
+                    </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+            @* Searchbar end *@
         </div>
+
+        
 
         <div id="content">
             <div class="container body-content">

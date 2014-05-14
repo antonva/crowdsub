@@ -9,7 +9,7 @@
 }
 
 <div id="video_information">
-    <img  id="video_image" src="~/Images/batman-logo.png" />
+    <img src="@Html.DisplayFor(model => model.video.poster_link)" />
     <div class="video_profile_general_description">
         <p id="video_description">@Html.DisplayFor(model => model.video.video_description)</p>
     </div>
@@ -17,9 +17,6 @@
 
 <table class="table">
     <tr>
-        <th>
-            <p>Video id</p>
-        </th>
         <th>
             <p>Date created</p>
         </th>
@@ -39,9 +36,6 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.subtitle_video_id)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.subtitle_date_created)
             </td>
             <td>
@@ -51,7 +45,7 @@
                 @Html.DisplayFor(modelItem => item.subtitle_language)
             </td>
             <td>
-                @Html.ActionLink("Go to video", "Profile", "Video", new { id = item.subtitle_video_id }, null)
+                @Html.ActionLink("Download", "Profile", "Video", new { id = item.subtitle_video_id }, null)
             </td>
         </tr>
     }

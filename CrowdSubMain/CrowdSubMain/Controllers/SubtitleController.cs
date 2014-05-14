@@ -10,6 +10,8 @@ using CrowdSubMain.Models;
 using CrowdSubMain.DAL;
 using CrowdSubMain.Repositories;
 using Microsoft.AspNet.Identity;
+using System.IO;
+using System.Diagnostics;
 
 namespace CrowdSubMain.Controllers
 {
@@ -54,9 +56,6 @@ namespace CrowdSubMain.Controllers
             return View();
         }
 
-        // POST: /Subtitle/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include="id,subtitle_user_id,subtitle_video_id,subtitle_file_path,subtitle_date_created,subtitle_download_count,subtitle_language")] subtitle subtitle)
@@ -64,7 +63,7 @@ namespace CrowdSubMain.Controllers
             if (ModelState.IsValid)
             {
                 string user_id = User.Identity.GetUserId(); // Get the user id
-                string user_name = User.Identity.GetUserName();
+                string user_name = User.Identity.GetUserName(); // Bind the user id to the subtitle object
                 subtitle.subtitle_user_id = user_id;   // Add the user id to the video object
                 subtitle.subtitle_date_created = DateTime.Now;    // Add current time to the object being created
                 
@@ -91,8 +90,6 @@ namespace CrowdSubMain.Controllers
         }
 
         // POST: /Subtitle/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include="id,subtitle_user_id,subtitle_video_id,subtitle_file_path,subtitle_date_created,subtitle_download_count,subtitle_language")] subtitle subtitle)
@@ -138,6 +135,36 @@ namespace CrowdSubMain.Controllers
 
             return View(model);
         }
+
+		[HttpGet]
+		public ActionResult Upload()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public ActionResult Upload(HttpPostedFileBase file)
+		{
+			if (file.ContentLength > 0)
+			{
+				var file_name = Path.GetFileName(file.FileName);
+				Debug.WriteLine("File name: " + file_name.ToString());
+				var path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
+				Debug.WriteLine("File path: " + path.ToString());
+				var subtitle = new subtitle
+				{
+					subtitle_user_id = User.Identity.GetUserId(), //get user id
+					subtitle_video_id = 5, 
+					subtitle_file_path = file_name,
+					subtitle_date_created = DateTime.Now,
+					subtitle_download_count = 0,
+					subtitle_language = 0
+				};
+				subtitle_repo.add(subtitle);
+				file.SaveAs(path);
+			}
+			return RedirectToAction("Upload");
+		}
 
         /* protected override void Dispose(bool disposing)
         {
