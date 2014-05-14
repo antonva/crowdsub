@@ -47,5 +47,22 @@ input[type="checkbox"].input-validation-error {
 
 #bar_title{
     background-color: #1cb2b0;
+    height: 150px;
+    padding-left: 8%;
 }
 
+.message{
+    color: #FFFFFF;
+}
+
+#bar_title > #page_title{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 50px;
+}
+} 
+
+#bar_title > #page_message{
+    margin-top: 0;
+    margin-bottom: 0;
+}
