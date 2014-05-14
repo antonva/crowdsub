@@ -136,14 +136,14 @@ namespace CrowdSubMain.Controllers
             return View(model);
         }
 
-		/* [HttpGet]
+		[HttpGet]
 		public ActionResult Upload()
 		{
 			return View();
 		}
 
 		[HttpPost]
-		public ActionResult Upload(HttpPostedFileBase file, )
+		public ActionResult Upload(HttpPostedFileBase file)
 		{
 			if (file.ContentLength > 0)
 			{
@@ -151,10 +151,20 @@ namespace CrowdSubMain.Controllers
 				Debug.WriteLine("File name: " + file_name.ToString());
 				var path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
 				Debug.WriteLine("File path: " + path.ToString());
+				var subtitle = new subtitle
+				{
+					subtitle_user_id = User.Identity.GetUserId(), //get user id
+					subtitle_video_id = 5, 
+					subtitle_file_path = file_name,
+					subtitle_date_created = DateTime.Now,
+					subtitle_download_count = 0,
+					subtitle_language = 0
+				};
+				subtitle_repo.add(subtitle);
 				file.SaveAs(path);
 			}
-			return RedirectToAction("Index");
-		} */
+			return RedirectToAction("Upload");
+		}
 
         /* protected override void Dispose(bool disposing)
         {
