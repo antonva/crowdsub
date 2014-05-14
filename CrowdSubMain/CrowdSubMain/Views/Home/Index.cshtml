@@ -6,50 +6,63 @@
     ViewBag.Message = "A crowd sourcing subtitle page";
 }
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Top Downloads</h2>
-        <p>
-            A Table that shows maybe 5 - 10 top downloaded subtitles
-        </p>
-        <p class="btn btn-default">@Html.ActionLink("See more", "TopDownloadedSubtitles", "Subtitle")</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h2>Top Downloads</h2>
+                <p>
+                    A Table that shows maybe 5 - 10 top downloaded subtitles
+                </p>
+                <p class="btn btn-default">@Html.ActionLink("See more", "TopDownloadedSubtitles", "Subtitle")</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h2>Recent</h2>
+                <p>A Table that shows maybe 5 - 10 most recent subtitles</p>
+                <p class="btn btn-default">@Html.ActionLink("See more", "recent", "Subtitle")</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h2>Top Requests</h2>
+                <p>A Table that shows maybe 5 - 10 top requests</p>
+                <p class="btn btn-default">@Html.ActionLink("See more", "recent", "Subtitle")</p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Recent</h2>
-        <p>A Table that shows maybe 5 - 10 most recent subtitles</p>
-        <p class ="btn btn-default">@Html.ActionLink("See more", "recent", "Subtitle")</p>
-    </div>
-    <div class="col-md-4">
-        <h2>Top Requests</h2>
-        <p>A Table that shows maybe 5 - 10 top requests</p>
-        <p class="btn btn-default">@Html.ActionLink("See more", "recent", "Subtitle")</p>
-    </div>
-</div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Create a Video Profile</h2>
-        <p>
-            If you don't find an existing video profile that holds your desired subtitle, you can
-            simply create a video profile. From there you can make a request for your subtitle version
-            or you can simply upload your subtitle!
-        </p>
-        <p class="btn btn-default">@Html.ActionLink("Create", "Create", "Video")</p>
+        <div class="well well-lg">
+            <h2>Create a Video Profile</h2>
+            <p>
+                If you don't find an existing video profile that holds your desired subtitle, you can
+                simply create a video profile. From there you can make a request for your subtitle version
+                or you can simply upload your subtitle!
+            </p>
+            <p class="btn btn-default">@Html.ActionLink("Create", "Create", "Video")</p>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Upload a subtitle</h2>
-        <p>
-            From here you can search for the video profile that will hold your subtitle. If the video
-            profile exists you can go to the video profile and upload your subtitle!    
-        </p>
-        <p class="btn btn-default">@Html.ActionLink("See more", "recent", "Subtitle")</p>
+        <div class="well well-lg">
+            <h2>Upload a subtitle</h2>
+            <p>
+                From here you can search for the video profile that will hold your subtitle. If the video
+                profile exists you can go to the video profile and upload your subtitle!
+            </p>
+            <p class="btn btn-default">@Html.ActionLink("See more", "recent", "Subtitle")</p>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>DO NOT FUCK WITH THIS LAYOUT BJÖRN</h2>
-        <p>
-            This layout will be extremly cool, JUST DONT FUCK WITH MY CODE BJÚRN!
-        </p>
-        <p class="btn btn-default">@Html.ActionLink("See more", "recent", "Subtitle")</p>
+        <div class="well well-lg">
+            <h2>DO NOT FUCK WITH THIS LAYOUT BJÖRN</h2>
+            <p>
+                This layout will be extremly cool, JUST DONT FUCK WITH MY CODE BJÚRN!
+            </p>
+            <p class="btn btn-default">@Html.ActionLink("See more", "recent", "Subtitle")</p>
+        </div>
     </div>
 </div>
 
