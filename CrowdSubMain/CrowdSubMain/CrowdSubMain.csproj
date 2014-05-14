@@ -168,14 +168,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201405131848054_InitialCreate.cs" />
-    <Compile Include="Migrations\201405131848054_InitialCreate.Designer.cs">
-      <DependentUpon>201405131848054_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201405132005555_InitialCreate1.cs" />
-    <Compile Include="Migrations\201405132005555_InitialCreate1.Designer.cs">
-      <DependentUpon>201405132005555_InitialCreate1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -207,6 +199,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\batman-logo.png" />
     <Content Include="Images\CrowdSub_Logo_V1_210x75.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -274,6 +267,7 @@
     <Content Include="Views\Home\recent.cshtml" />
     <Content Include="Views\Home\top_requests.cshtml" />
     <Content Include="Views\Home\all_requests.cshtml" />
+    <Content Include="Views\Subtitle\TopDownloadedSubtitles.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -284,14 +278,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201405131848054_InitialCreate.resx">
-      <DependentUpon>201405131848054_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201405132005555_InitialCreate1.resx">
-      <DependentUpon>201405132005555_InitialCreate1.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

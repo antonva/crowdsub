@@ -1,74 +1,33 @@
 ﻿@model CrowdSubMain.Models.video
 
 @{
-    ViewBag.Title = "video_profile";
+    ViewBag.Title = Html.DisplayFor(model => model.video_title);
 }
 
-<h2>video_profile</h2>
+@{
+    ViewBag.Message = Html.DisplayFor(model => model.video_type) + " / " + Html.DisplayFor(model => model.video_year_published);
+} 
 
-<div>
-    <h4>video</h4>
-	<hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.video_created_by_user_id)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video_created_by_user_id)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video_title)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video_title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video_type)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video_type)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video_year_published)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video_year_published)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video_date_created)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video_date_created)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video_date_updated)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video_date_updated)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.video_description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.video_description)
-        </dd>
-
-    </dl>
+<div id="video_information">
+    <img  id="video_image" src="~/Images/batman-logo.png" />
+    <div class="video_profile_general_description">
+        <p id="video_description">@Html.DisplayFor(model => model.video_description)</p>
+    </div>
 </div>
-<p>
+
+
+
+@*<div>
+    @Html.DisplayNameFor(model => model.video_date_created)
+
+    @Html.DisplayFor(model => model.video_date_created)
+
+    @Html.DisplayNameFor(model => model.video_date_updated)
+
+    @Html.DisplayFor(model => model.video_date_updated)
+</div>*@
+
+@*<p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@
