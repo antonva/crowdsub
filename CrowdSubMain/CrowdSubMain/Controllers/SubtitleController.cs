@@ -10,6 +10,8 @@ using CrowdSubMain.Models;
 using CrowdSubMain.DAL;
 using CrowdSubMain.Repositories;
 using Microsoft.AspNet.Identity;
+using System.IO;
+using System.Diagnostics;
 
 namespace CrowdSubMain.Controllers
 {
@@ -138,6 +140,26 @@ namespace CrowdSubMain.Controllers
 
             return View(model);
         }
+
+		/* [HttpGet]
+		public ActionResult Upload()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public ActionResult Upload(HttpPostedFileBase file, )
+		{
+			if (file.ContentLength > 0)
+			{
+				var file_name = Path.GetFileName(file.FileName);
+				Debug.WriteLine("File name: " + file_name.ToString());
+				var path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
+				Debug.WriteLine("File path: " + path.ToString());
+				file.SaveAs(path);
+			}
+			return RedirectToAction("Index");
+		} */
 
         /* protected override void Dispose(bool disposing)
         {
