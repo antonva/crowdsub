@@ -171,6 +171,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\profile_view_model.cs" />
     <Compile Include="Models\request.cs" />
     <Compile Include="Models\subtitle.cs" />
     <Compile Include="Models\subtitle_comment.cs" />
@@ -268,6 +269,7 @@
     <Content Include="Views\Home\top_requests.cshtml" />
     <Content Include="Views\Home\all_requests.cshtml" />
     <Content Include="Views\Subtitle\TopDownloadedSubtitles.cshtml" />
+    <Content Include="Views\Video\search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
