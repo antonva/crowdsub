@@ -170,6 +170,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\popular_subtitle_model.cs" />
     <Compile Include="Models\subtitle_profile_model.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\profile_view_model.cs" />

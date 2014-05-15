@@ -8,59 +8,59 @@
     ViewBag.Message = Html.DisplayFor(model => model.video.video_type) + " / " + Html.DisplayFor(model => model.video.video_year_published);
 }
 
-<div id="video_information">
-    <img src="@Html.DisplayFor(model => model.video.poster_link)" />
-    <div class="video_profile_general_description">
-        <p id="video_description">@Html.DisplayFor(model => model.video.video_description)</p>
+
+
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-body">
+        <div id="video_information">
+            <img src="@Html.DisplayFor(model => model.video.poster_link)" class="img-responsive" alt="Poster image is missing for this video profile. To fix this please edit video profile and provide us with an link to image" height="190" width="128">
+            <div class="video_profile_general_description">
+                <p id="video_description">@Html.DisplayFor(model => model.video.video_description)</p>
+            </div>
+            
+            <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Subtitle name</th>
+                            <th>Downloads</th>
+                            <th>Language</th>
+                            <th>Download Subtitle</th>
+                            <th>Date created</th>
+                        </tr>
+                    </thead>
+                    @foreach (var item in Model.subtitles)
+                    {
+                        <tr>
+                            <td>
+                                @Html.ActionLink(item.subtitle_file_name, "subtitle_profile",  "Subtitle" , new { id = item.id}, null) 
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.subtitle_download_count)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.subtitle_language)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Download", "Profile", "Video", new { id = item.subtitle_video_id }, null)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.subtitle_date_created)
+                            </td>
+                        </tr>
+                    }
+            </table>
+         
+            @using (Html.BeginForm("Upload", "Subtitle", new { video_id = Model.video.id }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <label for="file">Filename: </label>
+                <input type="file" name="file" id="file" />
+
+                <input type="submit" />
+            }
+      
+            @Html.ActionLink("Edit", "Edit", new { id = Model.video.id })
+            @Html.ActionLink("Request", "Request", new { id = Model.video.id })
+        </div>
     </div>
 </div>
-
-<table class="table">
-    <tr>
-        <th>
-            <p>Date created</p>
-        </th>
-        <th>
-            <p>Downloads</p>
-        </th>
-        <th>
-            <p>Language</p>
-        </th>
-        <th>
-            <p>Video profile</p>
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model.subtitles)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.subtitle_date_created)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.subtitle_download_count)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.subtitle_language)
-            </td>
-            <td>
-                @Html.ActionLink("Download", "Profile", "Video", new { id = item.subtitle_video_id }, null)
-            </td>
-        </tr>
-    }
-
-</table>
-
-@using (Html.BeginForm("Upload", "Subtitle", new { video_id = Model.video.id }, FormMethod.Post, new { enctype = "multipart/form-data" }))
-{
-    <label for="file">Filename: </label>
-    <input type="file" name="file" id="file" />
-
-    <input type="submit" />
-}
-
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.video.id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
