@@ -1,0 +1,109 @@
+﻿$(document).ready(function () {
+
+    // Sækir fjölda commenta á server
+    $.get("/Subtitle/GetCount", function (data) {
+        count = data; 
+    });
+
+    // Ná í comment sem tilheyra viðkomandi subtitle
+    /*
+    $.get("Subtitle/get_comments_for_subtitle", function (data) {
+        for (key in data) {
+            // Breyta sem skilar dagsetningu á ákjósnalegu formi
+            var date = data[key].CommentDate = ConvertStringToJSDate(data[key].CommentDate);
+            if (key >= count) {
+                count++;
+                $(" #Comments li:last-child").before('\
+                            <li class="list-group-item">\
+                                <span id="Comment-ID" style=" display : none">' + data[key].sc_sub_id + '</span>\
+                                <p>\
+                                    <span class="glyphicon glyphicon-user"></span>\
+                                    <span class="text-primary">'  + data[key].sc_sub_id + '</span>\
+                                    <span>' + data[key].sc_comment + '</span>\
+                                </p>\
+                                <p>\
+                                    <span class="text-muted">' + date + ' </span>\
+                                    <a id="like-button" class="like-comment" href="#">Like <span class="glyphicon glyphicon-thumbs-up"></span></a>\
+                                </p>\
+                            </li>'
+                );
+            }
+        }
+    });
+    */
+    //Send comment
+    $("#senda").click(function () {
+        
+        console.log("Keyrir jquery");
+        var sendData = {
+            "sc_comment": $("#CommentText").val(),
+            "sc_sub_id": $("#Subtitle_ID").val()
+        };
+
+            // Validation sem athugar hvort input sé tómt
+            if ($("#CommentText").val() === "") {
+                $("#submitCommentError").html("The comment field cannot be empty :(");
+                $("#submitCommentError").show();
+            }
+            else {
+                $.post("/Subtitle/post_comment", sendData, function (data) {
+
+                    // Ef Comment error var birtur þá fjarlægist hann hér við póstun nýs comments
+                    $("#submitCommentError").hide();
+
+                    for (key in data) {
+
+                        // Breyta sem skilar dagsetningu á ákjósnalegu formi
+                        var date = data[key].CommentDate = ConvertStringToJSDate(data[key].CommentDate);
+
+                        // Póstar kommentum frá fjölda síðasta kommenti póstað s.br count breytu sem sækir fjölda kommenta á server
+                        if (key >= count) {
+                            count++;
+                            $(" #Comments li:last-child").before('\
+                            <li class="list-group-item">\
+                                <span id="Comment-ID" style=" display : none">' + data[key].ID + '</span>\
+                                <p>\
+                                    <span class="glyphicon glyphicon-user"></span>\
+                                    <span class="text-primary">'  + data[key].Username + '</span>\
+                                    <span>' + data[key].CommentText + '</span>\
+                                </p>\
+                                <p>\
+                                    <span class="text-muted">' + date + ' </span>\
+                                    <a id="like-button" class="like-comment" href="#">Like <span class="glyphicon glyphicon-thumbs-up"></span></a>\
+                                </p>\
+                            </li>'
+                            );
+                            $("#like-button").click(likeFunction);
+                        }
+                    }
+                });     
+            }       
+            // Hreinsar út textaboxið eftir að hafa submit-að commenti
+            $("#CommentText").val("");
+    });
+});
+
+// Formatar dagsetningu svo hún lúkki einsog fyrirmyndin
+function ConvertStringToJSDate(dt) {
+    var dtE = /^\/Date\((-?[0-9]+)\)\/$/.exec(dt);
+    if (dtE) {
+        var dt = new Date(parseInt(dtE[1], 10));
+        var months = {
+            "0": "January",
+            "1": "February",
+            "2": "March",
+            "3": "April",
+            "4": "May",
+            "5": "June",
+            "6": "July",
+            "7": "August",
+            "8": "September",
+            "9": "October",
+            "10": "November",
+            "11": "December"
+        };
+        
+        return dt.getDate() + ". " + months[dt.getMonth()] + " " + dt.getHours() + ":" + dt.getMinutes() + " -";
+    }
+    return null;
+}

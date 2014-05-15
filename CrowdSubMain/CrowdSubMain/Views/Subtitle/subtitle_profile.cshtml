@@ -9,6 +9,7 @@
 <div>
     <!--SRT Parser and menu creator.-->
     @Scripts.Render("~/Scripts/srt_parser_menu.js")
+    <!--@Scripts.Render("~/Scripts/a_jscript.js")-->
     <h4>subtitle</h4>
 	<hr />
     <dl class="dl-horizontal">
@@ -73,6 +74,37 @@ two, one.
 </textarea>
     <div id="srt-select"></div>
 </div>
+
+<ul id="Comments" class="list-group" style="max-width: 560px;">
+    @foreach (var item in Model.subtitle_comments)
+    {
+        <li class="list-group-item">
+            <span id="Comment-ID" style=" display : none">@Html.DisplayFor(modelItem => item.id)</span>
+            <span id="CommentUser-ID" style=" display : none">@Html.DisplayFor(modelItem => item.sc_user_id)</span>
+            <span id="Subtitle_ID" style="display : none">@Html.DisplayFor(modelItem => Model.subtitle.id)</span>
+            <p>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="text-primary">@Html.DisplayFor(modelItem => item.user.UserName)</span>
+                <span>@Html.DisplayFor(modelItem => item.sc_comment)</span>
+            </p>
+            <p>
+                <span class="text-muted">@item.sc_date_created.ToString("dd. MMMM HH:mm") - </span>
+                <a id="like-button" class="like-comment" href="#">Like <span class="glyphicon glyphicon-thumbs-up"></span></a>
+            </p>
+        </li>
+    }
+    <li class="list-group-item">
+
+        <div class="form-horizontal">
+            <label class="sr-only" for="CommentText">Comment</label>
+            <textarea class="form-control" rows="3" id="CommentText" name="CommentText"></textarea>
+            <p class="error" id="submitCommentError"></p>
+            <button class="btn btn-primary" id="senda">Send</button>
+        </div>
+        @Html.ValidationSummary(false)
+    </li>
+</ul>
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.subtitle.id }) |
     @Html.ActionLink("Back to List", "Index")
