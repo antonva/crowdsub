@@ -35,6 +35,7 @@ namespace CrowdSubMain.Controllers
 
 		public ActionResult Profile(int id)
 		{
+
 			var video = (from v in video_repo.get_videos()
 						 where v.id == id
 						 select v).First();
@@ -96,6 +97,7 @@ namespace CrowdSubMain.Controllers
         } */
 
         // GET: /Video/Create
+        [Authorize]    
         public ActionResult Create()
         {
             List<SelectListItem> items = new List<SelectListItem>();
@@ -114,6 +116,7 @@ namespace CrowdSubMain.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize] 
         public ActionResult Create([Bind(Include="id,video_created_by_user_id,video_title,video_type,video_year_published,video_date_created,video_date_updated,video_description,poster_link")] video video)
         {
             if (ModelState.IsValid)
@@ -138,6 +141,7 @@ namespace CrowdSubMain.Controllers
         }
 
         // GET: /Video/Edit/5
+        [Authorize] 
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -157,6 +161,7 @@ namespace CrowdSubMain.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize] 
         public ActionResult Edit([Bind(Include="id,video_created_by_user_id,video_title,video_type,video_year_published,video_date_created,video_date_updated,video_description, poster_link")] video video)
         {
             string user_id = User.Identity.GetUserId(); // Get the user id
@@ -176,6 +181,7 @@ namespace CrowdSubMain.Controllers
         }
 
         // GET: /Video/Delete/5
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -193,6 +199,7 @@ namespace CrowdSubMain.Controllers
         // POST: /Video/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult DeleteConfirmed(int id)
         {
 			video video = video_repo.get_videos().Where(x => x.id == id).FirstOrDefault();

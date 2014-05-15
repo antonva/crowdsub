@@ -52,6 +52,14 @@
 
 </table>
 
+@using (Html.BeginForm("Upload", "Subtitle", new { video_id = Model.video.id }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label for="file">Filename: </label>
+    <input type="file" name="file" id="file" />
+
+    <input type="submit" />
+}
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.video.id }) |
     @Html.ActionLink("Back to List", "Index")

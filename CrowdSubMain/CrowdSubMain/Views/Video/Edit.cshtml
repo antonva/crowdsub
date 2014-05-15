@@ -63,59 +63,7 @@
     </div>
 </div>
 
-@*@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>video</h4>
-        <hr />
-        @Html.ValidationSummary(true)
-        @Html.HiddenFor(model => model.id)
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_title, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_title)
-                @Html.ValidationMessageFor(model => model.video_title)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_type, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_type)
-                @Html.ValidationMessageFor(model => model.video_type)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_year_published, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_year_published)
-                @Html.ValidationMessageFor(model => model.video_year_published)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_description, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_description)
-                @Html.ValidationMessageFor(model => model.video_description)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(m => m.poster_link, new { @class = "col-md-2 control-label" })
-            <div class="col-md-10">
-                @Html.TextBoxFor(m => m.poster_link, new { @class = "form-control" })
-                @Html.ValidationMessageFor(m => m.poster_link)
-            </div>
-        </div>
-
-        
-    </div>
-}*@
 
 
 @section Scripts {
