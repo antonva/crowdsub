@@ -26,9 +26,9 @@ namespace CrowdSubMain.Controllers
 		{
 			subtitle_repository subtitle = new subtitle_repository();
 			video_repository videos = new video_repository();
-			subtitle_repo = subtitle;
-			video_repo = videos;
             subtitle_comment_repository sc_repo = new subtitle_comment_repository();
+            subtitle_repo = subtitle;
+			video_repo = videos;
             subtitle_comment_repo = sc_repo; 
 		}
 
@@ -38,7 +38,7 @@ namespace CrowdSubMain.Controllers
 		}
 
         // GET: /Subtitle/
-        public ActionResult Index()
+        /* public ActionResult Index() WE DON'T NEED THIS MAN
         {
 			var view_model = new subtitle_view_model_download
 			{
@@ -47,15 +47,15 @@ namespace CrowdSubMain.Controllers
 			};
 			var paths = Directory.GetFiles(view_model.path).ToList();
 			view_model.subtitles = (from s in subtitle_repo.get_subtitles()
-									orderby s.subtitle_file_path descending
+									orderby s.subtitle_file_name descending
 									select s).ToList();
 			foreach(var sub in view_model.subtitles)
 			{
-				var file_name = sub.subtitle_file_path;
+				var file_name = sub.subtitle_file_name;
 				sub.subtitle_file_path = Path.Combine(Server.MapPath("~/App_data/uploads"), file_name);
 			}
-			return View(view_model);
-        }
+			return View(view_model); 
+        } */
 
 		public FileResult download(int subtitle_id)
 		{
@@ -91,7 +91,7 @@ namespace CrowdSubMain.Controllers
             }
 
             
-            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = srt_string };
+            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = srt_string, subtitle_comments = subtitle_comments };
             return View(model);
         }
 
@@ -209,11 +209,10 @@ namespace CrowdSubMain.Controllers
 				{
 					subtitle_user_id = User.Identity.GetUserId(), //get user id
 					subtitle_video_id = video_id, 
-					subtitle_file_path = file_name,
 					subtitle_file_name = file_name,
 					subtitle_date_created = DateTime.Now,
 					subtitle_download_count = 0,
-					subtitle_language = 0
+					subtitle_language = language
 				};
 				subtitle_repo.add(subtitle);
 				file.SaveAs(path);

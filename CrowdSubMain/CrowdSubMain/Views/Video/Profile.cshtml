@@ -57,14 +57,14 @@
             @using (Html.BeginForm("Upload", "Subtitle", new { video_id = Model.video.id }, FormMethod.Post, new { enctype = "multipart/form-data" }))
             {
                 <label for="file">Upload new subtitle for this video profile: </label>
-                <input type="file" name="file" id="file" />
+                <input type="file" name="file" id="file" /> <!--File browser-->
                 <label for="language">Language: </label>
                 <select name="language" id="language">
                     <option value="English">English</option>
                     <option value="Icelandic">Icelandic</option>
                 </select>
 
-                <input type="submit" />
+                <input type="submit" /> <!--Button to submit file-->
             }
            
             <ul class="list-inline">
