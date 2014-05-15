@@ -4,9 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - CrowdSub</title>
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script> <!--include jquery-->
-    <script src="~/Scripts/jquery-1.10.4.min.js"></script> <!--include jquery-ui-->
-    <script src="~/Scripts/faq.js"></script><!--FAQ javasript-->
+    <!--<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.10.4.min.js"></script> 
+    <script src="~/Scripts/jquery-ui-1.10.4.min.js"></script>-->
+
+    @Scripts.Render("http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    @Scripts.Render("http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js")
+    @Styles.Render("http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -80,7 +84,6 @@
         </div>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

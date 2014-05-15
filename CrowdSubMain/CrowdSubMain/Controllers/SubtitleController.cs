@@ -185,7 +185,7 @@ namespace CrowdSubMain.Controllers
             return View(model);
         }
 
-		/* [HttpGet]
+		[HttpGet]
 		public ActionResult Upload()
 		{
 			return View();
