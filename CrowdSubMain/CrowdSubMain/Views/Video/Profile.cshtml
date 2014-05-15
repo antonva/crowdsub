@@ -13,12 +13,15 @@
 <div class="panel panel-default">
     <!-- Default panel contents -->
     <div class="panel-body">
-        <div id="video_information">
-            <img src="@Html.DisplayFor(model => model.video.poster_link)" class="img-responsive" alt="Poster image is missing for this video profile. To fix this please edit video profile and provide us with an link to image" height="190" width="128">
-            <div class="video_profile_general_description">
-                <p id="video_description">@Html.DisplayFor(model => model.video.video_description)</p>
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img src="@Html.DisplayFor(model => model.video.poster_link)" class="media-object" alt="Poster image is missing for this video profile. To fix this please edit video profile and provide us with an link to image" height="190" width="128">
+            </a>
+            <div class="media-body">
+                <p>@Html.DisplayFor(model => model.video.video_description)</p>
             </div>
-            
+        </div>
+        
             <table class="table table-hover">
                     <thead>
                         <tr>
@@ -42,7 +45,7 @@
                                 @Html.DisplayFor(modelItem => item.subtitle_language)
                             </td>
                             <td>
-                                @Html.ActionLink("Download", "Profile", "Video", new { id = item.subtitle_video_id }, null)
+                                @Html.ActionLink("Download", "download", "Subtitle", new { subtitle_id = item.id }, null)
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.subtitle_date_created)
@@ -53,14 +56,22 @@
          
             @using (Html.BeginForm("Upload", "Subtitle", new { video_id = Model.video.id }, FormMethod.Post, new { enctype = "multipart/form-data" }))
             {
-                <label for="file">Filename: </label>
+                <label for="file">Upload new subtitle for this video profile: </label>
                 <input type="file" name="file" id="file" />
+                <label for="language">Language: </label>
+                <select name="language" id="language">
+                    <option value="English">English</option>
+                    <option value="Icelandic">Icelandic</option>
+                </select>
 
                 <input type="submit" />
             }
-      
-            @Html.ActionLink("Edit", "Edit", new { id = Model.video.id })
-            @Html.ActionLink("Request", "Request", new { id = Model.video.id })
-        </div>
+           
+            <ul class="list-inline">
+                <li></li>
+                <li>@Html.ActionLink("Edit video profile", "Edit", new { id = Model.video.id })</li>
+                <li>@Html.ActionLink("Request", "Request", new { id = Model.video.id })</li>
+            </ul>
+        
     </div>
 </div>
