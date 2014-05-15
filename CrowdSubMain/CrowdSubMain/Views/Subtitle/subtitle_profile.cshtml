@@ -9,6 +9,7 @@
 <div>
     <!--SRT Parser and menu creator.-->
     @Scripts.Render("~/Scripts/srt_parser_menu.js")
+    @Styles.Render("~/Content/subtitle-edit/srt.css")
     <h4>subtitle</h4>
 	<hr />
     <dl class="dl-horizontal">
@@ -61,8 +62,8 @@
         </dd>
 
     </dl>
-<!-- Cannot be a div, the parser does not work.-->
-<textarea id="srt"> 
+<!-- Cannot be a div, the parser has only been tested against textareas.-->
+<textarea id="srt">
 1
 00:00:50,739 --> 00:00:54,868
 And we're on in four, three,
