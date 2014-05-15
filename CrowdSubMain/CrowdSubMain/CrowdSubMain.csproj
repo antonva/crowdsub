@@ -207,6 +207,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\subtitle-edit\srt.css" />
+    <Content Include="App_Data\uploads\aqos-a2tlc.2013.unrated.hdrip.xvid.srt" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -277,11 +278,8 @@
     <Content Include="Views\Subtitle\TopDownloadedSubtitles.cshtml" />
     <Content Include="Views\Video\search.cshtml" />
     <Content Include="Views\Subtitle\RecentSubtitles.cshtml" />
-    <Content Include="Views\Subtitle\Upload.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\uploads\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
