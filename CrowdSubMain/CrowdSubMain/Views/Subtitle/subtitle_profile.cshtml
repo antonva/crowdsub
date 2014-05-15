@@ -12,7 +12,7 @@
     @Styles.Render("~/Content/subtitle-edit/srt.css")
     <h4>subtitle</h4>
 	<hr />
-    <dl class="dl-horizontal">
+    @*<dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.subtitle.subtitle_user_id)
         </dt>
@@ -61,7 +61,7 @@
             @Html.DisplayFor(model => model.subtitle.subtitle_language)
         </dd>
 
-    </dl>
+    </dl>*@
     <div id="srt-select"></div>
 <!-- Cannot be a div, the parser has only been tested against textareas.-->
 <textarea id="srt">
