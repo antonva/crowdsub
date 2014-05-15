@@ -33,6 +33,7 @@ namespace CrowdSubMain.Models
 		public System.DateTime video_date_updated { get; set; }
         [Display(Name = "Description")]
 		public string video_description { get; set; }
+        public int total_download_count { get; set; }
 
 		public virtual ICollection<subtitle> subtitles { get; set; }
 		public virtual ApplicationUser user { get; set; }
