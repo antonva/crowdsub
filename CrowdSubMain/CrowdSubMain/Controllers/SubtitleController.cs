@@ -53,8 +53,12 @@ namespace CrowdSubMain.Controllers
 			return View(view_model);
         }
 
-		public FileResult download(string file_path, string file_name)
+		public FileResult download(int subtitle_id)
 		{
+			var file_name = (from s in subtitle_repo.get_subtitles()
+							 where s.id == subtitle_id
+							 select s).First().subtitle_file_name;
+			var file_path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
 			var file = File(file_path, System.Net.Mime.MediaTypeNames.Text.Plain, file_name);
 			return file;
 		}
@@ -184,14 +188,14 @@ namespace CrowdSubMain.Controllers
 
 		[HttpPost]
         [Authorize]
-		public ActionResult Upload(HttpPostedFileBase file, int video_id)
+		public ActionResult Upload(HttpPostedFileBase file, string language, int video_id)
 		{
 			if (file.ContentLength > 0)
 			{
 				var video_name = (from v in video_repo.get_videos()
 								  where v.id == video_id
 								  select v).First().video_title; //get title of video
-				var file_name = video_name + ".srt";
+				var file_name = video_name + "_" + language + ".srt";
 				Debug.WriteLine("File name: " + file_name.ToString());
 				var path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
 				Debug.WriteLine("File path: " + path.ToString());
