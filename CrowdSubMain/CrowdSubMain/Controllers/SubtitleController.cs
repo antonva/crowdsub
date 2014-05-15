@@ -59,9 +59,11 @@ namespace CrowdSubMain.Controllers
 
 		public FileResult download(int subtitle_id)
 		{
-			var file_name = (from s in subtitle_repo.get_subtitles()
+			var subtitle = (from s in subtitle_repo.get_subtitles()
 							 where s.id == subtitle_id
-							 select s).First().subtitle_file_name;
+							 select s).First();
+			var file_name = subtitle.subtitle_file_name;
+			subtitle.subtitle_download_count++; //increment download count
 			var file_path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
 			var file = File(file_path, System.Net.Mime.MediaTypeNames.Text.Plain, file_name);
 			return file;
@@ -198,10 +200,10 @@ namespace CrowdSubMain.Controllers
 		{
 			if (file.ContentLength > 0)
 			{
-				var video_name = (from v in video_repo.get_videos()
+				 /* var video_name = (from v in video_repo.get_videos()
 								  where v.id == video_id
-								  select v).First().video_title; //get title of video
-				var file_name = video_name + "_" + language + ".srt";
+								  select v).First().video_title; //get title of video */
+				var file_name = Path.GetFileName(file.FileName);
 				Debug.WriteLine("File name: " + file_name.ToString());
 				var path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
 				Debug.WriteLine("File path: " + path.ToString());
@@ -211,6 +213,7 @@ namespace CrowdSubMain.Controllers
 					subtitle_video_id = video_id, 
 					subtitle_file_name = file_name,
 					subtitle_date_created = DateTime.Now,
+					subtitle_date_updated = DateTime.Now,
 					subtitle_download_count = 0,
 					subtitle_language = language
 				};

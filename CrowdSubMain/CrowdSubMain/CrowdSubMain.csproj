@@ -211,12 +211,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\subtitle-edit\srt.css" />
-    <Content Include="App_Data\uploads\aqos-a2tlc.2013.unrated.hdrip.xvid.srt" />
-    <Content Include="App_Data\uploads\Batman" />
-    <Content Include="App_Data\uploads\Batman.srt" />
-    <Content Include="App_Data\uploads\dummy.srt" />
-    <Content Include="App_Data\uploads\Game.of.Thrones.S03E05.720p.HDTV.x264-IMMERSE.srt" />
-    <Content Include="App_Data\uploads\Game.of.Thrones.S03E06.720p.HDTV.x264-IMMERSE.srt" />
+    <Content Include="App_Data\uploads\Rocky.I[1976]DvDrip-aXXo.srt" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
