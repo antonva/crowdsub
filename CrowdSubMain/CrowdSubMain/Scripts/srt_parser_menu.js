@@ -7,7 +7,10 @@ $(document).ready(function () {
          '<div id="srt-menu">'
          + srt_menu
          + '</div>'
-         + '<div id="srt-add-line">'
+         + '<div class="btn-group">'
+         + '<button id="srt-update" type="button" class="btn btn-default">Update</button>'
+         + '<button id="srt-addline" type="button" class="btn btn-default">Add Line</button>'
+         + '</div>'
          + '</div>'
         );
     })
@@ -118,24 +121,29 @@ function render_dialog_form(srt_id) {
     for ( var t in text_arr)
     {
         /* Use 1 index for 'Normal people' */
-        var c = t+1;
-        text_str += '<label for="text_' + t + '"> Line: ' + c + '</label>'
-        text_str += '<input id="text_' + t + '" name="text_' + t + '" type="text" value="' + text_arr[t] + '" class="text ui-widget-content ui-corner-all" />' 
+        var c = parseInt(t) + 1;
+        text_str += '<div class="input-group">'
+        text_str += '<span class="input-group-addon">' + c + '</span>'
+        text_str += '<input id="text_' + t + '" name="text_' + t + '" type="text" value="' + text_arr[t] + '" class="form-control"/>'
+        text_str += '</div>'
     }
 
     /* Create div for our dialog popup */
     $('body').append(
         '<div id="dialog_form" title"Edit line">'
-        + '<form>'
-        + '<fieldset>'
-        + '<label for="time_start">Start</label>'
-        + '<input type="text" name="time_start" id="time_start" value="' + time_start + '"class="text ui-widget-content ui-corner-all" />'
-        + '<label for="time_end">End</label>'
-        + '<input type="text" name="time_end" id="time_end" value="' + time_end + '" class="text ui-widget-content ui-corner-all" />'
-        + text_str
-        + '</fieldset>' 
-        + '</form>' 
-        + '</div>' 
+        + '<form class="navbar-form navbar-left">'
+        + '<div class="input-group">'
+        + '<span class="input-group-addon">Start</span>'
+        + '<input type="text" name="time_start" id="time_start" value="' + time_start + '" class="form-control"/>'
+        + '</div>'
+        + '<div class="input-group">'
+        + '<span class="input-group-addon">End</span>'
+        + '<input type="text" name="time_end" id="time_end" value="' + time_end + '" class="form-control"/>'
+        + '</div>'
+        + text_str 
+        
+        + '</form>'
+        + '</div>'
     );
 };
 
