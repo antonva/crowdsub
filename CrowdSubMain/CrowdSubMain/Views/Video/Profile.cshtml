@@ -45,7 +45,7 @@
                                 @Html.DisplayFor(modelItem => item.subtitle_language)
                             </td>
                             <td>
-                                @Html.ActionLink("Download", "Profile", "Video", new { id = item.subtitle_video_id }, null)
+                                @Html.ActionLink("Download", "download", "Subtitle", new { subtitle_id = item.id }, null)
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.subtitle_date_created)
@@ -58,6 +58,11 @@
             {
                 <label for="file">Upload new subtitle for this video profile: </label>
                 <input type="file" name="file" id="file" />
+                <label for="language">Language: </label>
+                <select name="language" id="language">
+                    <option value="English">English</option>
+                    <option value="Icelandic">Icelandic</option>
+                </select>
 
                 <input type="submit" />
             }
