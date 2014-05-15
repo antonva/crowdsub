@@ -1,36 +1,11 @@
 ﻿$(document).ready(function () {
 
     // Sækir fjölda commenta á server
-    $.get("/Subtitle/GetCount", function (data) {
-        count = data; 
+    $.get("../GetCount", function (data) {
+        count = data;
+        console.log(count)
     });
 
-    // Ná í comment sem tilheyra viðkomandi subtitle
-    /*
-    $.get("Subtitle/get_comments_for_subtitle", function (data) {
-        for (key in data) {
-            // Breyta sem skilar dagsetningu á ákjósnalegu formi
-            var date = data[key].CommentDate = ConvertStringToJSDate(data[key].CommentDate);
-            if (key >= count) {
-                count++;
-                $(" #Comments li:last-child").before('\
-                            <li class="list-group-item">\
-                                <span id="Comment-ID" style=" display : none">' + data[key].sc_sub_id + '</span>\
-                                <p>\
-                                    <span class="glyphicon glyphicon-user"></span>\
-                                    <span class="text-primary">'  + data[key].sc_sub_id + '</span>\
-                                    <span>' + data[key].sc_comment + '</span>\
-                                </p>\
-                                <p>\
-                                    <span class="text-muted">' + date + ' </span>\
-                                    <a id="like-button" class="like-comment" href="#">Like <span class="glyphicon glyphicon-thumbs-up"></span></a>\
-                                </p>\
-                            </li>'
-                );
-            }
-        }
-    });
-    */
     //Send comment
     $("#senda").click(function () {
         
@@ -46,8 +21,10 @@
                 $("#submitCommentError").show();
             }
             else {
-                $.post("/Subtitle/post_comment", sendData, function (data) {
+                console.log("Keyrir jquery inní else");
+                $.post("../post_comment", sendData, function (data) {
 
+                    console.log("Keyrir jquery inní post");
                     // Ef Comment error var birtur þá fjarlægist hann hér við póstun nýs comments
                     $("#submitCommentError").hide();
 
