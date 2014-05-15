@@ -20,12 +20,16 @@ namespace CrowdSubMain.Controllers
     {
 		private readonly i_subtitle_repository subtitle_repo;
 		private readonly i_video_repository video_repo;
+        private readonly i_subtitle_comment_repository subtitle_comment_repo;
+
 		public SubtitleController()
 		{
 			subtitle_repository subtitle = new subtitle_repository();
 			video_repository videos = new video_repository();
 			subtitle_repo = subtitle;
 			video_repo = videos;
+            subtitle_comment_repository sc_repo = new subtitle_comment_repository();
+            subtitle_comment_repo = sc_repo; 
 		}
 
 		public SubtitleController(i_subtitle_repository subtitles)
@@ -71,6 +75,8 @@ namespace CrowdSubMain.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             
+            IEnumerable<subtitle_comment> subtitle_comments = get_comments_for_subtitle(id);
+
 			subtitle subtitle = subtitle_repo.get_subtitles().Where(x => x.id == id).FirstOrDefault();
             if (subtitle == null)
             {
@@ -215,13 +221,40 @@ namespace CrowdSubMain.Controllers
 			return RedirectToAction("Profile","Video", new { id = video_id });
 		}
 
-        /* protected override void Dispose(bool disposing)
+        [HttpGet]
+        public int GetCount()
         {
-            if (disposing)
+            var count = subtitle_comment_repo.get_subtitle_comments().Count();
+
+            return count;
+        }
+
+        [HttpGet]
+        public IEnumerable<subtitle_comment> get_comments_for_subtitle(int? id) 
+        { 
+            var comments = (from s in subtitle_comment_repo.get_subtitle_comments()
+                            where s.sc_sub_id == id 
+                            orderby s.sc_date_created
+                            select s);
+
+            return comments;
+        }
+
+        [HttpPost]
+        public ActionResult post_comment(subtitle_comment d, int sub_id)
+        {
+            
+            subtitle_comment c = new subtitle_comment 
             {
-                db.Dispose();
+                sc_user_id = User.Identity.GetUserId(),
+                sc_sub_id = sub_id,
+                sc_comment = d.sc_comment,
+                sc_date_created = DateTime.Now
+            };
+            subtitle_comment_repo.add(c);
+            var repo = subtitle_comment_repo.get_subtitle_comments();
+
+            return Json(repo, JsonRequestBehavior.AllowGet);
             }
-            base.Dispose(disposing);
-        } */
     }
 }

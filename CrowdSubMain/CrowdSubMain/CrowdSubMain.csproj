@@ -186,11 +186,13 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Repositories\i_subtitle_comment_repository.cs" />
     <Compile Include="Repositories\i_request_repository.cs" />
     <Compile Include="Repositories\i_subtitle_repository.cs" />
     <Compile Include="Repositories\i_upvote_repository.cs" />
     <Compile Include="Repositories\i_video_repository.cs" />
     <Compile Include="Repositories\request_repository.cs" />
+    <Compile Include="Repositories\subtitle_comment_repository.cs" />
     <Compile Include="Repositories\subtitle_repository.cs" />
     <Compile Include="Repositories\upvote_repository.cs" />
     <Compile Include="Repositories\video_repository.cs" />
@@ -205,6 +207,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\batman-logo.png" />
     <Content Include="Images\CrowdSub_Logo_V1_210x75.png" />
+    <Content Include="Scripts\a_jscript.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\subtitle-edit\srt.css" />
@@ -219,6 +222,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\comment-og-like-scripta.js" />
     <Content Include="Scripts\faq.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

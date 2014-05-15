@@ -14,10 +14,12 @@
     <!-- Default panel contents -->
     <div class="panel-body">
         <div id="video_information">
-            <img src="@Html.DisplayFor(model => model.video.poster_link)" class="img-responsive" alt="Poster image is missing for this video profile. To fix this please edit video profile and provide us with an link to image" height="190" width="128">
+            <img src="@Html.DisplayFor(model => model.video.poster_link)" id="video_poster"class="img-responsive" alt="Poster image is missing for this video profile. To fix this please edit video profile and provide us with an link to image" height="190" width="128">
+            <div class="clearfix"></div>
             <div class="video_profile_general_description">
                 <p id="video_description">@Html.DisplayFor(model => model.video.video_description)</p>
             </div>
+        </div>
             
             <table class="table table-hover">
                     <thead>
@@ -53,7 +55,7 @@
          
             @using (Html.BeginForm("Upload", "Subtitle", new { video_id = Model.video.id }, FormMethod.Post, new { enctype = "multipart/form-data" }))
             {
-                <label for="file">Filename: </label>
+                <label for="file">Upload new subtitle for this video profile: </label>
                 <input type="file" name="file" id="file" />
                 <label for="language">Language: </label>
                 <select name="language" id="language">
@@ -63,9 +65,12 @@
 
                 <input type="submit" />
             }
-      
-            @Html.ActionLink("Edit", "Edit", new { id = Model.video.id })
-            @Html.ActionLink("Request", "Request", new { id = Model.video.id })
-        </div>
+           
+            <ul class="list-inline">
+                <li></li>
+                <li>@Html.ActionLink("Edit video profile", "Edit", new { id = Model.video.id })</li>
+                <li>@Html.ActionLink("Request", "Request", new { id = Model.video.id })</li>
+            </ul>
+        
     </div>
 </div>

@@ -47,15 +47,14 @@
                               <option value="1">Icelandic</option>
                           </select>*@
                          
-                       
-                          
-                          
-                          
-                          
-
                           <button type="submit" class="btn btn-default">Search</button>
                       </li>
-                      
+                      <li id="list_block">
+                          @Html.ActionLink("Top downloads", "TopDownloadedSubtitles", "Subtitle")
+                          @Html.ActionLink("Recent subtitles", "RecentSubtitles", "Subtitles")
+                          @Html.ActionLink("Top requests", "top_request", "Home")
+                      </li>
+
                   </ul>
               </div>
 }

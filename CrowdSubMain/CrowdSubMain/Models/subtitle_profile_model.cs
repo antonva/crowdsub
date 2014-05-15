@@ -11,5 +11,6 @@ namespace CrowdSubMain.Models
     {
         public subtitle subtitle { get; set; }
         public string srt_string { get; set; }
+        public IEnumerable<subtitle_comment> subtitle_comments { get; set; }
     }
 }
