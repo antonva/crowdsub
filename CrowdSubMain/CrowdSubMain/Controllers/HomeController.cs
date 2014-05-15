@@ -13,6 +13,12 @@ namespace CrowdSubMain.Controllers
 			return View();
 		}
 
+        [HttpPost]
+        public ActionResult Index(string search)
+        {
+            return RedirectToAction("search", "Video", new { query = search });
+        }
+
 		public ActionResult About()
 		{
 			ViewBag.Message = "Your application description page.";

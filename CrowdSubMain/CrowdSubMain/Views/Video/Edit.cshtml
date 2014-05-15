@@ -1,13 +1,69 @@
 ﻿@model CrowdSubMain.Models.video
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Edit Video Profile";
 }
 
-<h2>Edit</h2>
 
+<div class="row">
+    <div class="col-md-8">
+        <section id="loginForm">
+            @using (Html.BeginForm("Edit", "Video", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <h4>Please replace fields with the information you want to change and press save.</h4>
+                @Html.ValidationSummary(true)
+                <div class="form-group">
+                    @Html.LabelFor(m => m.video_title, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.video_title, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.video_title)
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    @Html.LabelFor(m => m.video_description, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextAreaFor(m => m.video_description, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.video_description)
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    @Html.LabelFor(m => m.video_year_published, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.video_year_published, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.video_year_published)
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    @Html.LabelFor(m => m.poster_link, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.poster_link, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.poster_link)
+                    </div>
+                </div>
+    
+                @*<div class="form-group">
+                    @Html.LabelFor(m => m.video_type, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.video_type, ViewBag.items as List<SelectListItem>)
+                            @Html.ValidationMessageFor(model => model.video_type)
+                    </div>
+                </div>*@
+    
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Save" class="btn btn-default" />
+                    </div>
+                </div>    
+            }
+        </section>
+    </div>
+</div>
 
-@using (Html.BeginForm())
+@*@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
     
@@ -16,14 +72,6 @@
         <hr />
         @Html.ValidationSummary(true)
         @Html.HiddenFor(model => model.id)
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_created_by_user_id, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_created_by_user_id)
-                @Html.ValidationMessageFor(model => model.video_created_by_user_id)
-            </div>
-        </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.video_title, new { @class = "control-label col-md-2" })
@@ -50,22 +98,6 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.video_date_created, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_date_created)
-                @Html.ValidationMessageFor(model => model.video_date_created)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_date_updated, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_date_updated)
-                @Html.ValidationMessageFor(model => model.video_date_updated)
-            </div>
-        </div>
-
-        <div class="form-group">
             @Html.LabelFor(model => model.video_description, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.video_description)
@@ -74,16 +106,17 @@
         </div>
 
         <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+            @Html.LabelFor(m => m.poster_link, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.poster_link, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.poster_link)
             </div>
         </div>
-    </div>
-}
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+        
+    </div>
+}*@
+
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

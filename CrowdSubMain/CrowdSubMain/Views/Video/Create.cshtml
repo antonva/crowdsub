@@ -12,7 +12,7 @@
             @using (Html.BeginForm("Create", "Video", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
                 @Html.AntiForgeryToken()
-                <h4>Please fill in the blanks to create a new video profile</h4>
+                <h4>Please fill in the blanks to create a new video profile.</h4>
                 @Html.ValidationSummary(true)
                 <div class="form-group">
                     @Html.LabelFor(m => m.video_title, new { @class = "col-md-2 control-label" })
