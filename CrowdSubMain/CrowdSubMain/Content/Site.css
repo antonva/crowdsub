@@ -51,9 +51,7 @@ input[type="checkbox"].input-validation-error {
     margin-top: 75px;
 }
 
-.message{
-    color: #FFFFFF;
-}
+
 
  #page_title{
     margin-top: 0;
@@ -120,15 +118,45 @@ body {
 
 /*BEGIN Search bar in the layout*/
 
-#search_row{
-    position: relative;
-    bottom: 50px;
-    left: 790px;
+
+
+#language_dropdown{
+    width: 10%;
 }
 
-#search_dropdown{
-    padding: 7px;
-    position: relative;
-    right: 18px;
-}
 /*END Search bar */
+
+/*BEGIN NEW CSS*/
+
+/*Main layout*/
+body { 
+/*This padding will keep the content from hitting the navbar*/
+    padding-top: 75px; 
+}
+
+#logo{
+    float: left;
+}
+
+#navbar_fixed_top{
+    height: 75px;
+}
+
+#search{
+    padding: 9px;
+    position: relative;
+    left: 15%;
+    float: right;
+}
+
+.message{
+    color: #FFFFFF;
+}
+
+h5{
+    height: 15px;
+}
+
+
+
+/*MAIN LAYOUT END*/
