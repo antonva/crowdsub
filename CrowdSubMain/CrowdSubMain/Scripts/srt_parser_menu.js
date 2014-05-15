@@ -4,9 +4,11 @@ $(document).ready(function () {
         parse_srt(this);
         srt_to_html();
         $('#srt-select').html(
-         '<div id="srt-menu">' +
-            srt_menu + 
-         '</div>'
+         '<div id="srt-menu">'
+         + srt_menu
+         + '</div>'
+         + '<div id="srt-add-line">'
+         + '</div>'
         );
     })
 
@@ -16,6 +18,7 @@ $(document).ready(function () {
             var srt_id = event.currentTarget.attributes['id'].value;
 
             if ((event.keyCode || event.which) == 13) {
+                console.log(event);
                 console.log('eeep');
             }
             draw_dialog(srt_id);
@@ -23,11 +26,6 @@ $(document).ready(function () {
         //refresh : function (event, ui) { }
     });
 
-    //$('.ui-menu-item').click(function (event) {
-    //    var srt_id = $(this).attr('id');
-        
-    //    //globmenu.menu('refresh', true);
-    //});
 });
 
 
@@ -64,7 +62,7 @@ function draw_dialog(srt_id) {
                 /* Update html */
                 $('#' + srt_id + '').html(
                           '<span id="' + srt_id +'">'
-                        + '<a href="#' + srt_id +'">'
+                        + '<a href="#srt-menu">'
                         + '<span id=' + srt_id + ' class="table">'
                         + '<span id="row-1" class="table-row">'
                         + '<span id="number" class="table-cell">' + srt_id + '</span>' 
@@ -198,7 +196,7 @@ function srt_to_html() {
     for (var i in srt_object)
     {
         srt_menu +='<span id="' + i +'">'
-        srt_menu +='<a href="#' + i +'">'
+        srt_menu +='<a href="#srt-menu">'
         srt_menu +='<span id=' + i + ' class="table">'
         srt_menu +='<span id="row-1" class="table-row">'
         srt_menu +='<span id="number" class="table-cell">' + i + '</span>' 

@@ -35,7 +35,7 @@ namespace CrowdSubMain.Controllers
 
 		public ActionResult Profile(int id)
 		{
-
+            //TODO: check valid id and redirect to 404
 			var video = (from v in video_repo.get_videos()
 						 where v.id == id
 						 select v).First();
