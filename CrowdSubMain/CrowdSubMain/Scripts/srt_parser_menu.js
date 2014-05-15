@@ -4,22 +4,26 @@ $(document).ready(function () {
         parse_srt(this);
         srt_to_html();
         $('#srt-select').html(
-         '<div id="srt-menu">' +
-            srt_menu + 
-         '</div>'
+         '<div id="srt-menu">'
+         + srt_menu
+         + '</div>'
+         + '<div id="srt-add-line">'
+         + '</div>'
         );
     })
 
     globmenu = $('#srt-menu').menu({
-        
-        menus : "div",
-        select : function (event, ui) { 
-            console.log(event.currentTarget.attributes['id'].value);
+        menus   : "div",
+        select: function (event, ui) {
             var srt_id = event.currentTarget.attributes['id'].value;
+
+            if ((event.keyCode || event.which) == 13) {
+                console.log(event);
+                console.log('eeep');
+            }
             draw_dialog(srt_id);
-            globmenu.menu('refresh', true);
-        },   
-        refresh : function (event, ui) { }
+        },
+        //refresh : function (event, ui) { }
     });
 
 });
@@ -58,14 +62,14 @@ function draw_dialog(srt_id) {
                 /* Update html */
                 $('#' + srt_id + '').html(
                           '<span id="' + srt_id +'">'
-                        + '<a href="#">'
+                        + '<a href="#srt-menu">'
                         + '<span id=' + srt_id + ' class="table">'
                         + '<span id="row-1" class="table-row">'
                         + '<span id="number" class="table-cell">' + srt_id + '</span>' 
                         + '<span id="row-2" class="table-row">'
                         + '<span id="time" class="table-cell">'
                         + srt_object[srt_id]["time"]["start"]
-                        + ' ▶  ' 
+                        + ' >>  ' 
                         + srt_object[srt_id]["time"]["end"]
                         + '</span>'
                         + '</span>'
@@ -77,7 +81,7 @@ function draw_dialog(srt_id) {
                         + '</span>'
                 );
 
-                globmenu.menu('refresh', true);
+                //globmenu.menu('refresh', true);
                 $(this).dialog("close");
                 },
 
@@ -87,8 +91,8 @@ function draw_dialog(srt_id) {
         },
         
         /* Close event callback */
-        close    : function (event, ui) {
-        $(this).dialog('destroy').remove();
+        close: function (event, ui) {
+            $(this).dialog('destroy').remove();
         }
     };
 
@@ -192,14 +196,14 @@ function srt_to_html() {
     for (var i in srt_object)
     {
         srt_menu +='<span id="' + i +'">'
-        srt_menu +='<a href="#">'
+        srt_menu +='<a href="#srt-menu">'
         srt_menu +='<span id=' + i + ' class="table">'
         srt_menu +='<span id="row-1" class="table-row">'
         srt_menu +='<span id="number" class="table-cell">' + i + '</span>' 
         srt_menu +='<span id="row-2" class="table-row">'
         srt_menu +='<span id="time" class="table-cell">'
         srt_menu +=srt_object[i]["time"]["start"]
-        srt_menu +=' ▶  ' 
+        srt_menu +=' >>  ' 
         srt_menu +=srt_object[i]["time"]["end"]
         srt_menu +='</span>'
         srt_menu +='</span>'
