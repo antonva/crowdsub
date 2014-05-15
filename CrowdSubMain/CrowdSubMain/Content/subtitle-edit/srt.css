@@ -22,8 +22,8 @@ div {
     margin-right: auto;
 }
 
-#menu {
-    height : 512px;
+#srt-menu {
+    height : 400px;
     overflow-y : scroll;
 }
 

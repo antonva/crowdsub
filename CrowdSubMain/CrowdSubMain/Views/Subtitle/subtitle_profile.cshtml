@@ -62,17 +62,19 @@
         </dd>
 
     </dl>
+    <div id="srt-select"></div>
 <!-- Cannot be a div, the parser has only been tested against textareas.-->
 <textarea id="srt">
-1
+@Html.DisplayTextFor(model => model.srt_string)
+@*1
 00:00:50,739 --> 00:00:54,868
 And we're on in four, three,
 
 2
 00:00:54,952 --> 00:00:56,870
-two, one.
+two, one.*@
 </textarea>
-    <div id="srt-select"></div>
+
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.subtitle.id }) |

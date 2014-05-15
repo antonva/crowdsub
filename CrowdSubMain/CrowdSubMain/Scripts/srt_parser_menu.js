@@ -12,15 +12,22 @@ $(document).ready(function () {
 
     globmenu = $('#srt-menu').menu({
         menus   : "div",
-        select  : function (event, ui) { },   
+        select: function (event, ui) {
+            var srt_id = event.currentTarget.attributes['id'].value;
+
+            if ((event.keyCode || event.which) == 13) {
+                console.log('eeep');
+            }
+            draw_dialog(srt_id);
+        },
         //refresh : function (event, ui) { }
     });
 
-    $('.ui-menu-item').click(function (event) {
-        var srt_id = $(this).attr('id');
-        draw_dialog(srt_id);
-        //globmenu.menu('refresh', true);
-    });
+    //$('.ui-menu-item').click(function (event) {
+    //    var srt_id = $(this).attr('id');
+        
+    //    //globmenu.menu('refresh', true);
+    //});
 });
 
 
