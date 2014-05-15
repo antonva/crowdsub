@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<CrowdSubMain.Models.subtitle>
+
+@{
     ViewBag.Title = "Welcome to Crowd Sub";
 }
 
@@ -6,8 +8,28 @@
     ViewBag.Message = "A crowd sourcing subtitle page";
 }
 
+<div class="page-header">
+    <h1>Popular subtitles</h1>
+</div>
 
-    <div class="row">
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" src="~/Images/batman-logo.png" width="200" height="100" alt="...">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">Batman</h4>
+        <ul>
+            <li>English
+            </li>
+            <li>Prump</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+    @*<div class="row">
         <div class="col-md-4">
             <div class="well">
                 <h2>Top Downloads</h2>
@@ -64,6 +86,6 @@
             <p class="btn btn-default">@Html.ActionLink("See more", "recent", "Subtitle")</p>
         </div>
     </div>
-</div>
+</div>*@
 
 

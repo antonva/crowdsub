@@ -12,18 +12,22 @@ using CrowdSubMain.Repositories;
 using Microsoft.AspNet.Identity;
 using System.IO;
 using System.Diagnostics;
+using System.Text;
 
 namespace CrowdSubMain.Controllers
 {
     public class SubtitleController : Controller
     {
 		private readonly i_subtitle_repository subtitle_repo;
+		private readonly i_video_repository video_repo;
         private readonly i_subtitle_comment_repository subtitle_comment_repo;
 
 		public SubtitleController()
 		{
 			subtitle_repository subtitle = new subtitle_repository();
+			video_repository videos = new video_repository();
 			subtitle_repo = subtitle;
+			video_repo = videos;
             subtitle_comment_repository sc_repo = new subtitle_comment_repository();
             subtitle_comment_repo = sc_repo; 
 		}
@@ -66,7 +70,7 @@ namespace CrowdSubMain.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-
+            
             IEnumerable<subtitle_comment> subtitle_comments = get_comments_for_subtitle(id);
 
 			subtitle subtitle = subtitle_repo.get_subtitles().Where(x => x.id == id).FirstOrDefault();
@@ -74,7 +78,16 @@ namespace CrowdSubMain.Controllers
             {
                 return HttpNotFound();
             }
-            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = "fle" , subtitle_comments = subtitle_comments};
+            
+            string srt_string = string.Empty;
+            string file_path = Path.Combine(Server.MapPath("~/App_Data/uploads"), subtitle.subtitle_file_name);
+            using (StreamReader stream_reader = new StreamReader(file_path, Encoding.UTF8))
+            {            
+                srt_string = stream_reader.ReadToEnd();
+            }
+
+            
+            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = srt_string };
             return View(model);
         }
 
@@ -179,10 +192,12 @@ namespace CrowdSubMain.Controllers
         [Authorize]
 		public ActionResult Upload(HttpPostedFileBase file, int video_id)
 		{
-			int subtitle_id = 0;
 			if (file.ContentLength > 0)
 			{
-				var file_name = Path.GetFileName(file.FileName);
+				var video_name = (from v in video_repo.get_videos()
+								  where v.id == video_id
+								  select v).First().video_title; //get title of video
+				var file_name = video_name + ".srt";
 				Debug.WriteLine("File name: " + file_name.ToString());
 				var path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
 				Debug.WriteLine("File path: " + path.ToString());
@@ -198,9 +213,8 @@ namespace CrowdSubMain.Controllers
 				};
 				subtitle_repo.add(subtitle);
 				file.SaveAs(path);
-				subtitle_id = subtitle.id;
 			}
-			return RedirectToAction("Profile","Video", new { id = subtitle_id });
+			return RedirectToAction("Profile","Video", new { id = video_id });
 		}
 
         [HttpGet]
@@ -227,7 +241,7 @@ namespace CrowdSubMain.Controllers
         {
             
             subtitle_comment c = new subtitle_comment 
-            { 
+            {
                 sc_user_id = User.Identity.GetUserId(),
                 sc_sub_id = sub_id,
                 sc_comment = d.sc_comment,
@@ -237,6 +251,6 @@ namespace CrowdSubMain.Controllers
             var repo = subtitle_comment_repo.get_subtitle_comments();
 
             return Json(repo, JsonRequestBehavior.AllowGet);
-        }
+            }
     }
 }
