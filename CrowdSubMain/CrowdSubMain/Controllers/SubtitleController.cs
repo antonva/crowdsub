@@ -80,6 +80,7 @@ namespace CrowdSubMain.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Create([Bind(Include="id,subtitle_user_id,subtitle_video_id,subtitle_file_path,subtitle_date_created,subtitle_download_count,subtitle_language")] subtitle subtitle)
         {
             if (ModelState.IsValid)
@@ -97,6 +98,7 @@ namespace CrowdSubMain.Controllers
         }
 
         // GET: /Subtitle/Edit/5
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -114,6 +116,7 @@ namespace CrowdSubMain.Controllers
         // POST: /Subtitle/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Edit([Bind(Include="id,subtitle_user_id,subtitle_video_id,subtitle_file_path,subtitle_date_created,subtitle_download_count,subtitle_language")] subtitle subtitle)
         {
             if (ModelState.IsValid)
@@ -167,6 +170,7 @@ namespace CrowdSubMain.Controllers
         }
 
 		[HttpPost]
+        [Authorize]
 		public ActionResult Upload(HttpPostedFileBase file, int video_id)
 		{
 			int subtitle_id = 0;
@@ -190,7 +194,7 @@ namespace CrowdSubMain.Controllers
 				file.SaveAs(path);
 				subtitle_id = subtitle.id;
 			}
-			return RedirectToAction("Profile", new { id = subtitle_id });
+			return RedirectToAction("Profile","Video", new { id = subtitle_id });
 		}
 
         /* protected override void Dispose(bool disposing)
