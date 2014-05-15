@@ -73,5 +73,13 @@ body {
     float:right;
 }
 
+#navlist{
+    float: right;
+}
+#navlist li
+{
+    display: inline;
+    list-style-type: none;
+}
 
 /*MAIN LAYOUT END*/
