@@ -13,14 +13,15 @@
 <div class="panel panel-default">
     <!-- Default panel contents -->
     <div class="panel-body">
-        <div id="video_information">
-            <img src="@Html.DisplayFor(model => model.video.poster_link)" id="video_poster"class="img-responsive" alt="Poster image is missing for this video profile. To fix this please edit video profile and provide us with an link to image" height="190" width="128">
-            <div class="clearfix"></div>
-            <div class="video_profile_general_description">
-                <p id="video_description">@Html.DisplayFor(model => model.video.video_description)</p>
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img src="@Html.DisplayFor(model => model.video.poster_link)" class="media-object" alt="Poster image is missing for this video profile. To fix this please edit video profile and provide us with an link to image" height="190" width="128">
+            </a>
+            <div class="media-body">
+                <p>@Html.DisplayFor(model => model.video.video_description)</p>
             </div>
         </div>
-            
+        
             <table class="table table-hover">
                     <thead>
                         <tr>
