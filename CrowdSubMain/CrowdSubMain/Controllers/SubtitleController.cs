@@ -26,9 +26,9 @@ namespace CrowdSubMain.Controllers
 		{
 			subtitle_repository subtitle = new subtitle_repository();
 			video_repository videos = new video_repository();
-			subtitle_repo = subtitle;
-			video_repo = videos;
             subtitle_comment_repository sc_repo = new subtitle_comment_repository();
+            subtitle_repo = subtitle;
+			video_repo = videos;
             subtitle_comment_repo = sc_repo; 
 		}
 
@@ -91,7 +91,7 @@ namespace CrowdSubMain.Controllers
             }
 
             
-            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = srt_string };
+            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = srt_string, subtitle_comments = subtitle_comments };
             return View(model);
         }
 
