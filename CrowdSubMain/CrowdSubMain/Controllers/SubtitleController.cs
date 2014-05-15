@@ -17,9 +17,6 @@ namespace CrowdSubMain.Controllers
 {
     public class SubtitleController : Controller
     {
-		private int _video_id; //global variable to store video id when uploading
-								  //i.e. transfering between Upload functions GET and POST
-
 		private readonly i_subtitle_repository subtitle_repo;
 		public SubtitleController()
 		{
@@ -168,13 +165,6 @@ namespace CrowdSubMain.Controllers
                          select v).ToList().Take(10);
             return View(model);
         }
-
-		[HttpGet]
-		public ActionResult Upload(int video_id)
-		{
-			_video_id = video_id;
-			return View();
-		}
 
 		[HttpPost]
 		public ActionResult Upload(HttpPostedFileBase file, int video_id)
