@@ -4,22 +4,22 @@ $(document).ready(function () {
         parse_srt(this);
         srt_to_html();
         $('#srt-select').html(
-         '<div id="menu">' +
+         '<div id="srt-menu">' +
             srt_menu + 
          '</div>'
         );
     })
 
-    globmenu = $('#menu').menu({
+    globmenu = $('#srt-menu').menu({
+        
         menus : "div",
-        select : function (event, ui) { },
-        refresh : function (event, ui) { }
-    });
-
-    $('.ui-menu-item').click( function(event) {
-            var srt_id = $(this).attr('id');
+        select : function (event, ui) { 
+            console.log(event.currentTarget.attributes['id'].value);
+            var srt_id = event.currentTarget.attributes['id'].value;
             draw_dialog(srt_id);
             globmenu.menu('refresh', true);
+        },   
+        refresh : function (event, ui) { }
     });
 
 });
@@ -28,10 +28,11 @@ $(document).ready(function () {
 function draw_dialog(srt_id) {
     var dialog_options =  {
         /* Base options */
-        height   : 400,
-        width    : 450,
-        autoOpen : false,
-        modal    : true,
+        height        : 400,
+        width         : 450,
+        autoOpen      : false,
+        modal         : true,
+        closeOnEscape : true,
 
         /* Define buttons */
         buttons  : {
@@ -112,7 +113,9 @@ function render_dialog_form(srt_id) {
     var text_str = "";
     for ( var t in text_arr)
     {
-        text_str += '<label for="text_' + t + '">' + t + '</label>'
+        /* Use 1 index for 'Normal people' */
+        var c = t+1;
+        text_str += '<label for="text_' + t + '"> Line: ' + c + '</label>'
         text_str += '<input id="text_' + t + '" name="text_' + t + '" type="text" value="' + text_arr[t] + '" class="text ui-widget-content ui-corner-all" />' 
     }
 

@@ -16,13 +16,13 @@ namespace CrowdSubMain.Repositories
 			return db.videos;
 		}
 
-		public void add(Models.video video)
+		public void add(video video)
 		{
 			db.videos.Add(video);
 			db.SaveChanges();
 		}
 
-		public void edit(Models.video video)
+		public void edit(video video)
 		{
 			db.Entry(video).State = EntityState.Modified;
 			db.SaveChanges();

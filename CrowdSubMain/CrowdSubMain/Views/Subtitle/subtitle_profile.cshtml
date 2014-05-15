@@ -8,9 +8,7 @@
 
 <div>
     <!--SRT Parser and menu creator.-->
-    @section scripts {
-    <script href="/Scripts/srt_parser_menu.js" type="text/javascript"></script>
-    }
+    @Scripts.Render("~/Scripts/srt_parser_menu.js")
     <h4>subtitle</h4>
 	<hr />
     <dl class="dl-horizontal">
@@ -63,17 +61,17 @@
         </dd>
 
     </dl>
-    <div id="srt-file">
-        <textarea id="srt" readonly="1">
-            1
-            00:00:50,739 --> 00:00:54,868
-            And we're on in four, three,
+<!-- Cannot be a div, the parser does not work.-->
+<textarea id="srt"> 
+1
+00:00:50,739 --> 00:00:54,868
+And we're on in four, three,
 
-            2
-            00:00:54,952 --> 00:00:56,870
-            two, one.
-        </textarea>
-    </div>
+2
+00:00:54,952 --> 00:00:56,870
+two, one.
+</textarea>
+    <div id="srt-select"></div>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.subtitle.id }) |
