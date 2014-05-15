@@ -1,0 +1,70 @@
+﻿html, body {
+    height : 100%;
+    width : 100%;
+}
+
+div {
+    display : block;
+}
+#srt {
+    width : 80%;
+    height : 300px;
+    visibility : hidden;
+    display:block;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+#srt-select {
+    width : 80%;
+    display:block;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+#srt-menu {
+    height : 400px;
+    overflow-y : scroll;
+}
+
+/* Div selector for jquery ui dialog div. */
+/* keep it hidden from normal view */
+#dialog {
+    display : none;
+}
+
+
+/* +---------+
+ * |menu-span|
+ * +---------+------------+
+ * | menu_row             |
+ * +--------+-------------+
+ * | number | block-span  |
+ * |        +------+------+
+ * |        | text | time |
+ * +--------+------+------+
+/* Make each selectable block of text a CSS style table */
+.table {
+    display : table;
+}
+
+.table-cell {
+    display : table-cell;
+    vertical-align : middle;
+}
+
+/* Formatting for individual cell types */
+#number {
+    display : inline;
+    vertical-align : middle;
+    margin-right : 20px;
+}
+
+#time {
+    text-align : right; 
+}
+
+/*jquery ui layout*/
+label, input { display:block; }
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:25px; }

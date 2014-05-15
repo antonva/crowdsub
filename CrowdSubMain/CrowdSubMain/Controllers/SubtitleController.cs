@@ -12,6 +12,7 @@ using CrowdSubMain.Repositories;
 using Microsoft.AspNet.Identity;
 using System.IO;
 using System.Diagnostics;
+using System.Text;
 
 namespace CrowdSubMain.Controllers
 {
@@ -71,7 +72,16 @@ namespace CrowdSubMain.Controllers
             {
                 return HttpNotFound();
             }
-            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = "fle" };
+            
+            string srt_string = string.Empty;
+            string file_path = Path.Combine(Server.MapPath("~/App_Data/uploads"), subtitle.subtitle_file_name);
+            using (StreamReader stream_reader = new StreamReader(file_path, Encoding.UTF8))
+            {            
+                srt_string = stream_reader.ReadToEnd();
+            }
+
+            
+            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = srt_string };
             return View(model);
         }
 
