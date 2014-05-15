@@ -9,8 +9,8 @@ namespace CrowdSubMain.Models
 	{
 		public int id { get; set; }
 		public string request_user_id { get; set; }
-		public string request_lang { get; set; }
 		public int request_video_id { get; set; }
+		public string request_language { get; set; }
 		public System.DateTime request_date_created { get; set; }
         public System.DateTime request_date_updated { get; set; }
 	
