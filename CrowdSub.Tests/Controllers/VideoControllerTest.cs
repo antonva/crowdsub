@@ -144,7 +144,7 @@ namespace CrowdSub.Tests.Controllers
             List<video> model = (view_result.Model as IEnumerable<video>).ToList();
             Assert.IsTrue(model.Count < 1);
             for (int i = 0; i < model.Count; i++)
-            {  
+            {
                 Assert.IsFalse(model[i].video_title.Contains(title));
             }
         }
@@ -182,14 +182,14 @@ namespace CrowdSub.Tests.Controllers
             // This test should fail.
             //Arrange
             List<video> videos = new List<video>();
-
+            
             for (var i = 0; i < 4; i++) 
             {
-                videos.Add(new video
-                {
+            videos.Add(new video
+            {
                     id = i,
                     video_title = "Video" + i.ToString()
-                });
+            });
             }
 
             mock_video_repository mock_video_repo = new mock_video_repository(videos);

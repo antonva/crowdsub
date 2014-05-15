@@ -18,14 +18,6 @@
         @Html.HiddenFor(model => model.id)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.video_created_by_user_id, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_created_by_user_id)
-                @Html.ValidationMessageFor(model => model.video_created_by_user_id)
-            </div>
-        </div>
-
-        <div class="form-group">
             @Html.LabelFor(model => model.video_title, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.video_title)
@@ -50,26 +42,18 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.video_date_created, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_date_created)
-                @Html.ValidationMessageFor(model => model.video_date_created)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.video_date_updated, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.video_date_updated)
-                @Html.ValidationMessageFor(model => model.video_date_updated)
-            </div>
-        </div>
-
-        <div class="form-group">
             @Html.LabelFor(model => model.video_description, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.video_description)
                 @Html.ValidationMessageFor(model => model.video_description)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.poster_link, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.poster_link, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.poster_link)
             </div>
         </div>
 

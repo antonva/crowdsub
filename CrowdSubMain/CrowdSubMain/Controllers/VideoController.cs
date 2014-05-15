@@ -118,7 +118,6 @@ namespace CrowdSubMain.Controllers
         {
             if (ModelState.IsValid)
             {
-
                 string user_id = User.Identity.GetUserId(); // Get the user id
                 string user_name = User.Identity.GetUserName();
                 video.video_created_by_user_id = user_id;   // Add the user id to the video object
@@ -158,14 +157,22 @@ namespace CrowdSubMain.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="id,video_created_by_user_id,video_title,video_type,video_year_published,video_date_created,video_date_updated,video_description")] video video)
+        public ActionResult Edit([Bind(Include="id,video_created_by_user_id,video_title,video_type,video_year_published,video_date_created,video_date_updated,video_description, poster_link")] video video)
         {
-            if (ModelState.IsValid)
+            string user_id = User.Identity.GetUserId(); // Get the user id
+            string user_name = User.Identity.GetUserName();
+            video.video_created_by_user_id = user_id;   // Add the user id to the video object
+            video.video_date_created = DateTime.Now;    // Add current time to the object being created
+            video.video_date_updated = DateTime.Now;    // Add curretn time to the object being created
+
+            if (video.poster_link == null)
             {
-				video_repo.edit(video);
-                return RedirectToAction("Index");
+                video.poster_link = "http://ia.media-imdb.com/images/M/MV5BODg0NjQ5ODQ3OF5BMl5BanBnXkFtZTcwNjU4MjkzNA@@._V1_SX300.jpg";
             }
-            return View(video);
+
+            video_repo.edit(video); // Add video to repo
+
+            return RedirectToAction("Profile", new { id = video.id });
         }
 
         // GET: /Video/Delete/5

@@ -29,25 +29,66 @@ namespace CrowdSubMain.Controllers
 			subtitle_repo = subtitles; //constructor takes repo as parameter
 		}
 
+		/* public ActionResult DisplayFilesForDownload()
+		{
+			var view_model = new SubtitleViewModel
+			{
+				Path = @"C:\Users\Lenovo\Documents\Tölvunarfræði BSc\Verklegt námskeið\FileUploadTest\FileUploadTest\App_Data\uploads",
+				subtitles = new List<Subtitle>()
+			};
+			var paths = Directory.GetFiles(view_model.Path).ToList();
+			foreach (var path in paths)
+			{
+				var file_info = new FileInfo(path);
+				var subtitle = new Subtitle(file_info.Name, path);
+				view_model.subtitles.Add(subtitle);
+			}
+			return View(view_model);
+		} */
+
+
+
         // GET: /Subtitle/
         public ActionResult Index()
         {
-            return View(subtitle_repo.get_subtitles());
+			var view_model = new subtitle_view_model_download
+			{
+				path = Server.MapPath("~/App_Data/uploads"),
+				subtitles = new List<subtitle>()
+			};
+			var paths = Directory.GetFiles(view_model.path).ToList();
+			view_model.subtitles = (from s in subtitle_repo.get_subtitles()
+									orderby s.subtitle_file_path descending
+									select s).ToList();
+			foreach(var sub in view_model.subtitles)
+			{
+				var file_name = sub.subtitle_file_path;
+				sub.subtitle_file_path = Path.Combine(Server.MapPath("~/App_data/uploads"), file_name);
+			}
+			return View(view_model);
         }
 
+		public FileResult download(string file_path, string file_name)
+		{
+			var file = File(file_path, System.Net.Mime.MediaTypeNames.Text.Plain, file_name);
+			return file;
+		}
+
         // GET: /Subtitle/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult subtitle_profile(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+            
 			subtitle subtitle = subtitle_repo.get_subtitles().Where(x => x.id == id).FirstOrDefault();
             if (subtitle == null)
             {
                 return HttpNotFound();
             }
-            return View(subtitle);
+            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = "fle" };
+            return View(model);
         }
 
         // GET: /Subtitle/Create
@@ -136,6 +177,14 @@ namespace CrowdSubMain.Controllers
             return View(model);
         }
 
+        public ActionResult RecentSubtitles() 
+        {
+            var model = (from v in subtitle_repo.get_subtitles()
+                         orderby v.subtitle_date_created descending
+                         select v).ToList().Take(10);
+            return View(model);
+        }
+
 		/* [HttpGet]
 		public ActionResult Upload()
 		{
@@ -143,7 +192,7 @@ namespace CrowdSubMain.Controllers
 		}
 
 		[HttpPost]
-		public ActionResult Upload(HttpPostedFileBase file, )
+		public ActionResult Upload(HttpPostedFileBase file)
 		{
 			if (file.ContentLength > 0)
 			{
@@ -151,10 +200,21 @@ namespace CrowdSubMain.Controllers
 				Debug.WriteLine("File name: " + file_name.ToString());
 				var path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
 				Debug.WriteLine("File path: " + path.ToString());
+				var subtitle = new subtitle
+				{
+					subtitle_user_id = User.Identity.GetUserId(), //get user id
+					subtitle_video_id = 5, 
+					subtitle_file_path = file_name,
+					subtitle_file_name = file_name,
+					subtitle_date_created = DateTime.Now,
+					subtitle_download_count = 0,
+					subtitle_language = 0
+				};
+				subtitle_repo.add(subtitle);
 				file.SaveAs(path);
 			}
-			return RedirectToAction("Index");
-		} */
+			return RedirectToAction("Upload");
+		}
 
         /* protected override void Dispose(bool disposing)
         {
