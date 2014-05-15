@@ -17,6 +17,9 @@ namespace CrowdSubMain.Controllers
 {
     public class SubtitleController : Controller
     {
+		private int _video_id; //global variable to store video id when uploading
+								  //i.e. transfering between Upload functions GET and POST
+
 		private readonly i_subtitle_repository subtitle_repo;
 		public SubtitleController()
 		{
@@ -28,25 +31,6 @@ namespace CrowdSubMain.Controllers
 		{
 			subtitle_repo = subtitles; //constructor takes repo as parameter
 		}
-
-		/* public ActionResult DisplayFilesForDownload()
-		{
-			var view_model = new SubtitleViewModel
-			{
-				Path = @"C:\Users\Lenovo\Documents\Tölvunarfræði BSc\Verklegt námskeið\FileUploadTest\FileUploadTest\App_Data\uploads",
-				subtitles = new List<Subtitle>()
-			};
-			var paths = Directory.GetFiles(view_model.Path).ToList();
-			foreach (var path in paths)
-			{
-				var file_info = new FileInfo(path);
-				var subtitle = new Subtitle(file_info.Name, path);
-				view_model.subtitles.Add(subtitle);
-			}
-			return View(view_model);
-		} */
-
-
 
         // GET: /Subtitle/
         public ActionResult Index()
@@ -185,15 +169,17 @@ namespace CrowdSubMain.Controllers
             return View(model);
         }
 
-		/* [HttpGet]
-		public ActionResult Upload()
+		[HttpGet]
+		public ActionResult Upload(int video_id)
 		{
+			_video_id = video_id;
 			return View();
 		}
 
 		[HttpPost]
-		public ActionResult Upload(HttpPostedFileBase file)
+		public ActionResult Upload(HttpPostedFileBase file, int video_id)
 		{
+			int subtitle_id = 0;
 			if (file.ContentLength > 0)
 			{
 				var file_name = Path.GetFileName(file.FileName);
@@ -203,7 +189,7 @@ namespace CrowdSubMain.Controllers
 				var subtitle = new subtitle
 				{
 					subtitle_user_id = User.Identity.GetUserId(), //get user id
-					subtitle_video_id = 5, 
+					subtitle_video_id = video_id, 
 					subtitle_file_path = file_name,
 					subtitle_file_name = file_name,
 					subtitle_date_created = DateTime.Now,
@@ -212,8 +198,9 @@ namespace CrowdSubMain.Controllers
 				};
 				subtitle_repo.add(subtitle);
 				file.SaveAs(path);
+				subtitle_id = subtitle.id;
 			}
-			return RedirectToAction("Upload");
+			return RedirectToAction("Profile", new { id = subtitle_id });
 		}
 
         /* protected override void Dispose(bool disposing)
