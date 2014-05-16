@@ -19,16 +19,4 @@
     $("#question5").click(function () {
         $("#answer5").toggle();
     });
-
-    $("#question6").click(function () {
-        $("#answer6").toggle();
-    });
-
-    $("#question7").click(function () {
-        $("#answer7").toggle();
-    });
-
-    $("#question8").click(function () {
-        $("#answer8").toggle();
-    });
 });
