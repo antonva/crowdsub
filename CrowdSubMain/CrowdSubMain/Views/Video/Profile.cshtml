@@ -79,13 +79,23 @@
                     </div>
 
                     <button type="submit" class="btn btn-default">Submit</button><!--Button to submit file-->
-
-                    
-                    <button class="btn btn-default" id="request_button">@Html.ActionLink("Request a subtitle", "Request", new { id = Model.video.id })</button>
                 </div>
 
             </div>
 
+        }
+
+        @using (Html.BeginForm("Create", "Request", new { video_id = Model.video.id }, FormMethod.Post))
+        {
+            <div class="btn-group">
+                <p>Submit request</p>
+                <label for="request_lang">Select language: </label>
+                <select class="form-control" id="request_lang" name="request_lang">
+                    <option value="English">English</option>
+                    <option value="Icelandic">Icelandic</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
         }
     </div>
 </div>
