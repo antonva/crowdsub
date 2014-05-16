@@ -59,10 +59,11 @@
 
         </div>
     </div>
-    <!-- Cannot be a div, the parser has only been tested against textareas.-->
-    <textarea id="srt">
-        @Html.DisplayTextFor(model => model.srt_string)
-    </textarea>
+<!-- Cannot be a div, the parser has only been tested against textareas.-->
+<textarea id="srt">
+@Html.DisplayTextFor(model => model.srt_string)
+
+</textarea>
 
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.subtitle.id }) |
