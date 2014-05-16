@@ -2,7 +2,9 @@
     var subtitle_id = $("#this_subtitle_id").text();
     parseInt(subtitle_id, 10);
     // Sækir fjölda commenta á server
-    $.get("../GetCount", subtitle_id,function (data) {
+    var count = 0;
+
+    $.get("../GetCount", subtitle_id, function (data) {
         count = data;
         console.log(count)
     });
@@ -26,20 +28,18 @@
                     // Ef Comment error var birtur þá fjarlægist hann hér við póstun nýs comments
                     $("#submitCommentError").hide();
 
-                    for (key in data) {
-
                         // Breyta sem skilar dagsetningu á ákjósanlegu formi
-                        var date = data[key].CommentDate = ConvertStringToJSDate(data[key].CommentDate);
+                        var date = ConvertStringToJSDate(data.date_created);
 
                         // Póstar kommentum frá fjölda síðasta kommenti póstað s.br count breytu sem sækir fjölda kommenta á server
-                        if (key >= count) {
+                            console.log("Append the shiznit!!!!!!")
                             count++;
                             $(" #Comments li:last-child").before('\
                             <li class="list-group-item">\
                                 <p>\
                                     <span class="glyphicon glyphicon-user"></span>\
-                                    <span class="text-primary">'  + data[key].Username + '</span>\
-                                    <span>' + data[key].CommentText + '</span>\
+                                    <span class="text-primary">'  + data.user_name + '</span>\
+                                    <span>' + data.subtitle_comment + '</span>\
                                 </p>\
                                 <p>\
                                     <span class="text-muted">' + date + ' </span>\
@@ -48,13 +48,20 @@
                                     <button class="btn btn-primary" id="delete">Delete</button>\
                                 </p>\
                             </li>'
-                            );
-                        }
-                    }
+                      );
                 });     
             }       
             // Hreinsar út textaboxið eftir að hafa submit-að commenti
             $("#CommentText").val("");
+    });
+    $("#delete").click( function() {
+        var sendData = {
+            "comment_id": $("#CommentText").val(),
+            "subtitle_id": subtitle_id
+            }
+                $.post("../delete_comment", sendData, function (data){
+                    $("#comment_to_delete").remove();
+        });
     });
 });
 

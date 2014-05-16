@@ -173,6 +173,7 @@ namespace CrowdSubMain.Controllers
                            where v.sc_sub_id == subtitle_id
                            select v;
 
+            Debug.WriteLine(comments.Count());
             return comments.Count();
         }
 
@@ -199,10 +200,18 @@ namespace CrowdSubMain.Controllers
                 sc_date_created = DateTime.Now
             };
 
-            subtitle_comment_repo.add(c);
-            var repo = subtitle_comment_repo.get_subtitle_comments();
 
-            return Json(repo, JsonRequestBehavior.AllowGet);
+
+            var model = new { 
+                subtitle_comment = c.sc_comment, 
+                user_name = User.Identity.GetUserName(),
+                date_created = c.sc_date_created
+            };
+
+            subtitle_comment_repo.add(c);
+            //var repo = subtitle_comment_repo.get_subtitle_comments();
+
+            return Json(model, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
