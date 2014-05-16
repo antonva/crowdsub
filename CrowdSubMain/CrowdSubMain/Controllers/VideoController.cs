@@ -64,65 +64,68 @@ namespace CrowdSubMain.Controllers
         [HandleError]
 		public ActionResult search(string search, string language)
 		{
-			Debug.WriteLine("query: " + search);
-            Debug.WriteLine("language: " + language);
+            //string input_from_user = language;
+            List<search_pair> search_pairs = new List<search_pair>();
 
-            
+            /*searches for the video profile that matches input search from user*/
+            IEnumerable<video> video_enum = (from v in video_repo.get_videos()
+                                             where v.video_title.Contains(search)
+                                             select v);
+            List<video> videos = video_enum.ToList();
             
 
             if(language == "null") /* if no specific language is selected*/
             {
-                List<search_pair> search_pairs = new List<search_pair>();
-
-                IEnumerable<video> video_enum = (from v in video_repo.get_videos()
-                                                 where v.video_title.Contains(search)
-                                                 select v);
-                List<video> videos = video_enum.ToList();
-
                 foreach (var video in videos)
                 {
-                    IEnumerable<subtitle> subtitle_enum = (from s in subtitle_repo.get_subtitles()
+                    /*searches all subtitles for video profile */
+                   IEnumerable<subtitle> subtitle_enum = (from s in subtitle_repo.get_subtitles()
                                                            where s.subtitle_video_id == video.id
                                                            select s);
                     List<subtitle> subtitles = subtitle_enum.ToList();
+
+                    var language_checker = (from lc in subtitle_enum
+                                            select lc.subtitle_language).Distinct();
+                    List<string> languages = language_checker.ToList(); 
+                    
                     search_pairs.Add(new search_pair
                     {
                         video_pair = video,
-                        subtitle_pair = subtitles
+                        subtitle_pair = subtitles,
+                        language_keeper = languages
                     });
                 }
-                video_language_search model = new video_language_search { search_pairs = search_pairs };
-                return View(model);                 
+                
             }
-            else
+            else /*if specific language is selected*/
             {
-                List<search_pair> search_pairs = new List<search_pair>();
 
-                IEnumerable<video> video_enum = (from v in video_repo.get_videos()
-                                                 where v.video_title.Contains(search)
-                                                 select v);
-
-                List<video> videos = video_enum.ToList();
                 foreach (var video in videos)
                 {
+                    /*Searches specific subtitle language for a video profile*/
                     IEnumerable<subtitle> subtitle_enum = (from s in subtitle_repo.get_subtitles()
-                                                           where s.subtitle_video_id == video.id
-                                                           where s.subtitle_language.Contains(language)
+                                                           where s.subtitle_video_id == video.id 
+                                                           &&  s.subtitle_language.Contains(language)
                                                            select s);
                     List<subtitle> subtitles = subtitle_enum.ToList();
 
+                    var language_checker = (from lc in subtitle_enum
+                                            select lc.subtitle_language);
+                    List<string> languages = language_checker.ToList();
+                
 
                     search_pairs.Add(new search_pair
                     {
                         video_pair = video,
-                        subtitle_pair = subtitles
+                        subtitle_pair = subtitles,
+                        language_keeper = languages
                     });
                 }
-                video_language_search model = new video_language_search { search_pairs = search_pairs };
-                return View(model);
+                
             }
 
-         
+            video_language_search model = new video_language_search { search_pairs = search_pairs }; 
+            return View(model);  
 		}
 
         [HandleError]
