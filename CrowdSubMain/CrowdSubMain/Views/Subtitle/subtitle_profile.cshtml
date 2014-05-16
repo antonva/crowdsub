@@ -4,8 +4,6 @@
     ViewBag.Title = "Subtitle Profile";
 }
 
-<h2>Subtitle Profile</h2>
-
 <div>
     <!--SRT Parser and menu creator.-->
     @Scripts.Render("~/Scripts/srt_parser_menu.js")
@@ -21,49 +19,49 @@
             @Html.DisplayNameFor(model => model.subtitle.subtitle_download_count)
             @Html.DisplayFor(model => model.subtitle.subtitle_language)
     *@
-    <div id="srt-select"></div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div id="srt-select"></div>
+        </div>
+        <div class="col-lg-6">
+            <!--Returns the subtitle id which is then sent to the controller to relate comment to this particular subtitle-->
+            <span id="this_subtitle_id" style="display : none">@Html.DisplayFor(modelItem => Model.subtitle.id)</span>
+            <ul id="Comments" class="list-group" style="max-width: 560px;">
+                @foreach (var item in Model.subtitle_comments)
+                {
+                    <li class="list-group-item">
+                        <p>
+                            <span class="glyphicon glyphicon-user"></span>
+                            <span class="text-primary">@Html.DisplayFor(modelItem => item.user.UserName)</span>
+                            <span>@Html.DisplayFor(modelItem => item.sc_comment)</span>
+                        </p>
+                        <p>
+                            <span class="text-muted">@item.sc_date_created.ToString("dd. MMMM HH:mm") - </span>
+                            <a id="like-button" class="like-comment" href="#">Like <span class="glyphicon glyphicon-thumbs-up"></span></a>
+                        </p>
+                    </li>
+                }
+                <li class="list-group-item">
+
+                    <div class="form-horizontal">
+                        <label class="sr-only" for="CommentText">Comment</label>
+                        <textarea class="form-control" rows="3" id="CommentText" name="CommentText"></textarea>
+                        <p class="error" id="submitCommentError"></p>
+                        <button class="btn btn-primary" id="senda">Send</button>
+                    </div>
+                    @Html.ValidationSummary(false)
+                </li>
+            </ul>
+
+        </div>
+    </div>
 <!-- Cannot be a div, the parser has only been tested against textareas.-->
 <textarea id="srt">
 @Html.DisplayTextFor(model => model.srt_string)
-@*1
-00:00:50,739 --> 00:00:54,868
-And we're on in four, three,
-
-2
-00:00:54,952 --> 00:00:56,870
-two, one.*@
 </textarea>
 
 </div>
 
-<!--Returns the subtitle id which is then sent to the controller to relate comment to this particular subtitle-->
-<span id="this_subtitle_id" style="display : none">@Html.DisplayFor(modelItem => Model.subtitle.id)</span>
-<ul id="Comments" class="list-group" style="max-width: 560px;">
-    @foreach (var item in Model.subtitle_comments)
-    {
-        <li class="list-group-item">
-            <p>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="text-primary">@Html.DisplayFor(modelItem => item.user.UserName)</span>
-                <span>@Html.DisplayFor(modelItem => item.sc_comment)</span>
-            </p>
-            <p>
-                <span class="text-muted">@item.sc_date_created.ToString("dd. MMMM HH:mm") - </span>
-                <a id="like-button" class="like-comment" href="#">Like <span class="glyphicon glyphicon-thumbs-up"></span></a>
-            </p>
-        </li>
-    }
-    <li class="list-group-item">
-
-        <div class="form-horizontal">
-            <label class="sr-only" for="CommentText">Comment</label>
-            <textarea class="form-control" rows="3" id="CommentText" name="CommentText"></textarea>
-            <p class="error" id="submitCommentError"></p>
-            <button class="btn btn-primary" id="senda">Send</button>
-        </div>
-        @Html.ValidationSummary(false)
-    </li>
-</ul>
 
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.subtitle.id }) |
