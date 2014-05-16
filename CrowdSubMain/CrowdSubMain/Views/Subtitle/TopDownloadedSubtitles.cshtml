@@ -1,50 +1,51 @@
 ﻿@model IEnumerable<CrowdSubMain.Models.subtitle>
 
 @{
-    ViewBag.Title = "TopDownloadedSubtitles";
+    ViewBag.Title = "Top Downloaded Subtitles";
 }
 
-<h2>TopDownloadedSubtitles</h2>
-
-<p>
+@*<p>
     @Html.ActionLink("Create New", "Create")
-</p>
+</p>*@
 
-<table class="table">
+<table class="table table-hover">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.subtitle_video_id)
+            Title
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.subtitle_date_created)
+            Subtitle name
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.subtitle_download_count)
+            Date created
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.subtitle_language)
+            Download count
         </th>
-        <th></th>
+        <th>
+            Language
+        </th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.subtitle_video_id)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.subtitle_date_created)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.subtitle_download_count)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.subtitle_language)
-        </td>
-        <td>
-            @Html.ActionLink("Go to video", "Profile", "Video", new { id = item.subtitle_video_id }, null)
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(item.video.video_title, "Profile", "Video", new { id = item.video.id}, null)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtitle_file_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtitle_date_created)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtitle_download_count)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtitle_language)
+            </td>
+        </tr>
+    }
 
 </table>

@@ -35,7 +35,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.video_created_by_user_id)
+            @Html.DisplayFor(modelItem => item.user.UserName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.video_title)
