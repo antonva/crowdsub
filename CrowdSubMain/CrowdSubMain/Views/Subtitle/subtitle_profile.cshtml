@@ -16,10 +16,10 @@
     <!-- Empty modal div for modal popup.-->
     <div id="dialog"></div>
 </div>
-<ul>
-    <li>@Html.DisplayFor(model => model.subtitle.subtitle_date_created)</li>
-    <li>@Html.DisplayFor(model => model.subtitle.subtitle_download_count)</li>
-    <li>@Html.DisplayFor(model => model.subtitle.subtitle_language)</li>
+<ul class="list-inline">
+    <li><b>Date Created: </b>@Html.DisplayFor(model => model.subtitle.subtitle_date_created)</li>
+    <li><b>Download Count: </b>@Html.DisplayFor(model => model.subtitle.subtitle_download_count)</li>
+    <li><b>Subtitle Language: </b>@Html.DisplayFor(model => model.subtitle.subtitle_language)</li>
 </ul>
     <div class="row">
         <div class="col-lg-8">
