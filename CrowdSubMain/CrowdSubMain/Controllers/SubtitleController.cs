@@ -20,12 +20,16 @@ namespace CrowdSubMain.Controllers
     {
 		private readonly i_subtitle_repository subtitle_repo;
 		private readonly i_video_repository video_repo;
+        private readonly i_subtitle_comment_repository subtitle_comment_repo;
+
 		public SubtitleController()
 		{
 			subtitle_repository subtitle = new subtitle_repository();
 			video_repository videos = new video_repository();
-			subtitle_repo = subtitle;
+            subtitle_comment_repository sc_repo = new subtitle_comment_repository();
+            subtitle_repo = subtitle;
 			video_repo = videos;
+            subtitle_comment_repo = sc_repo; 
 		}
 
 		public SubtitleController(i_subtitle_repository subtitles)
@@ -34,7 +38,7 @@ namespace CrowdSubMain.Controllers
 		}
 
         // GET: /Subtitle/
-        public ActionResult Index()
+        /* public ActionResult Index() WE DON'T NEED THIS MAN
         {
 			var view_model = new subtitle_view_model_download
 			{
@@ -43,18 +47,25 @@ namespace CrowdSubMain.Controllers
 			};
 			var paths = Directory.GetFiles(view_model.path).ToList();
 			view_model.subtitles = (from s in subtitle_repo.get_subtitles()
-									orderby s.subtitle_file_path descending
+									orderby s.subtitle_file_name descending
 									select s).ToList();
 			foreach(var sub in view_model.subtitles)
 			{
-				var file_name = sub.subtitle_file_path;
+				var file_name = sub.subtitle_file_name;
 				sub.subtitle_file_path = Path.Combine(Server.MapPath("~/App_data/uploads"), file_name);
 			}
-			return View(view_model);
-        }
+			return View(view_model); 
+        } */
 
-		public FileResult download(string file_path, string file_name)
+		public FileResult download(int subtitle_id)
 		{
+			var subtitle = (from s in subtitle_repo.get_subtitles()
+							 where s.id == subtitle_id
+							 select s).First();
+			var file_name = subtitle.subtitle_file_name;
+			subtitle.subtitle_download_count++; //increment download count
+			subtitle_repo.edit(subtitle);
+			var file_path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
 			var file = File(file_path, System.Net.Mime.MediaTypeNames.Text.Plain, file_name);
 			return file;
 		}
@@ -67,6 +78,8 @@ namespace CrowdSubMain.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             
+            IEnumerable<subtitle_comment> subtitle_comments = get_comments_for_subtitle(id);
+
 			subtitle subtitle = subtitle_repo.get_subtitles().Where(x => x.id == id).FirstOrDefault();
             if (subtitle == null)
             {
@@ -81,64 +94,24 @@ namespace CrowdSubMain.Controllers
             }
 
             
-            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = srt_string };
+            var model = new subtitle_profile_model { subtitle = subtitle, srt_string = srt_string, subtitle_comments = subtitle_comments };
             return View(model);
         }
 
-        // GET: /Subtitle/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+		//edit function that overwrites srt file with new content
+		public void Edit(string new_srt, int subtitle_id)
+		{
+			var file_name = (from s in subtitle_repo.get_subtitles()
+							 where s.id == subtitle_id
+							 select s).First().subtitle_file_name;
+			var file_path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
+			using(StreamWriter writer = new StreamWriter(file_path, false, Encoding.UTF8))
+			{
+				writer.Write(new_srt);
+			}
+		}
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Authorize]
-        public ActionResult Create([Bind(Include="id,subtitle_user_id,subtitle_video_id,subtitle_file_path,subtitle_date_created,subtitle_download_count,subtitle_language")] subtitle subtitle)
-        {
-            if (ModelState.IsValid)
-            {
-                string user_id = User.Identity.GetUserId(); // Get the user id
-                string user_name = User.Identity.GetUserName(); // Bind the user id to the subtitle object
-                subtitle.subtitle_user_id = user_id;   // Add the user id to the video object
-                subtitle.subtitle_date_created = DateTime.Now;    // Add current time to the object being created
-                
-                subtitle_repo.add(subtitle);
-                return RedirectToAction("Video/Profile", new { id = subtitle.subtitle_video_id });
-            }
 
-            return View(subtitle);
-        }
-
-        // GET: /Subtitle/Edit/5
-        [Authorize]
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-			subtitle subtitle = subtitle_repo.get_subtitles().Where(x => x.id == id).FirstOrDefault();
-            if (subtitle == null)
-            {
-                return HttpNotFound();
-            }
-            return View(subtitle);
-        }
-
-        // POST: /Subtitle/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Authorize]
-        public ActionResult Edit([Bind(Include="id,subtitle_user_id,subtitle_video_id,subtitle_file_path,subtitle_date_created,subtitle_download_count,subtitle_language")] subtitle subtitle)
-        {
-            if (ModelState.IsValid)
-            {
-				subtitle_repo.edit(subtitle);
-                return RedirectToAction("Index");
-            }
-            return View(subtitle);
-        }
 
         // GET: /Subtitle/Delete/5
         public ActionResult Delete(int? id)
@@ -184,14 +157,14 @@ namespace CrowdSubMain.Controllers
 
 		[HttpPost]
         [Authorize]
-		public ActionResult Upload(HttpPostedFileBase file, int video_id)
+		public ActionResult Upload(HttpPostedFileBase file, string language, int video_id)
 		{
 			if (file.ContentLength > 0)
 			{
-				var video_name = (from v in video_repo.get_videos()
+				 /* var video_name = (from v in video_repo.get_videos()
 								  where v.id == video_id
-								  select v).First().video_title; //get title of video
-				var file_name = video_name + ".srt";
+								  select v).First().video_title; //get title of video */
+				var file_name = Path.GetFileName(file.FileName);
 				Debug.WriteLine("File name: " + file_name.ToString());
 				var path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
 				Debug.WriteLine("File path: " + path.ToString());
@@ -199,11 +172,11 @@ namespace CrowdSubMain.Controllers
 				{
 					subtitle_user_id = User.Identity.GetUserId(), //get user id
 					subtitle_video_id = video_id, 
-					subtitle_file_path = file_name,
 					subtitle_file_name = file_name,
 					subtitle_date_created = DateTime.Now,
+					subtitle_date_updated = DateTime.Now,
 					subtitle_download_count = 0,
-					subtitle_language = 0
+					subtitle_language = language
 				};
 				subtitle_repo.add(subtitle);
 				file.SaveAs(path);
@@ -211,13 +184,42 @@ namespace CrowdSubMain.Controllers
 			return RedirectToAction("Profile","Video", new { id = video_id });
 		}
 
-        /* protected override void Dispose(bool disposing)
+        [HttpGet]
+        public int GetCount(int subtitle_id)
         {
-            if (disposing)
+            var comments = from v in subtitle_comment_repo.get_subtitle_comments()
+                           where v.sc_sub_id == subtitle_id
+                           select v;
+
+            return comments.Count();
+        }
+
+        [HttpGet]
+        public IEnumerable<subtitle_comment> get_comments_for_subtitle(int? id) 
+        { 
+            var comments = (from s in subtitle_comment_repo.get_subtitle_comments()
+                            where s.sc_sub_id == id 
+                            orderby s.sc_date_created
+                            select s);
+
+            return comments;
+        }
+
+        [HttpPost]
+        public ActionResult post_comment(subtitle_comment d)
+        {
+            subtitle_comment c = new subtitle_comment 
             {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        } */
+                sc_user_id = User.Identity.GetUserId(),
+                sc_sub_id = d.sc_sub_id,
+                sc_comment = d.sc_comment,
+                sc_date_created = DateTime.Now
+            };
+
+            subtitle_comment_repo.add(c);
+            var repo = subtitle_comment_repo.get_subtitle_comments();
+
+            return Json(repo, JsonRequestBehavior.AllowGet);
+        }
     }
 }

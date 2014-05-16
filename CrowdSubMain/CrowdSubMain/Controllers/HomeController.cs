@@ -14,9 +14,9 @@ namespace CrowdSubMain.Controllers
 		}
 
         [HttpPost]
-        public ActionResult Index(string search)
+        public ActionResult Index(string title_search, string language_search)
         {
-            return RedirectToAction("search", "Video", new { query = search });
+            return RedirectToAction("search", "Video", new { search = title_search, language = language_search });
         }
 
 		public ActionResult About()

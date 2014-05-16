@@ -46,15 +46,67 @@ namespace CrowdSubMain.Controllers
 			return View(model);
 		}
 
-		public ActionResult search(string query)
+		public ActionResult search(string search, string language)
 		{
-			Debug.WriteLine("query: " + query);
+			Debug.WriteLine("query: " + search);
+            Debug.WriteLine("language: " + language);
 
-			var model = from v in video_repo.get_videos()
-						where v.video_title.Contains(query)
-						select v;
+            
+            
 
-			return View(model);
+            if(language == "null") /* if no specific language is selected*/
+            {
+                List<search_pair> search_pairs = new List<search_pair>();
+
+                IEnumerable<video> video_enum = (from v in video_repo.get_videos()
+                                                 where v.video_title.Contains(search)
+                                                 select v);
+                List<video> videos = video_enum.ToList();
+
+                foreach (var video in videos)
+                {
+                    IEnumerable<subtitle> subtitle_enum = (from s in subtitle_repo.get_subtitles()
+                                                           where s.subtitle_video_id == video.id
+                                                           select s);
+                    List<subtitle> subtitles = subtitle_enum.ToList();
+                    search_pairs.Add(new search_pair
+                    {
+                        video_pair = video,
+                        subtitle_pair = subtitles
+                    });
+                }
+                video_language_search model = new video_language_search { search_pairs = search_pairs };
+                return View(model);                 
+            }
+            else
+            {
+                List<search_pair> search_pairs = new List<search_pair>();
+
+                IEnumerable<video> video_enum = (from v in video_repo.get_videos()
+                                                 where v.video_title.Contains(search)
+                                                 select v);
+
+                List<video> videos = video_enum.ToList();
+                foreach (var video in videos)
+                {
+                    IEnumerable<subtitle> subtitle_enum = (from s in subtitle_repo.get_subtitles()
+                                                           where s.subtitle_video_id == video.id
+                                                           where s.subtitle_language.Contains(language)
+                                                           select s);
+                    List<subtitle> subtitles = subtitle_enum.ToList();
+
+
+                    search_pairs.Add(new search_pair
+                    {
+                        video_pair = video,
+                        subtitle_pair = subtitles
+                    });
+                }
+                video_language_search model = new video_language_search { search_pairs = search_pairs };
+                return View(model);
+            }
+
+         
 		}
 
         public ActionResult top_downloads() 

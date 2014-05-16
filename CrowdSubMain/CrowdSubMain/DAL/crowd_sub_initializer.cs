@@ -9,7 +9,7 @@ namespace CrowdSubMain.DAL
 {
 	public class crowd_sub_initializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<crowd_sub_context>
 	{
-		protected override void Seed(crowd_sub_context context)
+		 /*protected override void Seed(crowd_sub_context context)
 		{
 			var requests = new List<request>
 			{
@@ -162,6 +162,6 @@ namespace CrowdSubMain.DAL
 
 			upvotes.ForEach(s => context.upvotes.Add(s));
 			context.SaveChanges();
-		}
+		} */
 	}
 }

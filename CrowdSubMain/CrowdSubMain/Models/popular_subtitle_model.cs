@@ -9,6 +9,5 @@ namespace CrowdSubMain.Models
     {
         public IEnumerable<subtitle> subtitles { get; set; }
         public video video { get; set;}
-        public int total_download_count { get; set; }
     }
 }

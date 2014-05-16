@@ -171,6 +171,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\popular_subtitle_model.cs" />
+    <Compile Include="Models\search_pair.cs" />
     <Compile Include="Models\subtitle_profile_model.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\profile_view_model.cs" />
@@ -180,17 +181,20 @@
     <Compile Include="Models\subtitle_view_model_download.cs" />
     <Compile Include="Models\upvote.cs" />
     <Compile Include="Models\video.cs" />
+    <Compile Include="Models\video_language_search.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Repositories\i_subtitle_comment_repository.cs" />
     <Compile Include="Repositories\i_request_repository.cs" />
     <Compile Include="Repositories\i_subtitle_repository.cs" />
     <Compile Include="Repositories\i_upvote_repository.cs" />
     <Compile Include="Repositories\i_video_repository.cs" />
     <Compile Include="Repositories\request_repository.cs" />
+    <Compile Include="Repositories\subtitle_comment_repository.cs" />
     <Compile Include="Repositories\subtitle_repository.cs" />
     <Compile Include="Repositories\upvote_repository.cs" />
     <Compile Include="Repositories\video_repository.cs" />
@@ -205,20 +209,19 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\batman-logo.png" />
     <Content Include="Images\CrowdSub_Logo_V1_210x75.png" />
+    <Content Include="Scripts\a_jscript.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\subtitle-edit\srt.css" />
-    <Content Include="App_Data\uploads\aqos-a2tlc.2013.unrated.hdrip.xvid.srt" />
-    <Content Include="App_Data\uploads\Batman" />
-    <Content Include="App_Data\uploads\Batman.srt" />
-    <Content Include="App_Data\uploads\dummy.srt" />
-    <Content Include="App_Data\uploads\Game.of.Thrones.S03E05.720p.HDTV.x264-IMMERSE.srt" />
-    <Content Include="App_Data\uploads\Game.of.Thrones.S03E06.720p.HDTV.x264-IMMERSE.srt" />
+    <Content Include="App_Data\uploads\Rocky.I[1976]DvDrip-aXXo.srt" />
+    <Content Include="App_Data\uploads\Rocky.Balboa[2006]DvDrip-aXXo.Eng.fixed.srt" />
+    <Content Include="App_Data\uploads\Under.Siege.2.1995.DVDRip.XviD-UnSeeN.srt" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\comment-og-like-scripta.js" />
     <Content Include="Scripts\faq.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
