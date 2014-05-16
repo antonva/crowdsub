@@ -128,7 +128,7 @@ namespace CrowdSubMain.Controllers
             return View(model);  
 		}
 
-        [HandleError]
+        
         public ActionResult top_downloads() 
         {
             var model = (from v in video_repo.get_videos()
@@ -138,7 +138,7 @@ namespace CrowdSubMain.Controllers
             return View();
         }
 
-        [HandleError]
+        
         public IEnumerable<subtitle> subtitle_for_video(int id) 
         {
             var model = (from v in subtitle_repo.get_subtitles()
