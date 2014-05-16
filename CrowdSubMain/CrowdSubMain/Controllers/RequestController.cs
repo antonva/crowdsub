@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using CrowdSubMain.Models;
 using CrowdSubMain.Repositories;
+using Microsoft.AspNet.Identity;
 
 namespace CrowdSubMain.Controllers
 {
@@ -52,25 +53,35 @@ namespace CrowdSubMain.Controllers
         }
 
         // GET: /Request/Create
-        public ActionResult Create()
+        public ActionResult Create(int video_id)
         {
-            return View();
+			var request = new request();
+			request.request_video_id = video_id;
+            return View(request);
         }
 
         // POST: /Request/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+		[Authorize]
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="id,request_user_id,request_lang,request_video_id,request_date_created")] request request)
+        public ActionResult Create(string request_lang, int video_id)
         {
+			var request = new request
+			{
+				request_user_id = User.Identity.GetUserId(),
+				request_video_id = video_id,
+				request_language = request_lang,
+				request_date_created = DateTime.Now,
+				request_date_updated = DateTime.Now
+			};
             if (ModelState.IsValid)
             {
                 request_repo.add(request);
                 return RedirectToAction("Index");
             }
 
-            return View(request);
+            return RedirectToAction("Index");
         }
 
         // GET: /Request/Edit/5

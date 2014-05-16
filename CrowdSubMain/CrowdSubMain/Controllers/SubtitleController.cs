@@ -64,7 +64,7 @@ namespace CrowdSubMain.Controllers
 							 select s).First();
 			var file_name = subtitle.subtitle_file_name;
 			subtitle.subtitle_download_count++; //increment download count
-			subtitle_repo.edit(subtitle);
+			subtitle_repo.edit(subtitle); //update download count in database
 			var file_path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
 			var file = File(file_path, System.Net.Mime.MediaTypeNames.Text.Plain, file_name);
 			return file;
