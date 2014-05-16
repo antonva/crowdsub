@@ -11,6 +11,9 @@
 <table class="table table-hover">
     <tr>
         <th>
+            Title
+        </th>
+        <th>
             Subtitle name
         </th>
         <th>
@@ -22,14 +25,14 @@
         <th>
             Language
         </th>
-        <th>
-            Link to video profile
-        </th>
     </tr>
 
     @foreach (var item in Model)
     {
         <tr>
+            <td>
+                @Html.ActionLink(item.video.video_title, "Profile", "Video", new { id = item.video.id}, null)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.subtitle_file_name)
             </td>
@@ -41,9 +44,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.subtitle_language)
-            </td>
-            <td>
-                @Html.ActionLink("Go to video", "Profile", "Video", new { id = item.subtitle_video_id }, null)
             </td>
         </tr>
     }

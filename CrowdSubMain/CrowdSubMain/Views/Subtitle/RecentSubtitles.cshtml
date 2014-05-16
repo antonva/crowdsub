@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CrowdSubMain.Models.subtitle>
+
+@{
+    ViewBag.Title = "RecentSubtitles";
+}
+
+<h2>RecentSubtitles</h2>
+
+<table class="table table-hover">
+    <tr>
+        <th>Title</th>
+        <th>File name</th>
+        <th>Date created</th>
+        <th>Downloads</th>
+        <th>Language</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink(item.video.video_title, "Profile", "Video", new { id = item.video.id}, null)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_file_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_date_created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_download_count)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subtitle_language)
+        </td>
+    </tr>
+}
+
+</table>

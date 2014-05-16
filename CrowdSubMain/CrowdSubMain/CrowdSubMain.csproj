@@ -179,7 +179,6 @@
     <Compile Include="Models\request.cs" />
     <Compile Include="Models\subtitle.cs" />
     <Compile Include="Models\subtitle_comment.cs" />
-    <Compile Include="Models\subtitle_update_payload.cs" />
     <Compile Include="Models\subtitle_view_model_download.cs" />
     <Compile Include="Models\upvote.cs" />
     <Compile Include="Models\video.cs" />
@@ -211,7 +210,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\batman-logo.png" />
     <Content Include="Images\CrowdSub_Logo_V1_210x75.png" />
-    <Content Include="Images\_Logo_transparent.png" />
     <Content Include="Scripts\comment_script.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -220,8 +218,6 @@
     <Content Include="App_Data\uploads\Rocky.Balboa[2006]DvDrip-aXXo.Eng.fixed.srt" />
     <Content Include="App_Data\uploads\Under.Siege.2.1995.DVDRip.XviD-UnSeeN.srt" />
     <Content Include="App_Data\uploads\ewdp-batman.a.xvid.srt" />
-    <Content Include="App_Data\uploads\Superman.III.1983.DVDRip.XviD-UnSeeN.srt" />
-    <Content Include="App_Data\uploads\SupermanIII.srt" />
     <Content Include="App_Data\uploads\Superman.Returns.srt" />
     <Content Include="App_Data\uploads\Superman.Returns[2006]DvDrip[Eng]-aXXo.srt" />
     <None Include="Properties\Settings.settings">
@@ -295,9 +291,12 @@
     <Content Include="Views\Home\all_requests.cshtml" />
     <Content Include="Views\Subtitle\TopDownloadedSubtitles.cshtml" />
     <Content Include="Views\Video\search.cshtml" />
+    <Content Include="Views\Subtitle\RecentSubtitles.cshtml" />
     <Content Include="Views\Shared\NotFound.cshtml" />
     <Content Include="Views\Request\recent_requests.cshtml" />
     <Content Include="Views\Subtitle\subtitle_recent.cshtml" />
+    <Content Include="Views\Subtitle\RecentSubtitles.cshtml" />
+    <Content Include="Views\Subtitle\top_downloaded_subtitles.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Error\" />
