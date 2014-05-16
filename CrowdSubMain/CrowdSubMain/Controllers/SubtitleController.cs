@@ -87,6 +87,7 @@ namespace CrowdSubMain.Controllers
 
 		/* Edit function that overwrites srt file with new content. */
 		[HttpPost]
+        [Authorize]
         public void update_subtitle(subtitle_update_payload payload)
 		{
             
