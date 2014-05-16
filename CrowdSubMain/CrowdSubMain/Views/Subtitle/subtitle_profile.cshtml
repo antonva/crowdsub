@@ -8,7 +8,7 @@
     <!--SRT Parser and menu creator.-->
     @Scripts.Render("~/Scripts/srt_parser_menu.js")
     @Styles.Render("~/Content/subtitle-edit/srt.css")
-    @Scripts.Render("~/Scripts/a_jscript.js")
+    @Scripts.Render("~/Scripts/comment_script.js")
 
     <h4>@Html.DisplayFor(model => model.subtitle.subtitle_file_name)</h4>
     <hr />
@@ -16,8 +16,8 @@
     <div id="dialog"></div>
 </div>
 <ul>
-    <li>@Html.DisplayNameFor(model => model.subtitle.subtitle_date_created)</li>
-    <li>@Html.DisplayNameFor(model => model.subtitle.subtitle_download_count)</li>
+    <li>@Html.DisplayFor(model => model.subtitle.subtitle_date_created)</li>
+    <li>@Html.DisplayFor(model => model.subtitle.subtitle_download_count)</li>
     <li>@Html.DisplayFor(model => model.subtitle.subtitle_language)</li>
 </ul>
     <div class="row">
@@ -39,9 +39,6 @@
                         </p>
                         <p>
                             <span class="text-muted">@item.sc_date_created.ToString("dd. MMMM HH:mm") - </span>
-                        </p>
-                        <p>
-                            <button class="btn btn-primary" id="delete">Delete</button>
                         </p>
                     </li>
                 }

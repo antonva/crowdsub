@@ -173,6 +173,7 @@ namespace CrowdSubMain.Controllers
                            where v.sc_sub_id == subtitle_id
                            select v;
 
+            Debug.WriteLine(comments.Count());
             return comments.Count();
         }
 
@@ -199,12 +200,18 @@ namespace CrowdSubMain.Controllers
                 sc_date_created = DateTime.Now
             };
 
-            subtitle_comment_repo.add(c);
-            var repo = subtitle_comment_repo.get_subtitle_comments();
+            var model = new { 
+                subtitle_comment = c.sc_comment, 
+                user_name = User.Identity.GetUserName(),
+                date_created = c.sc_date_created
+            };
 
-            return Json(repo, JsonRequestBehavior.AllowGet);
+            subtitle_comment_repo.add(c);
+
+            return Json(model, JsonRequestBehavior.AllowGet);
         }
 
+        /*
         [HttpPost]
         [Authorize]
         public ActionResult delete_comment(int comment_id, int subtitle_id) 
@@ -223,5 +230,6 @@ namespace CrowdSubMain.Controllers
             
             return Json(repo, JsonRequestBehavior.AllowGet);
         }
+        */
     }
 }
