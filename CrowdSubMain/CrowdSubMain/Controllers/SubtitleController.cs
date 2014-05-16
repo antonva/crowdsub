@@ -98,60 +98,20 @@ namespace CrowdSubMain.Controllers
             return View(model);
         }
 
-        // GET: /Subtitle/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+		//edit function that overwrites srt file with new content
+		public void Edit(string new_srt, int subtitle_id)
+		{
+			var file_name = (from s in subtitle_repo.get_subtitles()
+							 where s.id == subtitle_id
+							 select s).First().subtitle_file_name;
+			var file_path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
+			using(StreamWriter writer = new StreamWriter(file_path, false, Encoding.UTF8))
+			{
+				writer.Write(new_srt);
+			}
+		}
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Authorize]
-        public ActionResult Create([Bind(Include="id,subtitle_user_id,subtitle_video_id,subtitle_file_path,subtitle_date_created,subtitle_download_count,subtitle_language")] subtitle subtitle)
-        {
-            if (ModelState.IsValid)
-            {
-                string user_id = User.Identity.GetUserId(); // Get the user id
-                string user_name = User.Identity.GetUserName(); // Bind the user id to the subtitle object
-                subtitle.subtitle_user_id = user_id;   // Add the user id to the video object
-                subtitle.subtitle_date_created = DateTime.Now;    // Add current time to the object being created
-                
-                subtitle_repo.add(subtitle);
-                return RedirectToAction("Video/Profile", new { id = subtitle.subtitle_video_id });
-            }
 
-            return View(subtitle);
-        }
-
-        // GET: /Subtitle/Edit/5
-        [Authorize]
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-			subtitle subtitle = subtitle_repo.get_subtitles().Where(x => x.id == id).FirstOrDefault();
-            if (subtitle == null)
-            {
-                return HttpNotFound();
-            }
-            return View(subtitle);
-        }
-
-        // POST: /Subtitle/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Authorize]
-        public ActionResult Edit([Bind(Include="id,subtitle_user_id,subtitle_video_id,subtitle_file_path,subtitle_date_created,subtitle_download_count,subtitle_language")] subtitle subtitle)
-        {
-            if (ModelState.IsValid)
-            {
-				subtitle_repo.edit(subtitle);
-                return RedirectToAction("Index");
-            }
-            return View(subtitle);
-        }
 
         // GET: /Subtitle/Delete/5
         public ActionResult Delete(int? id)
