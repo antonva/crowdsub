@@ -44,24 +44,12 @@
                                 <p>\
                                     <span class="text-muted">' + date + ' </span>\
                                 </p>\
-                                <p>\
-                                    <button class="btn btn-primary" id="delete">Delete</button>\
-                                </p>\
                             </li>'
                       );
                 });     
             }       
             // Hreinsar út textaboxið eftir að hafa submit-að commenti
             $("#CommentText").val("");
-    });
-    $("#delete").click( function() {
-        var sendData = {
-            "comment_id": $("#CommentText").val(),
-            "subtitle_id": subtitle_id
-            }
-                $.post("../delete_comment", sendData, function (data){
-                    $("#comment_to_delete").remove();
-        });
     });
 });
 
