@@ -17,7 +17,7 @@
 
             // Validation sem athugar hvort input sé tómt
             if ($("#CommentText").val() === "") {
-                $("#submitCommentError").html("The comment field cannot be empty :(");
+                $("#submitCommentError").html("Please enter a comment to submit!");
                 $("#submitCommentError").show();
             }
             else {
