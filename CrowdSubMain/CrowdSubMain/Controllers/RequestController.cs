@@ -78,10 +78,10 @@ namespace CrowdSubMain.Controllers
             if (ModelState.IsValid)
             {
                 request_repo.add(request);
-                return RedirectToAction("Index");
+                return RedirectToAction("Profile", "Video", new { id = video_id});
             }
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Profile", "Video", new { id = video_id});
         }
 
         // GET: /Request/Edit/5
