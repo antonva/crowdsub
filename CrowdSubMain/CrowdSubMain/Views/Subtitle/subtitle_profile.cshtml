@@ -78,13 +78,12 @@ two, one.*@
 
 </div>
 
+<!--Returns the subtitle id which is then sent to the controller to relate comment to this particular subtitle-->
+<span id="this_subtitle_id" style="display : none">@Html.DisplayFor(modelItem => Model.subtitle.id)</span>
 <ul id="Comments" class="list-group" style="max-width: 560px;">
     @foreach (var item in Model.subtitle_comments)
     {
         <li class="list-group-item">
-            <span id="Comment-ID" style=" display : none">@Html.DisplayFor(modelItem => item.id)</span>
-            <span id="CommentUser-ID" style=" display : none">@Html.DisplayFor(modelItem => item.sc_user_id)</span>
-            <span id="Subtitle_ID" style="display : none">@Html.DisplayFor(modelItem => Model.subtitle.id)</span>
             <p>
                 <span class="glyphicon glyphicon-user"></span>
                 <span class="text-primary">@Html.DisplayFor(modelItem => item.user.UserName)</span>

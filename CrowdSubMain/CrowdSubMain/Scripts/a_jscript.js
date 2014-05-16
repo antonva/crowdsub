@@ -1,7 +1,8 @@
 ﻿$(document).ready(function () {
-
+    var subtitle_id = $("#this_subtitle_id").text();
+    parseInt(subtitle_id, 10);
     // Sækir fjölda commenta á server
-    $.get("../GetCount", function (data) {
+    $.get("../GetCount", subtitle_id,function (data) {
         count = data;
         console.log(count)
     });
@@ -9,10 +10,9 @@
     //Send comment
     $("#senda").click(function () {
         
-        console.log("Keyrir jquery");
         var sendData = {
             "sc_comment": $("#CommentText").val(),
-            "sc_sub_id": $("#Subtitle_ID").val()
+            "sc_sub_id": subtitle_id
         };
 
             // Validation sem athugar hvort input sé tómt
@@ -21,10 +21,8 @@
                 $("#submitCommentError").show();
             }
             else {
-                console.log("Keyrir jquery inní else");
                 $.post("../post_comment", sendData, function (data) {
 
-                    console.log("Keyrir jquery inní post");
                     // Ef Comment error var birtur þá fjarlægist hann hér við póstun nýs comments
                     $("#submitCommentError").hide();
 
@@ -38,7 +36,6 @@
                             count++;
                             $(" #Comments li:last-child").before('\
                             <li class="list-group-item">\
-                                <span id="Comment-ID" style=" display : none">' + data[key].ID + '</span>\
                                 <p>\
                                     <span class="glyphicon glyphicon-user"></span>\
                                     <span class="text-primary">'  + data[key].Username + '</span>\

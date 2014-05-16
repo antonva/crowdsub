@@ -225,11 +225,13 @@ namespace CrowdSubMain.Controllers
 		}
 
         [HttpGet]
-        public int GetCount()
+        public int GetCount(int subtitle_id)
         {
-            var count = subtitle_comment_repo.get_subtitle_comments().Count();
+            var comments = from v in subtitle_comment_repo.get_subtitle_comments()
+                           where v.sc_sub_id == subtitle_id
+                           select v;
 
-            return count;
+            return comments.Count();
         }
 
         [HttpGet]
@@ -244,20 +246,20 @@ namespace CrowdSubMain.Controllers
         }
 
         [HttpPost]
-        public ActionResult post_comment(subtitle_comment d, int sub_id)
+        public ActionResult post_comment(subtitle_comment d)
         {
-            
             subtitle_comment c = new subtitle_comment 
             {
                 sc_user_id = User.Identity.GetUserId(),
-                sc_sub_id = sub_id,
+                sc_sub_id = d.sc_sub_id,
                 sc_comment = d.sc_comment,
                 sc_date_created = DateTime.Now
             };
+
             subtitle_comment_repo.add(c);
             var repo = subtitle_comment_repo.get_subtitle_comments();
 
             return Json(repo, JsonRequestBehavior.AllowGet);
-            }
+        }
     }
 }
