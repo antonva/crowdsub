@@ -179,6 +179,7 @@
     <Compile Include="Models\request.cs" />
     <Compile Include="Models\subtitle.cs" />
     <Compile Include="Models\subtitle_comment.cs" />
+    <Compile Include="Models\subtitle_update_payload.cs" />
     <Compile Include="Models\subtitle_view_model_download.cs" />
     <Compile Include="Models\upvote.cs" />
     <Compile Include="Models\video.cs" />
@@ -294,9 +295,9 @@
     <Content Include="Views\Home\all_requests.cshtml" />
     <Content Include="Views\Subtitle\TopDownloadedSubtitles.cshtml" />
     <Content Include="Views\Video\search.cshtml" />
-    <Content Include="Views\Subtitle\RecentSubtitles.cshtml" />
     <Content Include="Views\Shared\NotFound.cshtml" />
     <Content Include="Views\Request\recent_requests.cshtml" />
+    <Content Include="Views\Subtitle\subtitle_recent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Error\" />

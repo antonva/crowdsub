@@ -82,8 +82,12 @@ namespace CrowdSubMain.Controllers
         }
 
 		/* Edit function that overwrites srt file with new content. */
-		public void update_subtitle(string new_srt, int subtitle_id)
+		[HttpPost]
+        public void update_subtitle(subtitle_update_payload payload)
 		{
+            
+            int subtitle_id = int.Parse(payload.id);
+            string new_srt = payload.sub_string;
 			var file_name = (from s in subtitle_repo.get_subtitles()
 							 where s.id == subtitle_id
 							 select s).First().subtitle_file_name;
