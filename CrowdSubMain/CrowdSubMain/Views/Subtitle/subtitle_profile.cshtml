@@ -4,14 +4,14 @@
     ViewBag.Title = "Subtitle Profile";
 }
 
-<h2>Subtitle Profile</h2>
-
 <div>
     <!--SRT Parser and menu creator.-->
     @Scripts.Render("~/Scripts/srt_parser_menu.js")
     @Styles.Render("~/Content/subtitle-edit/srt.css")
-    <h4>subtitle</h4>
+    <h4>@Html.DisplayTextFor(model => model.subtitle.subtitle_file_name)</h4>
 	<hr />
+    <!-- Empty modal div for modal popup.-->
+    <div id="dialog"></div>
     @*<dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.subtitle.subtitle_user_id)
