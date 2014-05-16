@@ -13,5 +13,6 @@ namespace CrowdSubMain.Models
     {
         public List<subtitle> subtitle_pair { get; set; }
         public video video_pair { get; set; }
+        public List<string> language_keeper { get; set; }
     }
 }

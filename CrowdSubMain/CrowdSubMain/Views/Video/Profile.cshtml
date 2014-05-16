@@ -9,15 +9,33 @@
 }
 
 
-
-<div class="media" id="profile_info">
-    <a class="pull-left" href="#">
-        <img src="@Html.DisplayFor(model => model.video.poster_link)" class="media-object" alt="Poster image is missing for this video profile. To fix this please edit video profile and provide us with an link to image" height="190" width="128">
-    </a>
-    <div class="media-body">
-        <p>@Html.DisplayFor(model => model.video.video_description)</p></br>
-        @*<p><strong>Registered users can edit each line in subtitles by clicking on the subtile file name</strong></p>*@
-        @*<button class="btn btn-default">@Html.ActionLink("Edit video profile", "Edit", new { id = Model.video.id })</button>*@
+<div class="row">
+    <div class="media col-lg-8" id="profile_info">
+        <a class="pull-left" href="#">
+            <img src="@Html.DisplayFor(model => model.video.poster_link)" class="media-object" alt="Poster image is missing for this video profile. To fix this please edit video profile and provide us with an link to image" height="190" width="128">
+        </a>
+        <div class="media-body">
+            <p>@Html.DisplayFor(model => model.video.video_description)</p></br>
+            @*<p><strong>Registered users can edit each line in subtitles by clicking on the subtile file name</strong></p>*@
+            @*<button class="btn btn-default">@Html.ActionLink("Edit video profile", "Edit", new { id = Model.video.id })</button>*@
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <ul id="requests" class="list-group" style="max-width:560px;">
+            @foreach(var item in Model.requests)
+            {
+                <li class="list-group-item">
+                    <p>
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="text-primary">@Html.DisplayFor(modelItem => item.user.UserName)</span>
+                        <span>Language requested: @Html.DisplayFor(modelItem => item.request_language)</span>
+                    </p>
+                    <p>
+                        <span class="text-muted">@item.request_date_created.ToString("dd. MMMM HH:mm") - </span>
+                    </p>
+                </li>
+            }
+        </ul>
     </div>
 </div>
 
@@ -36,6 +54,7 @@
                     <th>Download Subtitle</th>
                 </tr>
             </thead>
+
             @foreach (var item in Model.subtitles)
             {
                 <tr>
@@ -79,13 +98,23 @@
                     </div>
 
                     <button type="submit" class="btn btn-default">Submit</button><!--Button to submit file-->
-
-                    
-                    <button class="btn btn-default" id="request_button">@Html.ActionLink("Request a subtitle", "Request", new { id = Model.video.id })</button>
                 </div>
 
             </div>
 
+        }
+
+        @using (Html.BeginForm("Create", "Request", new { video_id = Model.video.id }, FormMethod.Post))
+        {
+            <div class="btn-group">
+                <p>Submit request</p>
+                <label for="request_lang">Select language: </label>
+                <select class="form-control" id="request_lang" name="request_lang">
+                    <option value="English">English</option>
+                    <option value="Icelandic">Icelandic</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
         }
     </div>
 </div>
