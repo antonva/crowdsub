@@ -5,111 +5,84 @@
 }
 
 <h2>Subtitle Profile</h2>
-<div class="">
-    <div class="">
-        <!--SRT Parser and menu creator.-->
-        @Scripts.Render("~/Scripts/srt_parser_menu.js")
-        @Styles.Render("~/Content/subtitle-edit/srt.css")
-        @Scripts.Render("~/Scripts/a_jscript.js")
-        <h4>subtitle</h4>
-        <hr />
-        @*<dl class="dl-horizontal">
-                <dt>
-                    @Html.DisplayNameFor(model => model.subtitle.subtitle_user_id)
-                </dt>
 
-                <dd>
-                    @Html.DisplayFor(model => model.subtitle.subtitle_user_id)
-                </dd>
+<div>
+    <!--SRT Parser and menu creator.-->
+    @Scripts.Render("~/Scripts/srt_parser_menu.js")
+    @Styles.Render("~/Content/subtitle-edit/srt.css")
+    @Scripts.Render("~/Scripts/a_jscript.js")
 
-                <dt>
-                    @Html.DisplayNameFor(model => model.subtitle.subtitle_video_id)
-                </dt>
+    <h4>@Html.DisplayFor(model => model.subtitle.subtitle_file_name)</h4>
+	<hr />
+    <!-- Empty modal div for modal popup.-->
+    <div id="dialog"></div>
+    @*
+            @Html.DisplayNameFor(model => model.subtitle.subtitle_date_created)
+            @Html.DisplayNameFor(model => model.subtitle.subtitle_download_count)
+            @Html.DisplayFor(model => model.subtitle.subtitle_language)
+    *@
+    <div id="srt-select"></div>
+<!-- Cannot be a div, the parser has only been tested against textareas.-->
+<textarea id="srt">
+@Html.DisplayTextFor(model => model.srt_string)
+@*1
+00:00:50,739 --> 00:00:54,868
+And we're on in four, three,
 
-                <dd>
-                    @Html.DisplayFor(model => model.subtitle.subtitle_video_id)
-                </dd>
+2
+00:00:54,952 --> 00:00:56,870
+two, one.*@
+</textarea>
 
-                <dt>
-                    @Html.DisplayNameFor(model => model.subtitle.subtitle_file_path)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.subtitle.subtitle_file_path)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.subtitle.subtitle_date_created)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.subtitle.subtitle_date_created)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.subtitle.subtitle_download_count)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.subtitle.subtitle_download_count)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.subtitle.subtitle_language)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.subtitle.subtitle_language)
-                </dd>
-
-            </dl>*@
-        <div id="srt-select"></div>
-        <!-- Cannot be a div, the parser has only been tested against textareas.-->
-        <textarea id="srt">
-            @Html.DisplayTextFor(model => model.srt_string)
-            @*1
-                00:00:50,739 --> 00:00:54,868
-                And we're on in four, three,
-
-                2
-                00:00:54,952 --> 00:00:56,870
-                two, one.*@
-        </textarea>
-
-    </div>
-
-    <!--Returns the subtitle id which is then sent to the controller to relate comment to this particular subtitle-->
-    <span id="this_subtitle_id" style="display : none">@Html.DisplayFor(modelItem => Model.subtitle.id)</span>
-    
-    <div class="">
-        <ul id="Comments" class="list-group col-md-4" style="max-width: 560px;">
-            @foreach (var item in Model.subtitle_comments)
-            {
-                <li class="list-group-item">
-                    <p>
-                        <span class="glyphicon glyphicon-user"></span>
-                        <span class="text-primary">@Html.DisplayFor(modelItem => item.user.UserName)</span><br />
-                        <span>@Html.DisplayFor(modelItem => item.sc_comment)</span>
-                    </p>
-                    <p>
-                        <span class="text-muted">@item.sc_date_created.ToString("dd. MMMM HH:mm") - </span>
-                    </p>
-                </li>
-            }
-            <li class="list-group-item">
-
-                <div class="form-horizontal">
-                    <label class="sr-only" for="CommentText">Comment</label>
-                    <textarea class="form-control" rows="3" id="CommentText" name="CommentText"></textarea>
-                    <p class="error" id="submitCommentError"></p>
-                    <button class="btn btn-primary" id="senda">Send</button>
-                </div>
-                @Html.ValidationSummary(false)
-            </li>
-        </ul>
-    </div>
 </div>
+
+<!--Returns the subtitle id which is then sent to the controller to relate comment to this particular subtitle-->
+<span id="this_subtitle_id" style="display : none">@Html.DisplayFor(modelItem => Model.subtitle.id)</span>
+<ul id="Comments" class="list-group" style="max-width: 560px;">
+    @foreach (var item in Model.subtitle_comments)
+    {
+        <li class="list-group-item">
+            <p>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="text-primary">@Html.DisplayFor(modelItem => item.user.UserName)</span>
+                <span>@Html.DisplayFor(modelItem => item.sc_comment)</span>
+            </p>
+            <p>
+                <span class="text-muted">@item.sc_date_created.ToString("dd. MMMM HH:mm") - </span>
+                <a id="like-button" class="like-comment" href="#">Like <span class="glyphicon glyphicon-thumbs-up"></span></a>
+            </p>
+        </li>
+    }
+    <li class="list-group-item">
+
+        <div class="form-horizontal">
+            <label class="sr-only" for="CommentText">Comment</label>
+            <textarea class="form-control" rows="3" id="CommentText" name="CommentText"></textarea>
+            <p class="error" id="submitCommentError"></p>
+            <button class="btn btn-primary" id="senda">Send</button>
+        </div>
+        @Html.ValidationSummary(false)
+    </li>
+</ul>
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.subtitle.id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+<!-- Modal, won't be displayed-->
+<div class="modal fade" id="srt-modal" tabindex="-1" role="dialog" aria-labelledby="srt-edit-line" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="srt-edit-line"></h4>
+            </div> <!-- modal-header -->
+            <div id="srt-dialog-form" class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="srt-update">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>  
