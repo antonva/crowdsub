@@ -9,8 +9,9 @@ namespace CrowdSubMain.Models
 {
     public class video_language_search
     {
-        //public IEnumerable<subtitle> subtitles { get; set; }
-        //public IEnumerable<video> videos { get; set; }
         public IEnumerable<search_pair> search_pairs { get; set; }
+        public string language_parameter { get; set; }
+        //public int english_subtitle_count { get; set; }
+        //public int icelandic_subtitle_count { get; set; }
     }
 }
