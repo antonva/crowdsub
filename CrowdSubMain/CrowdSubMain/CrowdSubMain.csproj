@@ -212,6 +212,8 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\subtitle-edit\srt.css" />
     <Content Include="App_Data\uploads\Rocky.I[1976]DvDrip-aXXo.srt" />
+    <Content Include="App_Data\uploads\Rocky.Balboa[2006]DvDrip-aXXo.Eng.fixed.srt" />
+    <Content Include="App_Data\uploads\Under.Siege.2.1995.DVDRip.XviD-UnSeeN.srt" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
