@@ -16,13 +16,19 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar_fixed_top">
         <div class="container">
             <a href="/Home/Index"><img id="logo" src="~/Images/CrowdSub_Logo_V1_210x75.png" width="261" height="67" /></a> @*LOGO*@
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav" id="navbar_links">
+                    <li>@Html.ActionLink("Top downloads", "TopDownloadedSubtitles", "Subtitle")</li>
+                    <li>@Html.ActionLink("Recent subtitles", "RecentSubtitles", "Subtitles")</li>
+                    <li>@Html.ActionLink("Top requests", "top_request", "Home")</li>
+                </ul>
 
-
-                @* LOGIN *@
-                <div class="navbar-collapse collapse">
-                    @Html.Partial("_LoginPartial")
-                </div>
-           </div>
+                    @* LOGIN *@
+                    <div class="navbar-collapse collapse">
+                        @Html.Partial("_LoginPartial")
+                    </div>
+            </div>
+        </div>
     </nav>
 
     <div class="jumbotron">
@@ -40,8 +46,15 @@
            
               <div id="navcontainer">
                   <ul class="list-inline">
-                      <li>@Html.TextBox("search", "", new { @class = "form-control", @placeholder = "Search" })</li>
-                      <li>@Html.TextBox("search", "", new { @class = "form-control", @placeholder = "Language" })</li>
+                      <li>@Html.TextBox("title_search", "", new { @class = "form-control", @placeholder = "Search" })</li>
+                      @*<li>@Html.TextBox("search", "", new { @class = "form-control", @placeholder = "Language" })</li>*@
+                      <li>
+                          <select name="language_search">
+                              <option value="null">Language</option>
+                              <option value="English">English</option>
+                              <option value="Icelandic">Icelandic</option>
+                          </select>
+                      </li>
                       <li><button type="submit" class="btn btn-default">Search</button></li>
                   </ul>
               </div>

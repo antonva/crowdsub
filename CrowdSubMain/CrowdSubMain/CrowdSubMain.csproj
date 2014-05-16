@@ -159,6 +159,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SubtitleController.cs" />
     <Compile Include="Controllers\VideoController.cs" />
@@ -171,6 +172,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\popular_subtitle_model.cs" />
+    <Compile Include="Models\search_pair.cs" />
     <Compile Include="Models\subtitle_profile_model.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\profile_view_model.cs" />
@@ -180,6 +182,7 @@
     <Compile Include="Models\subtitle_view_model_download.cs" />
     <Compile Include="Models\upvote.cs" />
     <Compile Include="Models\video.cs" />
+    <Compile Include="Models\video_language_search.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -214,6 +217,7 @@
     <Content Include="App_Data\uploads\Rocky.I[1976]DvDrip-aXXo.srt" />
     <Content Include="App_Data\uploads\Rocky.Balboa[2006]DvDrip-aXXo.Eng.fixed.srt" />
     <Content Include="App_Data\uploads\Under.Siege.2.1995.DVDRip.XviD-UnSeeN.srt" />
+    <Content Include="App_Data\uploads\ewdp-batman.a.xvid.srt" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -233,6 +237,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\srt_parser_menu - blackup.js" />
     <Content Include="Scripts\srt_parser_menu.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -285,8 +290,11 @@
     <Content Include="Views\Subtitle\TopDownloadedSubtitles.cshtml" />
     <Content Include="Views\Video\search.cshtml" />
     <Content Include="Views\Subtitle\RecentSubtitles.cshtml" />
+    <Content Include="Views\Shared\NotFound.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Error\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

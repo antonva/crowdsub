@@ -3,108 +3,51 @@ $(document).ready(function () {
     $('#srt').each(function() {
         parse_srt(this);
         srt_to_html();
-        $('#srt-select').html(
-         '<div id="srt-menu">'
-         + srt_menu
-         + '</div>'
-         + '<div class="btn-group">'
-         + '<button id="srt-update" type="button" class="btn btn-default">Update</button>'
-         + '<button id="srt-addline" type="button" class="btn btn-default">Add Line</button>'
-         + '</div>'
-         + '</div>'
-        );
+        $('#srt-select').html(srt_menu);
     })
 
-    globmenu = $('#srt-menu').menu({
-        menus   : "div",
-        select: function (event, ui) {
-            var srt_id = event.currentTarget.attributes['id'].value;
 
-            if ((event.keyCode || event.which) == 13) {
-                console.log(event);
-                console.log('eeep');
-            }
-            draw_dialog(srt_id);
-        },
-        //refresh : function (event, ui) { }
+    /* Draw modal dialog on click */
+    $('.srt-click').click(function(event, ui) {
+        event.preventDefault();
+        var srt_id = event.currentTarget.children[0].innerHTML;
+
+        render_dialog_form(srt_id);
+
+        $('#srt-modal').modal({
+            show : false
+        });
+        $('#srt-modal').modal('show');
     });
+   
+    /* Save Changes to modal dialog */
+    $('#srt-update').click(function(event, ui) {
+        var srt_id = $('#srt-dialog-form form').attr('id').slice(5);
+        srt_object[srt_id]['time']['start'] = $('#time_start').val();
+        srt_object[srt_id]['time']['end'] = $('#time_end').val();
 
+        /* loop through texts and update them */
+        for (var t in srt_object[srt_id]['text'])
+        {
+            srt_object[srt_id]['text'][t] = $('#text_' + t +'').val();
+        }
+
+        var srt_text = ""
+        for (var text in srt_object[srt_id]["text"]) { srt_text +='    <p class="list-group-item-text">' + srt_object[srt_id]["text"][text] + '</p>' }
+
+        $('#' + srt_id + '').html(
+            '    <h4 class="list-group-item-heading">' + srt_id + '</h4>'
+            +'    <p class="list-group-item-text">' + srt_object[srt_id]["time"]["start"] +' --> ' + srt_object[srt_id]["time"]["end"] + '</p>'
+            + srt_text
+        );
+    });
 });
 
 
-function draw_dialog(srt_id) {
-    var dialog_options =  {
-        /* Base options */
-        height        : 400,
-        width         : 450,
-        autoOpen      : false,
-        modal         : true,
-        closeOnEscape : true,
-
-        /* Define buttons */
-        buttons  : {
-            "Update line" : function() {
-
-                /* assign new values to srt object */
-                srt_object[srt_id]['time']['start'] = $('#time_start').val();
-                srt_object[srt_id]['time']['end'] = $('#time_end').val();
-
-                /* loop through texts and update them */
-                var text_html = "";
-                for (var t in srt_object[srt_id]['text'])
-                {
-                    console.log($('#text_' + t + '').val());
-                    srt_object[srt_id]['text'][t] = $('#text_' + t + '').val();
-                    
-                    text_html += '<span class="table-row">';
-                    text_html += srt_object[srt_id]['text'][t];
-                    text_html += '</span>';
-                    text_html += '<br/>';
-                }
-
-                /* Update html */
-                $('#' + srt_id + '').html(
-                          '<span id="' + srt_id +'">'
-                        + '<a href="#srt-menu">'
-                        + '<span id=' + srt_id + ' class="table">'
-                        + '<span id="row-1" class="table-row">'
-                        + '<span id="number" class="table-cell">' + srt_id + '</span>' 
-                        + '<span id="row-2" class="table-row">'
-                        + '<span id="time" class="table-cell">'
-                        + srt_object[srt_id]["time"]["start"]
-                        + ' >>  ' 
-                        + srt_object[srt_id]["time"]["end"]
-                        + '</span>'
-                        + '</span>'
-                        + '<br/>'
-                        + text_html
-                        + '</span>'
-                        + '</span>'
-                        + '</a>'
-                        + '</span>'
-                );
-
-                //globmenu.menu('refresh', true);
-                $(this).dialog("close");
-                },
-
-                "Cancel"      : function() {
-                $(this).dialog("close");
-            },
-        },
-        
-        /* Close event callback */
-        close: function (event, ui) {
-            $(this).dialog('destroy').remove();
-        }
-    };
-
-    render_dialog_form(srt_id);
-
-    $('#dialog_form').dialog(dialog_options);
-    $('#dialog_form').dialog('open');
-};
-
+/***************************************************
+ * This function renders the dialog form from the  *
+ * srt_object int o the modal form div.            *
+ ***************************************************/
 function render_dialog_form(srt_id) {
 
     var time_start = srt_object[srt_id]['time']['start'];
@@ -120,30 +63,32 @@ function render_dialog_form(srt_id) {
     var text_str = "";
     for ( var t in text_arr)
     {
-        /* Use 1 index for 'Normal people' */
         var c = parseInt(t) + 1;
-        text_str += '<div class="input-group">'
-        text_str += '<span class="input-group-addon">' + c + '</span>'
-        text_str += '<input id="text_' + t + '" name="text_' + t + '" type="text" value="' + text_arr[t] + '" class="form-control"/>'
-        text_str += '</div>'
+        text_str +=     '<div class="input-group">'
+        text_str +=     '<span class="input-group-addon">' + c + '</span>'
+        text_str +=     '<input id="text_' + t + '" name="text_' + t + '" type="text" value="' + text_arr[t] + '" class="form-control"/>'
+        text_str +=     '</div> <!-- input-group-->'
     }
 
     /* Create div for our dialog popup */
-    $('body').append(
-        '<div id="dialog_form" title"Edit line">'
-        + '<form class="navbar-form navbar-left">'
-        + '<div class="input-group">'
-        + '<span class="input-group-addon">Start</span>'
-        + '<input type="text" name="time_start" id="time_start" value="' + time_start + '" class="form-control"/>'
-        + '</div>'
-        + '<div class="input-group">'
-        + '<span class="input-group-addon">End</span>'
-        + '<input type="text" name="time_end" id="time_end" value="' + time_end + '" class="form-control"/>'
-        + '</div>'
-        + text_str 
-        
+    $('#srt-dialog-form').html(
+          '<form id="form_' + srt_id + '" class="form-guy" " role="form">'
+        + '    <div class="row">'
+        + '            <div class="col-lg-6">'
+        + '            <div class="input-group">'
+        + '                    <span class="input-group-addon">Start</span>'
+        + '                    <input type="text" name="time_start" id="time_start" value="' + time_start + '" class="form-control""/>'
+        + '            </div>'
+        + '            </div>'
+        + '            <div class="col-lg-6">'
+        + '            <div class="input-group">'
+        + '                    <span class="input-group-addon">End</span>'
+        + '                    <input type="text" name="time_end" id="time_end" value="' + time_end + '" class="form-control""/>'
+        + '            </div> <!-- input-group -->'
+        + '            </div> <!-- col-lg-6 -->'
+        + '    </div> <!-- row -->'
+        + '    ' + text_str 
         + '</form>'
-        + '</div>'
     );
 };
 
@@ -201,34 +146,16 @@ function parse_srt(el) {
 
 /* Create html menu items */
 function srt_to_html() { 
+    srt_menu +='<div class="list-group">'
     for (var i in srt_object)
     {
-        srt_menu +='<span id="' + i +'">'
-        srt_menu +='<a href="#srt-menu">'
-        srt_menu +='<span id=' + i + ' class="table">'
-        srt_menu +='<span id="row-1" class="table-row">'
-        srt_menu +='<span id="number" class="table-cell">' + i + '</span>' 
-        srt_menu +='<span id="row-2" class="table-row">'
-        srt_menu +='<span id="time" class="table-cell">'
-        srt_menu +=srt_object[i]["time"]["start"]
-        srt_menu +=' >>  ' 
-        srt_menu +=srt_object[i]["time"]["end"]
-        srt_menu +='</span>'
-        srt_menu +='</span>'
-        srt_menu +='<br/>'
-          
-
-        for (var text in srt_object[i]["text"]) 
-        {
-            srt_menu += '<span class="table-row">'
-            srt_menu += srt_object[i]["text"][text] 
-            srt_menu += '</span>'
-            srt_menu += '<br/>'
-        }
-
-        srt_menu +='</span>'
-        srt_menu +='</span>'
-        srt_menu +='</a>'
-        srt_menu +='</span>'
+        /* srt-click class for jquery*/
+        srt_menu +='  <a href="#" id="' + i + '" class="list-group-item srt-click">'
+        srt_menu +='    <h4 class="list-group-item-heading">' + i + '</h4>'
+        srt_menu +='    <p class="list-group-item-text">' + srt_object[i]["time"]["start"] +' --> ' + srt_object[i]["time"]["end"] + '</p>'
+        for (var text in srt_object[i]["text"]) { srt_menu +='    <p class="list-group-item-text">' + srt_object[i]["text"][text] + '</p>' }
+        srt_menu +='  </a>'
     } 
+    srt_menu +='</div>'
 };
+

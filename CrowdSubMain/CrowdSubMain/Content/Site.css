@@ -83,6 +83,41 @@ body {
     list-style-type: none;
 }
 
+#navbar_links{
+    padding-top: 15px;
+}
+
 /*MAIN LAYOUT END*/
 
+/*Video Profile*/
+#profile_info{
+    padding-bottom: 20px;
+}
 
+#language{
+    display: inline;
+}
+
+#file_upload{
+    display: inline;
+    padding-left: 20px;
+}
+
+#label_file{
+    display: block;
+    padding: 20px;
+}
+
+#edit_link{
+    float: right;
+    padding: inherit;
+    padding-bottom: 15px;
+}
+
+#tabe_video_profile{
+    clear: right;
+}
+
+#request_button{
+    float: right;
+}
