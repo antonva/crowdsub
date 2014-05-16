@@ -299,6 +299,7 @@
     <Content Include="Views\Shared\NotFound.cshtml" />
     <Content Include="Views\Request\recent_requests.cshtml" />
     <Content Include="Views\Subtitle\subtitle_recent.cshtml" />
+    <Content Include="Views\Subtitle\RecentSubtitles.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Error\" />
