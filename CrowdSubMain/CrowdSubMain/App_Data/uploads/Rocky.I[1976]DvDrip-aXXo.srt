@@ -1,10 +1,10 @@
-1
+ï»¿1
 00:00:36,360 --> 00:00:38,316
-<i>(crowd shouting)</i>
+(crowd shouting)(crowd shouting)
 
 2
 00:01:06,160 --> 00:01:08,310
-<i>(booing)</i>
+(booing)
 
 3
 00:01:15,440 --> 00:01:17,431
@@ -12,17 +12,15 @@ Come on! Hit 'im! Hit 'im!
 
 4
 00:01:29,480 --> 00:01:31,436
-<i>(bell)</i>
+(bell)
 
 5
 00:01:39,960 --> 00:01:43,430
-You're waltzin'.
-Give the sucker some action.
+You're waltzin'.Give the sucker some action.
 
 6
 00:01:43,560 --> 00:01:46,279
-You're fightin' like a bum.
-Want some advice?
+You're fightin' like a bum.Want some advice?
 
 7
 00:01:46,400 --> 00:01:48,356
@@ -30,30 +28,27 @@ Water!
 
 8
 00:01:50,560 --> 00:01:52,835
-Should I bet the fight
-don't go three rounds?
+Should I bet the fightdon't go three rounds?
 
 9
 00:01:52,960 --> 00:01:56,270
-- You feel strong?
-- Absolutely.
+- You feel strong?- Absolutely.
 
 10
 00:01:56,400 --> 00:01:59,198
-You want some good advice?
-Keep moving.
+You want some good advice?Keep moving.
 
 11
 00:02:04,160 --> 00:02:05,832
-<i>(bell)</i>
+(bell)
 
 12
 00:02:05,960 --> 00:02:07,916
-<i>(crowd shouting)</i>
+(crowd shouting)
 
 13
 00:02:42,000 --> 00:02:43,956
-<i>(booing)</i>
+(booing)
 
 14
 00:02:45,320 --> 00:02:47,151
@@ -61,15 +56,15 @@ Give him one!
 
 15
 00:02:57,320 --> 00:02:59,276
-<i>(bell)</i>
+(bell)
 
 16
 00:03:03,440 --> 00:03:05,590
-<i>(cheering and applause)</i>
+(cheering and applause)
 
 17
 00:03:16,200 --> 00:03:17,394
-<i>(bell)</i>
+(bell)
 
 18
 00:03:17,520 --> 00:03:19,829
@@ -77,8 +72,7 @@ All right, all right!
 
 19
 00:03:19,960 --> 00:03:23,350
-Next a six-rounder
-between local lightweights...
+Next a six-rounderbetween local lightweights...
 
 20
 00:03:23,480 --> 00:03:25,516
@@ -86,22 +80,19 @@ between local lightweights...
 
 21
 00:03:37,400 --> 00:03:38,958
-- Hey.
-- Hey, what?
+- Hey.- Hey, what?
 
 22
 00:03:39,080 --> 00:03:42,038
-- You got a smoke?
-- Yeah, you can have this one.
+- You got a smoke?- Yeah, you can have this one.
 
 23
 00:03:42,720 --> 00:03:44,676
-<i>(man in crowd)</i> You're a bum!
+(man in crowd) You're a bum!
 
 24
 00:03:44,800 --> 00:03:47,758
-You're a bum!
-You know that? You're a bum!
+You're a bum!You know that? You're a bum!
 
 25
 00:04:12,880 --> 00:04:14,677
@@ -113,13 +104,11 @@ You really got lucky tonight.
 
 27
 00:04:17,000 --> 00:04:21,118
-Spider, you get loser's share:
-$40, less $15 locker and cornerman...
+Spider, you get loser's share:$40, less $15 locker and cornerman...
 
 28
 00:04:21,240 --> 00:04:25,756
-...$5 shower and towel,
-7% tax. Comes to 17.20.
+...$5 shower and towel,7% tax. Comes to 17.20.
 
 29
 00:04:25,880 --> 00:04:28,269
@@ -127,8 +116,7 @@ You fought a good fight, Spider.
 
 30
 00:04:28,400 --> 00:04:32,552
-Balboa, you get winner's share:
-$65, less $15 locker and cornerman...
+Balboa, you get winner's share:$65, less $15 locker and cornerman...
 
 31
 00:04:32,680 --> 00:04:35,399
@@ -140,21 +128,19 @@ Comes to 40.55.
 
 33
 00:04:38,720 --> 00:04:42,679
-- When do I fight again?
-- Maybe two weeks. Gimme a call.
+- When do I fight again?- Maybe two weeks. Gimme a call.
 
 34
 00:04:42,800 --> 00:04:45,758
-The doctor should be in
-in about 20 minutes.
+The doctor should be inin about 20 minutes.
 
 35
 00:05:06,400 --> 00:05:08,755
-<i>(whistles a tune)</i>
+(whistles a tune)
 
 36
 00:05:16,880 --> 00:05:19,235
-<i>(whistles to dogs)</i>
+(whistles to dogs)
 
 37
 00:05:20,120 --> 00:05:22,475
@@ -170,13 +156,11 @@ Here, boy. Here, boy.
 
 40
 00:05:48,680 --> 00:05:51,638
-- # Doo doo do-doo
-- # I said I've been told by
+- # Doo doo do-doo- # I said I've been told by
 
 41
 00:05:51,760 --> 00:05:55,514
-# Doo doo do-doo
-Some people and they all
+# Doo doo do-dooSome people and they all
 
 42
 00:05:55,640 --> 00:05:57,551
@@ -184,8 +168,7 @@ Some people and they all
 
 43
 00:05:57,680 --> 00:06:01,798
-# Doo doo do-doo
-Take you back like before
+# Doo doo do-dooTake you back like before
 
 44
 00:06:01,920 --> 00:06:05,390
@@ -205,8 +188,7 @@ Take you back like before
 
 48
 00:06:14,920 --> 00:06:17,957
-You guys are gettin' better every year,
-you know that?
+You guys are gettin' better every year,you know that?
 
 49
 00:06:18,080 --> 00:06:20,036
@@ -230,13 +212,11 @@ Yeah!
 
 54
 00:06:36,240 --> 00:06:38,595
-- # Doo doo do-doo
-- # Well, you put me down
+- # Doo doo do-doo- # Well, you put me down
 
 55
 00:06:39,280 --> 00:06:42,750
-# Doo doo do-doo
-You put me down real nice
+# Doo doo do-dooYou put me down real nice
 
 56
 00:06:43,480 --> 00:06:45,072
@@ -244,8 +224,7 @@ You put me down real nice
 
 57
 00:06:45,200 --> 00:06:48,715
-# Doo doo do-doo
-Is takin' the largest slice
+# Doo doo do-dooIs takin' the largest slice
 
 58
 00:06:48,840 --> 00:06:52,310
@@ -253,13 +232,11 @@ Is takin' the largest slice
 
 59
 00:07:28,320 --> 00:07:31,153
-Hey! Your old man
-did pretty good tonight.
+Hey! Your old mandid pretty good tonight.
 
 60
 00:07:31,280 --> 00:07:35,637
-Why weren't you there, huh? You shoulda
-seen me. You guys hungry? No?
+Why weren't you there, huh? You shouldaseen me. You guys hungry? No?
 
 61
 00:07:38,120 --> 00:07:40,076
@@ -271,13 +248,11 @@ Here you go.
 
 63
 00:07:44,400 --> 00:07:47,153
-You wanna see
-your friend Moby Dick, huh?
+You wanna seeyour friend Moby Dick, huh?
 
 64
 00:07:50,080 --> 00:07:53,755
-How you doin', Moby Dick?
-You miss me today or what, huh?
+How you doin', Moby Dick?You miss me today or what, huh?
 
 65
 00:07:54,680 --> 00:07:56,557
@@ -285,8 +260,7 @@ Huh?
 
 66
 00:07:56,680 --> 00:08:02,118
-Here you go. Say hi. If you could sing or
-dance, I wouldn't be doin' this, you know?
+Here you go. Say hi. If you could sing ordance, I wouldn't be doin' this, you know?
 
 67
 00:08:17,880 --> 00:08:20,952
@@ -294,13 +268,11 @@ And this turtle food I got here, it's uh...
 
 68
 00:08:22,320 --> 00:08:25,949
-This turtle food, gotta add more flies in.
-There are more moths in it.
+This turtle food, gotta add more flies in.There are more moths in it.
 
 69
 00:08:26,080 --> 00:08:29,516
-More flies... More moths...
-Who the hell cares?
+More flies... More moths...Who the hell cares?
 
 70
 00:09:46,720 --> 00:09:49,154
@@ -308,23 +280,19 @@ How you feelin' this mornin'? Full of life?
 
 71
 00:09:49,280 --> 00:09:52,670
-- Fine.
-- Hey, how you doin', killer?
+- Fine.- Hey, how you doin', killer?
 
 72
 00:09:52,800 --> 00:09:56,236
-- How's the turtle food this week?
-- Fine.
+- How's the turtle food this week?- Fine.
 
 73
 00:09:56,360 --> 00:09:59,193
-- Me, I'm kinda aggravated, you know?
-- Oh, I'm sorry.
+- Me, I'm kinda aggravated, you know?- Oh, I'm sorry.
 
 74
 00:09:59,320 --> 00:10:03,677
-- Ain't your fault. Wanna hear about it?
-- I'll tell you somebody who <i>don't.</i>
+- Ain't your fault. Wanna hear about it?- I'll tell you somebody who don't.
 
 75
 00:10:03,800 --> 00:10:05,631
@@ -332,18 +300,15 @@ How you doin', Gloria?
 
 76
 00:10:05,760 --> 00:10:09,435
-The last turtle food I got here
-had more moths in it than flies.
+The last turtle food I got herehad more moths in it than flies.
 
 77
 00:10:09,720 --> 00:10:12,075
-The moths get caught
-in the turtles' throats.
+The moths get caughtin the turtles' throats.
 
 78
 00:10:12,200 --> 00:10:16,398
-They cough and I smack 'em on the back
-of the shell. What do you think they get?
+They cough and I smack 'em on the backof the shell. What do you think they get?
 
 79
 00:10:16,520 --> 00:10:19,080
@@ -351,18 +316,15 @@ And they get what, huh?
 
 80
 00:10:20,120 --> 00:10:23,874
-Come on... Shell-shocked.
-They get shell-shocked.
+Come on... Shell-shocked.They get shell-shocked.
 
 81
 00:10:24,000 --> 00:10:28,516
-- Startin' with the bad jokes early, huh?
-- Inventin' jokes ain't so easy sometimes.
+- Startin' with the bad jokes early, huh?- Inventin' jokes ain't so easy sometimes.
 
 82
 00:10:28,640 --> 00:10:30,596
-- That wasn't a joke.
-<i>- (barking)</i>
+- That wasn't a joke.- (barking)
 
 83
 00:10:30,720 --> 00:10:33,029
@@ -370,42 +332,35 @@ How's my buddy doin' today? Yo, Butkus!
 
 84
 00:10:33,160 --> 00:10:35,913
-- I ain't had time to check 'im.
-- Yo, Butkus!
+- I ain't had time to check 'im.- Yo, Butkus!
 
 85
 00:10:38,240 --> 00:10:40,356
-<i>(Rocky howls)</i>
+(Rocky howls)
 
 86
 00:10:43,560 --> 00:10:48,236
-Adrian, I want you to go downstairs and
-clean all the cat cages. They're a mess.
+Adrian, I want you to go downstairs andclean all the cat cages. They're a mess.
 
 87
 00:11:01,320 --> 00:11:04,039
-You gotta pay for that
-turtle food, Rock-head.
+You gotta pay for thatturtle food, Rock-head.
 
 88
 00:11:04,240 --> 00:11:08,153
-Hey, crime don't pay.
-You know that, Gloria. You know that.
+Hey, crime don't pay.You know that, Gloria. You know that.
 
 89
 00:11:30,840 --> 00:11:32,990
-- Yo, Rock, how's your boss?
-- Real good.
+- Yo, Rock, how's your boss?- Real good.
 
 90
 00:11:33,120 --> 00:11:35,395
-- You fightin' again?
-- Yeah, here and there.
+- You fightin' again?- Yeah, here and there.
 
 91
 00:11:35,520 --> 00:11:39,229
-- We'll make some money real soon, huh?
-- Yeah, a million dollars.
+- We'll make some money real soon, huh?- Yeah, a million dollars.
 
 92
 00:11:39,360 --> 00:11:41,510
@@ -413,8 +368,7 @@ Hey, you! Where you goin'?
 
 93
 00:11:47,040 --> 00:11:49,838
-Where you goin'? Huh?
-Where you runnin'?
+Where you goin'? Huh?Where you runnin'?
 
 94
 00:11:49,960 --> 00:11:51,552
@@ -422,8 +376,7 @@ Hey! Hey!
 
 95
 00:11:53,360 --> 00:11:56,796
-- Don't hit the face!
-- Shut up! Mr Gazzo wants the 200 now.
+- Don't hit the face!- Shut up! Mr Gazzo wants the 200 now.
 
 96
 00:11:56,920 --> 00:11:57,875
@@ -431,33 +384,27 @@ I'm broke!
 
 97
 00:11:58,000 --> 00:12:01,037
-Mr Gazzo says I should get the 200
-or break your thumb.
+Mr Gazzo says I should get the 200or break your thumb.
 
 98
 00:12:01,160 --> 00:12:04,596
-- Please! Please! Don't break my...
-- What's your name again?
+- Please! Please! Don't break my...- What's your name again?
 
 99
 00:12:04,720 --> 00:12:07,439
-- Bob!
-- Listen, Bob...
+- Bob!- Listen, Bob...
 
 100
 00:12:08,600 --> 00:12:11,034
-You wanna dance,
-you gotta pay the band.
+You wanna dance,you gotta pay the band.
 
 101
 00:12:11,160 --> 00:12:13,310
-You wanna borrow,
-you gotta pay the man.
+You wanna borrow,you gotta pay the man.
 
 102
 00:12:13,440 --> 00:12:18,070
-Hey, I ain't emotionally involved, Bob,
-you understand? Gimme some money.
+Hey, I ain't emotionally involved, Bob,you understand? Gimme some money.
 
 103
 00:12:18,200 --> 00:12:20,475
@@ -465,8 +412,7 @@ Gimme some money. Come on.
 
 104
 00:12:23,640 --> 00:12:27,030
-- There's 130 here.
-- That's it. I'm broke.
+- There's 130 here.- That's it. I'm broke.
 
 105
 00:12:27,160 --> 00:12:28,957
@@ -478,8 +424,7 @@ You're still $70 light.
 
 107
 00:12:31,160 --> 00:12:36,075
-You don't have to break nothin'. Here,
-take my coat. It's worth 50, 60 dollars.
+You don't have to break nothin'. Here,take my coat. It's worth 50, 60 dollars.
 
 108
 00:12:36,200 --> 00:12:38,919
@@ -487,23 +432,19 @@ Here, take the coat. Take the coat!
 
 109
 00:12:39,040 --> 00:12:41,918
-- Be smart.
-- You shoulda planned ahead, you know?
+- Be smart.- You shoulda planned ahead, you know?
 
 110
 00:12:42,040 --> 00:12:44,600
-- You shoulda planned ahead.
-- I'll tape up the hand!
+- You shoulda planned ahead.- I'll tape up the hand!
 
 111
 00:12:44,720 --> 00:12:47,871
-- You shoulda planned ahead.
-- Gazzo won't have to know!
+- You shoulda planned ahead.- Gazzo won't have to know!
 
 112
 00:12:48,000 --> 00:12:51,675
-He won't be wise to nothin'.
-Gazzo won't be wise to nothin'!
+He won't be wise to nothin'.Gazzo won't be wise to nothin'!
 
 113
 00:12:52,720 --> 00:12:54,676
@@ -511,8 +452,7 @@ He won't...
 
 114
 00:13:21,440 --> 00:13:25,228
-He only had 130, but I think he's
-good for the rest next week, Mr Gazzo.
+He only had 130, but I think he'sgood for the rest next week, Mr Gazzo.
 
 115
 00:13:25,360 --> 00:13:27,715
@@ -520,13 +460,11 @@ Sure, Rocky. Bob's good for it.
 
 116
 00:13:28,960 --> 00:13:32,999
-That's it for today.
-Tomorrow collect from Del Rio.
+That's it for today.Tomorrow collect from Del Rio.
 
 117
 00:13:33,120 --> 00:13:37,477
-- He's late three weeks and I don't like it.
-- Tomorrow, three weeks, Del Rio.
+- He's late three weeks and I don't like it.- Tomorrow, three weeks, Del Rio.
 
 118
 00:13:37,600 --> 00:13:39,716
@@ -534,23 +472,19 @@ I got it. How do you spell Del Rio?
 
 119
 00:13:39,840 --> 00:13:41,876
-- How'd you do last night?
-- Real good.
+- How'd you do last night?- Real good.
 
 120
 00:13:42,000 --> 00:13:45,913
-- Hey, did you get the licence number?
-- Of what?
+- Hey, did you get the licence number?- Of what?
 
 121
 00:13:46,040 --> 00:13:49,999
-- The truck that run over your face.
-- Relax, buddy. Pull it over here.
+- The truck that run over your face.- Relax, buddy. Pull it over here.
 
 122
 00:13:50,120 --> 00:13:53,032
-I wanna let Rocky out,
-then I'm gonna talk to him.
+I wanna let Rocky out,then I'm gonna talk to him.
 
 123
 00:14:15,240 --> 00:14:17,196
@@ -558,13 +492,11 @@ How come you didn't break his thumb?
 
 124
 00:14:17,320 --> 00:14:19,515
-- How do you know I didn't?
-- I hear things.
+- How do you know I didn't?- I hear things.
 
 125
 00:14:19,640 --> 00:14:21,949
-- Did I give you a job this mornin'?
-- Yeah.
+- Did I give you a job this mornin'?- Yeah.
 
 126
 00:14:22,080 --> 00:14:24,116
@@ -572,33 +504,27 @@ So why didn't you break his thumb?
 
 127
 00:14:24,240 --> 00:14:27,915
-When you don't do what I tell you to do,
-you make me look bad, Rock.
+When you don't do what I tell you to do,you make me look bad, Rock.
 
 128
 00:14:28,040 --> 00:14:32,670
-I figured... Look, if I break the guy's
-thumb, he gets laid off, right? He can't...
+I figured... Look, if I break the guy'sthumb, he gets laid off, right? He can't...
 
 129
 00:14:32,800 --> 00:14:37,351
-Well, let me do the figurin', OK, Rock?
-From here on, just let me do the figurin'.
+Well, let me do the figurin', OK, Rock?From here on, just let me do the figurin'.
 
 130
 00:14:37,480 --> 00:14:41,359
-These guys think we're runnin'
-a charity and they're gonna get off light.
+These guys think we're runnin'a charity and they're gonna get off light.
 
 131
 00:14:41,480 --> 00:14:43,835
-From here on in,
-do what I tell you to do...
+From here on in,do what I tell you to do...
 
 132
 00:14:43,960 --> 00:14:48,317
-...because it's bad for my reputation,
-you understand? You got it, Rock?
+...because it's bad for my reputation,you understand? You got it, Rock?
 
 133
 00:14:49,240 --> 00:14:51,196
@@ -610,13 +536,11 @@ Hey, how do you spell Del Rio?
 
 135
 00:14:55,440 --> 00:14:57,749
-- Look in a dictionary, Rock!
-- Come on!
+- Look in a dictionary, Rock!- Come on!
 
 136
 00:14:57,880 --> 00:15:01,509
-Hey, I won't let that happen no more -
-about the thumb.
+Hey, I won't let that happen no more -about the thumb.
 
 137
 00:15:02,760 --> 00:15:05,035
@@ -628,22 +552,19 @@ So long, meatbag.
 
 139
 00:15:09,440 --> 00:15:12,000
-I shoulda broke <i>your</i> thumbs!
+I shoulda broke your thumbs!
 
 140
 00:15:39,960 --> 00:15:43,669
-- I heard you did real good last night.
-- Absolutely. You shoulda seen me.
+- I heard you did real good last night.- Absolutely. You shoulda seen me.
 
 141
 00:15:43,800 --> 00:15:46,268
-- You oughta take a rest.
-- No, my back is hurtin'.
+- You oughta take a rest.- No, my back is hurtin'.
 
 142
 00:15:46,400 --> 00:15:48,994
-- Your back?
-- My back is hurtin'. You deaf?
+- Your back?- My back is hurtin'. You deaf?
 
 143
 00:15:49,120 --> 00:15:50,917
@@ -651,18 +572,15 @@ No, I'm short.
 
 144
 00:16:47,560 --> 00:16:51,712
-Hey, yo, Mike. Where's my lock?
-Whose stuff is this in my locker?
+Hey, yo, Mike. Where's my lock?Whose stuff is this in my locker?
 
 145
 00:16:51,840 --> 00:16:54,877
-It's Dipper's stuff.
-It ain't your locker no more.
+It's Dipper's stuff.It ain't your locker no more.
 
 146
 00:16:57,400 --> 00:17:01,518
-What you talkin' about? It's been my
-locker for six years. Where's my gear?
+What you talkin' about? It's been mylocker for six years. Where's my gear?
 
 147
 00:17:01,640 --> 00:17:04,393
@@ -674,8 +592,7 @@ You put my stuff on skid row?
 
 149
 00:17:10,720 --> 00:17:14,395
-I been in that locker for six years
-and you put my stuff on skid row?
+I been in that locker for six yearsand you put my stuff on skid row?
 
 150
 00:17:14,520 --> 00:17:16,954
@@ -683,27 +600,23 @@ Mickey tells me what to do, I gotta do it.
 
 151
 00:17:17,080 --> 00:17:20,993
-- Where is he?
-- He's outside, working with Dipper.
+- Where is he?- He's outside, working with Dipper.
 
 152
 00:17:21,120 --> 00:17:23,680
-- He's in a bad mood.
-- So am I.
+- He's in a bad mood.- So am I.
 
 153
 00:17:33,200 --> 00:17:37,637
-Put your hands up there. That's right.
-Keep your hands up. That's right.
+Put your hands up there. That's right.Keep your hands up. That's right.
 
 154
 00:17:37,760 --> 00:17:40,274
-- Hey, Mick.
-- Shut up!
+- Hey, Mick.- Shut up!
 
 155
 00:17:40,400 --> 00:17:42,356
-<i>(trainer)</i> Attaboy!
+(trainer) Attaboy!
 
 156
 00:17:44,240 --> 00:17:46,196
@@ -711,87 +624,71 @@ Time! Time!
 
 157
 00:17:47,920 --> 00:17:51,151
-- What the hell...? What do you want?
-- How you feelin' today?
+- What the hell...? What do you want?- How you feelin' today?
 
 158
 00:17:51,280 --> 00:17:54,989
-- What are you, a doctor or somethin'?
-- You got problems today?
+- What are you, a doctor or somethin'?- You got problems today?
 
 159
 00:17:55,120 --> 00:17:58,908
-- Never mind my problem. What's yours?
-- I've been talkin' to Michael.
+- Never mind my problem. What's yours?- I've been talkin' to Michael.
 
 160
 00:17:59,040 --> 00:18:02,749
-- How come I been put outta my locker?
-- Because Dipper needed it.
+- How come I been put outta my locker?- Because Dipper needed it.
 
 161
 00:18:02,880 --> 00:18:05,758
-Dipper's a contender, a climber.
-Know what you are?
+Dipper's a contender, a climber.Know what you are?
 
 162
 00:18:05,880 --> 00:18:07,632
-- What?
-- A tomato.
+- What?- A tomato.
 
 163
 00:18:07,760 --> 00:18:11,673
-Yeah, let's face it. I run a business here,
-not a goddamn soup kitchen.
+Yeah, let's face it. I run a business here,not a goddamn soup kitchen.
 
 164
 00:18:11,800 --> 00:18:13,597
-- Did you fight last night?
-- Yeah.
+- Did you fight last night?- Yeah.
 
 165
 00:18:13,720 --> 00:18:16,632
-- Did you win?
-- Yeah, I won KO in the second.
+- Did you win?- Yeah, I won KO in the second.
 
 166
 00:18:16,760 --> 00:18:19,320
-- Yeah? Who'd you fight?
-- Spider Rico.
+- Yeah? Who'd you fight?- Spider Rico.
 
 167
 00:18:19,440 --> 00:18:22,034
-<i>(laughs)</i> He's a bum!
+(laughs) He's a bum!
 
 168
 00:18:22,160 --> 00:18:25,470
-- You think everybody I fight is a bum.
-- Well, ain't they?
+- You think everybody I fight is a bum.- Well, ain't they?
 
 169
 00:18:25,600 --> 00:18:30,116
-You got heart, but you fight like a
-goddamn ape. Nothin' special about you.
+You got heart, but you fight like agoddamn ape. Nothin' special about you.
 
 170
 00:18:30,240 --> 00:18:35,075
-You never got your nose busted. Leave it
-that way, and what's left of your mind.
+You never got your nose busted. Leave itthat way, and what's left of your mind.
 
 171
 00:18:35,200 --> 00:18:37,919
-Mick, I think I'll go take a steam.
-You know why?
+Mick, I think I'll go take a steam.You know why?
 
 172
 00:18:38,040 --> 00:18:40,679
-I did real good last night.
-You shoulda seen me.
+I did real good last night.You shoulda seen me.
 
 173
 00:18:40,800 --> 00:18:43,189
-- Big deal.
-- You shoulda seen me too.
+- Big deal.- You shoulda seen me too.
 
 174
 00:18:43,320 --> 00:18:46,471
@@ -799,18 +696,15 @@ Hey, kid, you ever think about retiring?
 
 175
 00:18:46,600 --> 00:18:49,034
-- No.
-- You think about it.
+- No.- You think about it.
 
 176
 00:18:49,160 --> 00:18:51,390
-- All right. Time!
-- <i>(Dipper)</i> Hey, hey!
+- All right. Time!- (Dipper) Hey, hey!
 
 177
 00:18:51,520 --> 00:18:54,080
-- What?
-- I dig your locker, man.
+- What?- I dig your locker, man.
 
 178
 00:19:31,640 --> 00:19:34,108
@@ -818,8 +712,7 @@ Cold night.
 
 179
 00:19:34,240 --> 00:19:37,198
-Good night to catch pneumonia,
-you know?
+Good night to catch pneumonia,you know?
 
 180
 00:19:40,280 --> 00:19:42,999
@@ -827,8 +720,7 @@ You need some help with that cage?
 
 181
 00:19:43,120 --> 00:19:46,271
-There's a good game
-down at the Spectrum tonight.
+There's a good gamedown at the Spectrum tonight.
 
 182
 00:19:48,400 --> 00:19:50,960
@@ -836,28 +728,23 @@ You wanna go to a basketball game?
 
 183
 00:19:52,680 --> 00:19:56,229
-- <i>(dog barks)</i>
-- Hi, Butkus. Hi, kid.
+- (dog barks)- Hi, Butkus. Hi, kid.
 
 184
 00:19:58,320 --> 00:20:00,629
-Tough day today.
-They took my locker away.
+Tough day today.They took my locker away.
 
 185
 00:20:00,760 --> 00:20:03,558
-I had that locker for six years,
-but it don't bother me.
+I had that locker for six years,but it don't bother me.
 
 186
 00:20:03,680 --> 00:20:06,399
-Lockers are bad.
-People get the combination.
+Lockers are bad.People get the combination.
 
 187
 00:20:06,520 --> 00:20:10,149
-I must've had 20 bucks taken
-outta there in the past six years.
+I must've had 20 bucks takenoutta there in the past six years.
 
 188
 00:20:10,280 --> 00:20:12,430
@@ -869,8 +756,7 @@ You know? It doesn't matter. Who cares?
 
 190
 00:20:17,440 --> 00:20:20,671
-Cold night... Hey, birds!
-Hey, look who's here!
+Cold night... Hey, birds!Hey, look who's here!
 
 191
 00:20:20,800 --> 00:20:23,360
@@ -878,8 +764,7 @@ Look who's here. The giant worm.
 
 192
 00:20:24,440 --> 00:20:28,558
-Look at these birds. Don't these birds
-look like candy? Like flyin' candy.
+Look at these birds. Don't these birdslook like candy? Like flyin' candy.
 
 193
 00:20:28,680 --> 00:20:30,511
@@ -887,8 +772,7 @@ Want to fly me home?
 
 194
 00:20:30,640 --> 00:20:33,313
-Do you need somebody
-to walk you home, you know?
+Do you need somebodyto walk you home, you know?
 
 195
 00:20:33,440 --> 00:20:34,873
@@ -896,8 +780,7 @@ No.
 
 196
 00:20:35,000 --> 00:20:38,709
-It's a cold night. If I was you and
-you got the money, I would take a cab.
+It's a cold night. If I was you andyou got the money, I would take a cab.
 
 197
 00:20:38,840 --> 00:20:41,354
@@ -905,28 +788,23 @@ Too many creeps around here, you know?
 
 198
 00:20:41,480 --> 00:20:45,837
-Every other block there's a creep.
-You can always tell a creep.
+Every other block there's a creep.You can always tell a creep.
 
 199
 00:20:48,280 --> 00:20:51,829
-All right, listen. I'm gonna go now.
-I'll see ya's later, all right?
+All right, listen. I'm gonna go now.I'll see ya's later, all right?
 
 200
 00:20:51,960 --> 00:20:55,555
-Now you guys get up.
-I know you had a hard day in the cage.
+Now you guys get up.I know you had a hard day in the cage.
 
 201
 00:20:55,680 --> 00:21:00,435
-So... I wanna go home, make up a joke.
-I'll tell you a new joke tomorrow, OK?
+So... I wanna go home, make up a joke.I'll tell you a new joke tomorrow, OK?
 
 202
 00:21:00,560 --> 00:21:03,313
-- Good night, Adrian.
-- Good night, Rocky.
+- Good night, Adrian.- Good night, Rocky.
 
 203
 00:21:21,160 --> 00:21:23,116
@@ -938,8 +816,7 @@ There you go. I got a friend for you here.
 
 205
 00:21:27,400 --> 00:21:30,472
-- Hello, Rock.
-- How you doin'? You seen Paulie?
+- Hello, Rock.- How you doin'? You seen Paulie?
 
 206
 00:21:30,600 --> 00:21:32,477
@@ -947,33 +824,27 @@ He's in the steam room.
 
 207
 00:21:32,600 --> 00:21:35,353
-- Hey, Rocky, what's with the eye?
-- Been fightin'.
+- Hey, Rocky, what's with the eye?- Been fightin'.
 
 208
 00:21:35,480 --> 00:21:39,837
-- Hope ya's won it, at least.
-- I did real good. You shoulda seen me.
+- Hope ya's won it, at least.- I did real good. You shoulda seen me.
 
 209
 00:21:41,160 --> 00:21:44,994
-- Hey, Rock, who'd you fight?
-- Spider Rico.
+- Hey, Rock, who'd you fight?- Spider Rico.
 
 210
 00:21:45,120 --> 00:21:48,157
-- Hey, is he still around?
-- Yeah, he's doin' real good.
+- Hey, is he still around?- Yeah, he's doin' real good.
 
 211
 00:21:48,280 --> 00:21:53,832
-He's doin' better than you are, that's
-for sure! Hey, Paulie, you lock the door?
+He's doin' better than you are, that'sfor sure! Hey, Paulie, you lock the door?
 
 212
 00:21:53,960 --> 00:21:56,633
-I'd like to kill the moron
-who broke the mirror.
+I'd like to kill the moronwho broke the mirror.
 
 213
 00:21:56,760 --> 00:21:58,830
@@ -981,18 +852,15 @@ Hey, yo, Paulie!
 
 214
 00:21:58,960 --> 00:22:03,078
-Every day, every night I pass by.
-Your sister's givin' me the shoulder.
+Every day, every night I pass by.Your sister's givin' me the shoulder.
 
 215
 00:22:03,200 --> 00:22:06,670
-- Forget her. You could do better than her.
-- I don't forget nothin'.
+- Forget her. You could do better than her.- I don't forget nothin'.
 
 216
 00:22:06,800 --> 00:22:11,430
-Every night, I pass by the place, I tell
-a joke. Every mornin', I tell a joke. Nothin'.
+Every night, I pass by the place, I tella joke. Every mornin', I tell a joke. Nothin'.
 
 217
 00:22:11,560 --> 00:22:13,551
@@ -1000,63 +868,51 @@ She just looks at me, you know?
 
 218
 00:22:13,680 --> 00:22:16,592
-- Looks, huh?
-- Yeah, like I'm a plate of leftovers.
+- Looks, huh?- Yeah, like I'm a plate of leftovers.
 
 219
 00:22:16,720 --> 00:22:21,077
-I need a Cadillac to connect with your
-sister? Somethin' wrong with my face?
+I need a Cadillac to connect with yoursister? Somethin' wrong with my face?
 
 220
 00:22:21,200 --> 00:22:24,670
-She's a freakin' loser.
-Sometimes she gets me so crazy...
+She's a freakin' loser.Sometimes she gets me so crazy...
 
 221
 00:22:24,800 --> 00:22:27,997
-...I could split her head with a razor.
-- Don't get mental, man.
+...I could split her head with a razor.- Don't get mental, man.
 
 222
 00:22:28,120 --> 00:22:30,554
-- You caught me in a bad mood.
-- You always are.
+- You caught me in a bad mood.- You always are.
 
 223
 00:22:30,680 --> 00:22:33,877
-- Adrian ain't sharp. Adrian is a loser.
-- Hey!
+- Adrian ain't sharp. Adrian is a loser.- Hey!
 
 224
 00:22:34,000 --> 00:22:38,391
-She's pushin' 30 years old and if she
-don't watch out she'll end up dyin' alone.
+She's pushin' 30 years old and if shedon't watch out she'll end up dyin' alone.
 
 225
 00:22:38,520 --> 00:22:40,875
-- I'm 30 myself.
-- And <i>you'll</i> end up dyin' alone.
+- I'm 30 myself.- And you'll end up dyin' alone.
 
 226
 00:22:41,000 --> 00:22:45,232
-- I don't see no crowd around <i>you.</i>
-- I'll kill the moron who broke the mirror.
+- I don't see no crowd around you.- I'll kill the moron who broke the mirror.
 
 227
 00:22:45,360 --> 00:22:48,670
-Come on, let's get outta this stink,
-would ya? Come on.
+Come on, let's get outta this stink,would ya? Come on.
 
 228
 00:22:48,800 --> 00:22:51,394
-- I wanna talk to you, anyway.
-- About what?
+- I wanna talk to you, anyway.- About what?
 
 229
 00:22:51,520 --> 00:22:53,829
-- Do you still work for Gazzo?
-- Yeah, sure.
+- Do you still work for Gazzo?- Yeah, sure.
 
 230
 00:22:53,960 --> 00:22:56,599
@@ -1064,8 +920,7 @@ Why don't you talk to him about me?
 
 231
 00:22:56,720 --> 00:23:01,271
-Well, I just don't think
-Gazzo's hirin' right now, you know?
+Well, I just don't thinkGazzo's hirin' right now, you know?
 
 232
 00:23:01,400 --> 00:23:03,356
@@ -1073,23 +928,19 @@ Come on.
 
 233
 00:23:06,000 --> 00:23:08,036
-- The girl's dryin' up.
-- Who?
+- The girl's dryin' up.- Who?
 
 234
 00:23:08,160 --> 00:23:11,516
-My sister. If she don't start livin',
-her body's gonna dry up.
+My sister. If she don't start livin',her body's gonna dry up.
 
 235
 00:23:11,640 --> 00:23:15,428
-You know, tomorrow's Thanksgiving.
-Come over and talk to her.
+You know, tomorrow's Thanksgiving.Come over and talk to her.
 
 236
 00:23:15,560 --> 00:23:18,996
-- Sure. Beer!
-- Tomorrow you come for some bird.
+- Sure. Beer!- Tomorrow you come for some bird.
 
 237
 00:23:19,120 --> 00:23:21,873
@@ -1097,37 +948,31 @@ Absolutely. You got it.
 
 238
 00:23:22,000 --> 00:23:24,594
-I gotta go. If I'm late,
-she calls the hospital.
+I gotta go. If I'm late,she calls the hospital.
 
 239
 00:23:24,720 --> 00:23:26,472
-- Paulie!
-- I got it.
+- Paulie!- I got it.
 
 240
 00:23:26,600 --> 00:23:31,435
-<i>(TV)... with Mac Lee Green here in</i>
-<i>Philadelphia at the fabulous Spectrum.</i>
+(TV)... with Mac Lee Green here inPhiladelphia at the fabulous Spectrum.
 
 241
 00:23:31,560 --> 00:23:33,994
-<i>You're speakin' of your Bicentennial fight.</i>
+You're speakin' of your Bicentennial fight.
 
 242
 00:23:34,120 --> 00:23:38,113
-<i>The greatest sportin' event in the</i>
-<i>country's history. A gala occurrence.</i>
+The greatest sportin' event in thecountry's history. A gala occurrence.
 
 243
 00:23:38,240 --> 00:23:42,677
-- <i>I'll beat him like he committed a crime.</i>
-- Would you take a look at that guy?
+- I'll beat him like he committed a crime.- Would you take a look at that guy?
 
 244
 00:23:42,800 --> 00:23:45,951
-Where are the real fighters
-gonna come from, the pros?
+Where are the real fightersgonna come from, the pros?
 
 245
 00:23:46,080 --> 00:23:48,640
@@ -1135,102 +980,83 @@ All we got today are jig clowns.
 
 246
 00:23:50,720 --> 00:23:53,393
-- Clown?
-- That's right, clown.
+- Clown?- That's right, clown.
 
 247
 00:23:53,520 --> 00:23:56,034
-<i>In keeping with great events</i>
-<i>in our history...</i>
+In keeping with great eventsin our history...
 
 248
 00:23:56,160 --> 00:24:00,278
-<i>... I will duplicate the cracking of the</i>
-<i>Liberty Bell by cracking Mac Lee Green.</i>
+... I will duplicate the cracking of theLiberty Bell by cracking Mac Lee Green.
 
 249
 00:24:00,400 --> 00:24:04,473
-- You callin' Apollo Creed a clown?
-- Well, what else? Look at him.
+- You callin' Apollo Creed a clown?- Well, what else? Look at him.
 
 250
 00:24:04,800 --> 00:24:06,836
-<i>Stay in school and use your brain.</i>
+Stay in school and use your brain.
 
 251
 00:24:06,960 --> 00:24:09,838
-<i>Be a doctor, be a lawyer,</i>
-<i>carry a leather briefcase.</i>
+Be a doctor, be a lawyer,carry a leather briefcase.
 
 252
 00:24:09,960 --> 00:24:13,270
-<i>Forget sports as a profession.</i>
-<i>Sports make you grunt and smell.</i>
+Forget sports as a profession.Sports make you grunt and smell.
 
 253
 00:24:13,400 --> 00:24:16,551
-<i>- Be a thinker, not a stinker.</i>
-<i>- OK, thanks a lot, champ.</i>
+- Be a thinker, not a stinker.- OK, thanks a lot, champ.
 
 254
 00:24:16,680 --> 00:24:19,114
-Are you crazy?
-He's champion of the world.
+Are you crazy?He's champion of the world.
 
 255
 00:24:19,240 --> 00:24:23,995
-He took his best shot at becoming champ.
-What shot did you ever take?
+He took his best shot at becoming champ.What shot did you ever take?
 
 256
 00:24:24,120 --> 00:24:27,396
-Hey, Rocky, if you're not
-happy with your life, that's nice.
+Hey, Rocky, if you're nothappy with your life, that's nice.
 
 257
 00:24:27,520 --> 00:24:30,637
-But I got a business goin'.
-I don't have to take no shots.
+But I got a business goin'.I don't have to take no shots.
 
 258
 00:24:30,760 --> 00:24:35,072
-<i>... no one having gone more than 12</i>
-<i>rounds with him, and that was Jake...</i>
+... no one having gone more than 12rounds with him, and that was Jake...
 
 259
 00:24:35,200 --> 00:24:39,432
-- Stick that up your business.
-- What are you so insulted about?
+- Stick that up your business.- What are you so insulted about?
 
 260
 00:24:39,560 --> 00:24:43,712
-You want me to take a shot?
-All right, I'll take a shot!
+You want me to take a shot?All right, I'll take a shot!
 
 261
 00:24:56,720 --> 00:24:59,280
-- Hey, Rocky, how about a bottom?
-- No wine, man.
+- Hey, Rocky, how about a bottom?- No wine, man.
 
 262
 00:24:59,400 --> 00:25:03,279
-Come on! Just a little.
-You're makin' a lot of money.
+Come on! Just a little.You're makin' a lot of money.
 
 263
 00:25:03,400 --> 00:25:05,675
-Marie,
-does your brother know you're out?
+Marie,does your brother know you're out?
 
 264
 00:25:05,800 --> 00:25:09,679
-- Screw you, yo-yo!
-- These guys teach you to talk like that?
+- Screw you, yo-yo!- These guys teach you to talk like that?
 
 265
 00:25:09,800 --> 00:25:13,475
-- Stuff it, man!
-- Don't you say that to me. Come here!
+- Stuff it, man!- Don't you say that to me. Come here!
 
 266
 00:25:13,600 --> 00:25:15,909
@@ -1246,23 +1072,19 @@ Hey, you know, when I was your age...
 
 269
 00:25:20,320 --> 00:25:25,440
-...there was one girl in the neighbourhood
-who talked like that, you know? Just one.
+...there was one girl in the neighbourhoodwho talked like that, you know? Just one.
 
 270
 00:25:25,560 --> 00:25:28,358
-What you doin'?
-That'll make your teeth yellow.
+What you doin'?That'll make your teeth yellow.
 
 271
 00:25:28,480 --> 00:25:31,313
-- I like yellow teeth.
-- And your breath like garbage.
+- I like yellow teeth.- And your breath like garbage.
 
 272
 00:25:31,440 --> 00:25:34,273
-- Maybe I like garbage.
-- C'mon, nobody likes garbage.
+- Maybe I like garbage.- C'mon, nobody likes garbage.
 
 273
 00:25:34,400 --> 00:25:36,630
@@ -1270,28 +1092,23 @@ Anyway, this girl wasn't bad-looking...
 
 274
 00:25:36,760 --> 00:25:39,149
-...but guys never took her serious,
-you see?
+...but guys never took her serious,you see?
 
 275
 00:25:39,280 --> 00:25:41,510
-- They never took her out for a date.
-- Why?
+- They never took her out for a date.- Why?
 
 276
 00:25:41,640 --> 00:25:44,677
-Guys laugh when you talk dirty.
-They think you're cute.
+Guys laugh when you talk dirty.They think you're cute.
 
 277
 00:25:44,800 --> 00:25:48,110
-If you get a reputation,
-you get no respect, you understand?
+If you get a reputation,you get no respect, you understand?
 
 278
 00:25:48,240 --> 00:25:51,676
-You get no respect.
-I gotta use a bad word.
+You get no respect.I gotta use a bad word.
 
 279
 00:25:51,800 --> 00:25:54,075
@@ -1299,18 +1116,15 @@ Whore. You understand? Whore.
 
 280
 00:25:54,200 --> 00:25:58,193
-You see, if you use dirty words,
-you maybe end up becomin' a whore.
+You see, if you use dirty words,you maybe end up becomin' a whore.
 
 281
 00:25:58,720 --> 00:26:02,269
-- Come on, Rocky. I'm 12.
-- Hey, that don't matter you're 12.
+- Come on, Rocky. I'm 12.- Hey, that don't matter you're 12.
 
 282
 00:26:02,400 --> 00:26:07,315
-You don't really have to be one.
-You just act like one, and that's it - boom!
+You don't really have to be one.You just act like one, and that's it - boom!
 
 283
 00:26:07,440 --> 00:26:09,396
@@ -1318,13 +1132,11 @@ You get a bad rep, you understand?
 
 284
 00:26:09,520 --> 00:26:13,308
-20 years from now, people are
-gonna say "Do you remember Marie?"
+20 years from now, people aregonna say "Do you remember Marie?"
 
 285
 00:26:13,440 --> 00:26:17,228
-"No, who was she?" "The whore that
-hung down at the Atomic Hoagie Shop."
+"No, who was she?" "The whore thathung down at the Atomic Hoagie Shop."
 
 286
 00:26:17,360 --> 00:26:19,920
@@ -1332,8 +1144,7 @@ hung down at the Atomic Hoagie Shop."
 
 287
 00:26:20,040 --> 00:26:25,512
-You see, they don't remember <i>you.</i>
-They remember the rep, you understand?
+You see, they don't remember you.They remember the rep, you understand?
 
 288
 00:26:25,640 --> 00:26:27,471
@@ -1341,103 +1152,83 @@ Hey, you got a boyfriend?
 
 289
 00:26:27,600 --> 00:26:30,558
-No, you ain't got a boyfriend.
-You know why?
+No, you ain't got a boyfriend.You know why?
 
 290
 00:26:30,680 --> 00:26:34,434
-Why don't you? Because you hang out
-with them coconuts on the corner.
+Why don't you? Because you hang outwith them coconuts on the corner.
 
 291
 00:26:34,560 --> 00:26:37,916
-You hang around with coconuts,
-you get nowhere. They're lemons!
+You hang around with coconuts,you get nowhere. They're lemons!
 
 292
 00:26:38,040 --> 00:26:40,759
-Hang out with nice people,
-you get nice friends.
+Hang out with nice people,you get nice friends.
 
 293
 00:26:40,880 --> 00:26:43,519
-Hang out with smart people,
-you get smart friends.
+Hang out with smart people,you get smart friends.
 
 294
 00:26:43,640 --> 00:26:46,438
-Hang out with yo-yo people,
-you get yo-yo friends.
+Hang out with yo-yo people,you get yo-yo friends.
 
 295
 00:26:46,560 --> 00:26:49,996
-It's simple mathematics.
-I hope you ain't gonna...
+It's simple mathematics.I hope you ain't gonna...
 
 296
 00:26:50,120 --> 00:26:51,678
-- I won't.
-- What was I gonna say?
+- I won't.- What was I gonna say?
 
 297
 00:26:51,800 --> 00:26:54,837
-You hope I stop actin'
-like a whore or I'll turn into one.
+You hope I stop actin'like a whore or I'll turn into one.
 
 298
 00:26:54,960 --> 00:26:57,110
-- Somethin' like that.
-- Night, Rocky.
+- Somethin' like that.- Night, Rocky.
 
 299
 00:26:57,240 --> 00:26:59,470
-- Night, Marie. Take care.
-- Hey, Rocky.
+- Night, Marie. Take care.- Hey, Rocky.
 
 300
 00:26:59,600 --> 00:27:01,989
-- Yo?
-- Screw you, creepo!
+- Yo?- Screw you, creepo!
 
 301
 00:27:09,600 --> 00:27:13,354
-Yeah, who are you to give advice, creepo?
-Who are you?
+Yeah, who are you to give advice, creepo?Who are you?
 
 302
 00:27:31,760 --> 00:27:34,957
-- Are the doctor's reports confirmed?
-- Definitely.
+- Are the doctor's reports confirmed?- Definitely.
 
 303
 00:27:35,080 --> 00:27:40,757
-It says that Green has suffered a severely
-cracked third metacarpal in his left hand.
+It says that Green has suffered a severelycracked third metacarpal in his left hand.
 
 304
 00:27:42,240 --> 00:27:46,074
-We can cancel the fight indefinitely
-if you're set on fighting Green.
+We can cancel the fight indefinitelyif you're set on fighting Green.
 
 305
 00:27:46,200 --> 00:27:50,478
-Hey, it ain't just Green! What about
-all the time Apollo has invested?
+Hey, it ain't just Green! What aboutall the time Apollo has invested?
 
 306
 00:27:50,600 --> 00:27:53,398
-- I believe we can find a solution.
-- Solution nothin'.
+- I believe we can find a solution.- Solution nothin'.
 
 307
 00:27:53,520 --> 00:27:56,114
-Find me another contender in a flash,
-Jergens.
+Find me another contender in a flash,Jergens.
 
 308
 00:27:56,240 --> 00:28:00,677
-Don't play games with my client. He's
-done a million dollars' worth of publicity...
+Don't play games with my client. He'sdone a million dollars' worth of publicity...
 
 309
 00:28:00,800 --> 00:28:03,519
@@ -1445,38 +1236,31 @@ done a million dollars' worth of publicity...
 
 310
 00:28:03,640 --> 00:28:07,599
-- He's not going to be embarrassed!
-- I contacted Ernie Roman's manager.
+- He's not going to be embarrassed!- I contacted Ernie Roman's manager.
 
 311
 00:28:07,720 --> 00:28:11,633
-- Ernie is fighting in France that week.
-- Buddy Shaw. He's ranked fifth.
+- Ernie is fighting in France that week.- Buddy Shaw. He's ranked fifth.
 
 312
 00:28:11,760 --> 00:28:16,788
-Went to California and gained 50 pounds.
-I got hold of every worthwhile contender...
+Went to California and gained 50 pounds.I got hold of every worthwhile contender...
 
 313
 00:28:16,920 --> 00:28:20,674
-...and they all say five weeks
-isn't enough time to get into shape.
+...and they all say five weeksisn't enough time to get into shape.
 
 314
 00:28:20,800 --> 00:28:25,157
-Shape nothin', man! They afraid! They
-know everybody's gonna see the fight.
+Shape nothin', man! They afraid! Theyknow everybody's gonna see the fight.
 
 315
 00:28:25,280 --> 00:28:27,874
-None of 'em can whip me.
-They're makin' excuses...
+None of 'em can whip me.They're makin' excuses...
 
 316
 00:28:28,000 --> 00:28:31,072
-...so they don't get whipped
-in front of the whole world.
+...so they don't get whippedin front of the whole world.
 
 317
 00:28:31,200 --> 00:28:34,033
@@ -1484,13 +1268,11 @@ All I can say is I'm a good promoter.
 
 318
 00:28:34,160 --> 00:28:37,391
-I've promoted fights
-in every goddamn country in the world...
+I've promoted fightsin every goddamn country in the world...
 
 319
 00:28:37,520 --> 00:28:42,275
-...and I've broken my ass over this,
-but I don't know what the hell else to do.
+...and I've broken my ass over this,but I don't know what the hell else to do.
 
 320
 00:28:47,000 --> 00:28:48,877
@@ -1498,8 +1280,7 @@ I do.
 
 321
 00:28:50,320 --> 00:28:54,472
-Without a ranked contender,
-what this fight is gonna need is a novelty.
+Without a ranked contender,what this fight is gonna need is a novelty.
 
 322
 00:28:54,600 --> 00:28:56,875
@@ -1507,13 +1288,11 @@ This is the land of opportunity, right?
 
 323
 00:28:57,000 --> 00:29:02,870
-So Apollo Creed on January 1 gives
-a local underdog fighter an opportunity.
+So Apollo Creed on January 1 givesa local underdog fighter an opportunity.
 
 324
 00:29:03,000 --> 00:29:07,152
-A snow-white underdog. And I'm gonna
-put his face on this poster with me.
+A snow-white underdog. And I'm gonnaput his face on this poster with me.
 
 325
 00:29:07,280 --> 00:29:08,872
@@ -1521,22 +1300,19 @@ And I'll tell you why.
 
 326
 00:29:09,000 --> 00:29:13,676
-Because I'm sentimental,
-like a lot of other people in this country.
+Because I'm sentimental,like a lot of other people in this country.
 
 327
 00:29:13,800 --> 00:29:17,998
-There's nothing they'd like better than
-to see Apollo Creed give a local boy...
+There's nothing they'd like better thanto see Apollo Creed give a local boy...
 
 328
 00:29:18,120 --> 00:29:21,908
-...a shot at the world title
-on this country's biggest birthday.
+...a shot at the world titleon this country's biggest birthday.
 
 329
 00:29:22,040 --> 00:29:24,429
-Now <i>that's</i> the way I see it.
+Now that's the way I see it.
 
 330
 00:29:24,560 --> 00:29:26,596
@@ -1556,102 +1332,83 @@ No, Jergens. It's very smart.
 
 334
 00:29:35,200 --> 00:29:37,555
-<i>(Jergens laughs)</i>
+(Jergens laughs)
 
 335
 00:29:57,640 --> 00:29:59,949
-- What is it?
-- I just wanna check this out.
+- What is it?- I just wanna check this out.
 
 336
 00:30:00,080 --> 00:30:03,356
-I pick up two yards from Snyder
-and a grand from Cappoli?
+I pick up two yards from Snyderand a grand from Cappoli?
 
 337
 00:30:03,480 --> 00:30:07,314
-No, no. Two yards from Cappoli
-and a grand from Snyder.
+No, no. Two yards from Cappoliand a grand from Snyder.
 
 338
 00:30:07,440 --> 00:30:10,671
-- Two yards. Yeah, I got it.
-- OK, write it down, OK?
+- Two yards. Yeah, I got it.- OK, write it down, OK?
 
 339
 00:30:10,800 --> 00:30:14,270
-Who's this girl you're
-goin' out with tomorrow night?
+Who's this girl you'regoin' out with tomorrow night?
 
 340
 00:30:14,400 --> 00:30:17,358
-- How d'you know?
-- Don't you think I hear things?
+- How d'you know?- Don't you think I hear things?
 
 341
 00:30:17,480 --> 00:30:21,951
-- A lot of canaries flyin' around the docks.
-- I'm goin' out with Paulie's sister.
+- A lot of canaries flyin' around the docks.- I'm goin' out with Paulie's sister.
 
 342
 00:30:22,080 --> 00:30:25,709
-- I hear she's retarded.
-- She ain't retarded. She's shy, you know?
+- I hear she's retarded.- She ain't retarded. She's shy, you know?
 
 343
 00:30:25,840 --> 00:30:30,356
-I'll tell you what to do. Take her to the zoo.
-I hear retards like the zoo.
+I'll tell you what to do. Take her to the zoo.I hear retards like the zoo.
 
 344
 00:30:30,480 --> 00:30:32,835
-- This bum gotta say that?
-- You callin' me a bum?
+- This bum gotta say that?- You callin' me a bum?
 
 345
 00:30:32,960 --> 00:30:36,111
-- I'm callin' <i>you</i> a bum!
-- OK, relax. Buddy's in a bad mood.
+- I'm callin' you a bum!- OK, relax. Buddy's in a bad mood.
 
 346
 00:30:36,240 --> 00:30:38,595
-- It's his prostate.
-- He's always in a bad mood.
+- It's his prostate.- He's always in a bad mood.
 
 347
 00:30:38,720 --> 00:30:41,996
-Count your blessings, Buddy.
-You're still healthy.
+Count your blessings, Buddy.You're still healthy.
 
 348
 00:30:42,120 --> 00:30:44,350
-- I don't like your face.
-- I don't like yours!
+- I don't like your face.- I don't like yours!
 
 349
 00:30:44,480 --> 00:30:46,277
-- Kiss my ass!
-- Move!
+- Kiss my ass!- Move!
 
 350
 00:30:46,400 --> 00:30:51,349
-Relax! Relax! Relax! My ears! What,
-are you drivin' me crazy? Both of ya's.
+Relax! Relax! Relax! My ears! What,are you drivin' me crazy? Both of ya's.
 
 351
 00:30:53,040 --> 00:30:57,397
-Buddy doesn't like ya. Some guys,
-they just hate for no reason, you got me?
+Buddy doesn't like ya. Some guys,they just hate for no reason, you got me?
 
 352
 00:30:57,520 --> 00:30:59,476
-- Yeah.
-- Come here.
+- Yeah.- Come here.
 
 353
 00:31:00,520 --> 00:31:03,512
-There's 50 bucks.
-You and Adrian, you have a nice time.
+There's 50 bucks.You and Adrian, you have a nice time.
 
 354
 00:31:03,640 --> 00:31:05,756
@@ -1659,13 +1416,11 @@ Thanks.
 
 355
 00:31:06,200 --> 00:31:10,239
-- Hey, how'd you know her name?
-- You don't think I hear things?
+- Hey, how'd you know her name?- You don't think I hear things?
 
 356
 00:31:10,840 --> 00:31:13,718
-- <i>(Buddy)</i> Remember what I told you.
-- What'd you tell me?
+- (Buddy) Remember what I told you.- What'd you tell me?
 
 357
 00:31:13,840 --> 00:31:15,990
@@ -1673,37 +1428,31 @@ Take her to the zoo!
 
 358
 00:31:22,840 --> 00:31:26,594
-- Some more coffee, Mr Creed?
-- No thanks, Shirley.
+- Some more coffee, Mr Creed?- No thanks, Shirley.
 
 359
 00:31:26,720 --> 00:31:29,678
-- What do you think about Billy Snow?
-- Fouls.
+- What do you think about Billy Snow?- Fouls.
 
 360
 00:31:30,840 --> 00:31:32,796
-- How about Big Chuck Smith?
-- Yeah.
+- How about Big Chuck Smith?- Yeah.
 
 361
 00:31:32,920 --> 00:31:36,629
-No, he's too old and dull.
-Hey, that Bobby Judge, he's a good boy.
+No, he's too old and dull.Hey, that Bobby Judge, he's a good boy.
 
 362
 00:31:36,760 --> 00:31:41,675
-- No, I don't feel the heat from that name.
-- Joe Zack's a good prospect.
+- No, I don't feel the heat from that name.- Joe Zack's a good prospect.
 
 363
 00:31:41,800 --> 00:31:45,076
-Exactly what <i>are</i> you lookin' for, Apollo?
+Exactly what are you lookin' for, Apollo?
 
 364
 00:31:45,720 --> 00:31:49,599
-This is what I'm lookin' for.
-The Italian Stallion.
+This is what I'm lookin' for.The Italian Stallion.
 
 365
 00:31:50,480 --> 00:31:52,835
@@ -1719,23 +1468,19 @@ The Italian Stallion.
 
 368
 00:31:58,080 --> 00:32:02,631
-The media'll eat it up. Now who
-discovered America? An Italian, right?
+The media'll eat it up. Now whodiscovered America? An Italian, right?
 
 369
 00:32:02,760 --> 00:32:06,070
-What would be better than
-to get it on with a descendant?
+What would be better thanto get it on with a descendant?
 
 370
 00:32:06,200 --> 00:32:09,272
-He's a southpaw.
-I don't want you messin' with them.
+He's a southpaw.I don't want you messin' with them.
 
 371
 00:32:09,400 --> 00:32:14,155
-- They do everything backwards.
-- Southpaw nothin'! I'll drop him in three.
+- They do everything backwards.- Southpaw nothin'! I'll drop him in three.
 
 372
 00:32:14,280 --> 00:32:18,273
@@ -1747,53 +1492,43 @@ Sounds like a damn monster movie!
 
 374
 00:32:21,960 --> 00:32:25,475
-What are you doin' with that bat?
-I used to be deadly at stickball.
+What are you doin' with that bat?I used to be deadly at stickball.
 
 375
 00:32:25,600 --> 00:32:30,754
-- You sure your sister knows I'm comin'?
-- Very excited. Look at my swollen hands.
+- You sure your sister knows I'm comin'?- Very excited. Look at my swollen hands.
 
 376
 00:32:30,880 --> 00:32:34,077
-The joints, from carrying meat
-in and out of freezers.
+The joints, from carrying meatin and out of freezers.
 
 377
 00:32:34,200 --> 00:32:37,272
-- Plays hell on the joints.
-- Maybe you oughta see a doctor.
+- Plays hell on the joints.- Maybe you oughta see a doctor.
 
 378
 00:32:37,400 --> 00:32:39,868
-I don't need a doctor.
-I need a different job.
+I don't need a doctor.I need a different job.
 
 379
 00:32:40,000 --> 00:32:43,151
-- What kind of turkey? Big or small?
-- Talk to Gazzo about me.
+- What kind of turkey? Big or small?- Talk to Gazzo about me.
 
 380
 00:32:43,280 --> 00:32:46,670
-Tell him I'm a good man
-and nothin' bothers me.
+Tell him I'm a good manand nothin' bothers me.
 
 381
 00:32:46,800 --> 00:32:50,349
-I'd make a great collector.
-Bustin' bones don't bother me.
+I'd make a great collector.Bustin' bones don't bother me.
 
 382
 00:32:50,480 --> 00:32:55,190
-A big turkey, right? Hey, forget Gazzo.
-That's a bad job, you know what I mean?
+A big turkey, right? Hey, forget Gazzo.That's a bad job, you know what I mean?
 
 383
 00:32:55,320 --> 00:32:58,676
-- You got a match?
-- Go to him for me, as a favour.
+- You got a match?- Go to him for me, as a favour.
 
 384
 00:32:58,800 --> 00:33:01,519
@@ -1801,13 +1536,11 @@ Yeah, yeah. Last time I had a turkey...
 
 385
 00:33:01,640 --> 00:33:07,237
-...it was when they had a $2 special
-at Horn & Hardart's about three years ago.
+...it was when they had a $2 specialat Horn & Hardart's about three years ago.
 
 386
 00:33:15,240 --> 00:33:20,234
-- Your sister knows I'm comin', for sure?
-- Yeah, she's gonna be excited.
+- Your sister knows I'm comin', for sure?- Yeah, she's gonna be excited.
 
 387
 00:33:22,400 --> 00:33:25,153
@@ -1815,8 +1548,7 @@ Hey, will you forget about Gazzo, huh?
 
 388
 00:33:25,280 --> 00:33:28,511
-- I don't ask nobody twice.
-- You don't ask nobody twice.
+- I don't ask nobody twice.- You don't ask nobody twice.
 
 389
 00:33:28,640 --> 00:33:31,393
@@ -1824,21 +1556,19 @@ Hey, will you forget about Gazzo, huh?
 
 390
 00:33:33,200 --> 00:33:38,797
-- You sure your sister knows I'm comin'?
-- Yeah, yeah, yeah. She's very excited.
+- You sure your sister knows I'm comin'?- Yeah, yeah, yeah. She's very excited.
 
 391
 00:33:41,320 --> 00:33:43,914
-<i>(Adrian)</i> Paulie! You're late.
+(Adrian) Paulie! You're late.
 
 392
 00:33:44,040 --> 00:33:48,989
-You called the hospital? She calls
-the hospital if I'm ten minutes late.
+You called the hospital? She callsthe hospital if I'm ten minutes late.
 
 393
 00:33:49,120 --> 00:33:51,270
-<i>(Rocky)</i> Yo, how you doin'?
+(Rocky) Yo, how you doin'?
 
 394
 00:33:51,400 --> 00:33:53,755
@@ -1846,23 +1576,19 @@ I told you she's very excited.
 
 395
 00:33:56,440 --> 00:33:58,715
-Why didn't you say
-you were bringin' him?
+Why didn't you sayyou were bringin' him?
 
 396
 00:33:58,840 --> 00:34:02,276
-- Look at me. I'm not ready.
-- Would it make a difference if you were?
+- Look at me. I'm not ready.- Would it make a difference if you were?
 
 397
 00:34:02,400 --> 00:34:06,075
-- He's a friend and he's takin' you out.
-- No, I can't.
+- He's a friend and he's takin' you out.- No, I can't.
 
 398
 00:34:06,200 --> 00:34:09,749
-I want you outta the kitchen
-and I want you out right now.
+I want you outta the kitchenand I want you out right now.
 
 399
 00:34:09,880 --> 00:34:12,235
@@ -1878,38 +1604,31 @@ Hey, I want you outta here instamatically!
 
 402
 00:34:18,200 --> 00:34:22,876
-I'm sick of seein' you hangin' around
-like a spider! Go out and live! Enjoy life!
+I'm sick of seein' you hangin' aroundlike a spider! Go out and live! Enjoy life!
 
 403
 00:34:23,000 --> 00:34:26,436
-- Paulie, I can't go!
-- Don't get wise with me now.
+- Paulie, I can't go!- Don't get wise with me now.
 
 404
 00:34:26,560 --> 00:34:30,269
-- I'm tired of you bein' a loser.
-- Don't call me that, Paulie!
+- I'm tired of you bein' a loser.- Don't call me that, Paulie!
 
 405
 00:34:30,400 --> 00:34:33,198
-<i>(TV) Apollo Creed is</i>
-<i>shopping for another "victim"...</i>
+(TV) Apollo Creed isshopping for another "victim"...
 
 406
 00:34:33,320 --> 00:34:37,029
-<i>... to fill Green's vacancy for the</i>
-<i>Bicentennial championship fight...</i>
+... to fill Green's vacancy for theBicentennial championship fight...
 
 407
 00:34:37,160 --> 00:34:39,674
-You didn't tell me
-you were bringin' him home!
+You didn't tell meyou were bringin' him home!
 
 408
 00:34:39,800 --> 00:34:42,837
-I'm not gonna go, Paulie!
-I can't go! I won't go!
+I'm not gonna go, Paulie!I can't go! I won't go!
 
 409
 00:34:42,960 --> 00:34:44,871
@@ -1917,8 +1636,7 @@ Why?
 
 410
 00:34:45,000 --> 00:34:48,788
-Paulie, it's Thanksgiving.
-I got a turkey in the oven.
+Paulie, it's Thanksgiving.I got a turkey in the oven.
 
 411
 00:34:48,920 --> 00:34:51,753
@@ -1942,8 +1660,7 @@ Oh, Paulie!
 
 416
 00:35:12,320 --> 00:35:15,118
-I want you outta here!
-Get outta the house!
+I want you outta here!Get outta the house!
 
 417
 00:35:15,440 --> 00:35:17,635
@@ -1955,33 +1672,27 @@ You hungry, Rock?
 
 419
 00:35:29,760 --> 00:35:33,435
-Hey, yo, Paulie. Maybe we'd just
-better forget all this, you know?
+Hey, yo, Paulie. Maybe we'd justbetter forget all this, you know?
 
 420
 00:35:33,560 --> 00:35:36,711
-- Just forget it.
-- Forget nothin'. Say somethin' funny.
+- Just forget it.- Forget nothin'. Say somethin' funny.
 
 421
 00:35:36,840 --> 00:35:39,957
-Ain't nothin' to say.
-She's in a bad mood, I'm in a bad mood...
+Ain't nothin' to say.She's in a bad mood, I'm in a bad mood...
 
 422
 00:35:40,080 --> 00:35:42,640
-You know how to do funny.
-Wanna go out with her?
+You know how to do funny.Wanna go out with her?
 
 423
 00:35:42,760 --> 00:35:45,115
-- Yeah.
-- Well...
+- Yeah.- Well...
 
 424
 00:35:48,240 --> 00:35:50,800
-- I don't know what to say.
-- Funny.
+- I don't know what to say.- Funny.
 
 425
 00:36:02,240 --> 00:36:04,674
@@ -1997,13 +1708,11 @@ Listen, uh...
 
 428
 00:36:10,360 --> 00:36:14,638
-I dunno what to say, cos I ain't never
-talked to no door before, you know?
+I dunno what to say, cos I ain't nevertalked to no door before, you know?
 
 429
 00:36:15,680 --> 00:36:19,912
-- I mean, what do I say to a door? Listen...
-- Come on, you're doin' fine.
+- I mean, what do I say to a door? Listen...- Come on, you're doin' fine.
 
 430
 00:36:20,040 --> 00:36:22,270
@@ -2011,8 +1720,7 @@ I ain't doin' fine. I look like an idiot.
 
 431
 00:36:22,400 --> 00:36:26,552
-Keep doin' what you're doin'.
-Funny. I know all about these things.
+Keep doin' what you're doin'.Funny. I know all about these things.
 
 432
 00:36:26,680 --> 00:36:28,636
@@ -2028,23 +1736,19 @@ Listen, uh...
 
 435
 00:36:38,960 --> 00:36:41,520
-I know you ain't too happy
-at this moment.
+I know you ain't too happyat this moment.
 
 436
 00:36:41,640 --> 00:36:46,077
-Well, could you do me a favour? I ain't
-got nobody to spend Thanksgiving with.
+Well, could you do me a favour? I ain'tgot nobody to spend Thanksgiving with.
 
 437
 00:36:46,200 --> 00:36:51,069
-So, uh, how about maybe you and I could
-go out together and get somethin' to eat?
+So, uh, how about maybe you and I couldgo out together and get somethin' to eat?
 
 438
 00:36:51,200 --> 00:36:53,873
-I don't know,
-maybe laugh a little bit. Who knows?
+I don't know,maybe laugh a little bit. Who knows?
 
 439
 00:36:54,000 --> 00:36:56,355
@@ -2052,8 +1756,7 @@ Would you like to, uh...
 
 440
 00:36:57,320 --> 00:37:02,269
-I don't know. Would you like to maybe,
-you know, you and me go out together?
+I don't know. Would you like to maybe,you know, you and me go out together?
 
 441
 00:37:07,320 --> 00:37:09,788
@@ -2069,88 +1772,71 @@ Thanks for the bird.
 
 444
 00:37:21,520 --> 00:37:24,478
-I'm gonna turn the TV off.
-I got a headache.
+I'm gonna turn the TV off.I got a headache.
 
 445
 00:37:36,200 --> 00:37:38,475
-- What's your sister like to do?
-- Ice-skate.
+- What's your sister like to do?- Ice-skate.
 
 446
 00:37:38,600 --> 00:37:43,549
-Adrian, come on, you're lettin' the heat
-out. Who pays the bills around here?
+Adrian, come on, you're lettin' the heatout. Who pays the bills around here?
 
 447
 00:37:48,040 --> 00:37:51,589
-Listen, uh, I don't want
-no turkey anyway, you know?
+Listen, uh, I don't wantno turkey anyway, you know?
 
 448
 00:37:52,640 --> 00:37:56,189
-- But it was Thanksgiving.
-- It was what?
+- But it was Thanksgiving.- It was what?
 
 449
 00:37:56,320 --> 00:38:00,472
-- It was Thanksgiving.
-- Yeah, to you, but to me it's Thursday.
+- It was Thanksgiving.- Yeah, to you, but to me it's Thursday.
 
 450
 00:38:24,080 --> 00:38:26,548
-- Yo, looks kinda quiet.
-- I think it's closed.
+- Yo, looks kinda quiet.- I think it's closed.
 
 451
 00:38:26,680 --> 00:38:29,717
-No, I think we're just early
-or somethin' like that.
+No, I think we're just earlyor somethin' like that.
 
 452
 00:38:29,840 --> 00:38:31,034
-- Yo!
-- Yo!
+- Yo!- Yo!
 
 453
 00:38:31,160 --> 00:38:33,071
-- We're closed!
-- What?
+- We're closed!- What?
 
 454
 00:38:33,200 --> 00:38:35,919
-- I said we're closed!
-- Yeah. Hey, listen...
+- I said we're closed!- Yeah. Hey, listen...
 
 455
 00:38:36,040 --> 00:38:39,191
-...l'm gonna smooth this guy out.
-Wait here for a few minutes.
+...l'm gonna smooth this guy out.Wait here for a few minutes.
 
 456
 00:38:39,320 --> 00:38:41,515
-- We could go someplace else.
-- No, it's OK.
+- We could go someplace else.- No, it's OK.
 
 457
 00:38:41,640 --> 00:38:44,950
-Are you closed to the general public
-or closed to everybody?
+Are you closed to the general publicor closed to everybody?
 
 458
 00:38:45,080 --> 00:38:49,392
-It's after six o'clock. It's Thanksgiving.
-That's why there's nobody here.
+It's after six o'clock. It's Thanksgiving.That's why there's nobody here.
 
 459
 00:38:49,520 --> 00:38:53,638
-Besides, you ain't supposed to be in here,
-so do me a favour and leave, huh?
+Besides, you ain't supposed to be in here,so do me a favour and leave, huh?
 
 460
 00:38:53,760 --> 00:38:57,548
-- Could you do me a favour?
-- Hey, come on, we're not operatin'.
+- Could you do me a favour?- Hey, come on, we're not operatin'.
 
 461
 00:38:57,680 --> 00:39:00,319
@@ -2158,23 +1844,19 @@ Look... this girl here ain't feelin' well.
 
 462
 00:39:00,440 --> 00:39:04,877
-The doctor says she should exercise
-and ice-skating's the best thing.
+The doctor says she should exerciseand ice-skating's the best thing.
 
 463
 00:39:05,000 --> 00:39:09,198
-- Yeah? So what do you want from me?
-- Do me a favour. She ain't feelin' good.
+- Yeah? So what do you want from me?- Do me a favour. She ain't feelin' good.
 
 464
 00:39:09,320 --> 00:39:12,676
-So if you could let her on the ice,
-I'd appreciate it.
+So if you could let her on the ice,I'd appreciate it.
 
 465
 00:39:12,800 --> 00:39:16,588
-- Ten minutes, ten bucks.
-- Ten bucks? How about eight bucks?
+- Ten minutes, ten bucks.- Ten bucks? How about eight bucks?
 
 466
 00:39:16,720 --> 00:39:18,950
@@ -2182,8 +1864,7 @@ Come on! It's Thanksgiving.
 
 467
 00:39:19,080 --> 00:39:24,029
-- All right. Nine bucks, you got a deal.
-- You have the ice to yourself. Ten bucks.
+- All right. Nine bucks, you got a deal.- You have the ice to yourself. Ten bucks.
 
 468
 00:39:25,680 --> 00:39:27,238
@@ -2191,8 +1872,7 @@ Gimme the blades.
 
 469
 00:39:28,120 --> 00:39:31,112
-- Aren't you skating?
-- No, I ain't skated since I was 15.
+- Aren't you skating?- No, I ain't skated since I was 15.
 
 470
 00:39:31,240 --> 00:39:33,549
@@ -2200,8 +1880,7 @@ That's when I started fightin'.
 
 471
 00:39:33,680 --> 00:39:37,150
-- Skating's bad for the ankles, you know?
-- Yeah.
+- Skating's bad for the ankles, you know?- Yeah.
 
 472
 00:39:37,280 --> 00:39:39,840
@@ -2209,13 +1888,11 @@ You're a pretty good skater, ain't ya?
 
 473
 00:39:40,760 --> 00:39:45,993
-Like I was sayin' on the way over, fightin'
-used to be tops with me, but no more.
+Like I was sayin' on the way over, fightin'used to be tops with me, but no more.
 
 474
 00:39:46,120 --> 00:39:48,634
-All I wanted to do was
-prove I was no bum...
+All I wanted to do wasprove I was no bum...
 
 475
 00:39:48,760 --> 00:39:51,069
@@ -2223,18 +1900,15 @@ prove I was no bum...
 
 476
 00:39:51,200 --> 00:39:54,670
-- You never got the chance?
-- I ain't cryin', cos I still fight.
+- You never got the chance?- I ain't cryin', cos I still fight.
 
 477
 00:39:54,800 --> 00:39:58,156
-I kinda do it like a hobby.
-The trouble is, I'm a southpaw.
+I kinda do it like a hobby.The trouble is, I'm a southpaw.
 
 478
 00:39:58,280 --> 00:40:01,158
-- What's a southpaw?
-- It means you're left-handed.
+- What's a southpaw?- It means you're left-handed.
 
 479
 00:40:01,280 --> 00:40:03,510
@@ -2242,23 +1916,19 @@ A southpaw throws your timin' off, see?
 
 480
 00:40:03,640 --> 00:40:07,428
-Other guys, it makes 'em look awkward.
-Nobody wants to look awkward.
+Other guys, it makes 'em look awkward.Nobody wants to look awkward.
 
 481
 00:40:07,560 --> 00:40:10,996
-- You know where southpaw came from?
-- <i>(attendant)</i> Nine minutes!
+- You know where southpaw came from?- (attendant) Nine minutes!
 
 482
 00:40:11,120 --> 00:40:14,908
-A long time ago, a couple of hundred
-years ago, this guy was fightin'.
+A long time ago, a couple of hundredyears ago, this guy was fightin'.
 
 483
 00:40:15,040 --> 00:40:18,350
-I think it was around Philadelphia.
-He was left-handed.
+I think it was around Philadelphia.He was left-handed.
 
 484
 00:40:18,480 --> 00:40:20,789
@@ -2266,8 +1936,7 @@ His arm was facin' towards New Jersey.
 
 485
 00:40:20,920 --> 00:40:24,037
-And that's south,
-so they called him Southpaw.
+And that's south,so they called him Southpaw.
 
 486
 00:40:24,160 --> 00:40:26,754
@@ -2275,8 +1944,7 @@ You see? Southpaw, South Jersey...
 
 487
 00:40:26,880 --> 00:40:29,997
-...South Camden, Southpaw...
-You know what I mean?
+...South Camden, Southpaw...You know what I mean?
 
 488
 00:40:31,560 --> 00:40:33,551
@@ -2284,13 +1952,11 @@ Things worked out for the best.
 
 489
 00:40:33,680 --> 00:40:36,194
-You never got a chance,
-being left-handed?
+You never got a chance,being left-handed?
 
 490
 00:40:36,320 --> 00:40:39,869
-Well, that's absolutely true,
-you know? Watch out, watch out.
+Well, that's absolutely true,you know? Watch out, watch out.
 
 491
 00:40:40,000 --> 00:40:42,833
@@ -2298,8 +1964,7 @@ Agh! Agh! Agh!
 
 492
 00:40:42,960 --> 00:40:46,157
-I just dislocated my finger.
-Agh! Look at that.
+I just dislocated my finger.Agh! Look at that.
 
 493
 00:40:46,280 --> 00:40:48,589
@@ -2307,13 +1972,11 @@ No, hey, wait! It ain't your fault. Look.
 
 494
 00:40:48,720 --> 00:40:51,632
-See? Look.
-It's an old wound. You see that?
+See? Look.It's an old wound. You see that?
 
 495
 00:40:51,760 --> 00:40:55,435
-Look. See? Nothin'.
-It bends like that. I originally done it...
+Look. See? Nothin'.It bends like that. I originally done it...
 
 496
 00:40:55,560 --> 00:40:57,516
@@ -2321,13 +1984,11 @@ Push the button... Bong! It works.
 
 497
 00:40:57,640 --> 00:41:00,996
-- It ain't your fault. I'll show you...
-- Seven minutes!
+- It ain't your fault. I'll show you...- Seven minutes!
 
 498
 00:41:01,120 --> 00:41:04,032
-I originally done it...
-I keep pictures of all my fights.
+I originally done it...I keep pictures of all my fights.
 
 499
 00:41:04,160 --> 00:41:06,594
@@ -2335,13 +1996,11 @@ I done it in the Baby Crenshaw fight. See?
 
 500
 00:41:06,880 --> 00:41:09,713
-He's the size of an airplane.
-I broke both my hands.
+He's the size of an airplane.I broke both my hands.
 
 501
 00:41:09,840 --> 00:41:15,676
-I lost that fight, but that's a nice picture,
-don't you think? See how it works there?
+I lost that fight, but that's a nice picture,don't you think? See how it works there?
 
 502
 00:41:15,800 --> 00:41:17,791
@@ -2349,28 +2008,23 @@ Come on. Are you havin' a good time?
 
 503
 00:41:17,920 --> 00:41:21,833
-I'll tell ya, you can see I ain't too graceful.
-I don't move well.
+I'll tell ya, you can see I ain't too graceful.I don't move well.
 
 504
 00:41:21,960 --> 00:41:24,872
-But I can really swat, you know?
-I can really hit hard.
+But I can really swat, you know?I can really hit hard.
 
 505
 00:41:25,000 --> 00:41:29,949
-But I'm a southpaw and nobody wants to
-fight a southpaw, you know what I mean?
+But I'm a southpaw and nobody wants tofight a southpaw, you know what I mean?
 
 506
 00:41:32,320 --> 00:41:35,995
-Whooo!
-You know how I got started in fightin'?
+Whooo!You know how I got started in fightin'?
 
 507
 00:41:36,120 --> 00:41:38,076
-- Huh?
-- No.
+- Huh?- No.
 
 508
 00:41:38,200 --> 00:41:40,191
@@ -2378,18 +2032,15 @@ Am I talkin' too loud?
 
 509
 00:41:40,320 --> 00:41:41,673
-- No.
-- Three minutes!
+- No.- Three minutes!
 
 510
 00:41:41,800 --> 00:41:46,157
-My father, he's...
-My old man, he was never too smart.
+My father, he's...My old man, he was never too smart.
 
 511
 00:41:46,280 --> 00:41:50,717
-He says to me "You weren't born
-much of a brain, so start usin' your body."
+He says to me "You weren't bornmuch of a brain, so start usin' your body."
 
 512
 00:41:50,840 --> 00:41:53,195
@@ -2397,8 +2048,7 @@ So I've become a fighter.
 
 513
 00:41:53,320 --> 00:41:56,676
-You know what I mean?
-Why are you laughin'?
+You know what I mean?Why are you laughin'?
 
 514
 00:41:58,040 --> 00:42:00,759
@@ -2406,28 +2056,23 @@ My mother, she said the opposite thing.
 
 515
 00:42:00,880 --> 00:42:03,519
-What did she say?
-What did she say, the opposite?
+What did she say?What did she say, the opposite?
 
 516
 00:42:03,640 --> 00:42:07,633
-"You weren't born much of a body,
-so you'd better develop your brain."
+"You weren't born much of a body,so you'd better develop your brain."
 
 517
 00:42:07,760 --> 00:42:10,797
-- Did she say that?
-- Yo! Time!
+- Did she say that?- Yo! Time!
 
 518
 00:42:11,600 --> 00:42:14,398
-- Can I ask you a question?
-- Absolutely.
+- Can I ask you a question?- Absolutely.
 
 519
 00:42:15,640 --> 00:42:18,598
-- Why do you wanna fight?
-- Cos I can't sing or dance.
+- Why do you wanna fight?- Cos I can't sing or dance.
 
 520
 00:42:18,720 --> 00:42:20,312
@@ -2439,28 +2084,23 @@ Don't fall! Don't fall!
 
 522
 00:42:23,200 --> 00:42:26,875
-Hey, that was terrific. I'm good at this.
-You like the way I skate?
+Hey, that was terrific. I'm good at this.You like the way I skate?
 
 523
 00:42:27,000 --> 00:42:29,878
-The last fight I had was
-with a guy named Spider Rico.
+The last fight I had waswith a guy named Spider Rico.
 
 524
 00:42:30,000 --> 00:42:32,594
-He bust my head up.
-Do you see that scar?
+He bust my head up.Do you see that scar?
 
 525
 00:42:32,720 --> 00:42:35,518
-I'll tell ya,
-things get pretty rough in the ring.
+I'll tell ya,things get pretty rough in the ring.
 
 526
 00:42:44,640 --> 00:42:48,155
-You know, some people are
-very shy by nature, you know?
+You know, some people arevery shy by nature, you know?
 
 527
 00:42:48,280 --> 00:42:50,236
@@ -2468,8 +2108,7 @@ I suppose.
 
 528
 00:42:52,640 --> 00:42:55,313
-I say you're very shy by nature,
-you know?
+I say you're very shy by nature,you know?
 
 529
 00:42:55,440 --> 00:42:57,396
@@ -2481,13 +2120,11 @@ Hey! Hey!
 
 531
 00:43:00,320 --> 00:43:03,551
-The bum from the dock.
-Get a job, ya bum!
+The bum from the dock.Get a job, ya bum!
 
 532
 00:43:04,600 --> 00:43:09,151
-You know, some people think bein' shy
-is a disease, but it don't bother me none.
+You know, some people think bein' shyis a disease, but it don't bother me none.
 
 533
 00:43:09,280 --> 00:43:11,430
@@ -2495,18 +2132,15 @@ It don't bother me, either.
 
 534
 00:43:12,400 --> 00:43:16,154
-Why did I bother bringin' it up?
-Cos I'm dumb, that's why.
+Why did I bother bringin' it up?Cos I'm dumb, that's why.
 
 535
 00:43:17,840 --> 00:43:22,595
-I think we make a real sharp couple
-of coconuts. I'm dumb, you're shy.
+I think we make a real sharp coupleof coconuts. I'm dumb, you're shy.
 
 536
 00:43:24,640 --> 00:43:28,315
-I don't understand why anybody
-would wanna be a fighter.
+I don't understand why anybodywould wanna be a fighter.
 
 537
 00:43:28,440 --> 00:43:30,476
@@ -2514,18 +2148,15 @@ Hey, you gotta be a moron.
 
 538
 00:43:30,600 --> 00:43:33,956
-You gotta be a moron to wanna be
-a fighter, you know what I mean?
+You gotta be a moron to wanna bea fighter, you know what I mean?
 
 539
 00:43:34,080 --> 00:43:37,390
-It's a racket where you're almost
-guaranteed to end up a bum.
+It's a racket where you're almostguaranteed to end up a bum.
 
 540
 00:43:37,520 --> 00:43:40,910
-- I don't think you're a bum.
-- I'm at least half a bum, you know?
+- I don't think you're a bum.- I'm at least half a bum, you know?
 
 541
 00:43:41,040 --> 00:43:43,759
@@ -2533,13 +2164,11 @@ I'll tell ya somethin'.
 
 542
 00:43:43,880 --> 00:43:47,395
-The worst thing about fightin'
-is the mornin' after, you know?
+The worst thing about fightin'is the mornin' after, you know?
 
 543
 00:43:47,520 --> 00:43:52,150
-I'll tell ya. The mornin' after a fight, you're
-nothin' but a large wound, you know?
+I'll tell ya. The mornin' after a fight, you'renothin' but a large wound, you know?
 
 544
 00:43:52,280 --> 00:43:54,236
@@ -2547,18 +2176,15 @@ Sometimes I got pains all over me.
 
 545
 00:43:54,360 --> 00:43:57,796
-I wanna call a taxi to take me
-from the bed into the bathroom.
+I wanna call a taxi to take mefrom the bed into the bathroom.
 
 546
 00:43:57,920 --> 00:44:02,471
-Your hair hurts, your eyes hurt, your face
-is all busted up, your hands is swollen.
+Your hair hurts, your eyes hurt, your faceis all busted up, your hands is swollen.
 
 547
 00:44:02,600 --> 00:44:06,752
-Look at this face. 64 fights.
-Look at that nose. See that nose?
+Look at this face. 64 fights.Look at that nose. See that nose?
 
 548
 00:44:06,880 --> 00:44:09,110
@@ -2566,28 +2192,23 @@ That nose ain't been broken in 64 fights.
 
 549
 00:44:09,240 --> 00:44:13,597
-I've had guys bustin' on it,
-chewin' on it, twistin' it, punchin' it.
+I've had guys bustin' on it,chewin' on it, twistin' it, punchin' it.
 
 550
 00:44:13,720 --> 00:44:17,759
-I mean, whack, boom. These guys
-are hittin' my nose all the time.
+I mean, whack, boom. These guysare hittin' my nose all the time.
 
 551
 00:44:17,880 --> 00:44:21,350
-Never broke. I'm proud of that.
-Ain't that rare? That's rare.
+Never broke. I'm proud of that.Ain't that rare? That's rare.
 
 552
 00:44:21,480 --> 00:44:24,597
-- Why do you do it if it hurts?
-- Why you think?
+- Why do you do it if it hurts?- Why you think?
 
 553
 00:44:25,760 --> 00:44:30,675
-- Cos you can't sing or dance?
-- Yeah, somethin' like that.
+- Cos you can't sing or dance?- Yeah, somethin' like that.
 
 554
 00:44:30,800 --> 00:44:32,870
@@ -2595,33 +2216,27 @@ Hey, you wanna come inside?
 
 555
 00:44:35,320 --> 00:44:38,232
-- No, I gotta go.
-- Hey, come on. I got some animals.
+- No, I gotta go.- Hey, come on. I got some animals.
 
 556
 00:44:38,360 --> 00:44:42,114
-I got these very rare animals inside.
-Come on. Come on in.
+I got these very rare animals inside.Come on. Come on in.
 
 557
 00:44:42,240 --> 00:44:47,030
-- No, no. I gotta go.
-- I gotta go too. I gotta go to the bathroom.
+- No, no. I gotta go.- I gotta go too. I gotta go to the bathroom.
 
 558
 00:44:47,160 --> 00:44:49,674
-- Go on.
-- No, I gotta go.
+- Go on.- No, I gotta go.
 
 559
 00:44:49,800 --> 00:44:52,712
-Hey, look at this face.
-Is that a face you could trust?
+Hey, look at this face.Is that a face you could trust?
 
 560
 00:44:52,840 --> 00:44:57,550
-Huh? Is it? They oughta stick this face
-on a stamp. What do you think?
+Huh? Is it? They oughta stick this faceon a stamp. What do you think?
 
 561
 00:44:57,680 --> 00:45:00,035
@@ -2637,13 +2252,11 @@ Flick.
 
 564
 00:45:33,240 --> 00:45:36,232
-- Yo, Adrian, you hungry?
-- No.
+- Yo, Adrian, you hungry?- No.
 
 565
 00:45:36,360 --> 00:45:40,956
-I got some things in there. I got soda,
-some doughnuts or somethin'.
+I got some things in there. I got soda,some doughnuts or somethin'.
 
 566
 00:45:41,080 --> 00:45:43,275
@@ -2671,43 +2284,35 @@ Yo, Adrian.
 
 572
 00:46:08,520 --> 00:46:11,080
-These are the exotic animals
-I told you about.
+These are the exotic animalsI told you about.
 
 573
 00:46:11,200 --> 00:46:14,431
-- These are my friends Cuff and Link.
-- I sold 'em to ya.
+- These are my friends Cuff and Link.- I sold 'em to ya.
 
 574
 00:46:14,560 --> 00:46:18,314
-Sure, I know you sold 'em to me.
-You were workin' at that pet shop.
+Sure, I know you sold 'em to me.You were workin' at that pet shop.
 
 575
 00:46:18,440 --> 00:46:21,796
-First day you was there,
-I bought both these animals.
+First day you was there,I bought both these animals.
 
 576
 00:46:21,920 --> 00:46:26,675
-Sure, I remember that. I bought this bowl
-and I bought the animals themselves...
+Sure, I remember that. I bought this bowland I bought the animals themselves...
 
 577
 00:46:26,800 --> 00:46:29,758
-...the food,
-the marbles that go on the bottom there.
+...the food,the marbles that go on the bottom there.
 
 578
 00:46:29,880 --> 00:46:35,637
-Remember that mountain? I had to get rid
-of it, cos they kept fallin' over and flippin'.
+Remember that mountain? I had to get ridof it, cos they kept fallin' over and flippin'.
 
 579
 00:46:38,600 --> 00:46:41,353
-Yo, why don't you come on
-over here and sit down?
+Yo, why don't you come onover here and sit down?
 
 580
 00:46:41,480 --> 00:46:43,311
@@ -2719,8 +2324,7 @@ It's a nice couch. I don't know...
 
 582
 00:46:47,560 --> 00:46:51,348
-There's big bugs in there, you know?
-It's safer over here.
+There's big bugs in there, you know?It's safer over here.
 
 583
 00:46:53,160 --> 00:46:55,116
@@ -2736,38 +2340,31 @@ Yeah, that's both of 'em there.
 
 586
 00:47:05,120 --> 00:47:07,634
-- Is this you?
-- Yeah, that's me when I was eight.
+- Is this you?- Yeah, that's me when I was eight.
 
 587
 00:47:07,760 --> 00:47:10,957
-That's the Italian Stallion
-when he was a baby.
+That's the Italian Stallionwhen he was a baby.
 
 588
 00:47:12,880 --> 00:47:17,237
-Why don't you come on over and
-make yourself comfortable? Relax.
+Why don't you come on over andmake yourself comfortable? Relax.
 
 589
 00:47:21,120 --> 00:47:23,634
-- Do you have a phone?
-- No, I ain't got no phone.
+- Do you have a phone?- No, I ain't got no phone.
 
 590
 00:47:23,760 --> 00:47:26,957
-I had it pulled,
-cos of people callin' all the time.
+I had it pulled,cos of people callin' all the time.
 
 591
 00:47:27,080 --> 00:47:30,550
-Who needs the aggravation, right?
-The interruptions.
+Who needs the aggravation, right?The interruptions.
 
 592
 00:47:30,680 --> 00:47:34,832
-- Who do you wanna call?
-- I wanna let my brother know where I am.
+- Who do you wanna call?- I wanna let my brother know where I am.
 
 593
 00:47:35,760 --> 00:47:38,149
@@ -2775,13 +2372,11 @@ Why?
 
 594
 00:47:38,280 --> 00:47:43,035
-- I think he might be worried.
-- Well, I'll call him, if that's the problem.
+- I think he might be worried.- Well, I'll call him, if that's the problem.
 
 595
 00:47:45,440 --> 00:47:50,230
-Yo, Paulie! Your sister's with me!
-I'll call ya's back later! See ya!
+Yo, Paulie! Your sister's with me!I'll call ya's back later! See ya!
 
 596
 00:47:56,560 --> 00:47:58,630
@@ -2789,8 +2384,7 @@ You don't like the room, do ya?
 
 597
 00:47:58,760 --> 00:48:01,832
-- It's fine.
-- Well, it's only temporary, you know?
+- It's fine.- Well, it's only temporary, you know?
 
 598
 00:48:02,120 --> 00:48:04,076
@@ -2798,13 +2392,11 @@ It's not that.
 
 599
 00:48:08,440 --> 00:48:13,389
-What's the problem? You don't like <i>me?</i>
-Or the turtles? What's the problem?
+What's the problem? You don't like me?Or the turtles? What's the problem?
 
 600
 00:48:13,680 --> 00:48:16,478
-- I don't think I belong here.
-- It's OK.
+- I don't think I belong here.- It's OK.
 
 601
 00:48:19,000 --> 00:48:21,275
@@ -2812,8 +2404,7 @@ I don't belong here.
 
 602
 00:48:21,400 --> 00:48:25,439
-Well, you know, it's OK,
-cos you're my guest, you know?
+Well, you know, it's OK,cos you're my guest, you know?
 
 603
 00:48:25,560 --> 00:48:28,313
@@ -2821,13 +2412,11 @@ I don't... know you well enough.
 
 604
 00:48:28,440 --> 00:48:32,228
-I've never been in
-a man's apartment alone.
+I've never been ina man's apartment alone.
 
 605
 00:48:33,440 --> 00:48:36,398
-Well, I have.
-They're all the same, you know?
+Well, I have.They're all the same, you know?
 
 606
 00:48:41,120 --> 00:48:43,680
@@ -2839,13 +2428,11 @@ I don't feel comfortable.
 
 608
 00:48:47,000 --> 00:48:50,754
-Yo, Adrian, you know,
-I ain't so comfortable either.
+Yo, Adrian, you know,I ain't so comfortable either.
 
 609
 00:48:52,040 --> 00:48:55,271
-- I should go.
-- Don't go, please. Don't go.
+- I should go.- Don't go, please. Don't go.
 
 610
 00:48:55,400 --> 00:48:57,709
@@ -2857,8 +2444,7 @@ Don't go.
 
 612
 00:49:02,600 --> 00:49:05,239
-- Do me a favour?
-- What?
+- Do me a favour?- What?
 
 613
 00:49:05,360 --> 00:49:07,715
@@ -2882,8 +2468,7 @@ I always knew you was pretty.
 
 618
 00:49:29,160 --> 00:49:31,913
-- Don't tease me.
-- I'm not teasin' ya.
+- Don't tease me.- I'm not teasin' ya.
 
 619
 00:49:35,080 --> 00:49:37,719
@@ -2895,8 +2480,7 @@ I just... I wanna kiss ya.
 
 621
 00:49:42,880 --> 00:49:45,917
-You don't have to kiss me back
-if you don't want...
+You don't have to kiss me backif you don't want...
 
 622
 00:49:46,040 --> 00:49:47,996
@@ -2908,13 +2492,11 @@ I heard you had a fight comin' up.
 
 624
 00:50:58,920 --> 00:51:01,798
-Yeah, I'm gonna fight next month,
-January 27th.
+Yeah, I'm gonna fight next month,January 27th.
 
 625
 00:51:01,920 --> 00:51:06,914
-That's good, man. You come on down
-the gym. We'll see that you get in shape.
+That's good, man. You come on downthe gym. We'll see that you get in shape.
 
 626
 00:51:07,040 --> 00:51:08,951
@@ -2922,28 +2504,23 @@ Hey, Rock, how you doin'?
 
 627
 00:51:09,080 --> 00:51:12,152
-- Mick was lookin' for you up there, man.
-- For me? You sure?
+- Mick was lookin' for you up there, man.- For me? You sure?
 
 628
 00:51:12,280 --> 00:51:16,432
-Yeah, yeah, yeah. He was lookin' for you.
-Get on up there and see him.
+Yeah, yeah, yeah. He was lookin' for you.Get on up there and see him.
 
 629
 00:51:33,520 --> 00:51:37,718
-- You got somethin' for me?
-- A guy from Miles Jergens was here.
+- You got somethin' for me?- A guy from Miles Jergens was here.
 
 630
 00:51:37,840 --> 00:51:41,753
-- They need sparrin' partners for Creed.
-- When was he here?
+- They need sparrin' partners for Creed.- When was he here?
 
 631
 00:51:41,880 --> 00:51:45,953
-- About an hour ago.
-- Probably lookin' for sparrin' partners.
+- About an hour ago.- Probably lookin' for sparrin' partners.
 
 632
 00:51:46,360 --> 00:51:49,033
@@ -2951,28 +2528,23 @@ I said that before, you dumb dago!
 
 633
 00:51:50,080 --> 00:51:54,312
-I've been comin' here for six years
-and you always stick it to me. How come?
+I've been comin' here for six yearsand you always stick it to me. How come?
 
 634
 00:51:54,440 --> 00:51:57,318
-- You don't wanna know!
-- Yeah, I wanna know how come!
+- You don't wanna know!- Yeah, I wanna know how come!
 
 635
 00:51:57,440 --> 00:51:59,476
-- You wanna know?
-- I wanna know!
+- You wanna know?- I wanna know!
 
 636
 00:51:59,600 --> 00:52:04,196
-OK, I'm gonna tell ya! Cos you had
-the talent to become a good fighter!
+OK, I'm gonna tell ya! Cos you hadthe talent to become a good fighter!
 
 637
 00:52:04,320 --> 00:52:07,039
-And instead of that,
-you became a leg-breaker...
+And instead of that,you became a leg-breaker...
 
 638
 00:52:07,160 --> 00:52:10,197
@@ -2980,8 +2552,7 @@ you became a leg-breaker...
 
 639
 00:52:10,320 --> 00:52:13,232
-- It's a livin'.
-- It's a waste of life!
+- It's a livin'.- It's a waste of life!
 
 640
 00:52:31,240 --> 00:52:33,390
@@ -2993,8 +2564,7 @@ Oh! You must be Mr Rocky Balboa.
 
 642
 00:52:40,440 --> 00:52:43,398
-Mr Jergens is expecting you.
-Just a moment.
+Mr Jergens is expecting you.Just a moment.
 
 643
 00:52:48,160 --> 00:52:50,913
@@ -3006,13 +2576,11 @@ Fine.
 
 645
 00:52:53,080 --> 00:52:55,355
-- Please go in, Mr Balboa.
-- Can I have that?
+- Please go in, Mr Balboa.- Can I have that?
 
 646
 00:52:55,480 --> 00:52:57,835
-- Oh, certainly.
-- Thanks.
+- Oh, certainly.- Thanks.
 
 647
 00:53:02,160 --> 00:53:04,196
@@ -3020,8 +2588,7 @@ Mr Balboa.
 
 648
 00:53:04,320 --> 00:53:07,790
-How are you? George Jergens.
-Take a chair, please.
+How are you? George Jergens.Take a chair, please.
 
 649
 00:53:07,920 --> 00:53:09,876
@@ -3029,13 +2596,11 @@ Thanks.
 
 650
 00:53:10,680 --> 00:53:13,240
-- Mr Balboa...
-- You can call me Rocky.
+- Mr Balboa...- You can call me Rocky.
 
 651
 00:53:13,360 --> 00:53:17,751
-Rocky. Tell me, Rocky. You got any
-representation? You have a manager?
+Rocky. Tell me, Rocky. You got anyrepresentation? You have a manager?
 
 652
 00:53:17,880 --> 00:53:19,836
@@ -3043,48 +2608,39 @@ Uh, no, just me.
 
 653
 00:53:20,960 --> 00:53:24,509
-Rocky, I've got a proposition
-I'd like to make to you.
+Rocky, I've got a propositionI'd like to make to you.
 
 654
 00:53:24,640 --> 00:53:27,871
-- About sparrin'?
-- I beg your pardon?
+- About sparrin'?- I beg your pardon?
 
 655
 00:53:28,000 --> 00:53:32,357
-I know you're lookin' for sparrin' partners
-and I wanna say I'm very available.
+I know you're lookin' for sparrin' partnersand I wanna say I'm very available.
 
 656
 00:53:32,480 --> 00:53:35,677
-- I'm sure you are.
-- Absolutely. It would be an honour.
+- I'm sure you are.- Absolutely. It would be an honour.
 
 657
 00:53:35,800 --> 00:53:38,758
-And you know what?
-I wouldn't take no cheap shots.
+And you know what?I wouldn't take no cheap shots.
 
 658
 00:53:38,880 --> 00:53:43,670
-- I'd really be a good sparrin' partner.
-- You don't understand me, Rocky.
+- I'd really be a good sparrin' partner.- You don't understand me, Rocky.
 
 659
 00:53:43,800 --> 00:53:48,669
-My proposition's this. Would you be
-interested in fighting Apollo Creed...
+My proposition's this. Would you beinterested in fighting Apollo Creed...
 
 660
 00:53:48,800 --> 00:53:51,553
-...for the world
-heavyweight championship?
+...for the worldheavyweight championship?
 
 661
 00:53:55,880 --> 00:53:58,235
-- No.
-- Listen, Rocky...
+- No.- Listen, Rocky...
 
 662
 00:53:59,480 --> 00:54:01,596
@@ -3096,23 +2652,19 @@ He likes you. He wants to fight you.
 
 664
 00:54:05,160 --> 00:54:08,914
-Well, it's just that, you see, uh,
-I fight in clubs, you know?
+Well, it's just that, you see, uh,I fight in clubs, you know?
 
 665
 00:54:09,040 --> 00:54:13,431
-I'm really a ham and egger. This guy is
-the best. It wouldn't be such a good fight.
+I'm really a ham and egger. This guy isthe best. It wouldn't be such a good fight.
 
 666
 00:54:13,560 --> 00:54:17,348
-But thank you very much,
-you know? I appreciate it.
+But thank you very much,you know? I appreciate it.
 
 667
 00:54:17,720 --> 00:54:21,952
-Rocky, do you believe that America
-is the land of opportunity?
+Rocky, do you believe that Americais the land of opportunity?
 
 668
 00:54:23,240 --> 00:54:24,912
@@ -3124,8 +2676,7 @@ Apollo Creed does.
 
 670
 00:54:27,160 --> 00:54:31,790
-And he's gonna prove it to the world
-by giving an unknown a shot at the title.
+And he's gonna prove it to the worldby giving an unknown a shot at the title.
 
 671
 00:54:31,920 --> 00:54:34,639
@@ -3149,138 +2700,115 @@ What do ya say?
 
 676
 00:54:50,080 --> 00:54:53,868
-<i>All right. That's enough pictures.</i>
-<i>We wanna ask Apollo a few questions.</i>
+All right. That's enough pictures.We wanna ask Apollo a few questions.
 
 677
 00:54:53,960 --> 00:54:56,394
-<i>How do you like</i>
-<i>the city of brotherly love?</i>
+How do you likethe city of brotherly love?
 
 678
 00:54:56,520 --> 00:54:59,830
-<i>Well, just bein' in Philadelphia</i>
-<i>makes me feel patriotic.</i>
+Well, just bein' in Philadelphiamakes me feel patriotic.
 
 679
 00:54:59,960 --> 00:55:03,509
-<i>Beautiful people in a beautiful city</i>
-<i>wishin' me the best.</i>
+Beautiful people in a beautiful citywishin' me the best.
 
 680
 00:55:03,640 --> 00:55:06,996
-<i>I love my Philadelphia brothers.</i>
-<i>I'm proud to be an American.</i>
+I love my Philadelphia brothers.I'm proud to be an American.
 
 681
 00:55:07,120 --> 00:55:11,671
-<i>Apollo, why did you agree to fight a man</i>
-<i>who has virtually no chance of winning?</i>
+Apollo, why did you agree to fight a manwho has virtually no chance of winning?
 
 682
 00:55:11,800 --> 00:55:13,916
-<i>Look, if history proves one thing...</i>
+Look, if history proves one thing...
 
 683
 00:55:14,040 --> 00:55:17,555
-<i>American history proves that</i>
-<i>everybody's got a chance to win.</i>
+American history proves thateverybody's got a chance to win.
 
 684
 00:55:17,680 --> 00:55:21,150
-<i>Didn't you guys ever hear of</i>
-<i>Valley Forge or Bunker Hill?</i>
+Didn't you guys ever hear ofValley Forge or Bunker Hill?
 
 685
 00:55:21,280 --> 00:55:24,352
-<i>It is a coincidence that</i>
-<i>you're fighting a white man...</i>
+It is a coincidence thatyou're fighting a white man...
 
 686
 00:55:24,480 --> 00:55:26,675
-<i>... on the most celebrated day</i>
-<i>in US history?</i>
+... on the most celebrated dayin US history?
 
 687
 00:55:26,800 --> 00:55:32,193
-<i>I don't know. Is it a coincidence that he's</i>
-<i>fightin' a black man on the same day?</i>
+I don't know. Is it a coincidence that he'sfightin' a black man on the same day?
 
 688
 00:55:32,320 --> 00:55:34,276
-<i>Right on! Tell the truth, brother!</i>
+Right on! Tell the truth, brother!
 
 689
 00:55:34,400 --> 00:55:36,789
-<i>How do you feel about your challenger?</i>
+How do you feel about your challenger?
 
 690
 00:55:36,920 --> 00:55:39,878
-<i>How do I feel about him?</i>
-<i>Come here, Rock.</i>
+How do I feel about him?Come here, Rock.
 
 691
 00:55:40,000 --> 00:55:43,834
-<i>- My main man. Rocky, ain't you Italian?</i>
-<i>- Yeah, I'm Italian.</i>
+- My main man. Rocky, ain't you Italian?- Yeah, I'm Italian.
 
 692
 00:55:43,960 --> 00:55:48,511
-<i>- Well now, what does that mean?</i>
-<i>- If he can't fight, I bet he can cook!</i>
+- Well now, what does that mean?- If he can't fight, I bet he can cook!
 
 693
 00:55:50,080 --> 00:55:53,914
-- Do me a favour. His lungs, punch out.
-- Paulie!
+- Do me a favour. His lungs, punch out.- Paulie!
 
 694
 00:55:54,040 --> 00:55:57,316
-<i>Rocky,</i>
-<i>how do you expect to fight Apollo Creed?</i>
+Rocky,how do you expect to fight Apollo Creed?
 
 695
 00:55:57,440 --> 00:56:01,399
-<i>Well, jeez, Creed's the best.</i>
-<i>I guess I'll have to do the best I can.</i>
+Well, jeez, Creed's the best.I guess I'll have to do the best I can.
 
 696
 00:56:01,520 --> 00:56:04,193
-<i>Tell me, Rocky. Just between us...</i>
+Tell me, Rocky. Just between us...
 
 697
 00:56:04,320 --> 00:56:07,118
-<i>... where did you get</i>
-<i>the name "ltalian Stallion"?</i>
+... where did you getthe name "ltalian Stallion"?
 
 698
 00:56:07,240 --> 00:56:11,472
-<i>Oh, I invented that about eight years ago</i>
-<i>when I was eatin' dinner.</i>
+Oh, I invented that about eight years agowhen I was eatin' dinner.
 
 699
 00:56:11,600 --> 00:56:17,470
-<i>Rocky, now your payday will be $150,000.</i>
-<i>Any comment?</i>
+Rocky, now your payday will be $150,000.Any comment?
 
 700
 00:56:19,160 --> 00:56:21,390
-<i>- You got no comment, Rocky, right?</i>
-<i>- No.</i>
+- You got no comment, Rocky, right?- No.
 
 701
 00:56:21,520 --> 00:56:23,238
-<i>No comment, right.</i>
+No comment, right.
 
 702
 00:56:23,360 --> 00:56:26,830
-<i>Wait a minute.</i>
-<i>I just wanna say hi to my girlfriend, OK?</i>
+Wait a minute.I just wanna say hi to my girlfriend, OK?
 
 703
 00:56:26,960 --> 00:56:31,078
-<i>Yo, Adrian! It's me, Rocky.</i>
-<i>Look at this. Can you believe all this?</i>
+Yo, Adrian! It's me, Rocky.Look at this. Can you believe all this?
 
 704
 00:56:31,200 --> 00:56:34,033
@@ -3288,42 +2816,35 @@ Rocky, you didn't...!
 
 705
 00:56:34,160 --> 00:56:36,958
-<i>- Thank you, Rocky.</i>
-<i>- Quit pushin', man!</i>
+- Thank you, Rocky.- Quit pushin', man!
 
 706
 00:56:37,080 --> 00:56:38,149
-<i>Thank you, Rocky.</i>
+Thank you, Rocky.
 
 707
 00:56:38,280 --> 00:56:42,114
-Don't it matter he's makin' you out a fool?
-I'd break his lips.
+Don't it matter he's makin' you out a fool?I'd break his lips.
 
 708
 00:56:42,240 --> 00:56:45,277
-- He's takin' cheap shots.
-- It don't bother me none.
+- He's takin' cheap shots.- It don't bother me none.
 
 709
 00:56:45,400 --> 00:56:50,235
-Yo, Rock. I guess you'd be lookin'
-for people to help you out.
+Yo, Rock. I guess you'd be lookin'for people to help you out.
 
 710
 00:56:50,360 --> 00:56:52,920
-- Help what?
-- You know...
+- Help what?- You know...
 
 711
 00:56:53,040 --> 00:56:56,715
-- Keep you livin' a clean life.
-- I do OK, you know?
+- Keep you livin' a clean life.- I do OK, you know?
 
 712
 00:56:56,840 --> 00:57:00,992
-You need someone to help with
-the exercise, stand by with a towel...
+You need someone to help withthe exercise, stand by with a towel...
 
 713
 00:57:01,120 --> 00:57:02,758
@@ -3331,13 +2852,11 @@ the exercise, stand by with a towel...
 
 714
 00:57:02,880 --> 00:57:07,715
-Who cared about me yesterday? Nobody.
-I think I'm gonna train myself, you know?
+Who cared about me yesterday? Nobody.I think I'm gonna train myself, you know?
 
 715
 00:57:07,840 --> 00:57:12,550
-Without such good people around to help,
-you don't have such a good chance.
+Without such good people around to help,you don't have such a good chance.
 
 716
 00:57:12,680 --> 00:57:15,478
@@ -3345,18 +2864,15 @@ Einstein flunked outta school. Twice.
 
 717
 00:57:15,600 --> 00:57:17,795
-- That so?
-- Yeah.
+- That so?- Yeah.
 
 718
 00:57:17,920 --> 00:57:23,199
-Beethoven was deaf, Helen Keller was
-blind. I think Rocky's got a good chance.
+Beethoven was deaf, Helen Keller wasblind. I think Rocky's got a good chance.
 
 719
 00:57:28,960 --> 00:57:32,475
-- Want me to get you a beer, Paulie?
-- You lookin' to do a good deed?
+- Want me to get you a beer, Paulie?- You lookin' to do a good deed?
 
 720
 00:57:32,600 --> 00:57:35,319
@@ -3364,18 +2880,15 @@ Keep outta my freakin' life!
 
 721
 00:57:35,680 --> 00:57:37,636
-- What did I do?
-- Nothin'.
+- What did I do?- Nothin'.
 
 722
 00:57:37,760 --> 00:57:40,479
-- Did I say something?
-- You didn't say nothin'.
+- Did I say something?- You didn't say nothin'.
 
 723
 00:57:40,600 --> 00:57:44,673
-That's right, you didn't say nothin'!
-Nothin' at all!
+That's right, you didn't say nothin'!Nothin' at all!
 
 724
 00:57:46,240 --> 00:57:48,196
@@ -3387,18 +2900,15 @@ Where's the freakin' pretzels?
 
 726
 00:57:54,000 --> 00:57:57,549
-Goddamn the pretzels!
-Hey, we don't have any beer!
+Goddamn the pretzels!Hey, we don't have any beer!
 
 727
 00:57:58,680 --> 00:58:02,036
-I thought you were supposed
-to pick up some beer!
+I thought you were supposedto pick up some beer!
 
 728
 00:58:09,280 --> 00:58:12,556
-How'd you like hearin'
-your name on TV tonight?
+How'd you like hearin'your name on TV tonight?
 
 729
 00:58:13,600 --> 00:58:16,194
@@ -3406,13 +2916,11 @@ I was shocked. Why'd you do that?
 
 730
 00:58:16,320 --> 00:58:20,029
-- Come on, you're puttin' me on, right?
-- Absolutely.
+- Come on, you're puttin' me on, right?- Absolutely.
 
 731
 00:58:20,160 --> 00:58:23,789
-- What time should I expect you?
-- Oh, about seven.
+- What time should I expect you?- Oh, about seven.
 
 732
 00:58:23,920 --> 00:58:25,876
@@ -3424,8 +2932,7 @@ Hey.
 
 734
 00:58:41,720 --> 00:58:45,190
-You know I said that stuff on TV
-didn't bother me none?
+You know I said that stuff on TVdidn't bother me none?
 
 735
 00:58:45,320 --> 00:58:47,276
@@ -3437,53 +2944,43 @@ It did.
 
 737
 00:59:00,360 --> 00:59:03,636
-Listen, the reason I've
-brought you here is because...
+Listen, the reason I'vebrought you here is because...
 
 738
 00:59:03,760 --> 00:59:06,069
-Have you got money
-for trainin' expenses?
+Have you got moneyfor trainin' expenses?
 
 739
 00:59:06,200 --> 00:59:09,988
-- I got a few dollars, you know?
-- Well, here. Put this in your glove.
+- I got a few dollars, you know?- Well, here. Put this in your glove.
 
 740
 00:59:10,120 --> 00:59:13,476
-- What's this?
-- 500 bucks. Don't worry about it.
+- What's this?- 500 bucks. Don't worry about it.
 
 741
 00:59:14,400 --> 00:59:18,473
-You ain't never had any luck, but this time
-Lady Luck may be in your corner.
+You ain't never had any luck, but this timeLady Luck may be in your corner.
 
 742
 00:59:18,600 --> 00:59:21,478
-- What do ya think?
-- Maybe. Maybe...
+- What do ya think?- Maybe. Maybe...
 
 743
 00:59:21,600 --> 00:59:26,674
-- Hey, thanks for the money, Tony.
-- It's OK. Don't worry about it. See ya.
+- Hey, thanks for the money, Tony.- It's OK. Don't worry about it. See ya.
 
 744
 00:59:26,800 --> 00:59:28,199
-- Wait a minute.
-- What?
+- Wait a minute.- What?
 
 745
 00:59:28,320 --> 00:59:31,073
-- You're in trainin'. Huh? Come on.
-- Hey.
+- You're in trainin'. Huh? Come on.- Hey.
 
 746
 00:59:38,480 --> 00:59:40,596
-- Yo, Tony?
-- What?
+- Yo, Tony?- What?
 
 747
 00:59:40,720 --> 00:59:42,711
@@ -3491,8 +2988,7 @@ You gonna show up at the fight?
 
 748
 00:59:42,840 --> 00:59:44,956
-- Ringside.
-- Hey, hey!
+- Ringside.- Hey, hey!
 
 749
 00:59:46,560 --> 00:59:48,516
@@ -3500,17 +2996,15 @@ I'll see ya.
 
 750
 01:00:21,520 --> 01:00:23,476
-<i>(Rocky)</i> Yeah!
+(Rocky) Yeah!
 
 751
 01:00:28,160 --> 01:00:31,436
-Hello, kid. I seen your light.
-Can I come in?
+Hello, kid. I seen your light.Can I come in?
 
 752
 01:00:31,560 --> 01:00:33,630
-- Yeah, sure.
-- Yeah. Good!
+- Yeah, sure.- Yeah. Good!
 
 753
 01:00:33,760 --> 01:00:36,399
@@ -3518,8 +3012,7 @@ Hey, this is a nice place here.
 
 754
 01:00:36,520 --> 01:00:39,557
-Anyway, what I come to tell you
-is that, uh...
+Anyway, what I come to tell youis that, uh...
 
 755
 01:00:40,720 --> 01:00:43,837
@@ -3527,13 +3020,11 @@ is that, uh...
 
 756
 01:00:43,960 --> 01:00:46,997
-- Yeah, freak luck.
-- Ain't it true? Look at the other guys.
+- Yeah, freak luck.- Ain't it true? Look at the other guys.
 
 757
 01:00:47,120 --> 01:00:50,795
-They're good fighters.
-They're colourful, they got good records.
+They're good fighters.They're colourful, they got good records.
 
 758
 01:00:50,920 --> 01:00:53,150
@@ -3545,8 +3036,7 @@ But you... you got a shot at the title.
 
 760
 01:00:57,320 --> 01:01:00,710
-- Freak luck is a strange thing.
-- Yeah, sure it is. Can I sit down?
+- Freak luck is a strange thing.- Yeah, sure it is. Can I sit down?
 
 761
 01:01:00,840 --> 01:01:03,149
@@ -3554,13 +3044,11 @@ Yeah, sure.
 
 762
 01:01:03,280 --> 01:01:06,636
-- What the hell are those?
-- Oh, they're domestic turtles.
+- What the hell are those?- Oh, they're domestic turtles.
 
 763
 01:01:06,760 --> 01:01:10,230
-The one on top is Cuff and
-the other is Link. The rest are marbles.
+The one on top is Cuff andthe other is Link. The rest are marbles.
 
 764
 01:01:10,360 --> 01:01:13,670
@@ -3572,18 +3060,15 @@ Anyway, look, I'm here to warn ya...
 
 766
 01:01:17,360 --> 01:01:21,638
-...that you gotta be very careful
-about this shot that you got at the title.
+...that you gotta be very carefulabout this shot that you got at the title.
 
 767
 01:01:21,760 --> 01:01:26,595
-Because, I don't know, like the Bible says,
-you ain't gonna get a second chance.
+Because, I don't know, like the Bible says,you ain't gonna get a second chance.
 
 768
 01:01:27,440 --> 01:01:30,671
-- Yeah, all right.
-- You thought of that, huh?
+- Yeah, all right.- You thought of that, huh?
 
 769
 01:01:30,800 --> 01:01:33,837
@@ -3595,13 +3080,11 @@ A manager. Listen to me.
 
 771
 01:01:36,920 --> 01:01:40,356
-I know, because I've been
-in this racket for 50 years.
+I know, because I've beenin this racket for 50 years.
 
 772
 01:01:40,480 --> 01:01:43,597
-- 50 years, huh?
-- 50 years. God, I've seen it all.
+- 50 years, huh?- 50 years. God, I've seen it all.
 
 773
 01:01:43,720 --> 01:01:46,359
@@ -3609,33 +3092,27 @@ All of it. You know what I done?
 
 774
 01:01:46,480 --> 01:01:48,914
-- What?
-- I have done it all.
+- What?- I have done it all.
 
 775
 01:01:49,040 --> 01:01:52,589
-You shoulda seen me when
-I knocked Giny Russel outta the ring.
+You shoulda seen me whenI knocked Giny Russel outta the ring.
 
 776
 01:01:52,720 --> 01:01:56,599
-Outta the goddamn ring, I tell ya.
-September 14, 1923.
+Outta the goddamn ring, I tell ya.September 14, 1923.
 
 777
 01:01:56,720 --> 01:02:00,599
-And it was the same night that
-Firpo knocks Dempsey outta the ring.
+And it was the same night thatFirpo knocks Dempsey outta the ring.
 
 778
 01:02:00,720 --> 01:02:03,632
-- The same night. Who gets the publicity?
-- Dempsey.
+- The same night. Who gets the publicity?- Dempsey.
 
 779
 01:02:03,760 --> 01:02:05,955
-- That's right, but why?
-- Cos he was champ.
+- That's right, but why?- Cos he was champ.
 
 780
 01:02:06,080 --> 01:02:09,072
@@ -3647,23 +3124,19 @@ I had nothin', man.
 
 782
 01:02:11,840 --> 01:02:15,276
-I wanna show you somethin'.
-Look at my face for a minute. Look.
+I wanna show you somethin'.Look at my face for a minute. Look.
 
 783
 01:02:15,400 --> 01:02:20,110
-I got 21 stitches over this left eye.
-I got 34 stitches over this eye.
+I got 21 stitches over this left eye.I got 34 stitches over this eye.
 
 784
 01:02:20,240 --> 01:02:23,596
-You know what?
-I had my nose busted 17 times.
+You know what?I had my nose busted 17 times.
 
 785
 01:02:23,720 --> 01:02:27,713
-The last time was with
-that fight with Sailor Mike.
+The last time was withthat fight with Sailor Mike.
 
 786
 01:02:27,840 --> 01:02:30,718
@@ -3687,13 +3160,11 @@ Ah, Rocky Marciano!
 
 791
 01:02:43,360 --> 01:02:47,273
-You know, you kinda remind me
-of the Rock, do you know that?
+You know, you kinda remind meof the Rock, do you know that?
 
 792
 01:02:47,400 --> 01:02:50,870
-- You really think so?
-- That's right. You move like him.
+- You really think so?- That's right. You move like him.
 
 793
 01:02:51,000 --> 01:02:52,956
@@ -3701,8 +3172,7 @@ And you got heart, like he did.
 
 794
 01:02:53,080 --> 01:02:56,197
-Yeah, I got heart,
-but I ain't got no locker, do I, Mick?
+Yeah, I got heart,but I ain't got no locker, do I, Mick?
 
 795
 01:02:59,760 --> 01:03:02,354
@@ -3714,98 +3184,79 @@ Uh... anyway, you know...
 
 797
 01:03:06,480 --> 01:03:10,996
-Look, I wanna make a suggestion.
-Don't drink that piss before a fight.
+Look, I wanna make a suggestion.Don't drink that piss before a fight.
 
 798
 01:03:11,120 --> 01:03:14,715
-It's no good for ya.
-You don't mind my sayin'...?
+It's no good for ya.You don't mind my sayin'...?
 
 799
 01:03:14,840 --> 01:03:19,277
-Anyway, when I started this racket,
-pugs like us, we was treated like dogs.
+Anyway, when I started this racket,pugs like us, we was treated like dogs.
 
 800
 01:03:19,400 --> 01:03:24,872
-For $10, you gotta tear somebody's throat
-out. But I never had no management.
+For $10, you gotta tear somebody's throatout. But I never had no management.
 
 801
 01:03:25,400 --> 01:03:30,076
-One time, this son of a bitch
-that I fought, he put a nail right there.
+One time, this son of a bitchthat I fought, he put a nail right there.
 
 802
 01:03:30,200 --> 01:03:32,270
-- In his thumb?
-- Yeah, in the glove.
+- In his thumb?- Yeah, in the glove.
 
 803
 01:03:32,400 --> 01:03:34,755
-And he punched
-so many holes in my face...
+And he punchedso many holes in my face...
 
 804
 01:03:34,880 --> 01:03:39,795
-...I had this spit shootin' outta my cheeks.
-Can you imagine that?
+...I had this spit shootin' outta my cheeks.Can you imagine that?
 
 805
 01:03:39,920 --> 01:03:43,276
-When I tell you what I looked like
-when I was in my prime...
+When I tell you what I looked likewhen I was in my prime...
 
 806
 01:03:43,400 --> 01:03:46,153
-I want ya to look at somethin'.
-Will ya look at that?
+I want ya to look at somethin'.Will ya look at that?
 
 807
 01:03:46,280 --> 01:03:50,273
-That's the way I looked
-before these guys got at me.
+That's the way I lookedbefore these guys got at me.
 
 808
 01:03:50,400 --> 01:03:53,790
-That's nice.
-You don't take care of the picture, though.
+That's nice.You don't take care of the picture, though.
 
 809
 01:03:53,920 --> 01:03:57,833
-Well, I never had no management.
-That was the trouble.
+Well, I never had no management.That was the trouble.
 
 810
 01:03:57,960 --> 01:04:02,351
-Now I got all this knowledge.
-I got it up here and I wanna give it to you.
+Now I got all this knowledge.I got it up here and I wanna give it to you.
 
 811
 01:04:02,480 --> 01:04:06,871
-I wanna take care of you. I wanna make
-sure all this shit that happened to me...
+I wanna take care of you. I wanna makesure all this shit that happened to me...
 
 812
 01:04:07,000 --> 01:04:10,515
-...doesn't happen to you.
-You know what I mean?
+...doesn't happen to you.You know what I mean?
 
 813
 01:04:10,640 --> 01:04:14,269
-- The fight's set.
-- Listen to me. I wanna be your manager.
+- The fight's set.- Listen to me. I wanna be your manager.
 
 814
 01:04:14,400 --> 01:04:17,949
-- You follow that, do you?
-- The fight's set. I don't need no manager.
+- You follow that, do you?- The fight's set. I don't need no manager.
 
 815
 01:04:18,080 --> 01:04:22,471
-But you can't buy what I'm gonna give ya.
-I've got pain and I've got experience.
+But you can't buy what I'm gonna give ya.I've got pain and I've got experience.
 
 816
 01:04:22,600 --> 01:04:25,637
@@ -3813,28 +3264,23 @@ I got pain and I got experience too.
 
 817
 01:04:25,760 --> 01:04:29,275
-- Now listen, kid...
-- Hey, yo. Hey, Mick.
+- Now listen, kid...- Hey, yo. Hey, Mick.
 
 818
 01:04:29,400 --> 01:04:33,279
-I needed your help about ten years ago.
-You never helped me none.
+I needed your help about ten years ago.You never helped me none.
 
 819
 01:04:33,400 --> 01:04:36,472
-- You didn't care.
-- Well, if you wanted help...
+- You didn't care.- Well, if you wanted help...
 
 820
 01:04:36,600 --> 01:04:40,479
-I say, if you wanted help,
-why didn't you just ask me, kid?
+I say, if you wanted help,why didn't you just ask me, kid?
 
 821
 01:04:40,600 --> 01:04:43,956
-Look, I asked,
-but you never heard nothin'!
+Look, I asked,but you never heard nothin'!
 
 822
 01:04:44,080 --> 01:04:46,036
@@ -3862,8 +3308,7 @@ Took you long enough to get here.
 
 828
 01:05:34,400 --> 01:05:39,076
-Ten years to come to my house. What's
-the matter? You don't like my house?
+Ten years to come to my house. What'sthe matter? You don't like my house?
 
 829
 01:05:39,200 --> 01:05:41,430
@@ -3883,8 +3328,7 @@ Don't throw it around!
 
 833
 01:05:48,800 --> 01:05:52,713
-Talkin' about your prime.
-What about <i>my</i> prime, Mick?
+Talkin' about your prime.What about my prime, Mick?
 
 834
 01:05:53,120 --> 01:05:55,475
@@ -3892,18 +3336,15 @@ At least you had a prime!
 
 835
 01:05:55,600 --> 01:06:00,549
-I ain't had no prime! I ain't had nothin'!
-Legs are goin', everything's goin'!
+I ain't had no prime! I ain't had nothin'!Legs are goin', everything's goin'!
 
 836
 01:06:00,680 --> 01:06:05,674
-Guy offers me a fight. Big deal! Wanna
-fight the fight? Yeah, I'll fight the big fight.
+Guy offers me a fight. Big deal! Wannafight the fight? Yeah, I'll fight the big fight.
 
 837
 01:06:05,800 --> 01:06:09,190
-I'm gonna go and fight that big fight.
-I'm gonna get that!
+I'm gonna go and fight that big fight.I'm gonna get that!
 
 838
 01:06:09,320 --> 01:06:11,959
@@ -3911,18 +3352,15 @@ I'm gonna get that!
 
 839
 01:06:12,080 --> 01:06:14,833
-And you wanna be ringside and see it?
-Do ya?
+And you wanna be ringside and see it?Do ya?
 
 840
 01:06:14,960 --> 01:06:18,873
-You wanna help me out? Huh? Do you
-wanna see me get my face kicked in?
+You wanna help me out? Huh? Do youwanna see me get my face kicked in?
 
 841
 01:06:19,000 --> 01:06:23,676
-Legs ain't workin', nothing's workin'!
-They go "Go on, fight the champ!"
+Legs ain't workin', nothing's workin'!They go "Go on, fight the champ!"
 
 842
 01:06:23,800 --> 01:06:25,756
@@ -3934,8 +3372,7 @@ Get my face kicked in.
 
 844
 01:06:30,680 --> 01:06:35,629
-You come around here! You wanna move
-in with me? Come on in! It's a nice house!
+You come around here! You wanna movein with me? Come on in! It's a nice house!
 
 845
 01:06:35,760 --> 01:06:38,718
@@ -3947,8 +3384,7 @@ This whole place stinks!
 
 847
 01:06:42,280 --> 01:06:45,477
-You wanna help me out?
-Well, help me out!
+You wanna help me out?Well, help me out!
 
 848
 01:06:45,600 --> 01:06:48,478
@@ -3956,95 +3392,79 @@ Come on! Help me out! I'm standin' here!
 
 849
 01:07:35,840 --> 01:07:37,637
-<i>(alarm rings)</i>
+(alarm rings)
 
 850
 01:07:45,080 --> 01:07:50,677
-<i>(radio) It's 28 degrees. We'll check that</i>
-<i>forecast in a minute. I feel very... weird.</i>
+(radio) It's 28 degrees. We'll check thatforecast in a minute. I feel very... weird.
 
 851
 01:07:50,800 --> 01:07:54,315
-<i>Very... Well,</i>
-<i>the thing is I got vinyl seats in my car.</i>
+Very... Well,the thing is I got vinyl seats in my car.
 
 852
 01:07:54,440 --> 01:07:57,352
-<i>When I hit the seats this morning,</i>
-<i>I just went "Whoo!"</i>
+When I hit the seats this morning,I just went "Whoo!"
 
 853
 01:07:57,480 --> 01:08:01,359
-<i>I figured if I'm up, everybody</i>
-<i>in the Delaware Valley should be up.</i>
+I figured if I'm up, everybodyin the Delaware Valley should be up.
 
 854
 01:08:01,480 --> 01:08:05,155
-<i>Do you agree? At three minutes</i>
-<i>past four, what else are you gonna do?</i>
+Do you agree? At three minutespast four, what else are you gonna do?
 
 855
 01:08:05,280 --> 01:08:08,829
-<i>- (ringing tone)</i>
-<i>- (woman) Hello?</i>
+- (ringing tone)- (woman) Hello?
 
 856
 01:08:08,960 --> 01:08:12,555
-<i>Good morning, Mrs Kramer!</i>
-<i>This is Don Cabot, WYBG Philadelphia.</i>
+Good morning, Mrs Kramer!This is Don Cabot, WYBG Philadelphia.
 
 857
 01:08:12,680 --> 01:08:15,478
-<i>- How are you this morning?</i>
-<i>- Huh? What?</i>
+- How are you this morning?- Huh? What?
 
 858
 01:08:15,600 --> 01:08:20,754
-<i>I think you have a lot of nerve callin' me</i>
-<i>at this hour in the morning! Goodbye!</i>
+I think you have a lot of nerve callin' meat this hour in the morning! Goodbye!
 
 859
 01:08:20,880 --> 01:08:25,032
-# <i>WYBG</i>
+# WYBG
 
 860
 01:08:26,960 --> 01:08:31,272
-# <i>Philadelphia</i>
+# Philadelphia
 
 861
 01:08:32,320 --> 01:08:35,039
-<i>Ha! We got Mrs Kramer up</i>
-<i>and it's a good morning.</i>
+Ha! We got Mrs Kramer upand it's a good morning.
 
 862
 01:08:35,160 --> 01:08:39,199
-<i>Boy, I need somethin' to struggle with.</i>
-<i>28° - it's cold out there.</i>
+Boy, I need somethin' to struggle with.28ï¿½ - it's cold out there.
 
 863
 01:08:39,320 --> 01:08:44,394
-<i>We've been getting away with murder</i>
-<i>for weeks. Our high today could be 30.</i>
+We've been getting away with murderfor weeks. Our high today could be 30.
 
 864
 01:08:44,520 --> 01:08:48,069
-<i>Tonight we're back down in the 20° range,</i>
-<i>colder in the suburbs.</i>
+Tonight we're back down in the 20ï¿½ range,colder in the suburbs.
 
 865
 01:08:48,200 --> 01:08:51,909
-<i>And tomorrow, with a little bit of luck,</i>
-<i>we may hit 40 somewhere.</i>
+And tomorrow, with a little bit of luck,we may hit 40 somewhere.
 
 866
 01:08:52,040 --> 01:08:56,511
-<i>But it's awfully chilly. Make sure you</i>
-<i>have it bundled up before you bring it out.</i>
+But it's awfully chilly. Make sure youhave it bundled up before you bring it out.
 
 867
 01:11:13,080 --> 01:11:17,232
-Come on. It stinks... Hey, come on!
-It stinks in here, you know?
+Come on. It stinks... Hey, come on!It stinks in here, you know?
 
 868
 01:11:17,360 --> 01:11:19,316
@@ -4060,13 +3480,11 @@ No, across the street.
 
 871
 01:11:27,720 --> 01:11:30,393
-This place looks like an animal morgue,
-you know?
+This place looks like an animal morgue,you know?
 
 872
 01:11:30,520 --> 01:11:33,478
-- It's a little cold in here, ain't it?
-- Yeah.
+- It's a little cold in here, ain't it?- Yeah.
 
 873
 01:11:37,920 --> 01:11:40,275
@@ -4074,8 +3492,7 @@ Who killed all these things?
 
 874
 01:11:40,400 --> 01:11:43,790
-- What, are you crazy?
-- Pay Gazzo or you end up on a hook.
+- What, are you crazy?- Pay Gazzo or you end up on a hook.
 
 875
 01:11:43,920 --> 01:11:46,229
@@ -4083,8 +3500,7 @@ Hey, Gazzo's a good man. You know that.
 
 876
 01:11:46,360 --> 01:11:51,798
-Hey, don't get excited. I know that. That's
-why I want you to talk to him about me.
+Hey, don't get excited. I know that. That'swhy I want you to talk to him about me.
 
 877
 01:11:51,920 --> 01:11:54,309
@@ -4092,8 +3508,7 @@ I can get me out of this stinkin' freezer.
 
 878
 01:11:54,440 --> 01:11:59,719
-Why don't you do yourself a favour?
-Keep this job, because you eat better.
+Why don't you do yourself a favour?Keep this job, because you eat better.
 
 879
 01:11:59,840 --> 01:12:02,593
@@ -4101,8 +3516,7 @@ Moo... Does it ever snow in here?
 
 880
 01:12:04,080 --> 01:12:08,039
-Uh, you and my sister.
-How are you gettin' along together?
+Uh, you and my sister.How are you gettin' along together?
 
 881
 01:12:09,000 --> 01:12:10,956
@@ -4114,13 +3528,11 @@ Uh, I'm not sure, Rock. What's the story?
 
 883
 01:12:14,560 --> 01:12:18,439
-- About what?
-- What's the story? What's happening?
+- About what?- What's the story? What's happening?
 
 884
 01:12:18,560 --> 01:12:21,518
-- You really like her?
-- Sure I like her.
+- You really like her?- Sure I like her.
 
 885
 01:12:23,880 --> 01:12:27,190
@@ -4132,8 +3544,7 @@ I don't know. It fills gaps, I guess.
 
 887
 01:12:30,760 --> 01:12:34,753
-- What's "gaps"?
-- I don't know. She's got gaps, I got gaps.
+- What's "gaps"?- I don't know. She's got gaps, I got gaps.
 
 888
 01:12:34,880 --> 01:12:37,474
@@ -4157,18 +3568,15 @@ You screwin' my sister?
 
 893
 01:12:51,200 --> 01:12:54,510
-You see? That's why I can't
-connect you with Gazzo, Paulie.
+You see? That's why I can'tconnect you with Gazzo, Paulie.
 
 894
 01:12:54,640 --> 01:12:58,679
-Because you got a big mouth, you know?
-You just talk too much.
+Because you got a big mouth, you know?You just talk too much.
 
 895
 01:12:58,800 --> 01:13:02,873
-- It's gettin' cold in here. I'm goin' home.
-- Cold in here?! It <i>is</i> cold in here!
+- It's gettin' cold in here. I'm goin' home.- Cold in here?! It is cold in here!
 
 896
 01:13:03,000 --> 01:13:06,197
@@ -4176,7 +3584,7 @@ It stinks in here! And you stink!
 
 897
 01:13:30,680 --> 01:13:32,750
-<i>(cracking)</i>
+(cracking)
 
 898
 01:13:32,880 --> 01:13:35,440
@@ -4184,8 +3592,7 @@ You're breakin' the ribs.
 
 899
 01:13:53,480 --> 01:13:57,632
-If you do that to Apollo Creed,
-they'll put us in jail for murder.
+If you do that to Apollo Creed,they'll put us in jail for murder.
 
 900
 01:13:59,280 --> 01:14:01,840
@@ -4193,23 +3600,19 @@ I'll see you tomorrow mornin', OK?
 
 901
 01:14:13,760 --> 01:14:16,354
-- I turned the heat up.
-- Thanks.
+- I turned the heat up.- Thanks.
 
 902
 01:14:16,480 --> 01:14:21,235
-You know, your brother's a good man,
-but he's awful pushy, you know?
+You know, your brother's a good man,but he's awful pushy, you know?
 
 903
 01:14:29,880 --> 01:14:34,476
-- You want me to rub you down?
-- No, I'm just sore, OK? I'll just sit here.
+- You want me to rub you down?- No, I'm just sore, OK? I'll just sit here.
 
 904
 01:14:34,600 --> 01:14:36,955
-- You sure?
-- Yeah, I'm sure.
+- You sure?- Yeah, I'm sure.
 
 905
 01:14:40,200 --> 01:14:43,078
@@ -4225,18 +3628,15 @@ Hey, Adrian, I'm serious now.
 
 908
 01:14:47,280 --> 01:14:51,159
-There's no foolin' around durin' trainin'.
-I wanna stay strong.
+There's no foolin' around durin' trainin'.I wanna stay strong.
 
 909
 01:14:51,280 --> 01:14:54,238
-- You're not kiddin'.
-- No, I ain't kiddin'.
+- You're not kiddin'.- No, I ain't kiddin'.
 
 910
 01:14:56,880 --> 01:14:58,711
-- You sure?
-- Yeah, I'm sure.
+- You sure?- Yeah, I'm sure.
 
 911
 01:14:58,840 --> 01:15:01,434
@@ -4252,8 +3652,7 @@ Yo.
 
 914
 01:15:30,720 --> 01:15:33,188
-- It's OK.
-- I'm sorry.
+- It's OK.- I'm sorry.
 
 915
 01:15:33,320 --> 01:15:35,276
@@ -4277,43 +3676,35 @@ Underneath! Underneath! Come on!
 
 920
 01:16:06,720 --> 01:16:09,188
-Rock, hold it, hold it.
-Hold it, Rock, will ya?
+Rock, hold it, hold it.Hold it, Rock, will ya?
 
 921
 01:16:09,320 --> 01:16:12,869
-You're drivin' me crazy,
-you're so sloppy. You're off balance.
+You're drivin' me crazy,you're so sloppy. You're off balance.
 
 922
 01:16:13,000 --> 01:16:17,790
-Let's try this. Take this string. Tie it
-to both ankles. Leave two feet of slack.
+Let's try this. Take this string. Tie itto both ankles. Leave two feet of slack.
 
 923
 01:16:17,920 --> 01:16:21,549
-- I ain't never had good footwork.
-- Never mind. You're off balance.
+- I ain't never had good footwork.- Never mind. You're off balance.
 
 924
 01:16:21,680 --> 01:16:26,595
-Marciano... He had the same problem
-and this string cured it.
+Marciano... He had the same problemand this string cured it.
 
 925
 01:16:26,720 --> 01:16:30,952
-The idea is that if you can move
-and hit without breakin' the string...
+The idea is that if you can moveand hit without breakin' the string...
 
 926
 01:16:31,080 --> 01:16:34,789
-...you got balance. You become
-a dangerous person. You follow?
+...you got balance. You becomea dangerous person. You follow?
 
 927
 01:16:34,920 --> 01:16:37,354
-- You're lookin' good, Rock.
-- Thanks.
+- You're lookin' good, Rock.- Thanks.
 
 928
 01:16:37,480 --> 01:16:39,198
@@ -4325,8 +3716,7 @@ Hey, Rock, how about an autograph?
 
 930
 01:16:41,840 --> 01:16:45,992
-Get outta here! Don't you ever interrupt
-me while I'm conductin' business.
+Get outta here! Don't you ever interruptme while I'm conductin' business.
 
 931
 01:16:46,120 --> 01:16:48,714
@@ -4334,8 +3724,7 @@ Move your little chicken asses out.
 
 932
 01:16:48,840 --> 01:16:52,628
-Listen, kid. You...
-You lay off that pet-shop dame.
+Listen, kid. You...You lay off that pet-shop dame.
 
 933
 01:16:52,760 --> 01:16:55,069
@@ -4343,13 +3732,11 @@ Women weaken legs.
 
 934
 01:16:56,320 --> 01:17:00,472
-- Yeah, but I really like this girl...
-- Then let her train ya!
+- Yeah, but I really like this girl...- Then let her train ya!
 
 935
 01:17:03,000 --> 01:17:05,958
-- OK, no more foolin' around.
-- OK, now hit it.
+- OK, no more foolin' around.- OK, now hit it.
 
 936
 01:17:08,040 --> 01:17:10,793
@@ -4357,8 +3744,7 @@ Women weaken legs, huh?
 
 937
 01:17:14,600 --> 01:17:16,955
-- Yo, Rock!
-- Yo, Rocky!
+- Yo, Rock!- Yo, Rocky!
 
 938
 01:17:22,840 --> 01:17:25,115
@@ -4366,13 +3752,11 @@ Yo!
 
 939
 01:17:25,240 --> 01:17:27,629
-- Yo!
-- Yo, you look great.
+- Yo!- Yo, you look great.
 
 940
 01:17:28,760 --> 01:17:31,149
-- Really?
-- Oh, yeah. Terrific.
+- Really?- Oh, yeah. Terrific.
 
 941
 01:17:31,280 --> 01:17:33,555
@@ -4380,42 +3764,35 @@ I mean, you're gonna be a heartbreaker.
 
 942
 01:17:33,680 --> 01:17:37,514
-You'll walk down the street,
-breakin' hearts. Very sharp.
+You'll walk down the street,breakin' hearts. Very sharp.
 
 943
 01:17:37,640 --> 01:17:40,438
-- I got another surprise for you.
-- What?
+- I got another surprise for you.- What?
 
 944
 01:17:41,400 --> 01:17:45,791
-Hey, Butkus! Hey, Butkus,
-gimme a kiss! Come here!
+Hey, Butkus! Hey, Butkus,gimme a kiss! Come here!
 
 945
 01:17:45,920 --> 01:17:49,230
-- To keep you company when you run.
-<i>- (Rocky howls)</i>
+- To keep you company when you run.- (Rocky howls)
 
 946
 01:17:49,360 --> 01:17:51,920
-<i>(dog barks)</i>
+(dog barks)
 
 947
 01:17:53,000 --> 01:17:55,833
-Come and meet the family.
-The owner never come back?
+Come and meet the family.The owner never come back?
 
 948
 01:17:55,960 --> 01:17:58,633
-- He's yours if you want him.
-- Boy, do I want him!
+- He's yours if you want him.- Boy, do I want him!
 
 949
 01:17:58,760 --> 01:18:01,513
-- What's he eat, this dog?
-- He eats little turtles.
+- What's he eat, this dog?- He eats little turtles.
 
 950
 01:18:01,640 --> 01:18:03,790
@@ -4423,8 +3800,7 @@ Yo, Butkus!
 
 951
 01:18:26,040 --> 01:18:29,715
-What's that, Butkus, huh?
-Whose truck is this? C'mon.
+What's that, Butkus, huh?Whose truck is this? C'mon.
 
 952
 01:18:32,000 --> 01:18:34,560
@@ -4432,43 +3808,35 @@ One call from me, you're a celebrity.
 
 953
 01:18:36,440 --> 01:18:39,238
-- You need exposure.
-- Don't breathe on me, Paulie.
+- You need exposure.- Don't breathe on me, Paulie.
 
 954
 01:18:39,360 --> 01:18:41,920
-That's the big time...
-I know about these things.
+That's the big time...I know about these things.
 
 955
 01:18:42,040 --> 01:18:45,396
-- What do these guys want from me, huh?
-- To watch you train.
+- What do these guys want from me, huh?- To watch you train.
 
 956
 01:18:45,520 --> 01:18:48,273
-Hey, what is the matter with you?
-This is private.
+Hey, what is the matter with you?This is private.
 
 957
 01:18:48,400 --> 01:18:51,631
-- I'm doin' you a favour.
-- No, you're embarrassin' me...
+- I'm doin' you a favour.- No, you're embarrassin' me...
 
 958
 01:18:51,760 --> 01:18:54,672
-...in front of everybody,
-in front of your sister.
+...in front of everybody,in front of your sister.
 
 959
 01:18:54,800 --> 01:18:58,509
-You see this cigar? Stick it in your ear.
-Don't do these things to me.
+You see this cigar? Stick it in your ear.Don't do these things to me.
 
 960
 01:18:58,640 --> 01:19:02,758
-You shoulda called me up or somethin'.
-Leave a message. Don't do that!
+You shoulda called me up or somethin'.Leave a message. Don't do that!
 
 961
 01:19:02,880 --> 01:19:05,235
@@ -4476,33 +3844,27 @@ My sister really likes you.
 
 962
 01:19:06,040 --> 01:19:09,635
-- I'm gonna kill you one of these days!
-- Come on, come on.
+- I'm gonna kill you one of these days!- Come on, come on.
 
 963
 01:19:09,760 --> 01:19:11,716
-- Pretty...
-- Baby.
+- Pretty...- Baby.
 
 964
 01:19:11,840 --> 01:19:16,152
-Here he is, the next heavyweight
-champion of the world, Rocky Balboa!
+Here he is, the next heavyweightchampion of the world, Rocky Balboa!
 
 965
 01:19:16,280 --> 01:19:19,397
-Rocky Balboa, we wanna get
-a brief interview in with you.
+Rocky Balboa, we wanna geta brief interview in with you.
 
 966
 01:19:19,520 --> 01:19:20,999
-- What about me?
-- What about you?
+- What about me?- What about you?
 
 967
 01:19:21,120 --> 01:19:23,395
-- In charge of the meat.
-- Stand behind it.
+- In charge of the meat.- Stand behind it.
 
 968
 01:19:23,520 --> 01:19:25,670
@@ -4510,8 +3872,7 @@ Listen, just settle down. Just relax.
 
 969
 01:19:25,800 --> 01:19:28,394
-What we're going to do
-is ask you a few questions...
+What we're going to dois ask you a few questions...
 
 970
 01:19:28,520 --> 01:19:30,909
@@ -4519,23 +3880,19 @@ is ask you a few questions...
 
 971
 01:19:31,040 --> 01:19:34,635
-Talk to the folks at home.
-They wanna know how you got into this.
+Talk to the folks at home.They wanna know how you got into this.
 
 972
 01:19:34,760 --> 01:19:39,356
-This isn't an everyday thing. Jimmy,
-you guys ready? Rocky, turn around here.
+This isn't an everyday thing. Jimmy,you guys ready? Rocky, turn around here.
 
 973
 01:19:39,480 --> 01:19:43,439
-- Just don't take no cheap shots.
-- No, I won't do that. Just relax.
+- Just don't take no cheap shots.- No, I won't do that. Just relax.
 
 974
 01:19:43,560 --> 01:19:47,758
-Today we're here with heavyweight
-challenger Rocky Balboa. The reason...
+Today we're here with heavyweightchallenger Rocky Balboa. The reason...
 
 975
 01:19:47,880 --> 01:19:50,952
@@ -4547,66 +3904,55 @@ Let's try it again, Rocky.
 
 977
 01:19:53,640 --> 01:19:56,712
-<i>Today we're with heavyweight</i>
-<i>challenger Rocky Balboa.</i>
+Today we're with heavyweightchallenger Rocky Balboa.
 
 978
 01:19:56,840 --> 01:19:59,149
-<i>The reason we're in this refrigerated box...</i>
+The reason we're in this refrigerated box...
 
 979
 01:19:59,280 --> 01:20:02,192
-<i>... is that Mr Balboa has</i>
-<i>an unusual method of training.</i>
+... is that Mr Balboa hasan unusual method of training.
 
 980
 01:20:02,320 --> 01:20:05,835
-<i>In a moment, he's going to</i>
-<i>demonstrate that for viewers at home.</i>
+In a moment, he's going todemonstrate that for viewers at home.
 
 981
 01:20:05,960 --> 01:20:09,714
-<i>But first, Rocky,</i>
-<i>how did you come to train in an icebox?</i>
+But first, Rocky,how did you come to train in an icebox?
 
 982
 01:20:09,840 --> 01:20:13,116
-<i>Uh, well, my friend,</i>
-<i>the guy over there, he let me in one day.</i>
+Uh, well, my friend,the guy over there, he let me in one day.
 
 983
 01:20:13,240 --> 01:20:15,196
-<i>I hit the beef and I kinda liked it.</i>
+I hit the beef and I kinda liked it.
 
 984
 01:20:15,320 --> 01:20:18,710
-<i>Since I've become a challenger,</i>
-<i>the owner don't mind neither.</i>
+Since I've become a challenger,the owner don't mind neither.
 
 985
 01:20:18,840 --> 01:20:22,753
-<i>Is this a common training method?</i>
-<i>Do other fighters pound raw meat?</i>
+Is this a common training method?Do other fighters pound raw meat?
 
 986
 01:20:22,880 --> 01:20:27,829
-<i>- No, I think I invented it.</i>
-<i>- Would you give us a demonstration?</i>
+- No, I think I invented it.- Would you give us a demonstration?
 
 987
 01:20:27,960 --> 01:20:31,316
-<i>(Apollo)</i> And be sure
-to fly my barber to Philly.
+(Apollo) And be sureto fly my barber to Philly.
 
 988
 01:20:34,120 --> 01:20:36,680
-How much is going to
-West Coast advertising?
+How much is going toWest Coast advertising?
 
 989
 01:20:36,800 --> 01:20:39,030
-- $300,000.
-- Make it 450.
+- $300,000.- Make it 450.
 
 990
 01:20:39,160 --> 01:20:41,196
@@ -4614,23 +3960,19 @@ Send the mayor's wife 200 roses...
 
 991
 01:20:41,320 --> 01:20:44,118
-...and make sure we get
-a picture for the newspapers.
+...and make sure we geta picture for the newspapers.
 
 992
 01:20:44,240 --> 01:20:47,038
-Do you want to run
-15 radio spots in the Midwest?
+Do you want to run15 radio spots in the Midwest?
 
 993
 01:20:47,160 --> 01:20:49,720
-You could spend better
-in Canadian publicity.
+You could spend betterin Canadian publicity.
 
 994
 01:20:49,840 --> 01:20:54,789
-Either way, I've got friends in Toronto
-who could get you good tax breaks.
+Either way, I've got friends in Torontowho could get you good tax breaks.
 
 995
 01:20:54,920 --> 01:20:57,275
@@ -4638,32 +3980,27 @@ George, I like your friends.
 
 996
 01:21:03,880 --> 01:21:08,908
-Hey, champ, you oughta come and look
-at this boy you're gonna fight on TV.
+Hey, champ, you oughta come and lookat this boy you're gonna fight on TV.
 
 997
 01:21:09,040 --> 01:21:12,191
-- Looks like he means business.
-- Yeah, I mean business too.
+- Looks like he means business.- Yeah, I mean business too.
 
 998
 01:21:12,320 --> 01:21:17,474
-- Hey, Shirley, we got any more coffee?
-- Certainly, Mr Creed. I'll get you some.
+- Hey, Shirley, we got any more coffee?- Certainly, Mr Creed. I'll get you some.
 
 999
 01:21:33,800 --> 01:21:38,351
-<i>Diana Lewis, in the meat house,</i>
-<i>with southpaw Rocky Balboa.</i>
+Diana Lewis, in the meat house,with southpaw Rocky Balboa.
 
 1000
 01:21:41,160 --> 01:21:43,720
-<i>(</i># <i>drunkenly hums "The First Noel")</i>
+(# drunkenly hums "The First Noel")
 
 1001
 01:22:23,360 --> 01:22:27,433
-- <i>(Adrian)</i> He called the reporters?
-- <i>(Rocky)</i> It threw my trainin' schedule off.
+- (Adrian) He called the reporters?- (Rocky) It threw my trainin' schedule off.
 
 1002
 01:22:27,560 --> 01:22:29,915
@@ -4671,8 +4008,7 @@ Don't be mad at him. He's tryin' to help.
 
 1003
 01:22:30,040 --> 01:22:34,830
-Adrian, I ain't mad. It's just that when
-reporters are around, I get out of joint.
+Adrian, I ain't mad. It's just that whenreporters are around, I get out of joint.
 
 1004
 01:22:34,960 --> 01:22:37,838
@@ -4680,8 +4016,7 @@ They take cheap shots. Paulie knows that.
 
 1005
 01:22:37,960 --> 01:22:40,997
-Paulie keeps askin' me
-for a job all the time...
+Paulie keeps askin' mefor a job all the time...
 
 1006
 01:22:41,120 --> 01:22:43,839
@@ -4693,8 +4028,7 @@ Are you gonna say anything to him?
 
 1008
 01:22:47,080 --> 01:22:50,834
-What's to say?
-I just don't know what he wants from me.
+What's to say?I just don't know what he wants from me.
 
 1009
 01:22:52,640 --> 01:22:55,154
@@ -4706,22 +4040,19 @@ I don't want nothin' from you.
 
 1011
 01:22:58,400 --> 01:23:02,075
-This ain't no charity case.
-Get outta my house!
+This ain't no charity case.Get outta my house!
 
 1012
 01:23:02,200 --> 01:23:04,794
-It's not just <i>your</i> house.
+It's not just your house.
 
 1013
 01:23:04,920 --> 01:23:08,754
-He's no friend no more.
-Get outta my house, I just said.
+He's no friend no more.Get outta my house, I just said.
 
 1014
 01:23:08,880 --> 01:23:12,873
-- Don't talk to him like that.
-- Both of ya, get outta my house!
+- Don't talk to him like that.- Both of ya, get outta my house!
 
 1015
 01:23:13,000 --> 01:23:16,549
@@ -4737,33 +4068,27 @@ I don't raise ya to go with this scumball!
 
 1018
 01:23:30,640 --> 01:23:32,995
-Yeah?! C'mon!
-You wanna hit on me? C'mon!
+Yeah?! C'mon!You wanna hit on me? C'mon!
 
 1019
 01:23:33,120 --> 01:23:37,238
-I'll break both your arms,
-so they don't work for ya!
+I'll break both your arms,so they don't work for ya!
 
 1020
 01:23:39,040 --> 01:23:42,919
-I'm not good enough to meet with Gazzo?
-That's what I think of Gazzo!
+I'm not good enough to meet with Gazzo?That's what I think of Gazzo!
 
 1021
 01:23:43,040 --> 01:23:47,158
-Now you're a big-shot fighter on your way
-up, you don't even throw me a crumb!
+Now you're a big-shot fighter on your wayup, you don't even throw me a crumb!
 
 1022
 01:23:47,280 --> 01:23:51,751
-When I go and get you meat every
-mornin'! I even give you my sister, too!
+When I go and get you meat everymornin'! I even give you my sister, too!
 
 1023
 01:23:51,880 --> 01:23:55,156
-- Only a pig would say that!
-- I'm a pig?
+- Only a pig would say that!- I'm a pig?
 
 1024
 01:23:55,280 --> 01:23:57,669
@@ -4771,8 +4096,7 @@ A pig gets you the best?
 
 1025
 01:23:57,800 --> 01:24:01,236
-I'm a loser!
-I don't get married because of you!
+I'm a loser!I don't get married because of you!
 
 1026
 01:24:01,560 --> 01:24:03,630
@@ -4780,13 +4104,11 @@ You can't live by yourself!
 
 1027
 01:24:03,760 --> 01:24:08,197
-I put you two together, and you...
-don't you ever forget it! You owe me!
+I put you two together, and you...don't you ever forget it! You owe me!
 
 1028
 01:24:11,080 --> 01:24:13,071
-- You owe me!
-- What do I owe you?
+- You owe me!- What do I owe you?
 
 1029
 01:24:13,200 --> 01:24:15,509
@@ -4794,37 +4116,31 @@ You're supposed to be good to me.
 
 1030
 01:24:15,640 --> 01:24:19,030
-What do I owe you, Paulie?
-What do I owe ya?
+What do I owe you, Paulie?What do I owe ya?
 
 1031
 01:24:19,160 --> 01:24:23,676
-I treat you good. I cook for you, I clean
-for you, I pick up your dirty clothes!
+I treat you good. I cook for you, I cleanfor you, I pick up your dirty clothes!
 
 1032
 01:24:23,800 --> 01:24:27,759
-I take care of you, Paulie!
-I don't owe you nothin'!
+I take care of you, Paulie!I don't owe you nothin'!
 
 1033
 01:24:27,880 --> 01:24:32,829
-And you made me feel like
-a loser! I'm not a loser!
+And you made me feel likea loser! I'm not a loser!
 
 1034
 01:24:32,960 --> 01:24:35,235
-- You're busted!
-- What?!
+- You're busted!- What?!
 
 1035
 01:24:35,360 --> 01:24:39,035
-You're not a virgin!
-You let a man take down your pants!
+You're not a virgin!You let a man take down your pants!
 
 1036
 01:24:39,160 --> 01:24:41,993
-She's busted! <i>(whimpers)</i>
+She's busted! (whimpers)
 
 1037
 01:24:43,760 --> 01:24:46,718
@@ -4840,8 +4156,7 @@ Absolutely.
 
 1040
 01:25:24,360 --> 01:25:29,309
-OK, now when you walk into the ring
-with the No.1 heavyweight of the world...
+OK, now when you walk into the ringwith the No.1 heavyweight of the world...
 
 1041
 01:25:29,440 --> 01:25:31,749
@@ -4849,8 +4164,7 @@ with the No.1 heavyweight of the world...
 
 1042
 01:25:31,880 --> 01:25:35,953
-Because I've waited
-for 50 years to make ya ready.
+Because I've waitedfor 50 years to make ya ready.
 
 1043
 01:25:36,080 --> 01:25:38,514
@@ -4858,63 +4172,51 @@ You'll be able to spit nails, kid.
 
 1044
 01:25:38,640 --> 01:25:42,838
-Like the guy says, you're gonna eat
-lightning and you're gonna crap thunder!
+Like the guy says, you're gonna eatlightning and you're gonna crap thunder!
 
 1045
 01:25:42,960 --> 01:25:45,793
-You're gonna become
-a very dangerous person.
+You're gonna becomea very dangerous person.
 
 1046
 01:25:45,920 --> 01:25:48,832
-- Yo, Mickey!
-- Hey! Oh, Rock.
+- Yo, Mickey!- Hey! Oh, Rock.
 
 1047
 01:25:48,960 --> 01:25:51,952
-I want ya to meet our cut man here,
-Al Salvani.
+I want ya to meet our cut man here,Al Salvani.
 
 1048
 01:25:52,080 --> 01:25:54,833
-- Take a look at his eye, kid.
-- How you doin', Al?
+- Take a look at his eye, kid.- How you doin', Al?
 
 1049
 01:25:54,960 --> 01:25:57,793
-- Not bad. I've seen worse.
-- You ain't so bad yourself.
+- Not bad. I've seen worse.- You ain't so bad yourself.
 
 1050
 01:25:57,920 --> 01:26:00,593
-- Cover up. Things'll be OK.
-- <i>You</i> cover up.
+- Cover up. Things'll be OK.- You cover up.
 
 1051
 01:26:00,720 --> 01:26:05,350
-- Go and take a shower, will ya?
-- OK, Mick. I'll see ya's tomorrow.
+- Go and take a shower, will ya?- OK, Mick. I'll see ya's tomorrow.
 
 1052
 01:26:05,480 --> 01:26:09,234
-- Hey, you covered that Whitmore fight.
-- That's why he won.
+- Hey, you covered that Whitmore fight.- That's why he won.
 
 1053
 01:26:09,360 --> 01:26:12,113
-Listen, we got a winner here.
-We got a chance.
+Listen, we got a winner here.We got a chance.
 
 1054
 01:26:12,240 --> 01:26:15,198
-He goes to the body
-like nobody you've ever seen.
+He goes to the bodylike nobody you've ever seen.
 
 1055
 01:26:15,320 --> 01:26:18,278
-You just stand by for him.
-We're gonna win.
+You just stand by for him.We're gonna win.
 
 1056
 01:26:24,600 --> 01:26:27,160
@@ -4926,8 +4228,7 @@ OK you talk to me? Sure.
 
 1058
 01:26:31,240 --> 01:26:33,708
-I figured an angle
-to make money off your name.
+I figured an angleto make money off your name.
 
 1059
 01:26:33,840 --> 01:26:36,479
@@ -4939,35 +4240,31 @@ Advertising. I know about that stuff.
 
 1061
 01:26:41,000 --> 01:26:43,958
-What do you know about advertising?
-Huh?
+What do you know about advertising?Huh?
 
 1062
 01:26:46,520 --> 01:26:51,275
-Hey, you can make money off my name,
-make it, OK? I'm gonna take a shower.
+Hey, you can make money off my name,make it, OK? I'm gonna take a shower.
 
 1063
 01:26:52,120 --> 01:26:54,509
-- Hey, wanna help me off with these?
-- Sure.
+- Hey, wanna help me off with these?- Sure.
 
 1064
 01:26:54,640 --> 01:26:57,996
-<i>(</i># <i>"Gonna Fly" by De Etta Little</i>
-<i>and Nelson Pigford)</i>
+(# "Gonna Fly" by De Etta Littleand Nelson Pigford)
 
 1065
 01:27:43,480 --> 01:27:48,190
-# <i>Trying hard now</i>
+# Trying hard now
 
 1066
 01:27:48,320 --> 01:27:52,916
-# <i>It's so hard now</i>
+# It's so hard now
 
 1067
 01:27:53,040 --> 01:27:57,830
-# <i>Trying hard now</i>
+# Trying hard now
 
 1068
 01:28:26,400 --> 01:28:28,709
@@ -4975,35 +4272,35 @@ You're gonna kill him!
 
 1069
 01:28:36,360 --> 01:28:40,956
-# <i>Feeling strong now</i>
+# Feeling strong now
 
 1070
 01:28:41,080 --> 01:28:45,835
-# <i>Won't be long now</i>
+# Won't be long now
 
 1071
 01:28:45,960 --> 01:28:50,112
-# <i>Getting strong now</i>
+# Getting strong now
 
 1072
 01:29:08,720 --> 01:29:13,475
-# <i>Gonna fly now</i>
+# Gonna fly now
 
 1073
 01:29:13,600 --> 01:29:18,230
-# <i>Flying high now</i>
+# Flying high now
 
 1074
 01:29:18,360 --> 01:29:23,480
-# <i>Gonna fly</i>
+# Gonna fly
 
 1075
 01:29:23,600 --> 01:29:25,750
-# <i>Fly</i>
+# Fly
 
 1076
 01:29:26,040 --> 01:29:31,068
-# <i>Fly</i>
+# Fly
 
 1077
 01:31:11,760 --> 01:31:15,116
@@ -5015,13 +4312,11 @@ Mr Jergens, the poster's wrong.
 
 1079
 01:31:19,000 --> 01:31:23,755
-- What do you mean?
-- I'm wearin' white pants with a red stripe.
+- What do you mean?- I'm wearin' white pants with a red stripe.
 
 1080
 01:31:27,120 --> 01:31:32,319
-It doesn't really matter, does it? I'm sure
-you're gonna give us a great show.
+It doesn't really matter, does it? I'm sureyou're gonna give us a great show.
 
 1081
 01:31:33,200 --> 01:31:36,476
@@ -5053,8 +4348,7 @@ I been out there, walking around, thinkin'.
 
 1088
 01:33:23,840 --> 01:33:27,799
-I mean, who am I kiddin'?
-I ain't even in the guy's league.
+I mean, who am I kiddin'?I ain't even in the guy's league.
 
 1089
 01:33:32,080 --> 01:33:34,036
@@ -5070,8 +4364,7 @@ You worked so hard.
 
 1092
 01:33:55,880 --> 01:33:59,236
-Yeah, it don't matter,
-cos I was nobody before.
+Yeah, it don't matter,cos I was nobody before.
 
 1093
 01:34:01,240 --> 01:34:03,390
@@ -5095,8 +4388,7 @@ It really don't matter if I lose this fight.
 
 1098
 01:34:20,200 --> 01:34:24,159
-It really don't matter if this guy
-opens my head either.
+It really don't matter if this guyopens my head either.
 
 1099
 01:34:25,200 --> 01:34:28,158
@@ -5104,8 +4396,7 @@ Cos all I wanna do is go the distance.
 
 1100
 01:34:32,280 --> 01:34:35,875
-Nobody's ever
-gone the distance with Creed.
+Nobody's evergone the distance with Creed.
 
 1101
 01:34:36,000 --> 01:34:38,355
@@ -5117,13 +4408,11 @@ And if I can go that distance...
 
 1103
 01:34:47,520 --> 01:34:51,069
-...l'm gonna know for
-the first time in my life, see...
+...l'm gonna know forthe first time in my life, see...
 
 1104
 01:34:52,640 --> 01:34:56,599
-...that I weren't just another
-bum from the neighbourhood.
+...that I weren't just anotherbum from the neighbourhood.
 
 1105
 01:36:00,240 --> 01:36:02,390
@@ -5135,18 +4424,15 @@ I'll wait for you here.
 
 1107
 01:36:09,080 --> 01:36:12,470
-Well, how about I wait here and you fight,
-you know?
+Well, how about I wait here and you fight,you know?
 
 1108
 01:36:12,600 --> 01:36:15,956
-You're lookin' very great today.
-You know that? Mm?
+You're lookin' very great today.You know that? Mm?
 
 1109
 01:36:17,520 --> 01:36:20,478
-I gotta go now,
-but don't you leave town, huh?
+I gotta go now,but don't you leave town, huh?
 
 1110
 01:36:21,800 --> 01:36:24,712
@@ -5158,73 +4444,59 @@ Good luck.
 
 1112
 01:36:26,840 --> 01:36:30,196
-Say, Adrian, you don't think
-this robe is too baggy, you know?
+Say, Adrian, you don't thinkthis robe is too baggy, you know?
 
 1113
 01:36:30,320 --> 01:36:33,232
-- Good luck.
-- Don't leave town.
+- Good luck.- Don't leave town.
 
 1114
 01:36:35,360 --> 01:36:38,830
-I'd like you to meet the man
-working the fight with me, Stu Nahan.
+I'd like you to meet the manworking the fight with me, Stu Nahan.
 
 1115
 01:36:38,960 --> 01:36:42,999
-Thank you, Bill Baldwin. The electricity
-is all over the place tonight...
+Thank you, Bill Baldwin. The electricityis all over the place tonight...
 
 1116
 01:36:44,840 --> 01:36:48,594
-What the hell is that? I trained you
-to be a fighter, not a billboard.
+What the hell is that? I trained youto be a fighter, not a billboard.
 
 1117
 01:36:48,720 --> 01:36:51,473
-- I'm doin' it for a friend.
-- What do you get out of it?
+- I'm doin' it for a friend.- What do you get out of it?
 
 1118
 01:36:51,600 --> 01:36:55,149
-- Paulie gets three grand, I get the robe.
-- Shrewd.
+- Paulie gets three grand, I get the robe.- Shrewd.
 
 1119
 01:36:55,280 --> 01:36:57,999
-On tonight's fight,
-their difference in style...
+On tonight's fight,their difference in style...
 
 1120
 01:36:58,120 --> 01:37:01,874
-...a recent magazine said it could be
-the caveman against the cavalier.
+...a recent magazine said it could bethe caveman against the cavalier.
 
 1121
 01:37:02,000 --> 01:37:06,437
-The buzzing in the background could be
-the challenger getting into the ring.
+The buzzing in the background could bethe challenger getting into the ring.
 
 1122
 01:37:06,560 --> 01:37:12,351
-- Rocky! Look at me! Ya cost me $200.
-- Oh. I gotta go. I gotta work.
+- Rocky! Look at me! Ya cost me $200.- Oh. I gotta go. I gotta work.
 
 1123
 01:37:12,480 --> 01:37:14,675
-- How's the robe?
-- A little baggy.
+- How's the robe?- A little baggy.
 
 1124
 01:37:14,800 --> 01:37:17,678
-<i>(Bill)</i> A 50-1 underdog,
-a Cinderella story...
+(Bill) A 50-1 underdog,a Cinderella story...
 
 1125
 01:37:17,800 --> 01:37:21,679
-...and he's captured people's
-imaginations all over the world.
+...and he's captured people'simaginations all over the world.
 
 1126
 01:37:25,640 --> 01:37:27,835
@@ -5232,23 +4504,19 @@ We love you, Rocky!
 
 1127
 01:37:27,960 --> 01:37:30,554
-- Yo, champ!
-- Hey, thanks for showin' up.
+- Yo, champ!- Hey, thanks for showin' up.
 
 1128
 01:37:30,680 --> 01:37:35,037
-<i>(Stu)</i> His record: 44 victories -
-38 by knockout. And he's lost 20 fights.
+(Stu) His record: 44 victories -38 by knockout. And he's lost 20 fights.
 
 1129
 01:37:35,160 --> 01:37:37,594
-<i>(Bill)</i> Which makes me wonder,
-can he stand it?
+(Bill) Which makes me wonder,can he stand it?
 
 1130
 01:37:37,720 --> 01:37:42,032
-The stamina and the skill to last
-the three rounds? Las Vegas odds say no.
+The stamina and the skill to lastthe three rounds? Las Vegas odds say no.
 
 1131
 01:37:42,160 --> 01:37:45,470
@@ -5256,8 +4524,7 @@ Rocky Balboa climbing into the ring now.
 
 1132
 01:37:45,600 --> 01:37:50,435
-The Italian Stallion. Some meat sign
-on the back of his robe there. See that?
+The Italian Stallion. Some meat signon the back of his robe there. See that?
 
 1133
 01:37:50,560 --> 01:37:52,710
@@ -5265,8 +4532,7 @@ on the back of his robe there. See that?
 
 1134
 01:37:52,840 --> 01:37:56,913
-<i>(Stu)</i> There's a lot of noise.
-You could go deaf with that noise!
+(Stu) There's a lot of noise.You could go deaf with that noise!
 
 1135
 01:37:57,040 --> 01:37:59,235
@@ -5274,28 +4540,23 @@ Am I seeing right back there?
 
 1136
 01:37:59,360 --> 01:38:02,397
-Is that the world heavyweight champion,
-Apollo Creed?
+Is that the world heavyweight champion,Apollo Creed?
 
 1137
 01:38:02,520 --> 01:38:06,479
-<i>(Bill)</i> He's riding in a boat. Is he
-supposed to be George Washington?
+(Bill) He's riding in a boat. Is hesupposed to be George Washington?
 
 1138
 01:38:06,600 --> 01:38:09,239
-Obviously so.
-He's got the hat on. Look at that.
+Obviously so.He's got the hat on. Look at that.
 
 1139
 01:38:09,360 --> 01:38:13,114
-<i>(Stu)</i> Well, it's been confirmed.
-The world champion Apollo Creed...
+(Stu) Well, it's been confirmed.The world champion Apollo Creed...
 
 1140
 01:38:13,240 --> 01:38:16,391
-<i>... is</i> doing an imitation
-of George Washington.
+... is doing an imitationof George Washington.
 
 1141
 01:38:17,480 --> 01:38:19,152
@@ -5303,18 +4564,15 @@ He's throwing money.
 
 1142
 01:38:19,280 --> 01:38:23,319
-Remember when we talked about
-George Washington throwing a dollar?
+Remember when we talked aboutGeorge Washington throwing a dollar?
 
 1143
 01:38:23,440 --> 01:38:28,036
-Of course, throwing a dollar
-in those days went a lot farther.
+Of course, throwing a dollarin those days went a lot farther.
 
 1144
 01:38:28,160 --> 01:38:31,118
-The white wig came off,
-the hat came off...
+The white wig came off,the hat came off...
 
 1145
 01:38:32,040 --> 01:38:34,508
@@ -5322,13 +4580,11 @@ I want all of you!
 
 1146
 01:38:34,640 --> 01:38:39,760
-And the crowd is loving every minute of it.
-Here is the world heavyweight champion.
+And the crowd is loving every minute of it.Here is the world heavyweight champion.
 
 1147
 01:38:39,880 --> 01:38:44,192
-<i>(Bill)</i> For you around the world,
-he was dressed as George Washington.
+(Bill) For you around the world,he was dressed as George Washington.
 
 1148
 01:38:44,320 --> 01:38:47,278
@@ -5336,13 +4592,11 @@ I want all of you! Come on, Stallion!
 
 1149
 01:38:50,560 --> 01:38:53,279
-- <i>(Stu)</i> Uncle Sam himself...
-- I want all of you!
+- (Stu) Uncle Sam himself...- I want all of you!
 
 1150
 01:38:53,400 --> 01:38:58,315
-- All of you! I want all of you!
-- He looks like a big flag.
+- All of you! I want all of you!- He looks like a big flag.
 
 1151
 01:38:58,440 --> 01:39:00,829
@@ -5350,13 +4604,11 @@ I want you! You!
 
 1152
 01:39:01,600 --> 01:39:03,511
-- Is he talkin' to me?
-- He is.
+- Is he talkin' to me?- He is.
 
 1153
 01:39:03,640 --> 01:39:05,756
-- Is he talkin' to me?
-- Let him talk.
+- Is he talkin' to me?- Let him talk.
 
 1154
 01:39:05,880 --> 01:39:08,269
@@ -5364,12 +4616,11 @@ I want the Stallion! Come on!
 
 1155
 01:39:08,400 --> 01:39:11,153
-<i>(Bill)</i> He says "I want the Stallion!"
+(Bill) He says "I want the Stallion!"
 
 1156
 01:39:12,000 --> 01:39:15,993
-In foreign countries during World War I
-there was a picture of Uncle Sam...
+In foreign countries during World War Ithere was a picture of Uncle Sam...
 
 1157
 01:39:16,120 --> 01:39:17,951
@@ -5377,17 +4628,15 @@ there was a picture of Uncle Sam...
 
 1158
 01:39:18,080 --> 01:39:22,358
-...a recruiting poster for our fellows
-in the army and the navy. "I want you!"
+...a recruiting poster for our fellowsin the army and the navy. "I want you!"
 
 1159
 01:39:22,480 --> 01:39:24,436
-<i>(Stu)</i> That's what he's doing a take on.
+(Stu) That's what he's doing a take on.
 
 1160
 01:39:24,560 --> 01:39:27,358
-- That's it. "Creed" he's yelling.
-- "Creed in three."
+- That's it. "Creed" he's yelling.- "Creed in three."
 
 1161
 01:39:27,480 --> 01:39:29,755
@@ -5395,11 +4644,11 @@ What do you think that outfit cost?
 
 1162
 01:39:29,880 --> 01:39:32,030
-<i>(fanfare)</i>
+(fanfare)
 
 1163
 01:39:35,000 --> 01:39:37,150
-<i>(bell)</i>
+(bell)
 
 1164
 01:39:39,640 --> 01:39:42,473
@@ -5415,23 +4664,19 @@ Welcome to Philadelphia.
 
 1167
 01:39:48,440 --> 01:39:51,398
-<i>(Stu)</i> Everybody who's anybody
-is here tonight.
+(Stu) Everybody who's anybodyis here tonight.
 
 1168
 01:39:53,040 --> 01:39:59,513
-Time does not permit me to introduce
-the many luminaries of politics...
+Time does not permit me to introducethe many luminaries of politics...
 
 1169
 01:39:59,640 --> 01:40:03,792
-...show business and the sporting world
-who are with us tonight.
+...show business and the sporting worldwho are with us tonight.
 
 1170
 01:40:04,400 --> 01:40:09,269
-But I would like to present
-one of the immortals of pugilism...
+But I would like to presentone of the immortals of pugilism...
 
 1171
 01:40:09,400 --> 01:40:12,790
@@ -5447,17 +4692,15 @@ Philadelphia's own Smokin' Joe...
 
 1174
 01:40:18,720 --> 01:40:21,280
-<i>(cheering, whistling and applause)</i>
+(cheering, whistling and applause)
 
 1175
 01:40:28,400 --> 01:40:31,949
-Hi, how are you doing?
-Don't hurt him, OK?
+Hi, how are you doing?Don't hurt him, OK?
 
 1176
 01:40:32,080 --> 01:40:35,197
-<i>(Stu)</i> What a credit he's been
-in his career as a fighter.
+(Stu) What a credit he's beenin his career as a fighter.
 
 1177
 01:40:35,320 --> 01:40:37,436
@@ -5465,8 +4708,7 @@ He's coming over to talk with the champ.
 
 1178
 01:40:37,560 --> 01:40:40,472
-- Hey, Joe!
-- You been dumpin' me long time.
+- Hey, Joe!- You been dumpin' me long time.
 
 1179
 01:40:40,600 --> 01:40:43,353
@@ -5482,12 +4724,11 @@ Joe Frazier!
 
 1182
 01:40:55,960 --> 01:41:00,431
-Fight fans around the world, get settled
-down, because it won't be long now.
+Fight fans around the world, get settleddown, because it won't be long now.
 
 1183
 01:41:00,560 --> 01:41:01,879
-<i>(bell)</i>
+(bell)
 
 1184
 01:41:02,000 --> 01:41:05,709
@@ -5511,12 +4752,11 @@ In white trunks, weighing 190lb...
 
 1189
 01:41:24,600 --> 01:41:27,160
-<i>(cheering and some booing)</i>
+(cheering and some booing)
 
 1190
 01:41:30,960 --> 01:41:35,476
-And on my right,
-wearing red, white and blue...
+And on my right,wearing red, white and blue...
 
 1191
 01:41:35,600 --> 01:41:38,637
@@ -5532,13 +4772,11 @@ wearing red, white and blue...
 
 1194
 01:41:45,080 --> 01:41:48,516
-...the undisputed
-heavyweight champion of the world...
+...the undisputedheavyweight champion of the world...
 
 1195
 01:41:48,800 --> 01:41:52,509
-...Apollo Creed!
-<i>- (cheering)</i>
+...Apollo Creed!- (cheering)
 
 1196
 01:41:52,640 --> 01:41:55,029
@@ -5554,23 +4792,19 @@ You've both fought in Philadelphia before.
 
 1199
 01:42:02,360 --> 01:42:06,114
-You know the rules. No low blows.
-Watch your heads. No buttin'.
+You know the rules. No low blows.Watch your heads. No buttin'.
 
 1200
 01:42:06,240 --> 01:42:11,189
-- Shake hands now and come out fightin'.
-- Put your hands up, chump. Come on!
+- Shake hands now and come out fightin'.- Put your hands up, chump. Come on!
 
 1201
 01:42:11,320 --> 01:42:15,598
-<i>(Bill)</i> A little body play goin' on there.
-Rocky taking it carefully, though.
+(Bill) A little body play goin' on there.Rocky taking it carefully, though.
 
 1202
 01:42:15,720 --> 01:42:19,349
-He's just going over and being calm,
-it looks like from here.
+He's just going over and being calm,it looks like from here.
 
 1203
 01:42:19,480 --> 01:42:21,914
@@ -5578,8 +4812,7 @@ There goes the big hat.
 
 1204
 01:42:24,240 --> 01:42:28,313
-<i>(Stu)</i> I've never seen a fighter
-that concerned about his hair!
+(Stu) I've never seen a fighterthat concerned about his hair!
 
 1205
 01:42:36,000 --> 01:42:39,037
@@ -5587,48 +4820,39 @@ And there's the bell for round one.
 
 1206
 01:42:39,160 --> 01:42:43,358
-The fighters come out into the centre
-of the ring, looking at each other.
+The fighters come out into the centreof the ring, looking at each other.
 
 1207
 01:42:43,480 --> 01:42:48,235
-Creed the champion zipping those
-left-handed jabs, right in the head.
+Creed the champion zipping thoseleft-handed jabs, right in the head.
 
 1208
 01:42:50,360 --> 01:42:53,511
-The champ stinging
-the slower challenger jabs at will.
+The champ stingingthe slower challenger jabs at will.
 
 1209
 01:42:53,640 --> 01:42:57,474
-In fact, it looks like Rocky is
-blocking the blows with his face.
+In fact, it looks like Rocky isblocking the blows with his face.
 
 1210
 01:42:57,600 --> 01:43:01,832
-The champion doesn't look the best
-he's ever been, but he's moving smoothly.
+The champion doesn't look the besthe's ever been, but he's moving smoothly.
 
 1211
 01:43:01,960 --> 01:43:05,748
-Well, the champion is smiling now.
-He's toying with his man.
+Well, the champion is smiling now.He's toying with his man.
 
 1212
 01:43:05,880 --> 01:43:10,396
-Tryin' to give the fans their money's
-worth. He's makin' a show of it.
+Tryin' to give the fans their money'sworth. He's makin' a show of it.
 
 1213
 01:43:10,520 --> 01:43:13,876
-And a very badly outclassed
-challenger right now.
+And a very badly outclassedchallenger right now.
 
 1214
 01:43:16,040 --> 01:43:18,110
-<i>(Bill)</i> Creed trying to
-make this man make...
+(Bill) Creed trying tomake this man make...
 
 1215
 01:43:18,240 --> 01:43:21,038
@@ -5636,8 +4860,7 @@ See? Make him miss like that.
 
 1216
 01:43:21,160 --> 01:43:23,799
-<i>(Stu)</i> Oh, the champ
-is just taunting him now.
+(Stu) Oh, the champis just taunting him now.
 
 1217
 01:43:26,720 --> 01:43:29,075
@@ -5649,7 +4872,7 @@ I don't believe it! The champ is down!
 
 1219
 01:43:32,520 --> 01:43:34,476
-<i>(Bill)</i> Yes, he is!
+(Bill) Yes, he is!
 
 1220
 01:43:39,560 --> 01:43:42,597
@@ -5657,8 +4880,7 @@ Creed is down! What a surprise this is!
 
 1221
 01:43:43,880 --> 01:43:47,998
-<i>(Stu)</i> This is the first time the champion
-has ever been knocked down.
+(Stu) This is the first time the championhas ever been knocked down.
 
 1222
 01:43:49,320 --> 01:43:51,709
@@ -5666,18 +4888,15 @@ Six! Seven! Eight!
 
 1223
 01:43:51,840 --> 01:43:54,877
-He appears to be all right.
-Glancin' around...
+He appears to be all right.Glancin' around...
 
 1224
 01:43:55,240 --> 01:43:59,472
-<i>(Mickey)</i> Come on, Rock! Go to the ribs!
-Let's go to work right now, Rock!
+(Mickey) Come on, Rock! Go to the ribs!Let's go to work right now, Rock!
 
 1225
 01:44:00,960 --> 01:44:05,112
-<i>(Bill)</i> Rocky comes back out. He's like
-a bull in a china closet. He really wants it.
+(Bill) Rocky comes back out. He's likea bull in a china closet. He really wants it.
 
 1226
 01:44:05,240 --> 01:44:07,754
@@ -5685,18 +4904,15 @@ Apollo, left to the head.
 
 1227
 01:44:07,880 --> 01:44:12,158
-<i>(Stu)</i> Now the champion's comin' back.
-He's comin' off the floor now.
+(Stu) Now the champion's comin' back.He's comin' off the floor now.
 
 1228
 01:44:13,000 --> 01:44:18,518
-<i>(Bill)</i> Another left, another right.
-Combinations into the face. That's Apollo!
+(Bill) Another left, another right.Combinations into the face. That's Apollo!
 
 1229
 01:44:21,480 --> 01:44:24,756
-Now the champ is taunting Rocky
-to come and get some more.
+Now the champ is taunting Rockyto come and get some more.
 
 1230
 01:44:24,880 --> 01:44:26,791
@@ -5720,42 +4936,35 @@ OK, let's break it.
 
 1235
 01:44:43,000 --> 01:44:46,549
-There's no way they expected
-this kind of hitting power.
+There's no way they expectedthis kind of hitting power.
 
 1236
 01:44:46,680 --> 01:44:50,878
-But the ability of the champion,
-Apollo, is apparent.
+But the ability of the champion,Apollo, is apparent.
 
 1237
 01:44:52,920 --> 01:44:57,232
-<i>(Stu)</i> Apollo unloading,
-Rocky really tight against the ropes.
+(Stu) Apollo unloading,Rocky really tight against the ropes.
 
 1238
 01:44:57,360 --> 01:44:59,316
-<i>(bell)</i>
+(bell)
 
 1239
 01:45:03,880 --> 01:45:08,317
-They're leading him back over to his
-corner. Rocky can hardly find his way.
+They're leading him back over to hiscorner. Rocky can hardly find his way.
 
 1240
 01:45:08,440 --> 01:45:11,398
-- I told ya! I told ya!
-- Your nose is broke.
+- I told ya! I told ya!- Your nose is broke.
 
 1241
 01:45:11,520 --> 01:45:13,715
-- How does it look?
-- It's an improvement.
+- How does it look?- It's an improvement.
 
 1242
 01:45:13,840 --> 01:45:16,991
-I want you to quit chuckin' and jivin'.
-Stick and move.
+I want you to quit chuckin' and jivin'.Stick and move.
 
 1243
 01:45:17,120 --> 01:45:18,633
@@ -5763,18 +4972,15 @@ Go for the ribs.
 
 1244
 01:45:18,760 --> 01:45:22,275
-- Don't let that bastard breathe.
-- The guy's great.
+- Don't let that bastard breathe.- The guy's great.
 
 1245
 01:45:22,400 --> 01:45:25,870
-He doesn't know it's a damn show.
-He thinks it's a damn fight.
+He doesn't know it's a damn show.He thinks it's a damn fight.
 
 1246
 01:45:26,000 --> 01:45:28,753
-- Finish this bum and let's go home.
-- Right.
+- Finish this bum and let's go home.- Right.
 
 1247
 01:45:29,320 --> 01:45:31,470
@@ -5782,17 +4988,15 @@ Stay to the body! To his right!
 
 1248
 01:45:31,600 --> 01:45:34,956
-<i>(Stu)</i> Here we go. Round two.
-Creed predicted he would win in three.
+(Stu) Here we go. Round two.Creed predicted he would win in three.
 
 1249
 01:45:35,080 --> 01:45:38,550
-Creed got knocked down in the first.
-He came back at the end.
+Creed got knocked down in the first.He came back at the end.
 
 1250
 01:45:38,680 --> 01:45:40,671
-<i>(Bill)</i> Oh, he's working now.
+(Bill) Oh, he's working now.
 
 1251
 01:45:40,800 --> 01:45:43,189
@@ -5808,53 +5012,43 @@ He's got Rocky back in the corner.
 
 1254
 01:45:47,960 --> 01:45:52,317
-Pelting him left and right.
-He's bouncing up against the ring.
+Pelting him left and right.He's bouncing up against the ring.
 
 1255
 01:45:52,880 --> 01:45:55,713
-<i>(Stu)</i> Oh, Balboa's taking
-a tremendous beating here.
+(Stu) Oh, Balboa's takinga tremendous beating here.
 
 1256
 01:45:55,840 --> 01:46:00,356
-- <i>(Bill)</i> Battering him like a punching bag.
-- <i>(Stu)</i> What's keeping him up?
+- (Bill) Battering him like a punching bag.- (Stu) What's keeping him up?
 
 1257
 01:46:07,240 --> 01:46:09,674
-- He says he wants more!
-- <i>(Bill)</i> He wants more!
+- He says he wants more!- (Bill) He wants more!
 
 1258
 01:46:09,800 --> 01:46:14,157
-You folks in front of your television
-are watching a battle, I tell you that!
+You folks in front of your televisionare watching a battle, I tell you that!
 
 1259
 01:46:17,840 --> 01:46:21,515
-<i>(Stu)</i> Balboa trying to fight back...
-Ooh, a tremendous hook!
+(Stu) Balboa trying to fight back...Ooh, a tremendous hook!
 
 1260
 01:46:21,640 --> 01:46:24,916
-<i>(Bill)</i> The champion is trying
-to get himself out, but he can't.
+(Bill) The champion is tryingto get himself out, but he can't.
 
 1261
 01:46:25,040 --> 01:46:28,396
-He is being barraged
-with lefts and rights to his body!
+He is being barragedwith lefts and rights to his body!
 
 1262
 01:46:28,520 --> 01:46:31,990
-<i>(Stu)</i> Balboa is smacking the champion
-right on the kisser!
+(Stu) Balboa is smacking the championright on the kisser!
 
 1263
 01:46:32,120 --> 01:46:34,350
-<i>- (bell)</i>
-- The referee's stepped in.
+- (bell)- The referee's stepped in.
 
 1264
 01:46:34,480 --> 01:46:36,710
@@ -5870,21 +5064,19 @@ Come on, Creed!
 
 1267
 01:46:41,720 --> 01:46:43,790
-<i>(Stu)</i> This is gonna be a tough one.
+(Stu) This is gonna be a tough one.
 
 1268
 01:47:47,680 --> 01:47:49,636
-<i>(Bill)</i> Hard left and right combination!
+(Bill) Hard left and right combination!
 
 1269
 01:47:49,760 --> 01:47:52,718
-<i>(Stu)</i> What is keeping him up, Bill?
-I don't know!
+(Stu) What is keeping him up, Bill?I don't know!
 
 1270
 01:47:54,920 --> 01:47:58,276
-He can't even get his gloves up
-to protect himself!
+He can't even get his gloves upto protect himself!
 
 1271
 01:48:04,680 --> 01:48:06,716
@@ -5892,8 +5084,7 @@ Down! Down! Stay down!
 
 1272
 01:48:06,840 --> 01:48:09,991
-<i>(Bill)</i> Apollo dancing around
-with his arms in the air!
+(Bill) Apollo dancing aroundwith his arms in the air!
 
 1273
 01:48:19,520 --> 01:48:21,715
@@ -5913,36 +5104,31 @@ OK, OK. Come on!
 
 1277
 01:48:36,400 --> 01:48:38,994
-<i>(Bill)</i> Apollo can't believe it!
+(Bill) Apollo can't believe it!
 
 1278
 01:48:51,320 --> 01:48:53,276
-<i>(bell)</i>
+(bell)
 
 1279
 01:48:53,960 --> 01:48:57,748
-<i>(Stu)</i> The champion got a left to the ribs,
-his right ribs.
+(Stu) The champion got a left to the ribs,his right ribs.
 
 1280
 01:49:05,440 --> 01:49:08,193
-- You OK, champ?
-- Yeah, I'm OK, I'm OK.
+- You OK, champ?- Yeah, I'm OK, I'm OK.
 
 1281
 01:49:10,520 --> 01:49:13,796
-I can't see nothin'.
-I gotta open my eye. Cut me, Mick.
+I can't see nothin'.I gotta open my eye. Cut me, Mick.
 
 1282
 01:49:13,920 --> 01:49:17,276
-- You don't wanna do it.
-- Go on, cut me. Cut me.
+- You don't wanna do it.- Go on, cut me. Cut me.
 
 1283
 01:49:24,400 --> 01:49:30,032
-- You're bleeding inside. I'm gonna stop it.
-- You ain't stoppin' nothin', man.
+- You're bleeding inside. I'm gonna stop it.- You ain't stoppin' nothin', man.
 
 1284
 01:49:30,480 --> 01:49:32,835
@@ -5950,38 +5136,35 @@ You stop this fight, I'll kill ya.
 
 1285
 01:49:39,000 --> 01:49:40,956
-<i>(crowd chants)</i> Rocky!
+(crowd chants) Rocky!
 
 1286
 01:49:46,760 --> 01:49:48,352
-<i>(Bill) The 15th and final round.</i>
+(Bill) The 15th and final round.
 
 1287
 01:49:49,520 --> 01:49:53,798
-<i>(crowd chants)</i> Rocky! Rocky! Rocky!
+(crowd chants) Rocky! Rocky! Rocky!
 
 1288
 01:49:57,040 --> 01:49:59,998
-<i>(Stu)</i> They look like they've
-been in a war, these two.
+(Stu) They look like they'vebeen in a war, these two.
 
 1289
 01:50:08,160 --> 01:50:10,435
-<i>(Bill)</i> The champion really tightening!
+(Bill) The champion really tightening!
 
 1290
 01:50:10,560 --> 01:50:14,314
-And Apollo clearly protecting
-his right side, his ribs.
+And Apollo clearly protectinghis right side, his ribs.
 
 1291
 01:50:19,240 --> 01:50:22,152
-<i>(Stu)</i> Hard left and right!
-Look at the blood coming out!
+(Stu) Hard left and right!Look at the blood coming out!
 
 1292
 01:50:22,280 --> 01:50:25,511
-<i>(Bill)</i> Oh, he's spitting out blood now.
+(Bill) Oh, he's spitting out blood now.
 
 1293
 01:50:27,560 --> 01:50:30,233
@@ -5993,25 +5176,23 @@ Go for it, Rock!
 
 1295
 01:50:32,280 --> 01:50:35,033
-- <i>(Bill)</i> Listen to this crowd!
-- <i>(Stu)</i> Left to the ribs.
+- (Bill) Listen to this crowd!- (Stu) Left to the ribs.
 
 1296
 01:50:37,360 --> 01:50:41,035
-Right to the chin!
-He's got him up against the rope!
+Right to the chin!He's got him up against the rope!
 
 1297
 01:50:41,760 --> 01:50:43,159
-<i>(bell)</i>
+(bell)
 
 1298
 01:50:45,440 --> 01:50:48,637
-<i>(Apollo)</i> There ain't gonna be no rematch!
+(Apollo) There ain't gonna be no rematch!
 
 1299
 01:50:48,760 --> 01:50:50,239
-<i>(Rocky)</i> Don't want one.
+(Rocky) Don't want one.
 
 1300
 01:51:00,080 --> 01:51:02,469
@@ -6019,33 +5200,27 @@ Rocky, you went the distance, 15 rounds.
 
 1301
 01:51:02,600 --> 01:51:05,637
-- How do you feel?
-- All right. It's all right.
+- How do you feel?- All right. It's all right.
 
 1302
 01:51:05,760 --> 01:51:09,594
-- Adrian! Adrian!
-- What did you think in the 15th round...
+- Adrian! Adrian!- What did you think in the 15th round...
 
 1303
 01:51:09,720 --> 01:51:13,395
-- Rocky! Rocky!
-- <i>(MC)</i> Ladies and gentlemen...
+- Rocky! Rocky!- (MC) Ladies and gentlemen...
 
 1304
 01:51:13,520 --> 01:51:16,592
-...your attention, please!
-- Rocky! Rocky!
+...your attention, please!- Rocky! Rocky!
 
 1305
 01:51:16,720 --> 01:51:21,191
-Tonight we have had
-the privilege of witnessing...
+Tonight we have hadthe privilege of witnessing...
 
 1306
 01:51:21,320 --> 01:51:26,872
-...the greatest exhibition of guts
-and stamina in the history of the ring!
+...the greatest exhibition of gutsand stamina in the history of the ring!
 
 1307
 01:51:27,000 --> 01:51:29,355
@@ -6057,18 +5232,15 @@ Rocky!
 
 1309
 01:51:31,600 --> 01:51:35,752
-Ladies and gentlemen,
-we have a split decision!
+Ladies and gentlemen,we have a split decision!
 
 1310
 01:51:37,320 --> 01:51:40,596
-- The judges voted...
-- Adrian!
+- The judges voted...- Adrian!
 
 1311
 01:51:40,720 --> 01:51:43,154
-- Rocky!
-...8- 7 for Creed!
+- Rocky!...8- 7 for Creed!
 
 1312
 01:51:46,080 --> 01:51:47,798
@@ -6076,42 +5248,35 @@ Your fans want a rematch.
 
 1313
 01:51:47,920 --> 01:51:49,876
-- There ain't gonna be one!
-- Why not?
+- There ain't gonna be one!- Why not?
 
 1314
 01:51:50,000 --> 01:51:53,913
-- Come on! I had enough. Adrian!
-- You heard him.
+- Come on! I had enough. Adrian!- You heard him.
 
 1315
 01:51:54,040 --> 01:51:57,396
-- Let go! That's my friend. Rocco!
-- He's everybody's friend.
+- Let go! That's my friend. Rocco!- He's everybody's friend.
 
 1316
 01:51:57,520 --> 01:51:59,829
-- You're breakin' my jacket!
-- Let's go.
+- You're breakin' my jacket!- Let's go.
 
 1317
 01:51:59,960 --> 01:52:03,032
-- Paulie!
-- Adrian! Adrian!
+- Paulie!- Adrian! Adrian!
 
 1318
 01:52:03,160 --> 01:52:04,513
-- Rocky!
-- Adrian!
+- Rocky!- Adrian!
 
 1319
 01:52:04,640 --> 01:52:07,279
-- Hey, where's your hat?
-- I love you!
+- Hey, where's your hat?- I love you!
 
 1320
 01:52:07,880 --> 01:52:10,110
-I love <i>you.</i>
+I love you.
 
 1321
 01:52:10,240 --> 01:52:13,437

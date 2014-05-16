@@ -13,6 +13,7 @@ using Microsoft.AspNet.Identity;
 using System.IO;
 using System.Diagnostics;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace CrowdSubMain.Controllers
 {
@@ -76,7 +77,10 @@ namespace CrowdSubMain.Controllers
                 srt_string = stream_reader.ReadToEnd();
             }
 
-            
+            /* strip html formatting from srt files
+             * downloads will still include them.
+             */
+            srt_string = Regex.Replace(srt_string, @"<[^>]*>", String.Empty);
             var model = new subtitle_profile_model { subtitle = subtitle, srt_string = srt_string, subtitle_comments = subtitle_comments };
             return View(model);
         }
