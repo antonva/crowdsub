@@ -1,9 +1,19 @@
 ﻿@model System.Web.Mvc.HandleErrorInfo
 
+<!Doctype html>
+
 @{
-    ViewBag.Title = "Error";
+    ViewBag.Title = "Ooops! The page wasn't found. Please come again";
 }
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+<html>
+    <head>
+        <title>Error Page</title>
+    </head>
 
+
+    <body>
+            <div class="alert alert-danger">@Html.ActionLink("Go back to homepage", "Index", "Home")</div>
+    </body>
+
+</html>
