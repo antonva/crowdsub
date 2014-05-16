@@ -112,14 +112,16 @@ namespace CrowdSubMain.Controllers
                     var language_checker = (from lc in subtitle_enum
                                             select lc.subtitle_language);
                     List<string> languages = language_checker.ToList();
-                
 
-                    search_pairs.Add(new search_pair
-                    {
-                        video_pair = video,
-                        subtitle_pair = subtitles,
-                        language_keeper = languages
-                    });
+					if (subtitles.Count() > 0)
+					{
+						search_pairs.Add(new search_pair
+						{
+							video_pair = video,
+							subtitle_pair = subtitles,
+							language_keeper = languages
+						});
+					}
                 }
                 
             }
