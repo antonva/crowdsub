@@ -101,10 +101,8 @@ function draw_dialog(srt_id) {
 
     render_dialog_form(srt_id);
 
-    $('#dialog_form').modal({
-        show : false
-    });
-    $('#dialog_form').modal('show');
+    $('#dialog_form').dialog(dialog_options);
+    $('#dialog_form').dialog('open');
 };
 
 function render_dialog_form(srt_id) {
@@ -126,30 +124,26 @@ function render_dialog_form(srt_id) {
         var c = parseInt(t) + 1;
         text_str += '<div class="input-group">'
         text_str += '<span class="input-group-addon">' + c + '</span>'
-        text_str += '<input id="text_' + t + '" name="text_' + t + '" type="text" value="' + text_arr[t] + '" class="form-control"/>'
+        text_str += '<input id="text_' + t + '" name="text_' + t + '" type="text" value="' + text_arr[t] + '"/>'
         text_str += '</div>'
     }
 
     /* Create div for our dialog popup */
-    $('#dialog').append(
-        +'<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">'
-        +'  <div class="modal-dialog modal-sm">'
-        +'      <div class="modal-content">'
-        +'          <form role="form" id="dialog_form">'
-        +'              <div class="form-group">'
-        +'                  <label for="name">Name</label>'
-        +'                  <input type="text" class="form-control" id="name" placeholder="Enter Name">'
-        +'              </div>'
-        +'              <div class="form-group">'
-        +'                  <label for="inputfile">File input</label>'
-        +'                  <input type="file" id="inputfile">'
-        +'                  <p class="help-block">Example block-level help text here.</p>'
-        +'              </div>'
-        +'              <button type="submit" class="btn btn-default">Submit</button>'
-        +'          </form>'
-        +'      </div>'
-        +'  </div>'
-        +'</div>'
+    $('body').append(
+        '<div id="dialog_form" title"Edit line">'
+        + '<form class="navbar-form navbar-left">'
+        + '<div class="input-group">'
+        + '<span class="input-group-addon">Start</span>'
+        + '<input type="text" name="time_start" id="time_start" value="' + time_start + '"/>'
+        + '</div>'
+        + '<div class="input-group">'
+        + '<span class="input-group-addon">End</span>'
+        + '<input type="text" name="time_end" id="time_end" value="' + time_end + '"/>'
+        + '</div>'
+        + text_str 
+        
+        + '</form>'
+        + '</div>'
     );
 };
 
