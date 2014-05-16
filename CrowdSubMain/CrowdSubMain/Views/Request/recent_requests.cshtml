@@ -1,0 +1,40 @@
+﻿@model IEnumerable<CrowdSubMain.Models.request>
+
+@{
+    ViewBag.Title = "recent_requests";
+}
+
+<h2>recent_requests</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-hover">
+    <tr>
+        <th>Title</th>
+        <th>Language</th>
+        <th>Date created</th>
+        <th>Date updated</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_video_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_language)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_date_created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.request_date_updated)
+        </td>
+        <td>
+            @Html.ActionLink("Go to video", "Profile", "Video", new { id = item.request_video_id }) 
+        </td>
+    </tr>
+}
+
+</table>

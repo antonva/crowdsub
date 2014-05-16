@@ -139,15 +139,13 @@ namespace CrowdSubMain.Controllers
             return RedirectToAction("Index");
         }
 
-        /*
-        protected override void Dispose(bool disposing)
+        public ActionResult recent_requests() 
         {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
+            var model = (from r in request_repo.get_requests()
+                        orderby r.request_date_created
+                        select r).ToList().Take(10);
+
+            return View(model);
         }
-        */ 
     }
 }
