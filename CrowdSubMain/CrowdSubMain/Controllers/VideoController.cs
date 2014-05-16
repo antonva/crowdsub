@@ -44,7 +44,7 @@ namespace CrowdSubMain.Controllers
 			var _video = (from v in video_repo.get_videos()
 						 where v.id == id
 						 select v).FirstOrDefault();
-            if (video == null)
+            if (_video == null)
             {
                 return View("~/Error");
             }
