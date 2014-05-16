@@ -44,10 +44,14 @@ $(document).ready(function () {
 
     /* Save changes and update SRT file on site.*/
     $('#srt-save').click(function (event, ui) {
-
+        
         var payload = new Object();
-        payload["string"] = obj_to_srt();
-        $.post("../save_subtitle", payload, function (data) { });
+        var sub_string = obj_to_srt();
+        payload["sub_string"] = sub_string;
+        payload["id"] = $('#subtitle_id').text();
+        $.post("../update_subtitle", payload, function (data) {
+            console.log('hit');
+        });
     });
 });
 

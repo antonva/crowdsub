@@ -20,3 +20,7 @@ div {
     height : 400px;
     overflow-y : scroll;
 }
+
+#subtitle_id {
+    visibility : hidden;
+}
