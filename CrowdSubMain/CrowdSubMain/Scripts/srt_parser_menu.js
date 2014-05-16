@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('#srt').each(function() {
         parse_srt(this);
         srt_to_html();
-        $('#srt-select').html(srt_menu);
+        $('#srt-select').append(srt_menu);
     })
 
 
@@ -170,11 +170,6 @@ function srt_to_html() {
         srt_menu +='  </a>'
     } 
     srt_menu += '</div>'
-    srt_menu += '<div class="btn-group">'
-    srt_menu += '<button type="button" class="btn btn-default" id="srt-save">Update SRT</button>'
-    srt_menu += '<button type="button" class="btn btn-default" id="srt-download">Download</button>'
-    srt_menu += '</div>'
-
 };
 
 
