@@ -43,11 +43,9 @@
                                 </p>\
                                 <p>\
                                     <span class="text-muted">' + date + ' </span>\
-                                    <a id="like-button" class="like-comment" href="#">Like <span class="glyphicon glyphicon-thumbs-up"></span></a>\
                                 </p>\
                             </li>'
                             );
-                            $("#like-button").click(likeFunction);
                         }
                     }
                 });     
