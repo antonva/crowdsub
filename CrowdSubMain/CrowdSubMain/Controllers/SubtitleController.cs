@@ -82,8 +82,12 @@ namespace CrowdSubMain.Controllers
         }
 
 		/* Edit function that overwrites srt file with new content. */
-		public void update_subtitle(string new_srt, int subtitle_id)
+		[HttpPost]
+        public void update_subtitle(subtitle_update_payload payload)
 		{
+            
+            int subtitle_id = int.Parse(payload.id);
+            string new_srt = payload.sub_string;
 			var file_name = (from s in subtitle_repo.get_subtitles()
 							 where s.id == subtitle_id
 							 select s).First().subtitle_file_name;
@@ -173,6 +177,7 @@ namespace CrowdSubMain.Controllers
                            where v.sc_sub_id == subtitle_id
                            select v;
 
+            Debug.WriteLine(comments.Count());
             return comments.Count();
         }
 
@@ -199,12 +204,18 @@ namespace CrowdSubMain.Controllers
                 sc_date_created = DateTime.Now
             };
 
-            subtitle_comment_repo.add(c);
-            var repo = subtitle_comment_repo.get_subtitle_comments();
+            var model = new { 
+                subtitle_comment = c.sc_comment, 
+                user_name = User.Identity.GetUserName(),
+                date_created = c.sc_date_created
+            };
 
-            return Json(repo, JsonRequestBehavior.AllowGet);
+            subtitle_comment_repo.add(c);
+
+            return Json(model, JsonRequestBehavior.AllowGet);
         }
 
+        /*
         [HttpPost]
         [Authorize]
         public ActionResult delete_comment(int comment_id, int subtitle_id) 
@@ -223,5 +234,6 @@ namespace CrowdSubMain.Controllers
             
             return Json(repo, JsonRequestBehavior.AllowGet);
         }
+        */
     }
 }
