@@ -159,7 +159,7 @@ function parse_srt(el) {
 
 /* Create html menu items */
 function srt_to_html() { 
-    srt_menu +='<div class="list-group">'
+    srt_menu +='<div id="srt-list-group" class="list-group">'
     for (var i in srt_object)
     {
         /* srt-click class for jquery*/
