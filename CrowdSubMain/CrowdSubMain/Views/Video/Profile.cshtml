@@ -88,33 +88,35 @@
                         <input id="file" name="file" class="btn btn-default" type="file">
                     </div>
 
+                    <div class="row">
+                        <div class="btn-group">
+                            <select class="form-control" id="language" name="language">
+                                <option value="English">English</option>
+                                <option value="Icelandic">Icelandic</option>
+                            </select>
 
-                    <div class="btn-group">
-                        <select class="form-control" id="language" name="language">
-                            <option value="English">English</option>
-                            <option value="Icelandic">Icelandic</option>
-                        </select>
+                        </div>
 
+                        <button type="submit" class="btn btn-default">Submit</button><!--Button to submit file-->
                     </div>
 
-                    <button type="submit" class="btn btn-default">Submit</button><!--Button to submit file-->
                 </div>
-
             </div>
-
+        </div>
         }
 
         @using (Html.BeginForm("Create", "Request", new { video_id = Model.video.id }, FormMethod.Post))
         {
-            <div class="btn-group">
-                <p>Submit request</p>
-                <label for="request_lang">Select language: </label>
-                <select class="form-control" id="request_lang" name="request_lang">
-                    <option value="English">English</option>
-                    <option value="Icelandic">Icelandic</option>
-                </select>
+            <div>
+                <div class="btn-group">
+                    <p>Submit request for a subtitle</p>
+                    <label for="request_lang">Select language: </label>
+                    <select class="form-control" id="language" name="request_lang">
+                        <option value="English">English</option>
+                        <option value="Icelandic">Icelandic</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+                }
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-        }
-    </div>
-</div>
+        </div>

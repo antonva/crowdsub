@@ -220,6 +220,8 @@
     <Content Include="App_Data\uploads\ewdp-batman.a.xvid.srt" />
     <Content Include="App_Data\uploads\Superman.III.1983.DVDRip.XviD-UnSeeN.srt" />
     <Content Include="App_Data\uploads\SupermanIII.srt" />
+    <Content Include="App_Data\uploads\Superman.Returns.srt" />
+    <Content Include="App_Data\uploads\Superman.Returns[2006]DvDrip[Eng]-aXXo.srt" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
