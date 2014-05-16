@@ -37,26 +37,6 @@ namespace CrowdSubMain.Controllers
 			subtitle_repo = subtitles; //constructor takes repo as parameter
 		}
 
-        // GET: /Subtitle/
-        /* public ActionResult Index() WE DON'T NEED THIS MAN
-        {
-			var view_model = new subtitle_view_model_download
-			{
-				path = Server.MapPath("~/App_Data/uploads"),
-				subtitles = new List<subtitle>()
-			};
-			var paths = Directory.GetFiles(view_model.path).ToList();
-			view_model.subtitles = (from s in subtitle_repo.get_subtitles()
-									orderby s.subtitle_file_name descending
-									select s).ToList();
-			foreach(var sub in view_model.subtitles)
-			{
-				var file_name = sub.subtitle_file_name;
-				sub.subtitle_file_path = Path.Combine(Server.MapPath("~/App_data/uploads"), file_name);
-			}
-			return View(view_model); 
-        } */
-
 		public FileResult download(int subtitle_id)
 		{
 			var subtitle = (from s in subtitle_repo.get_subtitles()
@@ -69,8 +49,11 @@ namespace CrowdSubMain.Controllers
 			var file = File(file_path, System.Net.Mime.MediaTypeNames.Text.Plain, file_name);
 			return file;
 		}
-
-        // GET: /Subtitle/Details/5
+        
+        /* Returns subtitle info, comments and text as string.
+         * srt_parser_menu.js handles rendering the srt text 
+         * into editable text blocks.
+         */
         public ActionResult subtitle_profile(int? id)
         {
             if (id == null)
@@ -98,8 +81,8 @@ namespace CrowdSubMain.Controllers
             return View(model);
         }
 
-		//edit function that overwrites srt file with new content
-		public void Edit(string new_srt, int subtitle_id)
+		/* Edit function that overwrites srt file with new content. */
+		public void update_subtitle(string new_srt, int subtitle_id)
 		{
 			var file_name = (from s in subtitle_repo.get_subtitles()
 							 where s.id == subtitle_id
@@ -112,9 +95,8 @@ namespace CrowdSubMain.Controllers
 		}
 
 
-
-        // GET: /Subtitle/Delete/5
-        public ActionResult Delete(int? id)
+        /* Deletes selected subtitle. */
+        public ActionResult delete(int? id)
         {
             if (id == null)
             {

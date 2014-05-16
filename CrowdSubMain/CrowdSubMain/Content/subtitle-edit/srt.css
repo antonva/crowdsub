@@ -12,7 +12,11 @@ div {
     visibility : hidden;
 }
 
-#srt-select {
+/* Make sure that the list group box
+ * isn't too big. Ensures that it's 
+ * scrollable.
+ */
+.list-group {
     height : 400px;
     overflow-y : scroll;
 }

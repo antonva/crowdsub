@@ -41,6 +41,14 @@ $(document).ready(function () {
             + srt_text
         );
     });
+
+    /* Save changes and update SRT file on site.*/
+    $('#srt-save').click(function (event, ui) {
+
+        var payload = new Object();
+        payload["string"] = obj_to_srt();
+        $.post("../save_subtitle", payload, function (data) { });
+    });
 });
 
 
@@ -125,7 +133,7 @@ function parse_srt(el) {
     for (var i = 0; i < text_line_array.length; i++) {
         
         /* first line is always line identifier*/
-        srt_object[text_line_array[i]] = [];
+        srt_object[text_line_array[i]] = [];  
         var tmp = text_line_array[i];
         i++;
         //TODO: split time into start/end
@@ -142,6 +150,7 @@ function parse_srt(el) {
             j++;
         }
     }
+    delete srt_object[''];
 };
 
 /* Create html menu items */
@@ -156,6 +165,33 @@ function srt_to_html() {
         for (var text in srt_object[i]["text"]) { srt_menu +='    <p class="list-group-item-text">' + srt_object[i]["text"][text] + '</p>' }
         srt_menu +='  </a>'
     } 
-    srt_menu +='</div>'
+    srt_menu += '</div>'
+    srt_menu += '<div class="btn-group">'
+    srt_menu += '<button type="button" class="btn btn-default" id="srt-save">Update SRT</button>'
+    srt_menu += '<button type="button" class="btn btn-default" id="srt-download">Download</button>'
+    srt_menu += '</div>'
+
 };
 
+
+
+function obj_to_srt() {
+
+    var srt_string = "";
+    for (var i in srt_object)
+    {
+        srt_string += i + '\n'
+        srt_string += srt_object[i]["time"]["start"]
+        srt_string += ' --> '
+        srt_string += srt_object[i]["time"]["end"]
+        srt_string += '\n'
+        for (var t in srt_object[i]["text"])
+        {
+            srt_string +=srt_object[i]["text"][t]
+        }
+        srt_string += '\n'
+        srt_string += '\n'
+    }
+
+    return srt_string;
+};
