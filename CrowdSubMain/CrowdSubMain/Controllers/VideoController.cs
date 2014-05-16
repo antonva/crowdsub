@@ -13,6 +13,7 @@ using Microsoft.AspNet.Identity;
 
 namespace CrowdSubMain.Controllers
 {
+    [HandleError]
     public class VideoController : Controller
     {
 		private readonly i_video_repository video_repo;
@@ -33,12 +34,17 @@ namespace CrowdSubMain.Controllers
 			video_repo = videos;
 		}
 
+        [HandleError]
 		public ActionResult Profile(int id)
 		{
             //TODO: check valid id and redirect to 404
 			var video = (from v in video_repo.get_videos()
 						 where v.id == id
-						 select v).First();
+						 select v).FirstOrDefault();
+            if (video == null)
+            {
+                return View("~/Error");
+            }
 
             var subtitles = subtitle_for_video(id);
             var model = new profile_view_model { video = video, subtitles = subtitles };
@@ -46,6 +52,7 @@ namespace CrowdSubMain.Controllers
 			return View(model);
 		}
 
+        [HandleError]
 		public ActionResult search(string search, string language)
 		{
             //string input_from_user = language;
@@ -112,6 +119,7 @@ namespace CrowdSubMain.Controllers
             return View(model);  
 		}
 
+        [HandleError]
         public ActionResult top_downloads() 
         {
             var model = (from v in video_repo.get_videos()
@@ -121,6 +129,7 @@ namespace CrowdSubMain.Controllers
             return View();
         }
 
+        [HandleError]
         public IEnumerable<subtitle> subtitle_for_video(int id) 
         {
             var model = (from v in subtitle_repo.get_subtitles()
@@ -151,7 +160,7 @@ namespace CrowdSubMain.Controllers
             return View(video);
         } */
 
-        // GET: /Video/Create
+        // GET: /Video/Create 
         [Authorize]    
         public ActionResult Create()
         {

@@ -159,6 +159,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SubtitleController.cs" />
     <Compile Include="Controllers\VideoController.cs" />
@@ -209,7 +210,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\batman-logo.png" />
     <Content Include="Images\CrowdSub_Logo_V1_210x75.png" />
-    <Content Include="Scripts\a_jscript.js" />
+    <Content Include="Scripts\comment_script.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\subtitle-edit\srt.css" />
@@ -289,8 +290,11 @@
     <Content Include="Views\Subtitle\TopDownloadedSubtitles.cshtml" />
     <Content Include="Views\Video\search.cshtml" />
     <Content Include="Views\Subtitle\RecentSubtitles.cshtml" />
+    <Content Include="Views\Shared\NotFound.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Error\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

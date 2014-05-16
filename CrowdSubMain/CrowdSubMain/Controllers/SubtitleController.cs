@@ -64,7 +64,7 @@ namespace CrowdSubMain.Controllers
 							 select s).First();
 			var file_name = subtitle.subtitle_file_name;
 			subtitle.subtitle_download_count++; //increment download count
-			subtitle_repo.edit(subtitle);
+			subtitle_repo.edit(subtitle); //update download count in database
 			var file_path = Path.Combine(Server.MapPath("~/App_Data/uploads"), file_name);
 			var file = File(file_path, System.Net.Mime.MediaTypeNames.Text.Plain, file_name);
 			return file;
@@ -206,6 +206,7 @@ namespace CrowdSubMain.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public ActionResult post_comment(subtitle_comment d)
         {
             subtitle_comment c = new subtitle_comment 
@@ -219,6 +220,25 @@ namespace CrowdSubMain.Controllers
             subtitle_comment_repo.add(c);
             var repo = subtitle_comment_repo.get_subtitle_comments();
 
+            return Json(repo, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public ActionResult delete_comment(int comment_id, int subtitle_id) 
+        {
+            var comment_to_delete = (from c in subtitle_comment_repo.get_subtitle_comments()
+                                    where c.id == comment_id
+                                    select c).SingleOrDefault();
+
+            if (comment_to_delete == null)
+            {
+                RedirectToAction("subtitle_profile", "subtitle", new { id = subtitle_id });
+            }
+
+            subtitle_comment_repo.delete(comment_to_delete);
+            var repo = subtitle_comment_repo.get_subtitle_comments();
+            
             return Json(repo, JsonRequestBehavior.AllowGet);
         }
     }

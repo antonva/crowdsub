@@ -17,7 +17,7 @@
 
             // Validation sem athugar hvort input sé tómt
             if ($("#CommentText").val() === "") {
-                $("#submitCommentError").html("The comment field cannot be empty :(");
+                $("#submitCommentError").html("Please enter a comment to submit!");
                 $("#submitCommentError").show();
             }
             else {
@@ -28,7 +28,7 @@
 
                     for (key in data) {
 
-                        // Breyta sem skilar dagsetningu á ákjósnalegu formi
+                        // Breyta sem skilar dagsetningu á ákjósanlegu formi
                         var date = data[key].CommentDate = ConvertStringToJSDate(data[key].CommentDate);
 
                         // Póstar kommentum frá fjölda síðasta kommenti póstað s.br count breytu sem sækir fjölda kommenta á server
@@ -44,6 +44,9 @@
                                 <p>\
                                     <span class="text-muted">' + date + ' </span>\
                                 </p>\
+                                <p>\
+                                    <button class="btn btn-primary" id="delete">Delete</button>\
+                                </p>\
                             </li>'
                             );
                         }
@@ -54,6 +57,8 @@
             $("#CommentText").val("");
     });
 });
+
+
 
 // Formatar dagsetningu svo hún lúkki einsog fyrirmyndin
 function ConvertStringToJSDate(dt) {
