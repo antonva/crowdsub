@@ -11,5 +11,6 @@ namespace CrowdSubMain.Models
     {
         public video video { get; set; }
         public IEnumerable<subtitle> subtitles { get; set; }
+		public IEnumerable<request> requests { get; set; }
     }
 }
