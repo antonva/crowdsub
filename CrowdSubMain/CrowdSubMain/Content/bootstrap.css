@@ -1673,7 +1673,8 @@ input[type="checkbox"] {
 }
 
 input[type="file"] {
-  display: block;
+    /*CHANCE display from block*/
+  display: inline;
 }
 
 select[multiple],
