@@ -14,13 +14,17 @@
 
 </div>
 
-        <table class="table table-hover">
+       
+
+
+         <table class="table table-hover">
             <thead>
                 <tr>
                     <th>Title</th>
                     <th>Type</th>
                     <th>Realised</th>
                     <th>Subtitle Language</th>
+                    <th>Subtitle last updated</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,13 +35,28 @@
                         
                         <td>@Html.DisplayFor(modelItem => item.video_pair.video_type)</td>
                         <td>@Html.DisplayFor(modelItem => item.video_pair.video_year_published)</td>
+                        
 
-                            
                         @foreach (var sub in item.subtitle_pair)
                         { 
-                            <td>@Html.DisplayFor(modelItem => sub.subtitle_language)</td>
+                           
+                            if(item.language_keeper.Count() == 2)
+                            {
+                                <td>@Html.DisplayFor(modelItem => item.language_keeper[0]), @Html.DisplayFor(modelItem => item.language_keeper[1]) </td>
+                               
+                            
+                            }
+                            else
+                            {
+                                <td>@Html.DisplayFor(modelItem => sub.subtitle_language)</td>
+                                
+                            }
+                            <td>@Html.DisplayFor(modelItem => sub.subtitle_date_updated)</td>
                         }
+                        
                     </tr>
                 }    
             </tbody>
         </table>
+    
+
