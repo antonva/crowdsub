@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('#srt').each(function() {
         parse_srt(this);
         srt_to_html();
-        $('#srt-select').append(srt_menu);
+        $('#srt-select').html(srt_menu);
     })
 
 
