@@ -39,7 +39,11 @@
     </div>
 </div>
 
-<div id="edit_link"><button class="btn btn-default">@Html.ActionLink("Edit video profile", "Edit", new { id = Model.video.id })</button></div>
+
+@Html.ActionLink("Edit video profile", "Edit", new { id = Model.video.id }, new { @class = "btn btn-default" })
+
+
+@*<div id="edit_link"><button class="btn btn-default">@Html.ActionLink("Edit video profile", "Edit", new { id = Model.video.id })</button></div>*@
 
 <div class="panel panel-default" id="tabe_video_profile">
     <!-- Default panel contents -->

@@ -23,6 +23,7 @@
 </ul>
 <div class="btn-group">
     <button type="button" class="btn btn-default" id="srt-save">Update SRT</button>
+    @Html.ActionLink("Back to profile", "Profile", "Video", new { id = Model.subtitle.subtitle_video_id }, new { @class = "btn btn-default" })
 </div>
     <div class="row">
         <div class="col-lg-8">
@@ -68,10 +69,11 @@
 
 </textarea>
 
-<p>
+
+@*<p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.subtitle.id }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@
 
 <!-- Modal, won't be displayed-->
 <div class="modal fade" id="srt-modal" tabindex="-1" role="dialog" aria-labelledby="srt-edit-line" aria-hidden="true">
@@ -89,3 +91,4 @@
         </div>
     </div>
 </div>  
+

@@ -142,8 +142,8 @@ namespace CrowdSubMain.Controllers
         public ActionResult recent_requests() 
         {
             var model = (from r in request_repo.get_requests()
-                        orderby r.request_date_created
-                        select r).ToList().Take(10);
+                         orderby r.request_date_created descending
+                         select r).ToList().Take(10);
 
             return View(model);
         }
